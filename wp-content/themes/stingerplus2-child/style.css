@@ -12,6 +12,11 @@ Version: 20170621
 }
 */
 
+.menu-utility__top,
+.menu-utility__bottom {
+  display: none;
+}
+
 /* 「活動・セミナー」以外は1カラム表示 */
 .st-eyecatch__column1 {
   margin: -20px -15px 15px !important;
@@ -23,10 +28,7 @@ Version: 20170621
 /*media Queries タブレットサイズ（960px以下）
 ----------------------------------------------------*/
 @media only screen and (max-width: 960px) {
-  .menu-utility__top,
-  .menu-utility__bottom {
-    display: none;
-  }
+
 
 /*-- ここまで --*/
 }
