@@ -12,6 +12,14 @@ Version: 20170621
 }
 */
 
+/* 「活動・セミナー」以外は1カラム表示 */
+.st-eyecatch__column1 {
+  margin: -20px -15px 15px !important;
+}
+.st-eyecatch__column1 img {
+  border-radius: 0 !important;
+}
+
 /*media Queries タブレットサイズ（960px以下）
 ----------------------------------------------------*/
 @media only screen and (max-width: 960px) {
@@ -31,6 +39,12 @@ Version: 20170621
     display: none;
   }
 
+  /* 「活動・セミナー」以外は1カラム表示 */
+  .main__column1 {
+    margin: 0px -10px 20px !important;
+    padding:20px 30px !important;
+  }
+
 /*-- ここまで --*/
 }
 
@@ -40,6 +54,19 @@ Version: 20170621
   .menu-utility__top,
   .menu-utility__bottom {
     display: block;
+  }
+
+  /* 「活動・セミナー」以外は1カラム表示 */
+  .main__column1 {
+    margin: 0 0 20px !important;
+    padding:30px 70px !important;
+  }
+  #hakusinote .main__column1 {
+		margin: 0px !important;
+		padding:20px !important;
+	}
+  .st-eyecatch__column1 {
+    margin: -30px -70px 10px !important;
   }
 
 /*-- ここまで --*/

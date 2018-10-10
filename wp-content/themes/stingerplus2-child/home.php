@@ -20,7 +20,7 @@
 								<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 12 ) ) : else : //トップ上部のウィジェット ?>
 								<?php endif; ?>
 							<?php } ?>
-							
+							<?php get_template_part( 'news-st' ); //お知らせ ?>
 						<?php }?>
 
 						<?php get_template_part( 'st-topin' ); //固定記事挿入 ?>
