@@ -67,5 +67,10 @@
 						</div><!-- /#headbox clearfix -->
 					<?php get_template_part( 'st-header-image' ); //カスタムヘッダー画像 ?>
 
+					<!-- 独自ヘッダー画像 -->
+					<?php if(is_front_page()){ ?>
+						<?php get_template_part( 'custom-header' ); ?>
+					<?php } ?>
+
 					</header>
 					<div id="content-w">

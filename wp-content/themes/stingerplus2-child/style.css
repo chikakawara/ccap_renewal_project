@@ -12,11 +12,34 @@ Version: 20170621
 }
 */
 
+/* ユーティリティメニュー */
 .menu-utility__top,
 .menu-utility__bottom {
   display: none;
 }
 
+/* 独自ヘッダー */
+.ccap-custom-header {
+  border-radius: 10px;
+  height: 279px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  position: relative;
+  background: left top no-repeat url(images/header_sp.png);
+  background-color: #FBFFF1;
+}
+.ccap-custom-header-txt {
+  height: 279px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  justify-content: center;
+  text-align: left;
+}
+.ccap-custom-header-txt > p {
+  margin: 0;
+}
 /* 「活動・セミナー」以外は1カラム表示 */
 .st-eyecatch__column1 {
   margin: -20px -15px 15px !important;
@@ -29,7 +52,9 @@ Version: 20170621
 ----------------------------------------------------*/
 @media only screen and (max-width: 960px) {
 
-
+  .ccap-custom-header{
+    margin: 0px 20px 20px !important;
+  }
 /*-- ここまで --*/
 }
 
@@ -40,6 +65,8 @@ Version: 20170621
   .menu-utility__bottom {
     display: none;
   }
+
+
 
   /* 「活動・セミナー」以外は1カラム表示 */
   .main__column1 {
@@ -56,6 +83,13 @@ Version: 20170621
   .menu-utility__top,
   .menu-utility__bottom {
     display: block;
+  }
+
+  .ccap-custom-header {
+    max-width: 1060px;
+    height: 300px;
+    background-image: url(images/header_pc.png);
+    background-position: left 10px bottom;
   }
 
   /* 「活動・セミナー」以外は1カラム表示 */
@@ -104,11 +138,11 @@ Version: 20170621
 }
 .menu-utility__bottom li a {
   display: block;
-  background-color: #ccc;
+  background-color: #95CB40;
   border-radius: 4px;
   padding: 4px 10px;
   color: #fff;
 }
 .menu-utility__bottom li a:hover {
-  background-color: #a3c354;
+  background-color: #1B8924;
 }
