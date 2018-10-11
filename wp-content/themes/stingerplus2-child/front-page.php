@@ -8,36 +8,7 @@
 
 			<?php get_template_part( 'st-eyecatch' ); //アイキャッチ画像を挿入 ?>
 
-				<?php if( !is_front_page() ){ ?>
-					<?php if( is_single() or is_page() ){ //一括挿入ウィジェットの表示確認
-						$postID = $wp_query->post->ID;
-						$ikkatuwidgetset = get_post_meta( $postID, 'ikkatuwidget_set', true );
-					}else{
-						$ikkatuwidgetset = '';
-					}
-					?>
-					<?php if (( is_active_sidebar( 17 ) ) && ( trim( $ikkatuwidgetset ) === '' )) { ?>
-						<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 17 ) ) : else : //固定ページ上一括ウィジェット ?>
-						<?php endif; ?>
-					<?php } ?>
 
-					<!--ぱんくず -->
-					<div id="breadcrumb">
-					<ol itemscope itemtype="http://schema.org/BreadcrumbList">
-						 <li itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><a href="<?php echo home_url(); ?>" itemprop="item"><span itemprop="name"><?php echo esc_html( $GLOBALS["stdata141"] ); ?></span></a> > <meta itemprop="position" content="1" /></li>
-						<?php
-						$i = 2;
-						foreach ( array_reverse( get_post_ancestors( $post->ID ) ) as $parid ) { ?>
-
-							<li itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><a href="<?php echo get_page_link( $parid ); ?>" title="<?php echo  get_the_title(); ?>" itemprop="item"> <span itemprop="name"><?php echo get_page( $parid )->post_title; ?></span></a> > <meta itemprop="position" content="<?php echo $i; ?>" /></li>
-						<?php  $i++; } ?>
-					</ol>
-					</div>
-					<!--/ ぱんくず -->
-
-				<?php }else{ //フロントページの場合 ?>
 					<div class="nowhits <?php st_noheader_class(); ?>"><?php get_template_part( 'popular-thumbnail' ); //任意のエントリ ?></div>
 					<?php if ( is_active_sidebar( 12 ) ) { ?>
 						<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 12 ) ) : else : //トップ上部のウィジェット ?>
@@ -45,7 +16,7 @@
 					<?php } ?>
 
 					<?php get_template_part( 'news-st' ); //お知らせ ?>
-				<?php } ?>
+
 
 					<!--ループ開始 -->
 					<?php if (have_posts()) : while (have_posts()) :
