@@ -3,7 +3,7 @@ if(st_is_mobile() || trim($GLOBALS['stdata16']) === ''){ //PCで切り替え表�
 	if ( trim( $GLOBALS["stdata80"] ) === '' ) {
 	?>
 		<nav id="s-navi" class="pcnone">
-			<p class="sp-menubtn"><span class="op"><i class="fa fa-bars"></i></span></p>
+			<p class="sp-menubtn"><i class="fa fa-bars"></i></p>
 				<div class="acordion_tree">
 					<?php
 					if ( has_nav_menu( 'smartphone-menu' ) ) :
