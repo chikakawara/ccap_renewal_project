@@ -48,26 +48,12 @@
 				<div id="wrapper-in">
 					<header id="<?php st_head_class(); ?>">
 						<div id="headbox-bg">
-							<div class="clearfix" id="headbox">
-								<!-- utility_top -->
-								<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'container_class' => 'menu-utility__top' ) ); ?>
-								<!-- utility_bottom -->
-								<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'container_class' => 'menu-utility__bottom' ) ); ?>
-								<?php get_template_part( 'st-accordion-menu' ); //アコーディオンメニュー ?>
-									<div id="header-l">
-										<?php get_template_part( 'st-header-logo' ); //サイト名とディスクリプション ?>
-									</div><!-- /#header-l -->
-								<div id="header-r" class="smanone">
-									<?php if ( isset($GLOBALS['stdata43']) && $GLOBALS['stdata43'] === 'yes' ) {
-										get_template_part( 'st-footer-link' ); //フッターリンク
-									} ?>
-									<?php get_template_part( 'st-header-widget' ); //電話番号とヘッダー用ウィジェット ?>
-								</div><!-- /#header-r -->
-							</div><!-- /#headbox-bg -->
-						</div><!-- /#headbox clearfix -->
+							<!-- custom-headbox -->
+							<?php get_template_part( 'custom-headbox' ); ?>
+						</div><!-- /#headbox-bg -->
 					<?php get_template_part( 'st-header-image' ); //カスタムヘッダー画像 ?>
 
-					<!-- 独自ヘッダー画像 -->
+					<!-- custom-header -->
 					<?php if(is_front_page()){ ?>
 						<?php get_template_part( 'custom-header' ); ?>
 					<?php } ?>

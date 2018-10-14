@@ -12,9 +12,53 @@ Version: 20170621
 }
 */
 
+header .sitename {
+  margin: 0;
+  padding: 0;
+  font-size: 18px !important;
+}
+/* custom headbox */
+
+#headbox {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 !important;
+  position: relative;
+  text-align: left;
+}
+#headbox #header-l {
+  float: none;
+  max-width: auto;
+}
+#headbox .headbox-inner {
+  display: flex;
+  align-items: center;
+}
+#headbox #s-navi {
+  margin: 0;
+
+}
+#headbox #s-navi .sp-menubtn {
+  margin: 0;
+  padding: 15px;
+}
+#s-navi .acordion_tree {
+  background-color: #fff;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.acordion_tree ul.menu li {
+  text-align: left;
+}
+
 /* ユーティリティメニュー */
-.menu-utility__top,
-.menu-utility__bottom {
+.utility-box {
   display: none;
 }
 
@@ -61,8 +105,7 @@ Version: 20170621
 /*media Queries タブレットサイズ（600px以上）
 ----------------------------------------------------*/
 @media only screen and (min-width: 600px) {
-  .menu-utility__top,
-  .menu-utility__bottom {
+  .utility-box {
     display: none;
   }
 
@@ -80,8 +123,10 @@ Version: 20170621
 /*media Queries PCサイズ（960px以上）
 ----------------------------------------------------*/
 @media print, screen and (min-width: 960px) {
-  .menu-utility__top,
-  .menu-utility__bottom {
+  #headbox {
+    padding: 0 !important;
+  }
+  .utility-box {
     display: block;
   }
 
@@ -107,6 +152,8 @@ Version: 20170621
 
 /*-- ここまで --*/
 }
+
+
 
 /* utility menu */
 .menu-utility__top,
