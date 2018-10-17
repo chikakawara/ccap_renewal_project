@@ -19,3 +19,9 @@ register_nav_menus(
   'utility_bottom'=> __( 'ユーティリティメニュー（下）', 'default' )
  )
 );
+
+// 404 error 回避
+add_action( 'after_setup_theme', 'my_after_setup_theme' );
+function my_after_setup_theme() {
+    remove_action( 'wp_enqueue_scripts', 'load_stylesheet' );
+}
