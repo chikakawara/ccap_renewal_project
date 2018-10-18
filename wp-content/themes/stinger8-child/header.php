@@ -38,7 +38,7 @@
 					<header>
 						<div id="headbox-bg">
 							<div class="clearfix" id="headbox">
-								<?php get_template_part( 'st-accordion-menu' ); //アコーディオンメニュー ?>
+
 									<div id="header-l">
 									<!-- ロゴ又はブログ名 -->
 									<p class="sitename">
@@ -47,17 +47,24 @@
 										</a>
 									</p>
 									<!-- ロゴ又はブログ名ここまで -->
-									<!-- キャプション -->
-									<?php if ( is_front_page() ) { ?>
-										<h1 class="descr">
-											<?php bloginfo( 'description' ); ?>
-										</h1>
-									<?php } else { ?>
-										<p class="descr">
-											<?php bloginfo( 'description' ); ?>
-										</p>
-									<?php } ?>
+
 									</div><!-- /#header-l -->
+
+									<div id="header-m">
+										<div class="utility-box">
+											<!-- utility_top -->
+											<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'container_class' => 'menu-utility__top' ) ); ?>
+											<!-- utility_bottom -->
+											<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'container_class' => 'menu-utility__bottom' ) ); ?>
+										</div>
+									</div><!-- /#header-m -->
+
+									<div id="header-r">
+										<p>電話番号</p>
+									</div><!-- /#header-r -->
+
+									<?php get_template_part( 'st-accordion-menu' ); //アコーディオンメニュー ?>
+
 
 							</div><!-- /#headbox-bg -->
 						</div><!-- /#headbox clearfix -->
