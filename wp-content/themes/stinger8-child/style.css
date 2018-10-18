@@ -1,0 +1,29 @@
+/*
+Theme Name: STINGER8 Child
+Template: stinger8
+Version: 20170614
+*/
+
+/*media Queries タブレットサイズ（960px以下）
+----------------------------------------------------*/
+@media only screen and (max-width: 960x) {
+
+
+/*-- ここまで --*/
+}
+
+/*media Queries タブレットサイズ（600px以上）
+----------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+
+
+/*-- ここまで --*/
+}
+
+/*media Queries PCサイズ（960px以上）
+----------------------------------------------------*/
+@media print, screen and (min-width: 960px) {
+
+
+/*-- ここまで --*/
+}
