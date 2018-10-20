@@ -37,7 +37,7 @@
 				<div id="wrapper-in">
 					<header>
 						<div id="headbox-bg">
-							<div class="clearfix" id="headbox">
+							<div id="headbox">
 
 									<div id="header-l">
 									<!-- ロゴ又はブログ名 -->
@@ -63,7 +63,18 @@
 										<p>電話番号</p>
 									</div><!-- /#header-r -->
 
-									<?php get_template_part( 'st-accordion-menu' ); //アコーディオンメニュー ?>
+									<!-- custom accordion -->
+									<div class="accordion-custom">
+										<div id="nav-drawer">
+											<input id="nav-input" type="checkbox" class="nav-unshown">
+											<label id="nav-open" for="nav-input"><span></span></label>
+											<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      								<div id="nav-content">
+												<?php get_template_part( 'accordion-custom' ); //アコーディオンの中身 ?>
+
+											</div>
+										</div>
+									</div>
 
 
 							</div><!-- /#headbox-bg -->
