@@ -143,7 +143,54 @@ Version: 20170614
     box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
-
+/* PC用global menu */
+#st-menubox {
+  border: 0;
+}
+#st-menubox ul.menu {
+  display: flex;
+  margin-top: 20px;
+}
+header .smanone ul.menu li {
+  border: 0;
+}
+#st-menubox ul.menu li {
+  width: 176px;
+}
+#st-menubox ul.menu > li {
+  float: none;
+  border: 0;
+  border-right: 2px dotted #95CB40;
+  height: 24px;
+}
+#st-menubox ul.menu > li:first-child {
+  border-left: 2px dotted #95CB40;
+}
+#st-menubox ul.menu > li > a {
+  line-height: 24px;
+}
+#st-menubox ul.menu > li > a:hover {
+  color: #1B8924;
+}
+#st-menubox ul.menu > li:hover ul.sub-menu {
+  display: block;
+}
+#st-menubox ul.sub-menu {
+  position: absolute;
+  left: -1px;
+}
+#st-menubox ul.sub-menu > li > a {
+  border: 0;
+  border-bottom: 1px dotted #EAF9D3;
+  background-color: #95CB40;
+  color: #fff;
+}
+#st-menubox ul.sub-menu > li:last-child > a {
+  border: 0;
+}
+#st-menubox ul.sub-menu > li > a:hover {
+  background-color: #1B8924;
+}
 /*media Queries タブレットサイズ（960px以下）
 ----------------------------------------------------*/
 @media only screen and (max-width: 960x) {
