@@ -3,7 +3,7 @@
  * アコーディオンメニュー
  */
  ?>
-<div style="text-align:left;">
+<div>
 	<?php
 	if ( has_nav_menu( 'smartphone-menu' ) ) :
 		$defaults = array(

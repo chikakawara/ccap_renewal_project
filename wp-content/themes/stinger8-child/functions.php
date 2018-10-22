@@ -11,7 +11,16 @@ function theme_enqueue_styles() {
 function dequeue_basejs () {
   wp_dequeue_script('base');
 }
-add_action('wp_enqueue_scripts', 'dequeue_basejs', 100); 
+add_action('wp_enqueue_scripts', 'dequeue_basejs', 100);
+
+// custom js 読み込み
+wp_enqueue_script(
+    'sp_navigation',
+    get_stylesheet_directory_uri() . '/js/sp_nav.js',
+    array(),
+    null,
+    true
+);
 
 // メニューカスタム版
 register_nav_menus(
