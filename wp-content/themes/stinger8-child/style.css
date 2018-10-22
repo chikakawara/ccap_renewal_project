@@ -203,6 +203,7 @@ header .smanone ul.menu li {
 }
 #nav-content ul.menu li a {
   display: block;
+  color: #333;
   text-align: left;
   border-bottom: 1px solid #eee;
   height: 38px;
@@ -225,9 +226,9 @@ header .smanone ul.menu li {
   -webkit-transform: rotate(45deg);
 }
 #nav-content ul.menu > li.open > a::after {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  top: 16px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 2px;
 }
 #nav-content ul.sub-menu > li > a {
   margin-left: 20px;
