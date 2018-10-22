@@ -7,6 +7,12 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
+// base.js 読み込み禁止
+function dequeue_basejs () {
+  wp_dequeue_script('base');
+}
+add_action('wp_enqueue_scripts', 'dequeue_basejs', 100); 
+
 // メニューカスタム版
 register_nav_menus(
  array(
