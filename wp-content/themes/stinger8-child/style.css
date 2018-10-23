@@ -63,6 +63,9 @@ Version: 20170614
   font-size: 14px;
   letter-spacing: 1px;
 }
+.menu-utility__top ul li a:hover {
+  color: #1b8924;
+}
 .menu-utility__bottom ul {
   flex-wrap: wrap;
   width: 342px;
@@ -292,6 +295,84 @@ header .smanone ul.menu li {
 #nav-content ul.sub-menu > li > a {
   margin-left: 20px;
 }
+
+/* footer */
+#footer {
+  background-color: #eaf9D3;
+}
+#footer .footermenust {
+  display: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: left;
+  width: 920px;
+  margin: 0 auto;
+  padding: 0;
+}
+#footer .footermenust li {
+  display: flex;
+  flex-flow: column;
+  border: 0;
+  position: relative;
+  padding: 0;
+}
+#footer .footermenust > li {
+  padding-left: 20px;
+  width: 230px;
+  margin-bottom: 40px;
+}
+#footer .footermenust > li::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #95CB40;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+#footer .footermenust > li::after {
+  content: '';
+  display: block;
+  border: 4px solid transparent;
+  border-bottom: 4px solid #fff;
+  transform: translateX(-50%) translateY(-85%) rotate(90deg);
+  position: absolute;
+  top: 12px;
+  left: 8px;
+}
+#footer .footermenust li a {
+  font-size: 14px;
+}
+#footer .footermenust li a:hover {
+  color: #1b8924;
+}
+#footer .footermenust > li > a {
+  color: #222;
+}
+#footer .sub-menu {
+  margin-top: 15px;
+}
+#footer .sub-menu li {
+  margin-bottom: 5px;
+}
+#footer .sub-menu li::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.5px 5px;
+  position: absolute;
+  border-color: transparent transparent transparent #95CB40;
+  top: calc(50% - 3px);
+  left: -15px;
+}
+#footer .sub-menu li a {
+  color: #666;
+}
 /*media Queries タブレットサイズ（960px以下）
 ----------------------------------------------------*/
 @media only screen and (max-width: 960x) {
@@ -328,6 +409,9 @@ header .smanone ul.menu li {
   }
   .accordion-custom {
     display: none;
+  }
+  #footer .footermenust {
+    display: flex;
   }
 /*-- ここまで --*/
 }
