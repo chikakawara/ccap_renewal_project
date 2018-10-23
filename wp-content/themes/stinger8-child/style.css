@@ -7,6 +7,7 @@ Version: 20170614
 * {
   box-sizing: border-box;
 }
+
 /* header */
 #headbox {
   display: flex;
@@ -14,9 +15,20 @@ Version: 20170614
   justify-content: space-between;
   padding: 0 !important;
 }
-#header-m {
+.telno {
   display: none;
 }
+.header-r__top,
+.menu-utility__bottom {
+  display: none;
+}
+.header-r__top {
+  justify-content: flex-end;
+}
+.header-r__bottom {
+  display: flex;
+}
+
 .menu-utility__top ul,
 .menu-utility__bottom ul {
   list-style-type: none;
@@ -24,15 +36,46 @@ Version: 20170614
 }
 .menu-utility__top ul {
   justify-content: flex-end;
-
+}
+.menu-utility__top ul li {
+  position: relative;
+  padding-left: 13px;
+  margin-right: 15px;
+}
+.menu-utility__top ul li::before,
+.menu-utility__bottom ul li::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.5px 5px;
+  position: absolute;
+}
+.menu-utility__top ul li::before {
+  border-color: transparent transparent transparent #95CB40;
+  top: calc(50% - 3px);
+  left: 0;
+}
+.menu-utility__top ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 .menu-utility__bottom ul {
   flex-wrap: wrap;
-  width: 350px;
+  width: 342px;
 }
 .menu-utility__bottom ul li {
   margin-right: 4px;
   margin-bottom: 4px;
+  position: relative;
+}
+.menu-utility__bottom ul li::before {
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 8px;
 }
 .menu-utility__bottom ul li:nth-child(2n) {
   margin-right: 0;
@@ -44,23 +87,39 @@ Version: 20170614
 .menu-utility__bottom ul li a {
   background-color: #95cb40;
   color: #fff;
-  padding: 5px;
+  padding: 5px 4px;
   border-radius: 4px;
-  width: 170px;
+  width: 164px;
   display: block;
   text-align: center;
   text-decoration: none;
+  font-size: 12px;
 }
 .menu-utility__bottom ul li a:hover {
   background-color: #1b8924;
 }
-#header-r {
 
+/* telephone number */
+.telno,
+.telno__forsp {
+  width: 280px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #EAF9D3;
+  color: #1B8924;
+  justify-content: center;
+  align-items: center;
+}
+.telno {
+  margin-right: 10px;
+}
+.telno__forsp {
+  display: flex;
+  margin: 10px auto;
 }
 
 /* custom accordion */
 .accordion-custom {
-
 }
 
 #nav-drawer {
@@ -101,7 +160,7 @@ Version: 20170614
   bottom: -16px;
 }
 
-/*閉じる用の薄黒カバー*/
+/*閉じる用の半透明カバー*/
 #nav-close {
     display: none;/*はじめは隠しておく*/
     position: fixed;
@@ -244,7 +303,15 @@ header .smanone ul.menu li {
 /*media Queries タブレットサイズ（600px以上）
 ----------------------------------------------------*/
 @media only screen and (min-width: 600px) {
-
+  #header-r {
+    display: block;
+  }
+  .telno {
+    display: flex;
+  }
+  .telno__forsp {
+    display: none;
+  }
 
 /*-- ここまで --*/
 }
@@ -255,8 +322,9 @@ header .smanone ul.menu li {
   #headbox {
     display: flex;
   }
-  #header-m {
-    display: block;
+  .header-r__top,
+  .menu-utility__bottom {
+    display: flex;
   }
   .accordion-custom {
     display: none;

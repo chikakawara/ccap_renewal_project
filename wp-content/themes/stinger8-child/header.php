@@ -38,47 +38,46 @@
 					<header>
 						<div id="headbox-bg">
 							<div id="headbox">
-
 									<div id="header-l">
 									<!-- ロゴ又はブログ名 -->
-									<p class="sitename">
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-											<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>
-										</a>
-									</p>
-									<!-- ロゴ又はブログ名ここまで -->
-
+										<p class="sitename">
+											<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+												<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>
+											</a>
+										</p>
+										<!-- ロゴ又はブログ名ここまで -->
 									</div><!-- /#header-l -->
 
-									<div id="header-m">
-										<div class="utility-box">
+									<div id="header-r">
+										<div class="header-r__top">
 											<!-- utility_top -->
 											<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'container_class' => 'menu-utility__top' ) ); ?>
+										</div>
+										<div class="header-r__bottom">
 											<!-- utility_bottom -->
 											<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'container_class' => 'menu-utility__bottom' ) ); ?>
-										</div>
-									</div><!-- /#header-m -->
+											<div class="telno">電話番号</div>
 
-									<div id="header-r">
-										<p>電話番号</p>
-									</div><!-- /#header-r -->
-
-									<!-- custom accordion -->
-									<div class="accordion-custom">
-										<div id="nav-drawer">
-											<input id="nav-input" type="checkbox" class="nav-unshown">
-											<label id="nav-open" for="nav-input"><span></span></label>
-											<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      								<div id="nav-content">
-												<?php get_template_part( 'accordion-custom' ); //アコーディオンの中身 ?>
-
+											<!-- custom accordion -->
+											<div class="accordion-custom">
+												<div id="nav-drawer">
+													<input id="nav-input" type="checkbox" class="nav-unshown">
+													<label id="nav-open" for="nav-input"><span></span></label>
+													<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+		      								<div id="nav-content">
+														<?php get_template_part( 'accordion-custom' ); //アコーディオンの中身 ?>
+													</div>
+												</div>
 											</div>
+
 										</div>
-									</div>
 
-
-							</div><!-- /#headbox-bg -->
-						</div><!-- /#headbox clearfix -->
+									</div><!-- /#header-r -->
+							</div><!-- /#headbox -->
+							<div class="telno__forsp">
+								電話番号
+							</div>
+						</div><!-- /#headbox-bg -->
 
 						<div id="gazou-wide">
 							<?php get_template_part( 'st-header-menu' ); //カスタムヘッダーメニュー ?>
