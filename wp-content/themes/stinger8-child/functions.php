@@ -29,6 +29,10 @@ register_nav_menus(
   'secondary-menu' => __( 'フッター用メニュー', 'default' ),
   'smartphone-menu' => __( 'スマートフォン用メニュー', 'default' ),
   'utility_top'=> __( 'ユーティリティメニュー（上）', 'default' ),
-  'utility_bottom'=> __( 'ユーティリティメニュー（下）', 'default' )
+  'utility_bottom'=> __( 'ユーティリティメニュー（下）', 'default' ),
+  'smartphone-submenu01' => __( 'スマートフォン用サブメニュー01', 'default' ),
+  'smartphone-submenu02' => __( 'スマートフォン用サブメニュー02', 'default' ),
+  'smartphone-submenu03' => __( 'スマートフォン用サブメニュー03', 'default' ),
+  'smartphone-submenu04' => __( 'スマートフォン用サブメニュー04', 'default' )
  )
 );

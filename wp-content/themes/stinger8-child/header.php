@@ -52,6 +52,14 @@
 										<div class="header-r__top">
 											<!-- utility_top -->
 											<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'container_class' => 'menu-utility__top' ) ); ?>
+
+											<!-- links -->
+											<a href="" target="_blank"><div class="link-orange-ribbon">
+											  オレンジリボン運動
+											</div></a>
+											<a href=""><div class="link-clinic">
+											  クリニック（開設予定）
+											</div></a>
 										</div>
 										<div class="header-r__bottom">
 											<!-- utility_bottom -->
