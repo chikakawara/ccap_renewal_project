@@ -113,10 +113,6 @@ Version: 20170614
   margin-right: 0;
 }
 
-.menu-utility__bottom ul li:nth-child(2n) {
-  margin-right: 0;
-}
-
 .menu-utility__bottom ul li:nth-child(3), .menu-utility__bottom ul li:nth-child(4) {
   margin-bottom: 0;
 }
