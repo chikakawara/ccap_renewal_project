@@ -1,0 +1,42 @@
+/*media Queries タブレットサイズ（960px以下）
+----------------------------------------------------*/
+@media only screen and (max-width: 960x) {
+
+
+/*-- ここまで --*/
+}
+
+/*media Queries タブレットサイズ（600px以上）
+----------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  #header-r {
+    display: block;
+  }
+  .telno {
+    display: flex;
+  }
+  .telno__forsp {
+    display: none;
+  }
+
+/*-- ここまで --*/
+}
+
+/*media Queries PCサイズ（960px以上）
+----------------------------------------------------*/
+@media print, screen and (min-width: 960px) {
+  #headbox {
+    display: flex;
+  }
+  .header-r__top,
+  .menu-utility__bottom {
+    display: flex;
+  }
+  .accordion-custom {
+    display: none;
+  }
+  #footer .footermenust {
+    display: flex;
+  }
+/*-- ここまで --*/
+}

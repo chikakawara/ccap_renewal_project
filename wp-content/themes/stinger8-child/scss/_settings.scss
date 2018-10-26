@@ -1,0 +1,30 @@
+$primary-color: #95cb40; //黄緑
+$secondary-color: #1b8924; //緑
+$base-color: #eaf9d3; //薄緑
+$highlight-color01: #f2bd1c; //オレンジ
+$highlight-color02: #fce80b; //黄
+$txt-base-color01: #666;
+$txt-base-color02: #333;
+
+@mixin css-arrow($color:#fff, $width:5px, $top:3px, $left:0) {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $width/2 0 $width/2 $width;
+  position: absolute;
+  border-color: transparent transparent transparent $color;
+  top: calc(50% - #{$top});
+  left: $left;
+}
+
+@mixin link-with-arrow($color:#fff, $width:5px, $top:3px, $left:0) {
+  position: relative;
+  &::before {
+    @include css-arrow($color:$color, $width:$width, $top:$top, $left:$left);
+  }
+  a {
+    text-decoration: none;
+  }
+}
