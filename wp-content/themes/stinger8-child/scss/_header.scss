@@ -64,6 +64,9 @@
       text-align: center;
       width: 164px;
       font-size: 12px;
+      &:hover {
+        background-color: $secondary-color;
+      }
     }
   }
 }

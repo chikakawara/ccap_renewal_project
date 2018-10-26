@@ -128,6 +128,10 @@ Version: 20170614
   font-size: 12px;
 }
 
+.menu-utility__bottom ul li a:hover {
+  background-color: #1b8924;
+}
+
 /* telephone number */
 .telno,
 .telno__forsp {
