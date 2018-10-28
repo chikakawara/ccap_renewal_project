@@ -6,6 +6,23 @@ $highlight-color02: #fce80b; //黄
 $txt-base-color01: #666;
 $txt-base-color02: #333;
 
+/* media query */
+
+/* タブレットサイズ（600px以上） */
+@mixin screen-tablet {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+/* PCサイズ（960px以上） */
+@mixin screen-pc {
+  @media print, screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+/* css arrow */
+
 @mixin css-arrow($color:#fff, $width:5px, $top:3px, $left:0) {
   display: block;
   content: '';

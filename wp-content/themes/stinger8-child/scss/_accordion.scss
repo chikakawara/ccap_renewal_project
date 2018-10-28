@@ -1,6 +1,9 @@
 /* custom accordion */
 .accordion-custom {
   margin-left: 10px;
+  @include screen-pc {
+    display: none;
+  }
 }
 
 #nav-drawer {

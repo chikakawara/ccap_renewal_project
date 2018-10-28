@@ -3,6 +3,9 @@
   background-color: $base-color;
   .footermenust {
     display: none;
+    @include screen-pc {
+      display: flex;
+    }
     flex-wrap: wrap;
     align-items: flex-start;
     text-align: left;

@@ -5,12 +5,12 @@
   justify-content: space-between;
   padding: 0 !important;
 }
-.telno {
-  display: none;
-}
 .header-r__top,
 .menu-utility__bottom {
   display: none;
+  @include screen-pc {
+    display: flex;
+  }
 }
 .header-r__top {
   justify-content: flex-end;
@@ -82,9 +82,18 @@
   justify-content: center;
   align-items: center;
 }
+.telno {
+  display: none;
+  @include screen-tablet {
+    display: flex;
+  }
+}
 .telno__forsp {
   display: flex;
   margin: 10px auto;
+  @include screen-tablet {
+    display: none;
+  }
 }
 
 /* links */

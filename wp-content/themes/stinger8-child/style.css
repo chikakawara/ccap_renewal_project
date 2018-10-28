@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* media query */
+/* タブレットサイズ（600px以上） */
+/* PCサイズ（960px以上） */
+/* css arrow */
 /*
 Theme Name: STINGER8 Child
 Template: stinger8
@@ -17,13 +21,16 @@ Version: 20170614
   padding: 0 !important;
 }
 
-.telno {
-  display: none;
-}
-
 .header-r__top,
 .menu-utility__bottom {
   display: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .header-r__top,
+  .menu-utility__bottom {
+    display: flex;
+  }
 }
 
 .header-r__top {
@@ -144,9 +151,25 @@ Version: 20170614
   align-items: center;
 }
 
+.telno {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .telno {
+    display: flex;
+  }
+}
+
 .telno__forsp {
   display: flex;
   margin: 10px auto;
+}
+
+@media screen and (min-width: 600px) {
+  .telno__forsp {
+    display: none;
+  }
 }
 
 /* links */
@@ -432,6 +455,12 @@ Version: 20170614
   padding: 0;
 }
 
+@media print, screen and (min-width: 960px) {
+  #footer .footermenust {
+    display: flex;
+  }
+}
+
 #footer .footermenust li {
   display: flex;
   flex-flow: column;
@@ -510,6 +539,12 @@ Version: 20170614
 /* custom accordion */
 .accordion-custom {
   margin-left: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .accordion-custom {
+    display: none;
+  }
 }
 
 #nav-drawer {
@@ -603,46 +638,6 @@ Version: 20170614
   transform: translateX(0%);
   /*中身を表示*/
   /* box-shadow: 6px 0 25px rgba(0,0,0,.15); */
-}
-
-/*media Queries タブレットサイズ（960px以下）
-----------------------------------------------------*/
-@media only screen and (max-width: 960x) {
-  /*-- ここまで --*/
-}
-
-/*media Queries タブレットサイズ（600px以上）
-----------------------------------------------------*/
-@media only screen and (min-width: 600px) {
-  #header-r {
-    display: block;
-  }
-  .telno {
-    display: flex;
-  }
-  .telno__forsp {
-    display: none;
-  }
-  /*-- ここまで --*/
-}
-
-/*media Queries PCサイズ（960px以上）
-----------------------------------------------------*/
-@media print, screen and (min-width: 960px) {
-  #headbox {
-    display: flex;
-  }
-  .header-r__top,
-  .menu-utility__bottom {
-    display: flex;
-  }
-  .accordion-custom {
-    display: none;
-  }
-  #footer .footermenust {
-    display: flex;
-  }
-  /*-- ここまで --*/
 }
 
 /*# sourceMappingURL=maps/style.css.map */
