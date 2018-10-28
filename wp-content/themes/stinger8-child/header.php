@@ -51,7 +51,7 @@
 									<div id="header-r">
 										<div class="header-r__top">
 											<!-- utility_top -->
-											<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'container_class' => 'menu-utility__top' ) ); ?>
+											<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'container_class' => 'menu-utility__header-top' ) ); ?>
 
 											<!-- links -->
 											<a href="" target="_blank"><div class="link-orange-ribbon">
@@ -63,7 +63,7 @@
 										</div>
 										<div class="header-r__bottom">
 											<!-- utility_bottom -->
-											<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'container_class' => 'menu-utility__bottom' ) ); ?>
+											<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'container_class' => 'menu-utility__header-bottom' ) ); ?>
 											<div class="telno">電話番号</div>
 
 											<!-- custom accordion -->

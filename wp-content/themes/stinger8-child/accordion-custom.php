@@ -18,18 +18,14 @@
 	<div class="clear"></div>
 </div>
 <div class="st-submenu-box">
-  <?php
-    $spsubmenu02 = array(
-      'theme_location' => 'smartphone-submenu02'
-    );
-   ?>
-  <?php wp_nav_menu( $spsubmenu02 ); ?>
-  <?php
-    $spsubmenu03 = array(
-      'theme_location' => 'smartphone-submenu03'
-    );
-   ?>
-  <?php wp_nav_menu( $spsubmenu03 ); ?>
+  <?php wp_nav_menu( array(
+    'theme_location' => 'smartphone-submenu02',
+    'container_class' => 'menu-utility__sp-sub-top'
+   ) ); ?>
+ <?php wp_nav_menu( array(
+   'theme_location' => 'smartphone-submenu03',
+   'container_class' => 'menu-utility__sp-sub-bottom'
+  ) ); ?>
 </div>
 <a href="" target="_blank"><div class="link-orange-ribbon">
   オレンジリボン運動

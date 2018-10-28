@@ -22,13 +22,13 @@ Version: 20170614
 }
 
 .header-r__top,
-.menu-utility__bottom {
+.menu-utility__header-bottom {
   display: none;
 }
 
 @media print, screen and (min-width: 960px) {
   .header-r__top,
-  .menu-utility__bottom {
+  .menu-utility__header-bottom {
     display: flex;
   }
 }
@@ -44,24 +44,23 @@ Version: 20170614
 }
 
 /* utility menu */
-.menu-utility__top ul,
-.menu-utility__bottom ul,
-#nav-content #menu-utility-top-1 {
+.menu-utility__header-top ul,
+.menu-utility__header-bottom ul {
   list-style-type: none;
   display: flex;
 }
 
-.menu-utility__top ul {
+.menu-utility__header-top ul {
   justify-content: flex-end;
 }
 
-.menu-utility__top ul li {
+.menu-utility__header-top ul li {
   position: relative;
   padding-left: 13px;
   margin-right: 15px;
 }
 
-.menu-utility__top ul li::before {
+.menu-utility__header-top ul li::before {
   display: block;
   content: '';
   width: 0;
@@ -74,32 +73,32 @@ Version: 20170614
   left: 0;
 }
 
-.menu-utility__top ul li a {
+.menu-utility__header-top ul li a {
   text-decoration: none;
 }
 
-.menu-utility__top ul li a {
+.menu-utility__header-top ul li a {
   color: #666;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-.menu-utility__top ul li a:hover {
+.menu-utility__header-top ul li a:hover {
   color: #1b8924;
 }
 
-.menu-utility__bottom ul {
+.menu-utility__header-bottom ul {
   flex-wrap: wrap;
   width: 342px;
 }
 
-.menu-utility__bottom ul li {
+.menu-utility__header-bottom ul li {
   position: relative;
   margin-right: 4px;
   margin-bottom: 4px;
 }
 
-.menu-utility__bottom ul li::before {
+.menu-utility__header-bottom ul li::before {
   display: block;
   content: '';
   width: 0;
@@ -112,19 +111,19 @@ Version: 20170614
   left: 8px;
 }
 
-.menu-utility__bottom ul li a {
+.menu-utility__header-bottom ul li a {
   text-decoration: none;
 }
 
-.menu-utility__bottom ul li:nth-child(2n) {
+.menu-utility__header-bottom ul li:nth-child(2n) {
   margin-right: 0;
 }
 
-.menu-utility__bottom ul li:nth-child(3), .menu-utility__bottom ul li:nth-child(4) {
+.menu-utility__header-bottom ul li:nth-child(3), .menu-utility__header-bottom ul li:nth-child(4) {
   margin-bottom: 0;
 }
 
-.menu-utility__bottom ul li a {
+.menu-utility__header-bottom ul li a {
   background-color: #95cb40;
   color: #fff;
   padding: 5px 4px;
@@ -135,7 +134,7 @@ Version: 20170614
   font-size: 12px;
 }
 
-.menu-utility__bottom ul li a:hover {
+.menu-utility__header-bottom ul li a:hover {
   background-color: #1b8924;
 }
 
@@ -375,45 +374,21 @@ Version: 20170614
   margin-left: 20px;
 }
 
-#nav-content #menu-utility-top-1,
-#nav-content #menu-utility-bottom-1 {
+#nav-content .st-submenu-box {
   width: 80%;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
-#nav-content #menu-utility-top-1 li {
-  position: relative;
-  padding-left: 13px;
-  margin-right: 15px;
+#nav-content .menu-utility__sp-sub-top ul {
+  margin-bottom: 10px;
 }
 
-#nav-content #menu-utility-top-1 li::before {
-  display: block;
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 2.5px 0 2.5px 5px;
-  position: absolute;
-  border-color: transparent transparent transparent #95cb40;
-  top: calc(50% - 3px);
-  left: 0;
-}
-
-#nav-content #menu-utility-top-1 li a {
-  text-decoration: none;
-}
-
-#nav-content #menu-utility-top-1 li a {
-  color: #666;
-}
-
-#nav-content #menu-utility-bottom-1 li {
+#nav-content .menu-utility__sp-sub-top ul li {
   position: relative;
   margin-bottom: 5px;
 }
 
-#nav-content #menu-utility-bottom-1 li::before {
+#nav-content .menu-utility__sp-sub-top ul li::before {
   display: block;
   content: '';
   width: 0;
@@ -426,11 +401,11 @@ Version: 20170614
   left: 14px;
 }
 
-#nav-content #menu-utility-bottom-1 li a {
+#nav-content .menu-utility__sp-sub-top ul li a {
   text-decoration: none;
 }
 
-#nav-content #menu-utility-bottom-1 li a {
+#nav-content .menu-utility__sp-sub-top ul li a {
   background-color: #95cb40;
   color: #fff;
   padding: 5px 4px;
@@ -438,6 +413,33 @@ Version: 20170614
   display: block;
   text-align: center;
   width: 100%;
+}
+
+#nav-content .menu-utility__sp-sub-bottom ul li {
+  position: relative;
+  padding-left: 13px;
+  margin-right: 15px;
+}
+
+#nav-content .menu-utility__sp-sub-bottom ul li::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.5px 5px;
+  position: absolute;
+  border-color: transparent transparent transparent #95cb40;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+#nav-content .menu-utility__sp-sub-bottom ul li a {
+  text-decoration: none;
+}
+
+#nav-content .menu-utility__sp-sub-bottom ul li a {
+  color: #666;
 }
 
 /* footer */
