@@ -20,16 +20,16 @@
 <div class="st-submenu-box">
   <?php wp_nav_menu( array(
     'theme_location' => 'smartphone-submenu02',
-    'container_class' => 'menu-utility__sp-sub-top'
+    'menu_class' => 'menu-utility__sp-sub-top'
    ) ); ?>
  <?php wp_nav_menu( array(
    'theme_location' => 'smartphone-submenu03',
-   'container_class' => 'menu-utility__sp-sub-bottom'
+   'menu_class' => 'menu-utility__sp-sub-bottom'
   ) ); ?>
 </div>
-<a href="" target="_blank"><div class="link-orange-ribbon">
-  オレンジリボン運動
-</div></a>
-<a href=""><div class="link-clinic">
-  クリニック（開設予定）
-</div></a>
+<div class="link-orange-ribbon">
+  <a href="" target="_blank">オレンジリボン運動</a>
+</div>
+<div class="link-clinic">
+  <a href="">クリニック（開設予定）</a>
+</div>

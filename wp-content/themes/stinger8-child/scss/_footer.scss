@@ -1,5 +1,9 @@
 /* footer */
 #footer {
+  #footer-in {
+    position: relative;
+  }
+
   background-color: $base-color;
   .footermenust {
     display: none;
@@ -54,6 +58,10 @@
       > a {
         color: #222;
       }
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-bottom: 0;
+      }
     }
   }
   .sub-menu {
@@ -65,6 +73,82 @@
       }
       a {
         color: #666;
+      }
+    }
+  }
+
+  /* utility menu */
+  .footer-utility-box {
+    @include screen-pc {
+      position: absolute;
+      bottom: 38px;
+      right: 0;
+    }
+    .footer-utility-box__top {
+      display: flex;
+      justify-content: space-between;
+      @include screen-pc {
+        justify-content: flex-end;
+      }
+
+    }
+
+  }
+  .menu-utility__footer-top,
+  .menu-utility__footer-bottom {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+  .menu-utility__footer-top {
+
+    li {
+      @include link-with-arrow($color:$primary-color);
+      padding-left: 13px;
+      margin-right: 15px;
+      a {
+        color: $txt-base-color01;
+        font-size: 14px;
+        letter-spacing: 1px;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .menu-utility__footer-bottom {
+    flex-wrap: wrap;
+    width: 100%;
+    @include screen-pc {
+      width: 332px;
+    }
+
+
+    li {
+      @include link-with-arrow($left:8px);
+      margin-right: 4px;
+      margin-bottom: 4px;
+      width: calc((100vw - 30px) / 2 - 2px);
+      @include screen-pc {
+        width: 164px;
+      }
+      &:nth-child(2n) { margin-right: 0; }
+      &:nth-child(3),
+      &:nth-child(4) { margin-bottom: 0; }
+      a {
+        background-color: $primary-color;
+        color: #fff;
+        padding: 5px 4px;
+        border-radius: 2px;
+        display: block;
+        text-align: center;
+        @include screen-pc {
+          font-size: 12px;
+        }
+        &:hover {
+          background-color: $secondary-color;
+        }
       }
     }
   }

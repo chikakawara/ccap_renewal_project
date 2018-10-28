@@ -5,14 +5,11 @@
   justify-content: space-between;
   padding: 0 !important;
 }
-.header-r__top,
-.menu-utility__header-bottom {
+.header-r__top {
   display: none;
   @include screen-pc {
     display: flex;
   }
-}
-.header-r__top {
   justify-content: flex-end;
   align-items: center;
 }
@@ -22,12 +19,12 @@
 }
 
 /* utility menu */
-.menu-utility__header-top ul,
-.menu-utility__header-bottom ul {
+.menu-utility__header-top,
+.menu-utility__header-bottom {
   list-style-type: none;
-  display: flex;
 }
-.menu-utility__header-top ul {
+.menu-utility__header-top {
+  display: flex;
   justify-content: flex-end;
   li {
     @include link-with-arrow($color:$primary-color);
@@ -44,9 +41,13 @@
   }
 }
 
-.menu-utility__header-bottom ul {
+.menu-utility__header-bottom {
   flex-wrap: wrap;
   width: 342px;
+  display: none;
+  @include screen-pc {
+    display: flex;
+  }
   li {
     @include link-with-arrow($left:8px);
     margin-right: 4px;
@@ -54,6 +55,7 @@
     &:nth-child(2n) { margin-right: 0; }
     &:nth-child(3),
     &:nth-child(4) { margin-bottom: 0; }
+    width: 164px;
     a {
       background-color: $primary-color;
       color: #fff;
@@ -61,7 +63,6 @@
       border-radius: 2px;
       display: block;
       text-align: center;
-      width: 164px;
       font-size: 12px;
       &:hover {
         background-color: $secondary-color;
@@ -98,25 +99,42 @@
 /* links */
 .link-orange-ribbon,
 .link-clinic {
-  text-align: center;
   position: relative;
+  a {
+    text-align: center;
+
+    display: block;
+  }
 }
 .link-orange-ribbon {
-  background-color: $highlight-color01;
-  color: #fff;
+  a {
+    background-color: $highlight-color01;
+    color: #fff;
+    &:hover {
+      background-color: desaturate($highlight-color01, 15%);
+    }
+  }
 }
 .link-clinic {
-  background-color: $highlight-color02;
-  color: $txt-base-color02;
+  a {
+    background-color: $highlight-color02;
+    color: $txt-base-color02;
+    &:hover {
+      background-color: desaturate($highlight-color02, 15%);
+    }
+  }
 }
 .header-r__top .link-orange-ribbon,
 .header-r__top .link-clinic {
   width: 180px;
   margin: 10px 4px 10px 0;
-  height: 24px;
-  line-height: 24px;
-  border-radius: 12px;
-  font-size: 12px;
+
+  a {
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
 }
 .header-r__top .link-orange-ribbon::before {
   @include css-arrow($left:10px);
@@ -134,10 +152,12 @@
 #nav-content .link-clinic {
   width: 80%;
   margin: 10px auto;
-  height: 34px;
-  line-height: 34px;
-  border-radius: 17px;
-  font-size: 14px;
+  a {
+    height: 34px;
+    line-height: 34px;
+    border-radius: 17px;
+    font-size: 14px;
+  }
 }
 
 /* PC用global menu */
@@ -258,7 +278,7 @@
     margin: 20px auto;
   }
 
-  .menu-utility__sp-sub-top ul {
+  .menu-utility__sp-sub-top {
     margin-bottom: 10px;
     li {
       @include link-with-arrow($left:14px);
@@ -270,11 +290,10 @@
         border-radius: 2px;
         display: block;
         text-align: center;
-        width: 100%;
       }
     }
   }
-  .menu-utility__sp-sub-bottom ul {
+  .menu-utility__sp-sub-bottom {
     li {
       @include link-with-arrow($color:$primary-color, $left:14px);
       padding-left: 13px;
