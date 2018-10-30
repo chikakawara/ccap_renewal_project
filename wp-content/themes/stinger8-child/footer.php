@@ -27,12 +27,26 @@
 		) ); ?>
 	</div>
 
-	<p class="copy">Copyright&copy;
-		<?php bloginfo( 'name' ); ?>
-		,
-		<?php echo date( 'Y' ); ?>
-		All Rights Reserved.</p>
-
+</div>
+<div class="footer-bottom-box">
+	<div class="footer-bottom-inner">
+		<ul class="footer-bottom-links">
+			<li><a href="">サイトマップ</a></li>
+			<li><a href="">プライバシーポリシー</a></li>
+		</ul>
+		<div class="footer-bottom-copy">
+			<p class="copy">Copyright&copy;
+				<?php bloginfo( 'name' ); ?>
+				,
+				<?php echo date( 'Y' ); ?>
+				All Rights Reserved.</p>
+			<div class="banner-servicegrant">
+				<a href="" target="_blank">
+					<img src="wp-content/themes/stinger8-child/images/bn_servicegrant.png">
+				</a>
+			</div>
+		</div>
+	</div>
 </div>
 </div>
 </footer>
@@ -42,7 +56,7 @@
 <!-- /#wrapper -->
 </div><!-- /#st-ami -->
 <!-- ページトップへ戻る -->
-	<div id="page-top"><a href="#wrapper" class="fa fa-angle-up"></a></div>
+	<!-- <div id="page-top"><a href="#wrapper" class="fa fa-angle-up"></a></div> -->
 <!-- ページトップへ戻る　終わり -->
 <?php wp_footer(); ?>
 </body></html>

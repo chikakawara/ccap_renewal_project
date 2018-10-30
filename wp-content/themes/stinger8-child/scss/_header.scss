@@ -1,4 +1,10 @@
 /* header */
+#headbox-bg {
+  border-top: 4px solid $primary-color;
+  @include screen-pc {
+    padding-top: 0;
+  }
+}
 #headbox {
   display: flex;
   align-items: flex-start;

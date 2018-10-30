@@ -1,20 +1,24 @@
 /* footer */
 #footer {
+  padding: 30px 0 0;
+  background-color: $base-color;
   #footer-in {
-    position: relative;
+
+    margin: 0 auto 20px;
+    padding: 0 15px;
+    @include screen-pc {
+      width: 920px;
+      padding: 0;
+      position: relative;
+    }
   }
 
-  background-color: $base-color;
   .footermenust {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     text-align: left;
     width: 100%;
-    margin: 0 auto 20px;
-    @include screen-pc {
-      width: 920px;
-    }
     padding: 0;
     li {
       display: flex;
@@ -121,7 +125,7 @@
   .footer-utility-box {
     @include screen-pc {
       position: absolute;
-      bottom: 58px;
+      bottom: 0;
       right: 0;
     }
     .footer-utility-box__top {
@@ -139,7 +143,6 @@
     padding: 0;
   }
   .menu-utility__footer-top {
-
     li {
       @include link-with-arrow($color:$primary-color);
       padding-left: 13px;
@@ -154,7 +157,6 @@
       }
     }
   }
-
   .menu-utility__footer-bottom {
     flex-wrap: wrap;
     width: 100%;
@@ -184,6 +186,62 @@
         }
         &:hover {
           background-color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-box {
+    text-align: left;
+    background-color: $secondary-color;
+    @include screen-pc {
+      min-height: 80px;
+    }
+    .footer-bottom-inner {
+      margin: 0 auto;
+      padding: 15px;
+      @include screen-pc {
+        width: 920px;
+        padding: 15px 0;
+        position: relative;
+      }
+    }
+    .footer-bottom-links {
+      list-style-type: none;
+      padding: 0;
+      font-size: 12px;
+      display: flex;
+      li {
+        @include link-with-arrow;
+        padding-left: 13px;
+        margin-right: 15px;
+        @include screen-pc {
+          margin-right: 25px;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+    .footer-bottom-copy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      @include screen-pc {
+        margin-top: 5px;
+      }
+      .copy {
+        margin: 0 10px 0 0;
+        padding: 0;
+        color: #fff;
+        word-wrap: break-word;
+      }
+      .banner-servicegrant {
+        @include screen-pc {
+          position: absolute;
+          top: 15px;
+          right: 0;
         }
       }
     }
