@@ -26,7 +26,7 @@ Version: 20170614
 
 #headbox {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 0 !important;
 }
@@ -46,6 +46,7 @@ Version: 20170614
 .header-r__bottom {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 /* utility menu */
@@ -880,20 +881,20 @@ Version: 20170614
 /*アイコンのスペース*/
 #nav-open {
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 90px;
+  height: 90px;
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 28px 25px;
 }
 
 /*ハンバーガーアイコンをCSSだけで表現*/
 #nav-open span, #nav-open span:before, #nav-open span:after {
   position: absolute;
-  height: 3px;
+  height: 4px;
   /*線の太さ*/
-  width: 25px;
+  width: 40px;
   /*長さ*/
   border-radius: 0;
   background: #1b8924;
@@ -902,11 +903,11 @@ Version: 20170614
 }
 
 #nav-open span:before {
-  bottom: -8px;
+  bottom: -12px;
 }
 
 #nav-open span:after {
-  bottom: -16px;
+  bottom: -24px;
 }
 
 /*閉じる用の半透明カバー*/
