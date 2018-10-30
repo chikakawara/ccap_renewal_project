@@ -16,7 +16,7 @@
 			</div>
 		<?php } ?>
 
-		<?php get_template_part( 'newpost' ); //最近のエントリ ?>
+		
 
 		<?php if ( is_active_sidebar( 1 ) ) { ?>
 			<div id="mybox">

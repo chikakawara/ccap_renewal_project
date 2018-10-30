@@ -858,6 +858,114 @@ Version: 20170614
   }
 }
 
+/* sidebar */
+#mybox .ad {
+  background-color: #eaf9d3;
+  border-radius: 3px;
+  padding: 15px;
+  margin: 40px 0 0;
+  position: relative;
+}
+
+@media print, screen and (min-width: 960px) {
+  #mybox .ad {
+    margin-top: 70px;
+  }
+}
+
+#mybox .ad:last-child {
+  margin-top: 60px;
+}
+
+#mybox .ad .menu_underh2 {
+  color: #333;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  #mybox .ad .menu_underh2 {
+    font-size: 16px;
+  }
+}
+
+#mybox .ad ul li {
+  position: relative;
+  background-color: #95cb40;
+  margin-bottom: 2px;
+}
+
+#mybox .ad ul li::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.5px 5px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 10px;
+}
+
+#mybox .ad ul li a {
+  text-decoration: none;
+}
+
+#mybox .ad ul li:hover {
+  background-color: #1b8924;
+}
+
+#mybox .ad ul li:last-child {
+  padding-bottom: 3px;
+}
+
+#mybox .ad ul li:last-child::before {
+  top: 13px;
+}
+
+#mybox .ad ul li a {
+  display: block;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#mybox .ad ul li .children {
+  margin: 2px 10px;
+}
+
+#mybox .ad ul li .children li {
+  background-color: #abd668;
+  margin-bottom: 2px;
+}
+
+#mybox .ad ul li .children li:hover {
+  background-color: #88be34;
+}
+
+#mybox .ad ul li .children li::before {
+  border-left-color: #1b8924;
+}
+
+#mybox .ad ul li .children li a {
+  color: #1b8924;
+}
+
+#mybox .ad label {
+  display: none;
+}
+
+#mybox .ad select {
+  background-color: #fff;
+  height: 50px;
+  border: 3px solid #95cb40;
+  border-radius: 2px;
+}
+
 /* custom accordion */
 .accordion-custom {
   margin-left: 10px;
