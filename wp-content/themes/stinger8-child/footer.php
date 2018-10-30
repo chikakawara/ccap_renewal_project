@@ -42,7 +42,7 @@
 				All Rights Reserved.</p>
 			<div class="banner-servicegrant">
 				<a href="" target="_blank">
-					<img src="wp-content/themes/stinger8-child/images/bn_servicegrant.png">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bn_servicegrant.png">
 				</a>
 			</div>
 		</div>
