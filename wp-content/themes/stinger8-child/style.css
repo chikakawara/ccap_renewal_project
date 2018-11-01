@@ -1085,4 +1085,57 @@ Version: 20170614
   /* box-shadow: 6px 0 25px rgba(0,0,0,.15); */
 }
 
+/* top */
+.for-people-box {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+.for-people-box--inner a {
+  text-decoration: none;
+  color: #333;
+}
+
+.for-people-box--inner a:last-child dl {
+  border-bottom: 0px;
+}
+
+.for-people-box--inner a:hover dt {
+  background-image: url(./images/arrow_circle_hover.png);
+}
+
+.for-people-box--inner dl {
+  border-bottom: 2px dotted #95cb40;
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 0;
+}
+
+.for-people-box--inner dl dt {
+  width: 8em;
+  min-width: 8em;
+  font-size: 14px;
+  margin-right: 10px;
+  text-align: center;
+  padding-bottom: 24px;
+  background-image: url(./images/arrow_circle.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
+
+.for-people-box--inner dl dt .people-category {
+  font-size: 18px;
+}
+
+.for-people-box--inner dl dd {
+  font-size: 16px;
+}
+
+.for-people-box--inner dl dd p {
+  font-size: 16px;
+  margin: 0;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
