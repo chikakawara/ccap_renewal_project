@@ -343,5 +343,28 @@
       }
     }
   }
+}
 
+/* header image */
+.header-image {
+  width: 94%;
+  height: 280px;
+  margin: 15px auto 0;
+  background-color: $base-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  @include tablet {
+    margin-top: 0;
+  }
+  @include screen-pc {
+    width: 980px;
+    height: 320px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }

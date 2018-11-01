@@ -97,13 +97,10 @@
 						<div id="gazou-wide">
 							<?php get_template_part( 'st-header-menu' ); //カスタムヘッダーメニュー ?>
 
-							<?php if ( (get_header_image()) && (is_front_page()) ) : //カスタムヘッダー ?>
-							<div id="st-headerbox">
-								<div id="st-header">
-									<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-								</div>
+							<!-- ヘッダー画像 -->
+							<div class="header-image">
+								ヘッダー画像
 							</div>
-							<?php endif;?>
 
 						</div>
 						<!-- /gazou -->
