@@ -66,9 +66,9 @@
 											<!-- utility_bottom -->
 											<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'menu_class' => 'menu-utility__header-bottom' ) ); ?>
 											<div class="telno">
-												<a href="/">
+												<span data-action="call" data-tel="0353002990">
 													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
-												</a>
+												</span>
 											</div>
 
 											<!-- custom accordion -->
@@ -88,9 +88,9 @@
 									</div><!-- /#header-r -->
 							</div><!-- /#headbox -->
 							<div class="telno__forsp">
-								<a href="/">
+								<span data-action="call" data-tel="0353002990">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
-								</a>
+								</span>
 							</div>
 						</div><!-- /#headbox-bg -->
 
