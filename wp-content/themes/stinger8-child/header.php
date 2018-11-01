@@ -40,11 +40,11 @@
 							<div id="headbox">
 									<div id="header-l">
 									<!-- ロゴ又はブログ名 -->
-										<p class="sitename">
-											<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-												<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>
+										<div class="ccap-logo">
+											<a href="/">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="子どもの虐待防止センター">
 											</a>
-										</p>
+										</div>
 										<!-- ロゴ又はブログ名ここまで -->
 									</div><!-- /#header-l -->
 
@@ -65,7 +65,11 @@
 										<div class="header-r__bottom">
 											<!-- utility_bottom -->
 											<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'menu_class' => 'menu-utility__header-bottom' ) ); ?>
-											<div class="telno">電話番号</div>
+											<div class="telno">
+												<a href="/">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
+												</a>
+											</div>
 
 											<!-- custom accordion -->
 											<div class="accordion-custom">
@@ -84,7 +88,9 @@
 									</div><!-- /#header-r -->
 							</div><!-- /#headbox -->
 							<div class="telno__forsp">
-								電話番号
+								<a href="/">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
+								</a>
 							</div>
 						</div><!-- /#headbox-bg -->
 

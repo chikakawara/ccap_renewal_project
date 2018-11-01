@@ -26,9 +26,55 @@ Version: 20170614
 
 #headbox {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 !important;
+  align-items: center;
+}
+
+@media print, screen and (min-width: 960px) {
+  #headbox {
+    align-items: flex-start;
+  }
+}
+
+/* logo */
+#header-l {
+  width: 100%;
+  height: auto;
+  margin: 15px 30px 10px 0;
+}
+
+@media screen and (min-width: 600px) {
+  #header-l {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.ccap-logo {
+  margin-left: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .ccap-logo {
+    width: 178px;
+    height: 60px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .ccap-logo {
+    width: 239px;
+    height: 81px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+
+.ccap-logo img {
+  width: 100%;
+  height: auto;
 }
 
 .header-r__top {
@@ -156,11 +202,6 @@ Version: 20170614
 .telno__forsp {
   width: 280px;
   height: 60px;
-  border-radius: 30px;
-  background-color: #eaf9d3;
-  color: #1b8924;
-  justify-content: center;
-  align-items: center;
 }
 
 .telno {
@@ -174,8 +215,15 @@ Version: 20170614
 }
 
 .telno__forsp {
-  display: flex;
-  margin: 10px auto;
+  display: block;
+  margin: 0 auto;
+  width: 94%;
+  height: auto;
+}
+
+.telno__forsp img {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 600px) {
@@ -939,10 +987,6 @@ Version: 20170614
 }
 
 /* custom accordion */
-.accordion-custom {
-  margin-left: 10px;
-}
-
 @media print, screen and (min-width: 960px) {
   .accordion-custom {
     display: none;
@@ -961,12 +1005,11 @@ Version: 20170614
 /*アイコンのスペース*/
 #nav-open {
   display: inline-block;
-  width: 90px;
+  width: 100px;
   height: 90px;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid #ddd;
-  padding: 28px 25px;
+  padding: 28px 30px;
 }
 
 /*ハンバーガーアイコンをCSSだけで表現*/
@@ -983,11 +1026,11 @@ Version: 20170614
 }
 
 #nav-open span:before {
-  bottom: -12px;
+  bottom: -13px;
 }
 
 #nav-open span:after {
-  bottom: -24px;
+  bottom: -26px;
 }
 
 /*閉じる用の半透明カバー*/

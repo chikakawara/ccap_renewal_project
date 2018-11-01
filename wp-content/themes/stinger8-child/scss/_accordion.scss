@@ -1,6 +1,6 @@
 /* custom accordion */
 .accordion-custom {
-  margin-left: 10px;
+
   @include screen-pc {
     display: none;
   }
@@ -18,12 +18,12 @@
 /*アイコンのスペース*/
 #nav-open {
   display: inline-block;
-  width: 90px;
+  width: 100px;
   height: 90px;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid #ddd;
-  padding: 28px 25px;
+  // border: 1px solid #ddd;
+  padding: 28px 30px;
 }
 
 /*ハンバーガーアイコンをCSSだけで表現*/
@@ -38,10 +38,10 @@
 
 }
 #nav-open span:before {
-  bottom: -12px;
+  bottom: -13px;
 }
 #nav-open span:after {
-  bottom: -24px;
+  bottom: -26px;
 }
 
 /*閉じる用の半透明カバー*/

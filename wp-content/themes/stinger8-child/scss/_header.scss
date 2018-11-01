@@ -7,10 +7,43 @@
 }
 #headbox {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 !important;
+  align-items: center;
+  @include screen-pc {
+    align-items: flex-start;
+  }
 }
+
+/* logo */
+#header-l {
+  width: 100%;
+  height: auto;
+  margin: 15px 30px 10px 0;
+  @include screen-tablet {
+    width: auto;
+    margin: 0;
+  }
+}
+.ccap-logo {
+  margin-left: 15px;
+  width: 100%;
+  @include screen-tablet {
+    width: 178px;
+    height: 60px;
+  }
+  @include screen-pc {
+    width: 239px;
+    height: 81px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .header-r__top {
   display: none;
   @include screen-pc {
@@ -83,11 +116,6 @@
 .telno__forsp {
   width: 280px;
   height: 60px;
-  border-radius: 30px;
-  background-color: $base-color;
-  color: $secondary-color;
-  justify-content: center;
-  align-items: center;
 }
 .telno {
   display: none;
@@ -96,8 +124,14 @@
   }
 }
 .telno__forsp {
-  display: flex;
-  margin: 10px auto;
+  display: block;
+  margin: 0 auto;
+  width: 94%;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
   @include screen-tablet {
     display: none;
   }
@@ -109,7 +143,6 @@
   position: relative;
   a {
     text-align: center;
-
     display: block;
   }
 }
