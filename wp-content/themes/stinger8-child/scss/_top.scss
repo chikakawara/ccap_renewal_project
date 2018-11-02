@@ -50,8 +50,8 @@
         //     background: transparent;
         //   }
         // }
-        color: $secondary-color;
         @include screen-pc {
+          color: $secondary-color;
           background-image: url(./images/arrow_circle_hover.png);
         }
       }

@@ -1259,12 +1259,9 @@ Version: 20170614
   }
 }
 
-.for-people-box--inner a:hover {
-  color: #1b8924;
-}
-
 @media print, screen and (min-width: 960px) {
   .for-people-box--inner a:hover {
+    color: #1b8924;
     background-image: url(./images/arrow_circle_hover.png);
   }
 }
