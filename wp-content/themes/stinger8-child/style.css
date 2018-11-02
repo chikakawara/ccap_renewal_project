@@ -350,6 +350,7 @@ Version: 20170614
 
 #st-menubox .menu {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -551,7 +552,7 @@ Version: 20170614
 
 @media print, screen and (min-width: 960px) {
   .header-image {
-    width: 980px;
+    width: 1050px;
     height: 320px;
     margin: 0 auto;
     align-items: flex-start;
@@ -1202,10 +1203,35 @@ Version: 20170614
   padding: 20px;
 }
 
+@media print, screen and (min-width: 960px) {
+  .st-main {
+    position: relative;
+  }
+}
+
 .for-people-box {
   border: 3px solid #95cb40;
   border-radius: 10px;
   padding: 0 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-people-box {
+    padding: 0 0 10px 0;
+    width: 32em;
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
+    background-color: #fff;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
 }
 
 .for-people-box--inner a {
@@ -1213,12 +1239,40 @@ Version: 20170614
   color: #333;
 }
 
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner a {
+    display: flex;
+    background-image: url(./images/arrow_circle.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+  }
+}
+
 .for-people-box--inner a:last-child dl {
   border-bottom: 0px;
 }
 
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner a:last-child dt {
+    border-right: 0px;
+  }
+}
+
 .for-people-box--inner a:hover dt {
   background-image: url(./images/arrow_circle_hover.png);
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner a:hover dt {
+    background: transparent;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner a:hover {
+    background-image: url(./images/arrow_circle_hover.png);
+  }
 }
 
 .for-people-box--inner dl {
@@ -1226,6 +1280,13 @@ Version: 20170614
   display: flex;
   align-items: center;
   padding: 15px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner dl {
+    border: 0;
+    padding: 15px 0 25px;
+  }
 }
 
 .for-people-box--inner dl dt {
@@ -1241,12 +1302,27 @@ Version: 20170614
   background-size: 18px auto;
 }
 
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner dl dt {
+    padding: 0;
+    background: transparent;
+    border-right: 2px dotted #95cb40;
+    margin-right: 0;
+  }
+}
+
 .for-people-box--inner dl dt .people-category {
   font-size: 18px;
 }
 
 .for-people-box--inner dl dd {
   font-size: 16px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-people-box--inner dl dd {
+    display: none;
+  }
 }
 
 .for-people-box--inner dl dd p {

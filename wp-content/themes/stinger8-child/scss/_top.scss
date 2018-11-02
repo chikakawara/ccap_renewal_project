@@ -1,23 +1,56 @@
 /* top */
 .st-main {
   padding: 20px;
+  @include screen-pc {
+    position: relative;
+  }
 }
 .for-people-box {
   border: 3px solid $primary-color;
   border-radius: 10px;
   padding: 0 15px;
+  @include screen-pc {
+    padding: 0 0 10px 0;
+    width: 32em;
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
+    background-color: #fff;
+  }
   &--inner {
-
+    @include screen-pc {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
     a {
       text-decoration: none;
       color: $txt-base-color02;
+      @include screen-pc {
+        display: flex;
+        background-image: url(./images/arrow_circle.png);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 18px auto;
+      }
       &:last-child {
         dl {
           border-bottom: 0px;
         }
+        dt {
+          @include screen-pc {
+            border-right: 0px;
+          }
+        }
       }
       &:hover {
         dt {
+          background-image: url(./images/arrow_circle_hover.png);
+          @include screen-pc {
+            background: transparent;
+          }
+        }
+        @include screen-pc {
           background-image: url(./images/arrow_circle_hover.png);
         }
       }
@@ -27,6 +60,10 @@
       display: flex;
       align-items: center;
       padding: 15px 0;
+      @include screen-pc {
+        border: 0;
+        padding: 15px 0 25px;
+      }
       dt {
         width: 8em;
         min-width: 8em;
@@ -38,12 +75,21 @@
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: 18px auto;
+        @include screen-pc {
+          padding: 0;
+          background: transparent;
+          border-right: 2px dotted $primary-color;
+          margin-right: 0;
+        }
         .people-category {
           font-size: 18px;
         }
       }
       dd {
         font-size: 16px;
+        @include screen-pc {
+          display: none;
+        }
         p {
           font-size: 16px;
           margin: 0;
