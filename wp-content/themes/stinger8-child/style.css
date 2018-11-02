@@ -1259,14 +1259,8 @@ Version: 20170614
   }
 }
 
-.for-people-box--inner a:hover dt {
-  background-image: url(./images/arrow_circle_hover.png);
-}
-
-@media print, screen and (min-width: 960px) {
-  .for-people-box--inner a:hover dt {
-    background: transparent;
-  }
+.for-people-box--inner a:hover {
+  color: #1b8924;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1313,6 +1307,15 @@ Version: 20170614
 
 .for-people-box--inner dl dt .people-category {
   font-size: 18px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2f091+0,e2f091+100&0+0,0+69,1+70,1+90,0+91 */
+  background: -moz-linear-gradient(top, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e2f091', endColorstr='#00e2f091',GradientType=0 );
+  /* IE6-9 */
 }
 
 .for-people-box--inner dl dd {
