@@ -41,7 +41,7 @@
 									<div id="header-l">
 									<!-- ロゴ又はブログ名 -->
 										<div class="ccap-logo">
-											<a href="./">
+											<a href="<?php echo esc_url( home_url() ); ?>">
 												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="子どもの虐待防止センター">
 											</a>
 										</div>
