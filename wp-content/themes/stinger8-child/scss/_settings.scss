@@ -9,6 +9,12 @@ $txt-base-color02: #333;
 
 /* media query */
 
+/* iPhone6/7/8 Plusサイズ（414px以上）　*/
+@mixin screen-iphoneplus {
+  @media screen and (min-width: 414px) {
+    @content;
+  }
+}
 /* タブレットサイズ（600px以上） */
 @mixin screen-tablet {
   @media screen and (min-width: 600px) {
