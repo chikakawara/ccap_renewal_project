@@ -1,19 +1,26 @@
 /* top */
+#content {
+  max-width: 100%;
+  width: 100%;
+}
 .st-main {
-  padding: 20px;
+  padding: 20px 0;
   @include screen-pc {
     position: relative;
   }
 }
+
 .for-people-box {
   border: 3px solid $primary-color;
   border-radius: 10px;
+  margin: 0 20px 20px;
   padding: 0 15px;
   @include screen-pc {
+    margin: 0;
     padding: 0 0 10px 0;
     width: 32em;
     position: absolute;
-    bottom: -40px;
+    top: -110px;
     right: 30px;
     background-color: #fff;
   }
@@ -44,12 +51,6 @@
         }
       }
       &:hover {
-        // dt {
-        //   background-image: url(./images/arrow_circle_hover.png);
-        //   @include screen-pc {
-        //     background: transparent;
-        //   }
-        // }
         @include screen-pc {
           color: $secondary-color;
           background-image: url(./images/arrow_circle_hover.png);
@@ -98,9 +99,94 @@
         }
         p {
           font-size: 16px;
+          line-height: 1.4;
           margin: 0;
         }
       }
+    }
+  }
+}
+
+.section-title {
+  background: transparent;
+  color: $txt-base-color02;
+  border: 0;
+  text-align: center;
+  font-size: 26px !important;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  .section-title__en {
+    color: $primary-color;
+    font-size: 0.8em;
+  }
+}
+
+.latest-news-box {
+  font-size: 16px;
+  background-color: $base-color;
+  padding: 20px 20px 40px;
+
+  ul {
+    list-style-type: none;
+    background-color: #fff;
+    // width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    @include screen-pc {
+      width: 960px;
+      margin: 20px auto;
+    }
+    li {
+      a {
+        display: block;
+        border-bottom: 2px solid #ddd;
+        padding: 10px 0;
+        color: $txt-base-color02;
+        text-decoration: none;
+        @include screen-pc {
+          overflow: hidden;
+        }
+        p {
+          font-size: inherit;
+          margin: 0;
+          @include screen-pc {
+            float: left;
+            margin-right: 10px;
+          }
+          &:last-child {
+            @include screen-pc {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      &:last-child {
+        a {
+          border: 0;
+        }
+      }
+    }
+
+
+  }
+  .latest-news-more-link {
+    @include link-with-arrow($width:8px, $left:14px);
+    width: 80%;
+    margin: 0 auto;
+    @include screen-pc {
+      width: 300px;
+    }
+    a {
+      background-color: $primary-color;
+      color: #fff;
+      padding: 14px 4px;
+      border-radius: 2px;
+      display: block;
+      text-align: center;
+      letter-spacing: 0.1em;
     }
   }
 }
