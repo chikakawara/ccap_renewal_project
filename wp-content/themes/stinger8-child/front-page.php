@@ -20,6 +20,14 @@
 		<div class="st-main" style="margin-right:0;">
 			<article>
 
+				<!-- lead -->
+				<section class="lead-box">
+					<h2 class="lead-box-title"><strong>子どもの虐待防止センター（CCAP) </strong>とは</h2>
+					<p class="lead-box-body">
+						社会福祉法人子どもの虐待防止センター（CCAP) は、子どもの虐待を早期に発見し、虐待防止を援助するために設立された民間の団体です。虐待から子どもを守り、親への支援を行っています。<br>（1991年に設立、1997年社会福祉法人として認可されました）
+					</p>
+				</section>
+
 				<!-- ○○の方へ -->
 				<section class="for-people-box">
 					<div class="for-people-box--inner">
