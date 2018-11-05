@@ -175,6 +175,11 @@
         @include screen-pc {
           overflow: hidden;
         }
+        &:hover {
+          @include screen-pc {
+            color: $secondary-color;
+          }
+        }
         p {
           font-size: inherit;
           margin: 0;
@@ -195,8 +200,6 @@
         }
       }
     }
-
-
   }
   .latest-news-more-link {
     @include link-with-arrow($width:8px, $left:14px);
@@ -213,6 +216,11 @@
       display: block;
       text-align: center;
       letter-spacing: 0.1em;
+      &:hover {
+        @include screen-pc {
+          background-color: $secondary-color;
+        }
+      }
     }
   }
 }

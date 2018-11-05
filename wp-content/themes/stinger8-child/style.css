@@ -1442,6 +1442,12 @@ p {
   }
 }
 
+@media print, screen and (min-width: 960px) {
+  .latest-news-box ul li a:hover {
+    color: #1b8924;
+  }
+}
+
 .latest-news-box ul li a p {
   font-size: inherit;
   margin: 0;
@@ -1501,6 +1507,12 @@ p {
   display: block;
   text-align: center;
   letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .latest-news-box .latest-news-more-link a:hover {
+    background-color: #1b8924;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
