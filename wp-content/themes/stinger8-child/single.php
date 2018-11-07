@@ -6,52 +6,57 @@
 		<div class="st-main">
 
 			<div id="post-<?php the_ID(); ?>" <?php post_class('st-post'); ?>>
-				<article>
+				<article class="article-post">
 					<!--ループ開始 -->
 					<?php if (have_posts()) : while (have_posts()) :
 					the_post(); ?>
 
-					<?php //カテゴリ表示
-					if ( isset($GLOBALS['stdata60']) && $GLOBALS['stdata60'] === 'yes' ) {
+					<!-- カテゴリと日付 -->
+					<div class="article-post--header">
 
-					} else {
+						<?php //カテゴリ表示
+						if ( isset($GLOBALS['stdata60']) && $GLOBALS['stdata60'] === 'yes' ) {
 
-						$categories = get_the_category();
-						$separator = ' ';
-						$output = ''; ?>
-					<p class="st-catgroup">
-					<?php
-							if ( $categories ) {
-								foreach( $categories as $category ) {
-									$output .= '<a href="' . get_category_link( $category->term_id ) . '" title="'
-									. esc_attr( sprintf( "View all posts in %s", $category->name ) )
-									. '" rel="category tag"><span class="catname st-catid' . $category->cat_ID . '">' . $category->cat_name . '</span></a>' . $separator;
-									}
-								echo trim( $output, $separator );
-							} ?>
-					</p>
-					<?php
-					} //カテゴリ表示ここまで
-					?>
+						} else {
+
+							$categories = get_the_category();
+							$separator = ' ';
+							$output = ''; ?>
+						<p class="st-catgroup">
+						<?php
+								if ( $categories ) {
+									foreach( $categories as $category ) {
+										$output .= '<a href="' . get_category_link( $category->term_id ) . '" title="'
+										. esc_attr( sprintf( "View all posts in %s", $category->name ) )
+										. '" rel="category tag"><span class="catname st-catid' . $category->cat_ID . '">' . $category->cat_name . '</span></a>' . $separator;
+										}
+									echo trim( $output, $separator );
+								} ?>
+						</p>
+						<?php
+						} //カテゴリ表示ここまで
+						?>
+
+						<!-- 日付 -->
+						<div class="article-post--header--date">
+							<span class="kdate">
+								<?php if ( get_the_date() != get_the_modified_date() ) : //更新がある場合 ?>
+									投稿日：<?php echo esc_html( get_the_date() ); ?>
+									更新日：<time class="updated" datetime="<?php echo esc_attr( get_the_modified_date( DATE_ISO8601 ) ); ?>"><?php echo esc_html( get_the_modified_date() ); ?></time>
+								<?php else: //更新がない場合 ?>
+									投稿日：<time class="updated" datetime="<?php echo esc_attr( get_the_date( DATE_ISO8601 ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
+								<?php endif; ?>
+							</span>
+						</div>
+
+					</div>
 
 					<h1 class="entry-title"><?php the_title(); //タイトル ?></h1>
-
-					<div class="blogbox">
-						<p><span class="kdate">
-							<?php if ( get_the_date() != get_the_modified_date() ) : //更新がある場合 ?>
-								投稿日：<?php echo esc_html( get_the_date() ); ?>
-								更新日：<time class="updated" datetime="<?php echo esc_attr( get_the_modified_date( DATE_ISO8601 ) ); ?>"><?php echo esc_html( get_the_modified_date() ); ?></time>
-							<?php else: //更新がない場合 ?>
-								投稿日：<time class="updated" datetime="<?php echo esc_attr( get_the_date( DATE_ISO8601 ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
-							<?php endif; ?>
-						</span></p>
-					</div>
 
 					<div class="mainbox">
 							<div class="entry-content">
 								<?php the_content(); //本文 ?>
 							</div>
-						<?php get_template_part( 'st-ad-on' ); //広告 ?>
 
 							<?php //ページ改
 									$defaults = array(
@@ -71,15 +76,10 @@
 
 					</div><!-- .mainboxここまで -->
 
-						<?php get_template_part( 'sns' ); //ソーシャルボタン読み込み ?>
-
 						<p class="tagst">
 							<i class="fa fa-folder-open-o" aria-hidden="true"></i>-<?php the_category( ', ' ) ?><br/>
 							<?php the_tags( '<i class="fa fa-tags"></i>-', ', ' ); ?>
 						</p>
-
-					<p>執筆者：<?php the_author_posts_link(); ?></p>
-
 
 					<?php endwhile; else: ?>
 						<p>記事がありません</p>

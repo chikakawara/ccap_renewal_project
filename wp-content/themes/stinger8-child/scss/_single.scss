@@ -1,0 +1,61 @@
+/* single */
+/* カテゴリーラベル */
+.post .st-catgroup {
+  padding-top: 0;
+}
+.catname {
+  color: #fff;
+  background: $highlight-color01;
+  @include screen-pc {
+    font-size: 11px !important;
+  }
+}
+
+/* 投稿ページ */
+.article-post {
+  @include screen-pc {
+    border: 2px solid #93c73f;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-right: 20px;
+    box-shadow: 3px 3px 0px 0px #95cb40;
+  }
+  /* カテゴリと日付 */
+  .article-post--header {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    color: $txt-base-color01;
+    @include screen-pc {
+      flex-flow: row;
+      align-items: center;
+    }
+    .article-post--header--date {
+      margin: 15px 0 0 0;
+      @include screen-pc {
+        margin: 0 0 0 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  /* 見出し */
+  .entry-title {
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    // font-weight: normal;
+    @include screen-pc {
+      margin: 20px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
+  }
+  /* 本文 */
+  .entry-content {
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    @include screen-pc {
+      font-size: 15px;
+    }
+  }
+}

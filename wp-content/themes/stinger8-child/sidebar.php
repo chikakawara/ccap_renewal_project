@@ -16,7 +16,7 @@
 			</div>
 		<?php } ?>
 
-		
+
 
 		<?php if ( is_active_sidebar( 1 ) ) { ?>
 			<div id="mybox">
@@ -24,14 +24,7 @@
 				<?php endif; ?>
 			</div>
 		<?php } ?>
-		<!-- 追尾広告エリア -->
-		<div id="scrollad">
-			<?php if ( is_active_sidebar( 2 ) ) { ?>
-				<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 2 ) ) : else : ?>
-				<?php endif; ?>
-			<?php } ?>
-		</div>
-		<!-- 追尾広告エリアここまで -->
+
 	</div>
 </div>
 <!-- /#side -->

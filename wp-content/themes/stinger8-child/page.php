@@ -3,6 +3,7 @@
 <div id="content" class="clearfix">
 	<div id="contentInner">
 		<div class="st-main">
+			<?php echo 'page.php' ?>
 			<div id="st-page" <?php post_class('post'); ?>>
 			<article>
 					<!--ループ開始 -->

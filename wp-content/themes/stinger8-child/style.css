@@ -1250,13 +1250,17 @@ p {
   width: 100%;
 }
 
-.st-main {
-  padding: 20px 0;
+@media print, screen and (min-width: 960px) {
+  #content {
+    max-width: 1060px;
+    margin-top: 30px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
   .st-main {
     position: relative;
+    padding: 0;
   }
 }
 
@@ -1269,7 +1273,6 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .lead-box {
-    margin-top: 50px;
     margin-bottom: 40px;
   }
 }
@@ -1311,7 +1314,7 @@ p {
     padding: 0 0 10px 0;
     width: 32em;
     position: absolute;
-    top: -110px;
+    top: -160px;
     right: 30px;
     background-color: #fff;
   }
@@ -1545,5 +1548,88 @@ p {
 }
 
 /* page */
+/* single */
+/* カテゴリーラベル */
+.post .st-catgroup {
+  padding-top: 0;
+}
+
+.catname {
+  color: #fff;
+  background: #f2bd1c;
+}
+
+@media print, screen and (min-width: 960px) {
+  .catname {
+    font-size: 11px !important;
+  }
+}
+
+/* 投稿ページ */
+.article-post {
+  /* カテゴリと日付 */
+  /* 見出し */
+  /* 本文 */
+}
+
+@media print, screen and (min-width: 960px) {
+  .article-post {
+    border: 2px solid #93c73f;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-right: 20px;
+    box-shadow: 3px 3px 0px 0px #95cb40;
+  }
+}
+
+.article-post .article-post--header {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  color: #666;
+}
+
+@media print, screen and (min-width: 960px) {
+  .article-post .article-post--header {
+    flex-flow: row;
+    align-items: center;
+  }
+}
+
+.article-post .article-post--header .article-post--header--date {
+  margin: 15px 0 0 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .article-post .article-post--header .article-post--header--date {
+    margin: 0 0 0 20px;
+    font-size: 14px;
+  }
+}
+
+.article-post .entry-title {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .article-post .entry-title {
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+.article-post .entry-content {
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .article-post .entry-content {
+    font-size: 15px;
+  }
+}
 
 /*# sourceMappingURL=maps/style.css.map */
