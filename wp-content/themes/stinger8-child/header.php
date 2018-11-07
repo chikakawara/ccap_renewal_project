@@ -101,3 +101,138 @@
 
 					</header>
 					<div id="content-w">
+
+						<!-- 固定ページ用ぱんくず -->
+						<?php if( !is_front_page() && is_page() ): ?>
+							<!--ぱんくず -->
+							<section id="breadcrumb">
+							<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+								 <li itemprop="itemListElement" itemscope
+						itemtype="http://schema.org/ListItem"><a href="<?php echo home_url(); ?>" itemprop="item"><span itemprop="name">HOME</span></a> > <meta itemprop="position" content="1" /></li>
+								<?php
+								$i = 2;
+								foreach ( array_reverse( get_post_ancestors( $post->ID ) ) as $parid ) { ?>
+
+									<li itemprop="itemListElement" itemscope
+						itemtype="http://schema.org/ListItem"><a href="<?php echo get_page_link( $parid ); ?>" title="<?php echo  get_the_title(); ?>" itemprop="item"> <span itemprop="name"><?php echo get_page( $parid )->post_title; ?></span></a> > <meta itemprop="position" content="<?php echo $i; ?>" /></li>
+								<?php  $i++; } ?>
+							</ol>
+							</section>
+							<!--/ ぱんくず -->
+						<?php endif; ?>
+
+
+						<!-- カテゴリページ用ぱんくず -->
+						<?php if ( is_category() ) { ?>
+							<section id="breadcrumb">
+							<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+								<li itemprop="itemListElement" itemscope
+					itemtype="http://schema.org/ListItem"><a href="<?php echo home_url(); ?>" itemprop="item"><span itemprop="name">HOME</span></a> > <meta itemprop="position" content="1" /></li>
+							<?php /*--- カテゴリーが階層化している場合に対応させる --- */ ?>
+							<?php
+							$catid = get_query_var('cat');
+							if( !$catid ){
+							$cat_now = get_the_category();
+							$cat_now = $cat_now[0];
+							$catid  = $cat_now->cat_ID;
+							}
+							?>
+							<?php $allcats = array( $catid ); ?>
+							<?php
+							while ( !$catid == 0 ) {    /* すべてのカテゴリーIDを取得し配列にセットするループ */
+								$mycat = get_category( $catid );    /* カテゴリーIDをセット */
+								$catid = $mycat->parent;    /* 上で取得したカテゴリーIDの親カテゴリーをセット */
+								array_push( $allcats, $catid );
+							}
+							array_pop( $allcats );
+							$allcats = array_reverse( $allcats );
+							?>
+							<?php /*--- 親カテゴリーがある場合は表示させる --- */ ?>
+							<?php
+							$i = 2;
+							foreach ( $allcats as $catid ): ?>
+									<li itemprop="itemListElement" itemscope
+					itemtype="http://schema.org/ListItem"><a href="<?php echo esc_url( get_category_link( $catid ) ); ?>" itemprop="item">
+										<span itemprop="name"><?php echo esc_html( get_cat_name( $catid ) ); ?></span> </a> &gt;
+										<meta itemprop="position" content="<?php echo $i; ?>" />
+									</li>
+							<?php  $i++; ?>
+							<?php endforeach; ?>
+							</ol>
+							</section>
+
+						<?php } elseif ( is_tag() ) { //タグアーカイブ ?>
+							<section id="breadcrumb">
+							<ol>
+								<li><a href="<?php echo home_url(); ?>"><span>HOME</span></a> > </li>
+								<li><?php single_tag_title(); ?></li>
+							</ol>
+							</section>
+						<?php } elseif ( is_author() ) { //投稿者アーカイブ ?>
+							<section id="breadcrumb">
+							<ol>
+								<li><a href="<?php echo home_url(); ?>"><span>HOME</span></a> >  </li>
+								<li><?php the_author_meta('display_name', get_query_var('author')); ?></li>
+							</ol>
+							</section>
+						<?php } elseif(is_attachment()){ //添付ファイル ?>
+							<section id="breadcrumb">
+							<ol>
+								<li><a href="<?php echo home_url(); ?>"><span>HOME</span></a> >  </li>
+								<?php if($post -> post_parent != 0 ): ?> >
+									<li><a href="<?php echo get_permalink($post -> post_parent); ?>"><?php echo get_the_title($post -> post_parent); ?></a> > </li>
+								<?php endif; ?>
+									<li><?php echo $post -> post_title; ?></li>
+							</ol>
+							</section>
+						<?php } elseif(is_date()){ //日付アーカイブ ?>
+							<section id="breadcrumb">
+							<ol>
+								<li><a href="<?php echo home_url(); ?>"><span>HOME</span></a> >  </li>
+
+								<?php if(is_day()): //日別アーカイブ ?>
+									<li><a href="<?php echo get_year_link(get_query_var('year')); ?>"><?php echo get_query_var('year'); ?>年</a> > </li>
+									<li><a href="<?php echo get_month_link(get_query_var('year'), get_query_var('monthnum')); ?>"><?php echo get_query_var('monthnum'); ?>月</a> > </li>
+									<li><?php echo get_query_var('day'); ?>日</li>
+								<?php elseif(is_month()): //月別アーカイブ ?>
+									<li><a href="<?php echo get_year_link(get_query_var('year')); ?>"><?php echo get_query_var('year'); ?>年</a> > </li>
+									<li><?php echo get_query_var('monthnum'); ?>月</li>
+								<?php elseif(is_year()): //年別アーカイブ ?>
+									<li><?php echo get_query_var('year'); ?>年</li>
+								<?php endif; ?>
+							</ol>
+							</section>
+						<?php }else{} ?>
+						<!--/ ぱんくず -->
+
+						<!-- 投稿ページ用ぱんくず -->
+						<?php if ( is_single() ) { ?>
+						<!-- ぱんくず -->
+						<section id="breadcrumb">
+						<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+								 <li itemprop="itemListElement" itemscope
+						itemtype="http://schema.org/ListItem"><a href="<?php echo home_url(); ?>" itemprop="item"><span itemprop="name">HOME</span></a> > <meta itemprop="position" content="1" /></li>
+							<?php
+								$postcat = get_the_category();
+								$catid = $postcat[0]->cat_ID;
+								$allcats = array( $catid );
+
+							while ( !$catid == 0 ) {
+								$mycat = get_category( $catid );
+								$catid = $mycat->parent;
+								array_push( $allcats, $catid );
+							}
+							array_pop( $allcats );
+							$allcats = array_reverse( $allcats );
+							$i = 2;
+							foreach ( $allcats as $catid ): ?>
+								<li itemprop="itemListElement" itemscope
+						itemtype="http://schema.org/ListItem"><a href="<?php echo get_category_link( $catid ); ?>" itemprop="item">
+								<span itemprop="name"><?php echo esc_html( get_cat_name( $catid ) ); ?></span> </a> &gt;<meta itemprop="position" content="<?php echo $i; ?>" /></li>
+							<?php
+							$i++;
+							endforeach; ?>
+						</ol>
+						</section>
+						<?php }else{} ?>
+						<!--/ ぱんくず -->

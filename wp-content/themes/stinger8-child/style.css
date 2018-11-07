@@ -653,6 +653,35 @@ p {
   }
 }
 
+/* ぱんくず */
+#breadcrumb {
+  margin: 0;
+  padding: 0 0 5px;
+  background-color: #eaf9d3;
+  padding: 5px 0;
+  margin: 20px 0 0;
+}
+
+#breadcrumb ol {
+  width: 100%;
+  margin: 0 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  #breadcrumb ol {
+    width: 1060px;
+    margin: 0 auto;
+  }
+}
+
+#breadcrumb ol li {
+  color: #333;
+}
+
+#breadcrumb ol li a {
+  color: #333;
+}
+
 /* footer */
 #footer {
   padding: 30px 0 0;
@@ -1514,5 +1543,7 @@ p {
     background-color: #1b8924;
   }
 }
+
+/* page */
 
 /*# sourceMappingURL=maps/style.css.map */

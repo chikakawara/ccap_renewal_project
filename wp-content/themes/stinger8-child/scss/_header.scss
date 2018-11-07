@@ -428,3 +428,26 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 
   }
 }
+
+/* ぱんくず */
+#breadcrumb {
+  margin: 0;
+  padding: 0 0 5px;
+  background-color: $base-color;
+  padding: 5px 0;
+  margin: 20px 0 0;
+  ol {
+  	width: 100%;
+    margin: 0 20px;
+    @include screen-pc {
+      width: 1060px;
+      margin: 0 auto;
+    }
+    li {
+      color: $txt-base-color02;
+      a {
+        color: $txt-base-color02;
+      }
+    }
+  }
+}

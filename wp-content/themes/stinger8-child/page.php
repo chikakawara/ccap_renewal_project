@@ -3,25 +3,6 @@
 <div id="content" class="clearfix">
 	<div id="contentInner">
 		<div class="st-main">
-
-			<?php if( !is_front_page() ): ?>
-				<!--ぱんくず -->
-				<section id="breadcrumb">
-				<ol itemscope itemtype="http://schema.org/BreadcrumbList">
-					 <li itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><a href="<?php echo home_url(); ?>" itemprop="item"><span itemprop="name">HOME</span></a> > <meta itemprop="position" content="1" /></li>
-					<?php
-					$i = 2;
-					foreach ( array_reverse( get_post_ancestors( $post->ID ) ) as $parid ) { ?>
-
-						<li itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><a href="<?php echo get_page_link( $parid ); ?>" title="<?php echo  get_the_title(); ?>" itemprop="item"> <span itemprop="name"><?php echo get_page( $parid )->post_title; ?></span></a> > <meta itemprop="position" content="<?php echo $i; ?>" /></li>
-					<?php  $i++; } ?>
-				</ol>
-				</section>
-				<!--/ ぱんくず -->
-			<?php endif; ?>
-
 			<div id="st-page" <?php post_class('post'); ?>>
 			<article>
 					<!--ループ開始 -->
