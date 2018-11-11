@@ -34,9 +34,10 @@
       }
     }
     > li {
-      width: calc((100vw - 30px) / 2 - 2px);
+      width: calc((100vw - 30px) / 2);
       margin: 0 1px 1px 0;
       &:nth-child(2n) {
+        width: calc((100vw - 30px) / 2 - 1px);
         margin-right: 0;
       }
       @include screen-pc {
@@ -82,7 +83,7 @@
         color: #222;
         background-color: $base-layerd-color;
         font-size: 16px;
-        text-align: center;
+        text-align: left;
         padding: 0 10px 0 45px;
         height: 76px;
         display: flex;
@@ -177,10 +178,13 @@
       a {
         background-color: $primary-color;
         color: #fff;
-        padding: 5px 4px;
+        padding: 5px 4px 5px 18px;
         border-radius: 2px;
-        display: block;
-        text-align: center;
+        text-align: left;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include screen-pc {
           font-size: 12px;
         }
