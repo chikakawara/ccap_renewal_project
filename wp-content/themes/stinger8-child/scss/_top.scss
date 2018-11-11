@@ -59,7 +59,8 @@
     width: 32em;
     position: absolute;
     top: -160px;
-    right: 30px;
+    // right: 30px;
+    right: calc((100vw - 1050px) / 2 + 30px);
     background-color: #fff;
   }
   &--inner {
