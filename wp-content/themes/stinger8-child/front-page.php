@@ -15,7 +15,7 @@
 </div>
 
 </div>
-<div id="content" class="clearfix">
+<div id="content" class="clearfix content--top-pc">
 	<div id="contentInner">
 		<div class="st-main" style="margin-right:0;">
 			<article>
@@ -72,7 +72,7 @@
 
 				<!-- 最新のお知らせ -->
 				<section class="latest-news-box">
-					<h2 class="section-title">最新のお知らせ <span class="section-title__en">latest news</a></h2>
+					<h2 class="section-title">最新のお知らせ<span class="section-title__en">latest news</a></h2>
 					<?php
 					  $arg = array(
 					             'posts_per_page' => 4, // 表示する件数
@@ -109,6 +109,109 @@
 					  endif;
 					  wp_reset_postdata();
 					?>
+				</section>
+
+				<!-- 活動 -->
+				<section class="actions-box">
+					<h2 class="section-title">
+						CCAPの活動
+						<span class="section-title__en">Action</a>
+					</h2>
+
+					<div class="actions-items-wrapper">
+
+						<div class="actions-item">
+							<div class="actions-item-contents">
+								<a href="">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="電話相談">
+								</a>
+								<div class="actions-item-description">
+									<strong>電話相談</strong>
+									<p>研修を受けた相談員（女性）が虐待の相談、子育ての悩みを受け付けています。あなたのお名前を聞くことはありません。秘密を守ります。お電話下さい。</p>
+								</div>
+							</div>
+							<div class="actions-more-link">
+								<a href="">詳しくはこちら</a>
+							</div>
+						</div>
+
+						<div class="actions-item">
+							<div class="actions-item-contents">
+								<a href="">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="グループケア">
+								</a>
+								<div class="actions-item-description">
+									<strong>グループケア</strong>
+									<p>「子どもがかわいく思えない」「イライラや怒りを子どもにぶつけてしまう」MCGはそんな子どもへの虐待の悩みを抱えたおかあさんたちのグループです。</p>
+								</div>
+							</div>
+							<div class="actions-more-link">
+								<a href="">詳しくはこちら</a>
+							</div>
+						</div>
+
+						<div class="actions-item">
+							<div class="actions-item-contents">
+								<a href="">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="里親・養親支援">
+								</a>
+								<div class="actions-item-description">
+									<strong>里親・養親支援</strong>
+									<p>専門家による相談、里親会への講師派遣、里親対象研修などさまざまな支援を行なっています。</p>
+								</div>
+							</div>
+							<div class="actions-more-link">
+								<a href="">詳しくはこちら</a>
+							</div>
+						</div>
+
+						<div class="actions-item">
+							<div class="actions-item-contents">
+								<a href="">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="子どもケア">
+								</a>
+								<div class="actions-item-description">
+									<strong>子どもケア</strong>
+									<p>里親家庭や養子縁組家庭、児童養護施設等で暮らすお子さんを対象とした心理療法プログラムを実施しています。</p>
+								</div>
+							</div>
+							<div class="actions-more-link">
+								<a href="">詳しくはこちら</a>
+							</div>
+						</div>
+
+						<div class="actions-item">
+							<div class="actions-item-contents">
+							<a href="">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="ペアレンティングプログラム">
+							</a>
+								<div class="actions-item-description">
+									<strong>ペアレンティングプログラム</strong>
+									<p>子どもが言うことを聞かない、つい怒鳴ってしまう、子どものしつけってどうすればいいの？　そんな思いを抱えている方への親と子のコミュニケーションを学ぶプログラムです。</p>
+								</div>
+							</div>
+							<div class="actions-more-link">
+								<a href="">詳しくはこちら</a>
+							</div>
+						</div>
+
+						<div class="actions-item">
+							<div class="actions-item-contents">
+								<a href="">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="研修・セミナー">
+								</a>
+								<div class="actions-item-description">
+									<strong>研修・セミナー</strong>
+									<p>専門職・行政向け、里親家庭や養子縁組家庭向け、一般向けなど様々な研修・セミナーを実施しています。</p>
+								</div>
+							</div>
+							<div class="actions-more-link">
+								<a href="">詳しくはこちら</a>
+							</div>
+						</div>
+
+					</div>
+
 				</section>
 
 			</article>
