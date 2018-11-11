@@ -39,6 +39,9 @@
       &:nth-child(2n) {
         width: calc((100vw - 30px) / 2 - 1px);
         margin-right: 0;
+        @include screen-pc {
+          width: 230px;
+        }
       }
       @include screen-pc {
         width: 230px;
@@ -204,7 +207,13 @@
     .footer-bottom-inner {
       margin: 0 auto;
       padding: 15px;
+      @include screen-tablet {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
       @include screen-pc {
+        display: block;
         width: 920px;
         padding: 15px 0;
         position: relative;
@@ -228,9 +237,9 @@
       }
     }
     .footer-bottom-copy {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
       margin-top: 10px;
       @include screen-pc {
         margin-top: 5px;
@@ -241,12 +250,30 @@
         color: #fff;
         word-wrap: break-word;
       }
-      .banner-servicegrant {
-        @include screen-pc {
-          position: absolute;
-          top: 15px;
-          right: 0;
+    }
+    .footer-bottom-banners {
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+      margin-top: 10px;
+      li {
+        float: left;
+        margin-right: 4px;
+        a {
+          img {
+            width: 143px;
+            height: auto;
+          }
         }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      @include screen-pc {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        margin: 0;
       }
     }
   }

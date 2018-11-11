@@ -740,6 +740,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
+  #footer .footermenust > li:nth-child(2n) {
+    width: 230px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
   #footer .footermenust > li {
     width: 230px;
     margin: 0 0 40px;
@@ -995,8 +1001,17 @@ p {
   padding: 15px;
 }
 
+@media screen and (min-width: 600px) {
+  #footer .footer-bottom-box .footer-bottom-inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
 @media print, screen and (min-width: 960px) {
   #footer .footer-bottom-box .footer-bottom-inner {
+    display: block;
     width: 920px;
     padding: 15px 0;
     position: relative;
@@ -1044,9 +1059,6 @@ p {
 }
 
 #footer .footer-bottom-box .footer-bottom-copy {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 10px;
 }
 
@@ -1063,11 +1075,33 @@ p {
   word-wrap: break-word;
 }
 
+#footer .footer-bottom-box .footer-bottom-banners {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#footer .footer-bottom-box .footer-bottom-banners li {
+  float: left;
+  margin-right: 4px;
+}
+
+#footer .footer-bottom-box .footer-bottom-banners li a img {
+  width: 143px;
+  height: auto;
+}
+
+#footer .footer-bottom-box .footer-bottom-banners li:last-child {
+  margin-right: 0;
+}
+
 @media print, screen and (min-width: 960px) {
-  #footer .footer-bottom-box .footer-bottom-copy .banner-servicegrant {
+  #footer .footer-bottom-box .footer-bottom-banners {
     position: absolute;
     top: 15px;
-    right: 0;
+    right: 15px;
+    margin: 0;
   }
 }
 
