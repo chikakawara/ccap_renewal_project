@@ -19,7 +19,11 @@
 				'theme_location' => 'utility_footer_top',
 				'menu_class' => 'menu-utility__footer-top'
 			) ); ?>
-			<div class="link-twitter"><a href="" target="_blank">twitter</a></div>
+			<div class="link-twitter">
+				<a href="https://twitter.com/ccap27117136" target="_blank">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="twitter">
+				</a>
+			</div>
 		</div>
 		<?php wp_nav_menu( array(
 			'theme_location' => 'utility_footer_bottom',

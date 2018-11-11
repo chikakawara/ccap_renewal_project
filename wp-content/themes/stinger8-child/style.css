@@ -866,6 +866,8 @@ p {
 #footer .footer-utility-box .footer-utility-box__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1100,7 +1102,7 @@ p {
   #footer .footer-bottom-box .footer-bottom-banners {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 0;
     margin: 0;
   }
 }
@@ -1744,6 +1746,20 @@ p {
 @media print, screen and (min-width: 960px) {
   .actions-box .actions-more-link a:hover {
     background-color: #1b8924;
+  }
+}
+
+/* twitter link */
+.link-twitter img {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .link-twitter img {
+    width: 24px;
+    padding: 0;
   }
 }
 

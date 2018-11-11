@@ -54,13 +54,17 @@
 											<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'menu_class' => 'menu-utility__header-top' ) ); ?>
 
 											<!-- links -->
-											<div class="link-orange-ribbon">
+											<!-- <div class="link-orange-ribbon">
 											  <a href="" target="_blank">オレンジリボン運動</a>
-											</div>
+											</div> -->
 											<div class="link-clinic">
 											  <a href="">クリニック（開設予定）</a>
 											</div>
-											<div class="link-twitter"><a href="" target="_blank">twitter</a></div>
+											<div class="link-twitter">
+												<a href="https://twitter.com/ccap27117136" target="_blank">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="twitter">
+												</a>
+											</div>
 										</div>
 										<div class="header-r__bottom">
 											<!-- utility_bottom -->
