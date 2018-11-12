@@ -603,7 +603,6 @@ p {
 @media print, screen and (min-width: 960px) {
   .header-image .header-image-copy {
     width: 500px;
-    margin-right: 20px;
     margin-top: 88px;
   }
 }
@@ -626,7 +625,7 @@ p {
 
 .header-image .header-image-copy strong {
   font-size: calc(16px + 19 * ((100vw - 320px) / 680));
-  color: #95cb40;
+  color: #80b230;
   line-height: 1.4;
   font-weight: normal;
   display: block;
@@ -635,8 +634,21 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .header-image .header-image-copy strong {
-    font-size: 24px;
-    letter-spacing: .12em;
+    font-size: 25px;
+    letter-spacing: .1em;
+  }
+}
+
+.header-image .header-image-copy strong .phone-icon {
+  font-size: 50px;
+  transform: rotate(-19deg) translateY(4px);
+  margin-right: 15px;
+  display: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .header-image .header-image-copy strong .phone-icon {
+    display: inline-block;
   }
 }
 
@@ -644,7 +656,7 @@ p {
   font-size: calc(12px + 8 * ((100vw - 320px) / 680));
   line-height: 1.5;
   margin: 0;
-  color: #666;
+  color: #333;
 }
 
 @media print, screen and (min-width: 960px) {

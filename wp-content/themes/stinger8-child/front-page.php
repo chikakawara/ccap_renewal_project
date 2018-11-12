@@ -4,7 +4,7 @@
 <div class="header-image">
 	<div class="header-image-copy">
 		<strong>
-			聞かせてください、<span class="br">子育ての悩み。</span>
+			<i class="fa fa-mobile phone-icon"></i>聞かせてください、<span class="br">子育ての悩み。</span>
 		</strong>
 		<p>
 			ひとりで悩んでいないで、<span class="br">電話で相談してみませんか。</span>
