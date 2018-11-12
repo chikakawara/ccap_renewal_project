@@ -21,6 +21,13 @@ wp_enqueue_script(
     null,
     true
 );
+wp_enqueue_script(
+    'main_animation',
+    get_stylesheet_directory_uri() . '/js/main_animation.js',
+    array(),
+    null,
+    true
+);
 
 // メニューカスタム版
 register_nav_menus(

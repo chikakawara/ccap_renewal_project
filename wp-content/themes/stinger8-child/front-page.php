@@ -2,6 +2,15 @@
 
 <!-- ヘッダー画像 -->
 <div class="header-image">
+	<ul class="header-image-animation">
+
+		<li class="header-image-03">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top-main-03.png" alt=""></li>
+		<li class="header-image-02">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top-main-02.png" alt=""></li>
+		<li class="header-image-01">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top-main-01.png" alt=""></li>
+	</ul>
 	<div class="header-image-copy">
 		<strong>
 			<i class="fa fa-mobile phone-icon"></i>聞かせてください、<span class="br">子育ての悩み。</span>
