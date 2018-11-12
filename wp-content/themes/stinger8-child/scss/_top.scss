@@ -54,14 +54,18 @@
   margin: 0 20px 20px;
   padding: 0 15px;
   @include screen-pc {
+    border: 0;
     margin: 0;
     padding: 0 0 10px 0;
     width: 32em;
     position: absolute;
     top: -160px;
-    // right: 30px;
     right: calc((100vw - 1050px) / 2 + 30px);
-    background-color: #fff;
+    background-image: url(./images/for-people-box_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 448px;
+    height: 120px;
   }
   &--inner {
     @include screen-pc {
@@ -75,9 +79,9 @@
       @include screen-pc {
         display: flex;
         background-image: url(./images/arrow_circle.png);
-        background-position: bottom center;
+        background-position: center 90px;
         background-repeat: no-repeat;
-        background-size: 18px auto;
+        background-size: 14px auto;
       }
       &:last-child {
         dl {
@@ -106,8 +110,8 @@
         padding: 15px 0 25px;
       }
       dt {
-        width: 8em;
-        min-width: 8em;
+        width: 110px;
+        min-width: 110px;
         font-size: 14px;
         margin-right: 10px;
         text-align: center;
@@ -118,12 +122,12 @@
         background-size: 18px auto;
         @include screen-pc {
           padding: 0;
-          background: transparent;
-          border-right: 2px dotted $primary-color;
+          background: none;
           margin-right: 0;
         }
         .people-category {
-          font-size: 18px;
+          font-size: 16px;
+          letter-spacing: 0.1em;
           @include string-highlight();
         }
       }
