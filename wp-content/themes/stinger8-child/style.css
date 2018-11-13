@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* google font */
 /* media query */
 /* iPhone6/7/8 Plusサイズ（414px以上）　*/
 /* タブレットサイズ（600px以上） */
@@ -1535,17 +1536,25 @@ p {
 
 .section-title {
   color: #333;
-  text-align: center;
   font-size: 26px;
   line-height: 1.5;
+  font-family: "M PLUS Rounded 1c";
   margin: 0 0 20px;
-  letter-spacing: 0.04em;
+  padding-bottom: 10px;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  background-image: url(./images/heading_bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 7px;
 }
 
 .section-title .section-title__en {
   color: #95cb40;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-family: "Noto Sans JP";
   margin-left: 10px;
+  letter-spacing: 0.15em;
 }
 
 /* 最新のお知らせ */
@@ -1553,7 +1562,14 @@ p {
   font-size: 16px;
   background-color: #eaf9d3;
   padding: 20px 20px 40px;
-  margin-bottom: 0;
+  text-align: center;
+  /* h2 center揃えのため */
+}
+
+@media print, screen and (min-width: 960px) {
+  .latest-news-box {
+    margin-bottom: 0;
+  }
 }
 
 .latest-news-box ul {
@@ -1562,6 +1578,7 @@ p {
   margin: 20px 0;
   padding: 20px;
   border-radius: 10px;
+  text-align: left;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1661,6 +1678,8 @@ p {
 /* 活動 */
 .actions-box {
   width: 100%;
+  text-align: center;
+  /* h2 center揃えのため */
 }
 
 @media print, screen and (min-width: 960px) {

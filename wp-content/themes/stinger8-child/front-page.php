@@ -81,7 +81,7 @@
 
 				<!-- 最新のお知らせ -->
 				<section class="latest-news-box">
-					<h2 class="section-title">最新のお知らせ<span class="section-title__en">latest news</a></h2>
+					<h2 class="section-title">最新のお知らせ<span class="section-title__en">Latest news</a></h2>
 					<?php
 					  $arg = array(
 					             'posts_per_page' => 4, // 表示する件数

@@ -7,6 +7,10 @@ $highlight-color02: #fce80b; //黄
 $txt-base-color01: #666;
 $txt-base-color02: #333;
 
+/* google font */
+@mixin font-noto { font-family: "Noto Sans JP"; }
+@mixin font-rounded { font-family: "M PLUS Rounded 1c"; }
+
 /* media query */
 
 /* iPhone6/7/8 Plusサイズ（414px以上）　*/

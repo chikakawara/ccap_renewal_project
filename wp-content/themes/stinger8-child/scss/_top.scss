@@ -270,15 +270,23 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 
 .section-title {
   color: $txt-base-color02;
-  text-align: center;
   font-size: 26px;
   line-height: 1.5;
+  @include font-rounded;
   margin: 0 0 20px;
-  letter-spacing: 0.04em;
+  padding-bottom: 10px;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  background-image: url(./images/heading_bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 7px;
   .section-title__en {
     color: $primary-color;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    @include font-noto;
     margin-left: 10px;
+    letter-spacing: 0.15em;
   }
 }
 
@@ -287,15 +295,17 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   font-size: 16px;
   background-color: $base-color;
   padding: 20px 20px 40px;
-  margin-bottom: 0;
-
+  text-align: center; /* h2 center揃えのため */
+  @include screen-pc {
+    margin-bottom: 0;
+  }
   ul {
     list-style-type: none;
     background-color: #fff;
-    // width: 90%;
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
+    text-align: left;
     @include screen-pc {
       width: 960px;
       margin: 20px auto;
@@ -344,6 +354,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 /* 活動 */
 .actions-box {
   width: 100%;
+  text-align: center; /* h2 center揃えのため */
   @include screen-pc {
     /* 背景ドットを隠して白くするため幅100% */
     background-color: #fff;
