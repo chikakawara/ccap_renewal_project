@@ -104,7 +104,7 @@
 						<!-- /gazou -->
 
 					</header>
-					<div id="content-w">
+					<div id="content-w" <?php body_class($class); ?>>
 
 						<!-- 固定ページ用ぱんくず -->
 						<?php if( !is_front_page() && is_page() ): ?>

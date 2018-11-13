@@ -1,4 +1,8 @@
 /* top */
+#content-w.home {
+  background-image: url(./images/dot.png);
+  background-size: 18%;
+}
 #content {
   max-width: 100%;
   width: 100%;
@@ -16,6 +20,7 @@
   padding: 0;
   @include screen-pc {
     position: relative;
+    background: transparent;
 
   }
 }
@@ -282,6 +287,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   font-size: 16px;
   background-color: $base-color;
   padding: 20px 20px 40px;
+  margin-bottom: 0;
 
   ul {
     list-style-type: none;
@@ -339,10 +345,11 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 .actions-box {
   width: 100%;
   @include screen-pc {
-    max-width: 1060px;
-    margin: 0 auto;
+    /* 背景ドットを隠して白くするため幅100% */
+    background-color: #fff;
+    padding: 50px 0;
+    margin-bottom: 0;
   }
-
   .actions-items-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -352,6 +359,8 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
       margin-left: 2%;
     }
     @include screen-pc {
+      max-width: 1060px;
+      margin: 0 auto;
       justify-content: space-between;
       margin-left: 15px;
     }
