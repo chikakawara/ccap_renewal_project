@@ -15,6 +15,13 @@ add_action('wp_enqueue_scripts', 'dequeue_basejs', 100);
 
 // custom js 読み込み
 wp_enqueue_script(
+    'all',
+    get_stylesheet_directory_uri() . '/js/all.js',
+    array(),
+    null,
+    true
+);
+wp_enqueue_script(
     'sp_navigation',
     get_stylesheet_directory_uri() . '/js/sp.js',
     array(),

@@ -1,4 +1,11 @@
 </div><!-- /contentw -->
+<!-- ページトップへ戻る -->
+<div class="pagetop-wrapper">
+	<a href="" id="pageTop">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pagetop.png" alt="トップへ戻る">
+	</a>
+</div>
+<!-- ページトップへ戻る　終わり -->
 <footer>
 <div id="footer">
 <div id="footer-in">
@@ -67,8 +74,5 @@
 </div>
 <!-- /#wrapper -->
 </div><!-- /#st-ami -->
-<!-- ページトップへ戻る -->
-	<!-- <div id="page-top"><a href="#wrapper" class="fa fa-angle-up"></a></div> -->
-<!-- ページトップへ戻る　終わり -->
 <?php wp_footer(); ?>
 </body></html>

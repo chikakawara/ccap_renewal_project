@@ -1027,6 +1027,30 @@ p {
   }
 }
 
+/* pagetop btn */
+.pagetop-wrapper {
+  cursor: pointer;
+  z-index: 100;
+}
+
+.pagetop-wrapper.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.pagetop-wrapper.static {
+  position: static;
+  text-align: right;
+  margin: 0 10px 10px 0;
+}
+
+.pagetop-wrapper a {
+  width: 60px;
+  height: auto;
+  display: inline-block;
+}
+
 /* sidebar */
 #mybox .ad {
   background-color: #eaf9d3;
