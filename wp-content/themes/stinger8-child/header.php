@@ -95,11 +95,14 @@
 
 									</div><!-- /#header-r -->
 							</div><!-- /#headbox -->
-							<div class="telno__forsp">
-								<span data-action="call" data-tel="0353002990">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
-								</span>
-							</div>
+							<!-- SP用電話番号 topにのみ表示 -->
+							<?php if ( is_front_page() ) : ?>
+								<div class="telno__forsp">
+									<span data-action="call" data-tel="0353002990">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
+									</span>
+								</div>
+							<?php endif; ?>
 						</div><!-- /#headbox-bg -->
 
 						<div id="gazou-wide">
