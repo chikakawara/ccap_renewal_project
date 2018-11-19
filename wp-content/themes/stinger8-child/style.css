@@ -34,6 +34,36 @@ p {
   padding: 0;
 }
 
+#content {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media print, screen and (min-width: 960px) {
+  #content {
+    max-width: 1060px;
+    margin-top: 30px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  #content.content--top-pc {
+    max-width: 100%;
+  }
+}
+
+.st-main {
+  padding: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .st-main {
+    position: relative;
+    background: transparent;
+    margin-bottom: 0;
+  }
+}
+
 /* header */
 #headbox-bg {
   border-top: 4px solid #95cb40;
@@ -1180,35 +1210,6 @@ p {
 #content-w.home {
   background-image: url(./images/dot.png);
   background-size: 18%;
-}
-
-#content {
-  max-width: 100%;
-  width: 100%;
-}
-
-@media print, screen and (min-width: 960px) {
-  #content {
-    max-width: 1060px;
-    margin-top: 30px;
-  }
-}
-
-@media print, screen and (min-width: 960px) {
-  #content.content--top-pc {
-    max-width: 100%;
-  }
-}
-
-.st-main {
-  padding: 0;
-}
-
-@media print, screen and (min-width: 960px) {
-  .st-main {
-    position: relative;
-    background: transparent;
-  }
 }
 
 /* header image */

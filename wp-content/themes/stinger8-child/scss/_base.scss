@@ -17,3 +17,25 @@ p {
   margin: 0;
   padding: 0;
 }
+
+#content {
+  max-width: 100%;
+  width: 100%;
+  @include screen-pc {
+    max-width: 1060px;
+    margin-top: 30px;
+  }
+  &.content--top-pc {
+    @include screen-pc {
+      max-width: 100%;
+    }
+  }
+}
+.st-main {
+  padding: 0;
+  @include screen-pc {
+    position: relative;
+    background: transparent;
+    margin-bottom: 0;
+  }
+}
