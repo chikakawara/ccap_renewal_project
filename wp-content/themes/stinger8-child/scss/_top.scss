@@ -251,15 +251,9 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   color: $txt-base-color02;
   font-size: 26px;
   line-height: 1.5;
-  @include font-rounded;
-  margin: 0 0 20px;
-  padding-bottom: 10px;
   letter-spacing: 0.05em;
-  display: inline-block;
-  background-image: url(./images/heading_bg.png);
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: auto 7px;
+  @include font-rounded;
+  @include slant-stripe-line;
   .section-title__en {
     color: $primary-color;
     font-size: 0.7em;

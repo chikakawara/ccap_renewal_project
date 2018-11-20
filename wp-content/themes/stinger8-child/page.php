@@ -2,16 +2,16 @@
 
 <div id="content" class="clearfix">
 	<div id="contentInner">
-		<div class="st-main">
-			<?php echo 'page.php' ?>
-			<div id="st-page" <?php post_class('post'); ?>>
+		<div class="st-main" style="margin-right:0;">
+
+			<div id="st-page" <?php post_class('post static-page'); ?>>
 			<article>
 					<!--ループ開始 -->
 					<?php if (have_posts()) : while (have_posts()) :
 					the_post(); ?>
 
 						<?php if(!is_front_page()){ ?>
-							<h1 class="entry-title"><?php the_title(); //タイトル ?></h1>
+							<h1 class="entry-title"><div class="static-page-title"><?php the_title(); //タイトル ?><span class="static-page-title__en">Something</span></div></h1>
 						<?php } ?>
 
 					<div class="mainbox">

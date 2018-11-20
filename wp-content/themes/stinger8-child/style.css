@@ -7,6 +7,7 @@
 /* css arrow */
 /* 角丸四角形リンク */
 /* ハイライト */
+/* 斜め線アンダーラインタイトル */
 /*
 Theme Name: STINGER8 Child
 Template: stinger8
@@ -1563,10 +1564,10 @@ p {
   color: #333;
   font-size: 26px;
   line-height: 1.5;
+  letter-spacing: 0.05em;
   font-family: "M PLUS Rounded 1c";
   margin: 0 0 20px;
   padding-bottom: 10px;
-  letter-spacing: 0.05em;
   display: inline-block;
   background-image: url(./images/heading_bg.png);
   background-repeat: repeat-x;
@@ -1870,6 +1871,166 @@ p {
 }
 
 /* page */
+.static-page {
+  margin: 0 15px;
+  /* タイトル */
+  /* お問い合わせ */
+}
+
+@media print, screen and (min-width: 960px) {
+  .static-page {
+    margin: 0 0 30px;
+  }
+}
+
+.static-page .entry-title {
+  text-align: center;
+}
+
+.static-page .entry-title .static-page-title {
+  color: #333;
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "M PLUS Rounded 1c";
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  display: inline-block;
+  background-image: url(./images/heading_bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 7px;
+}
+
+.static-page .entry-title .static-page-title .static-page-title__en {
+  color: #95cb40;
+  font-size: 0.7em;
+  font-family: "Noto Sans JP";
+  margin-left: 10px;
+  letter-spacing: 0.15em;
+}
+
+.static-page .wpcf7 {
+  /* table layout */
+}
+
+.static-page .wpcf7 .form-table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+}
+
+.static-page .wpcf7 .form-table tr, .static-page .wpcf7 .form-table th, .static-page .wpcf7 .form-table td {
+  border: 0;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+.static-page .wpcf7 .form-table tr {
+  border-top: 2px solid #ddd;
+}
+
+.static-page .wpcf7 .form-table th,
+.static-page .wpcf7 .form-table td {
+  width: 100%;
+  display: block;
+}
+
+@media print, screen and (min-width: 960px) {
+  .static-page .wpcf7 .form-table th,
+  .static-page .wpcf7 .form-table td {
+    display: table-cell;
+    padding: 30px 0;
+  }
+}
+
+.static-page .wpcf7 .form-table th {
+  text-align: left;
+  font-weight: normal;
+  padding: 30px 0 20px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .static-page .wpcf7 .form-table th {
+    width: 30%;
+  }
+}
+
+.static-page .wpcf7 .form-table td {
+  padding-bottom: 30px;
+}
+
+.static-page .wpcf7 .required {
+  font-size: 0.7em;
+  color: #666;
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  background: #fce80b;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.static-page .wpcf7 label {
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+.static-page .wpcf7 .wpcf7-form-control-wrap.categories {
+  font-size: 16px;
+}
+
+.static-page .wpcf7 select,
+.static-page .wpcf7 input[type=text],
+.static-page .wpcf7 input[type=email],
+.static-page .wpcf7 input[type=tel],
+.static-page .wpcf7 textarea {
+  background-color: #f5f5f5;
+  border-radius: 2px;
+}
+
+.static-page .wpcf7 select {
+  border: 0;
+  border-bottom: 2px solid #ddd;
+  height: 50px;
+}
+
+.static-page .wpcf7 input[type=text],
+.static-page .wpcf7 input[type=email],
+.static-page .wpcf7 input[type=tel] {
+  border: 1px solid #ddd;
+  height: 50px;
+}
+
+.static-page .wpcf7 textarea {
+  border: 1px solid #ddd;
+}
+
+.static-page .wpcf7 input[type=text]:focus,
+.static-page .wpcf7 input[type=email]:focus,
+.static-page .wpcf7 input[type=tel]:focus,
+.static-page .wpcf7 textarea:focus {
+  background: #fff;
+}
+
+.static-page .wpcf7 .textarea-block {
+  border-top: 2px solid #ddd;
+}
+
+.static-page .wpcf7 .textarea-block label {
+  margin-bottom: 10px;
+}
+
+.static-page .wpcf7 input[type="submit"] {
+  padding: 0.5em 4em;
+  border-radius: 2px;
+  background-color: #95cb40;
+  color: #fff;
+}
+
+.static-page .wpcf7 input[type="submit"]:hover {
+  background-color: #1b8924;
+}
+
 /* list */
 @media print, screen and (min-width: 960px) {
   .list-box--wrapper {
