@@ -28,10 +28,23 @@
   /* お問い合わせ */
   .wpcf7 {
     /* table layout */
-    .form-table {
+    .form-table,
+    .form-leading,
+    .textarea-block,
+    .link-area {
       width: 100%;
+      @include screen-pc {
+        width: 800px;
+        margin: 0 auto;
+      }
+    }
+    .form-leading {
+      margin-bottom: 25px;
+    }
+    .form-table {
       border: 0;
       border-collapse: collapse;
+      margin-bottom: 0;
       tr, th, td {
         border: 0;
         padding: 0;
@@ -42,63 +55,102 @@
       }
       th,
       td {
-        width: 100%;
         display: block;
-        @include screen-pc {
+        @include screen-tablet {
           display: table-cell;
-          padding: 30px 0;
+          padding: 20px 0;
         }
       }
       th {
+        width: 100%;
         text-align: left;
         font-weight: normal;
-        padding: 30px 0 20px 0;
-        @include screen-pc {
+        padding: 20px 0 12px 0;
+        @include screen-tablet {
           width: 30%;
+        }
+        @include screen-pc {
+          width: 260px;
         }
       }
       td {
-        padding-bottom: 30px;
+        width: 100%;
+        padding-bottom: 20px;
+        @include screen-tablet {
+          width: auto;
+        }
       }
-
-    }
-    .required {
-      font-size: 0.7em;
-      color: $txt-base-color01;
-      display: inline-block;
-      padding: 0.1em 0.4em;
-      background: $highlight-color02;
-      border-radius: 2px;
-      margin-left: 10px;
     }
     label {
-      font-size: 18px;
-      letter-spacing: 0.08em;
-    }
-    .wpcf7-form-control-wrap.categories {
       font-size: 16px;
+      letter-spacing: 0.1em;
+      color: $txt-base-color01;
+    }
+    .required {
+      font-size: 0.8em;
+      padding: 0 0.5em;
+      background: $highlight-color02;
+      border-radius: 2px;
+      margin-left: 8px;
+    }
+    .note {
+      margin-top: 8px;
+    }
+    /* error message */
+    span.wpcf7-not-valid-tip {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 0;
+      outline: none;
+      background: transparent;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=tel] {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      outline: none;
+      background: none;
+    }
+    input[type="submit"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 0;
+      border: 0;
+      outline: none;
+      background: transparent;
     }
     select,
     input[type=text],
     input[type=email],
     input[type=tel],
     textarea {
+      font-size: 16px;
       background-color: #f5f5f5;
-      border-radius: 2px;
+      border-radius: 4px;
     }
     select {
-      border: 0;
       border-bottom: 2px solid #ddd;
       height: 50px;
+      padding: 0 10px;
     }
     input[type=text],
     input[type=email],
     input[type=tel] {
       border: 1px solid #ddd;
       height: 50px;
+      padding: 0 10px;
     }
     textarea {
       border: 1px solid #ddd;
+      padding: 10px;
     }
     input[type=text]:focus,
     input[type=email]:focus,
@@ -109,19 +161,107 @@
     .textarea-block {
       border-top: 2px solid #ddd;
       label {
-        margin-bottom: 10px;
+        display: block;
+        margin: 20px 0 12px 0;
+        .selected-category,
+        .please-input-txt {
+          display: block;
+          @include screen-tablet {
+            display: inline-block;
+          }
+        }
+        .selected-category {
+          font-size: 19px;
+          color: $txt-base-color02;
+        }
+        .please-input-txt {
+          @include screen-tablet {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .link-area {
+      overflow: hidden;
+      margin: 20px auto;
+      .link-area__pdf {
+        float: left;
+        a {
+          font-size: 14px;
+          padding: 5px 10px;
+          background-color: #f5f5f5;
+          border-radius: 4px;
+          border: 1px solid #ddd;
+          display: block;
+          text-decoration: none;
+          color: $txt-base-color01;
+          &:hover {
+            @include screen-pc {
+              background-color: #eaeaea;
+            }
+          }
+        }
+      }
+      .link-area__page {
+        float: right;
+        @include link-with-arrow($color:$primary-color);
+        padding-left: 13px;
+        a {
+          font-size: 14px;
+          color: $txt-base-color01;
+          &:hover {
+            @include screen-pc {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+    .btn-area {
+      margin: 20px 0 0;
+    }
+
+    input[type="submit"],
+    input[type="button"].wpcf7c-btn-back {
+      display: block;
+      position: relative;
+      width: 200px;
+      margin: 0 auto;
+      padding: 15px 0;
+      border-radius: 4px;
+      letter-spacing: 0.1em;
+      &:hover {
+        @include screen-pc {
+          transform: translateY(3px);
+          box-shadow: none;
+        }
       }
     }
     input[type="submit"] {
-      padding: 0.5em 4em;
-      border-radius: 2px;
       background-color: $primary-color;
       color: #fff;
-      &:hover {
-        background-color: $secondary-color;
+      box-shadow: 0px 3px 0px 0px #7EB02F;
+    }
+    input[type="button"].wpcf7c-btn-back {
+      background-color: #d4d4d4;
+      color: $txt-base-color01;
+      box-shadow: 0px 3px 0px 0px #bfbfbf;
+      margin-bottom: 15px;
+    }
+
+    /* confirm */
+    .wpcf7-form.custom-wpcf7c-confirmed {
+      select,
+      input[type=text],
+      input[type=email],
+      input[type=tel] {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+      textarea {
+        background-color: transparent;
       }
     }
   }
-
-
 }

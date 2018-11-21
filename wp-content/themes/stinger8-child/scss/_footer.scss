@@ -117,7 +117,7 @@
     li {
       margin-bottom: 5px;
       &::before {
-        @include css-arrow($color:$primary-color, $left:-15px)
+        @include css-arrow($color:$primary-color, $left:-15px);
       }
       a {
         color: #666;

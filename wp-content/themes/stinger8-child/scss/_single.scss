@@ -14,11 +14,11 @@
 /* 投稿ページ */
 .article-post {
   @include screen-pc {
-    border: 2px solid #93c73f;
+    border: 2px solid $primary-color;
     border-radius: 10px;
     padding: 20px 40px;
     margin-right: 20px;
-    box-shadow: 3px 3px 0px 0px #95cb40;
+    box-shadow: 3px 3px 0px 0px $primary-color;
   }
   /* カテゴリと日付 */
   .article-post--header {

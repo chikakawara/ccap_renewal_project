@@ -11,7 +11,11 @@
 					the_post(); ?>
 
 						<?php if(!is_front_page()){ ?>
-							<h1 class="entry-title"><div class="static-page-title"><?php the_title(); //タイトル ?><span class="static-page-title__en">Something</span></div></h1>
+							<h1 class="entry-title">
+								<div class="static-page-title">
+									<?php the_title(); //タイトル ?>
+									<!-- <span class="static-page-title__en">Something</span> -->
+								</div></h1>
 						<?php } ?>
 
 					<div class="mainbox">
