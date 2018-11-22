@@ -237,11 +237,14 @@
     position: absolute;
     left: -1px;
     > li {
+      height: auto;
       > a {
         border: 0;
         border-bottom: 1px dotted $base-color;
         background-color: $primary-color;
         color: #fff;
+        line-height: 1.5;
+        padding: 10px 0;
         &:hover {
           background-color: $secondary-color;
         }
@@ -274,14 +277,19 @@
           color: $txt-base-color02;
           text-align: left;
           border-bottom: 1px solid #eee;
-          height: 38px;
-          line-height: 38px;
           text-decoration: none;
+          /* 第二階層用設定 二行以上に対応 */
+          height: auto;
+          line-height: 1.5;
+          padding: 5px 0;
         }
       }
       > li {
         > a {
           position: relative;
+          /* 第一階層は一行のみ対応 */
+          height: 38px;
+          line-height: 38px;
           &::after {
             content: '';
             border: solid $primary-color;

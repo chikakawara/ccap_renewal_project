@@ -438,11 +438,17 @@ p {
   left: -1px;
 }
 
+#st-menubox .sub-menu > li {
+  height: auto;
+}
+
 #st-menubox .sub-menu > li > a {
   border: 0;
   border-bottom: 1px dotted #eaf9d3;
   background-color: #95cb40;
   color: #fff;
+  line-height: 1.5;
+  padding: 10px 0;
 }
 
 #st-menubox .sub-menu > li > a:hover {
@@ -477,13 +483,18 @@ p {
   color: #333;
   text-align: left;
   border-bottom: 1px solid #eee;
-  height: 38px;
-  line-height: 38px;
   text-decoration: none;
+  /* 第二階層用設定 二行以上に対応 */
+  height: auto;
+  line-height: 1.5;
+  padding: 5px 0;
 }
 
 #nav-content .menu-global-container .menu > li > a {
   position: relative;
+  /* 第一階層は一行のみ対応 */
+  height: 38px;
+  line-height: 38px;
 }
 
 #nav-content .menu-global-container .menu > li > a::after {
