@@ -7,6 +7,16 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
+// bodyにslug class付与
+add_filter( 'body_class', 'add_page_slug_class_name' );
+function add_page_slug_class_name( $classes ) {
+  if ( is_page() ) {
+    $page = get_post( get_the_ID() );
+    $classes[] = $page->post_name;
+  }
+  return $classes;
+}
+
 // base.js 読み込み禁止
 function dequeue_basejs () {
   wp_dequeue_script('base');
