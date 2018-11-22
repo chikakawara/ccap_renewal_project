@@ -2232,19 +2232,6 @@ p {
   margin-bottom: 15px;
 }
 
-.static-page .wpcf7 .wpcf7-form.custom-wpcf7c-confirmed select,
-.static-page .wpcf7 .wpcf7-form.custom-wpcf7c-confirmed input[type=text],
-.static-page .wpcf7 .wpcf7-form.custom-wpcf7c-confirmed input[type=email],
-.static-page .wpcf7 .wpcf7-form.custom-wpcf7c-confirmed input[type=tel] {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-}
-
-.static-page .wpcf7 .wpcf7-form.custom-wpcf7c-confirmed textarea {
-  background-color: transparent;
-}
-
 /* list */
 @media print, screen and (min-width: 960px) {
   .list-box--wrapper {

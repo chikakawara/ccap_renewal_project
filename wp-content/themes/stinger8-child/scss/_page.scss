@@ -261,18 +261,5 @@
     }
 
     /* confirm */
-    .wpcf7-form.custom-wpcf7c-confirmed {
-      select,
-      input[type=text],
-      input[type=email],
-      input[type=tel] {
-        border: 0;
-        padding: 0;
-        background-color: transparent;
-      }
-      textarea {
-        background-color: transparent;
-      }
-    }
   }
 }
