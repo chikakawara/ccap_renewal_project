@@ -1126,10 +1126,21 @@ p {
 }
 
 #mybox .ad select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: none;
+  background: transparent;
   background-color: #fff;
   height: 50px;
+  padding: 0 0 0 15px;
   border: 3px solid #95cb40;
   border-radius: 2px;
+  background-image: url(./images/select_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 8px auto;
 }
 
 /* custom accordion */
@@ -1734,7 +1745,7 @@ p {
     max-width: 1060px;
     margin: 0 auto;
     justify-content: space-between;
-    margin-left: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -1877,12 +1888,6 @@ p {
   /* お問い合わせ */
 }
 
-@media print, screen and (min-width: 960px) {
-  .static-page {
-    margin: 0 0 30px;
-  }
-}
-
 .static-page .entry-title {
   text-align: center;
 }
@@ -1981,7 +1986,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .static-page .wpcf7 .form-table th {
-    width: 260px;
+    width: 270px;
   }
 }
 
@@ -2007,7 +2012,7 @@ p {
   padding: 0 0.5em;
   background: #fce80b;
   border-radius: 2px;
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
 .static-page .wpcf7 .note {
@@ -2062,6 +2067,10 @@ p {
   border-bottom: 2px solid #ddd;
   height: 50px;
   padding: 0 10px;
+  background-image: url(./images/select_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 8px auto;
 }
 
 .static-page .wpcf7 input[type=text],
@@ -2154,7 +2163,7 @@ p {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 2.5px 0 2.5px 5px;
+  border-width: 3px 0 3px 6px;
   position: absolute;
   border-color: transparent transparent transparent #95cb40;
   top: calc(50% - 3px);
@@ -2189,6 +2198,17 @@ p {
   padding: 15px 0;
   border-radius: 4px;
   letter-spacing: 0.1em;
+  background-image: url(./images/white_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 6px auto;
+}
+
+@media screen and (min-width: 600px) {
+  .static-page .wpcf7 input[type="submit"],
+  .static-page .wpcf7 input[type="button"].wpcf7c-btn-back {
+    width: 300px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
