@@ -1,243 +1,240 @@
 /* contact */
-.static-page {
-  .wpcf7 {
-    /* table layout */
-    .form-table,
-    .form-leading,
-    .textarea-block,
-    .link-area,
-    .notice-area {
-      width: 100%;
-      @include screen-pc {
-        width: 800px;
-        margin: 0 auto;
-      }
-    }
-    .form-leading {
-      margin-bottom: 25px;
-    }
-    .form-table {
-      border: 0;
-      border-collapse: collapse;
-      margin-bottom: 0;
-      tr, th, td {
-        border: 0;
-        padding: 0;
-        background-color: transparent !important;
-      }
-      tr {
-        border-top: 2px solid #ddd;
-      }
-      th,
-      td {
-        display: block;
-        @include screen-tablet {
-          display: table-cell;
-          padding: 20px 0;
-        }
-      }
-      th {
-        width: 100%;
-        text-align: left;
-        font-weight: normal;
-        padding: 20px 0 12px 0;
-        @include screen-tablet {
-          width: 30%;
-        }
-        @include screen-pc {
-          width: 270px;
-        }
-      }
-      td {
-        width: 100%;
-        padding-bottom: 20px;
-        @include screen-tablet {
-          width: auto;
-        }
-      }
-    }
-    label {
-      font-size: 16px;
-      letter-spacing: 0.1em;
-      color: $txt-base-color01;
-    }
-    .required {
-      font-size: 0.8em;
-      padding: 0 0.5em;
-      background: $highlight-color02;
-      border-radius: 2px;
-      margin-left: 6px;
-    }
-    .note {
-      margin-top: 8px;
-    }
-    /* error message */
-    span.wpcf7-not-valid-tip {
-      font-size: 14px;
-      margin-top: 8px;
-    }
-    select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      border: 0;
-      outline: none;
-      background: transparent;
-    }
-    input[type=text],
-    input[type=email],
-    input[type=tel] {
-      padding: 0;
-      border: 0;
-      border-radius: 0;
-      outline: none;
-      background: none;
-    }
-    input[type="submit"] {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      padding: 0;
-      border: 0;
-      outline: none;
-      background: transparent;
-    }
-    select,
-    input[type=text],
-    input[type=email],
-    input[type=tel],
-    textarea {
-      font-size: 16px;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-    }
-    select {
-      border-bottom: 2px solid #ddd;
-      height: 50px;
-      padding: 0 10px;
-      background-image: url(./images/select_arrow.png);
-      background-repeat: no-repeat;
-      background-position: right 12px center;
-      background-size: 8px auto;
-    }
-    input[type=text],
-    input[type=email],
-    input[type=tel] {
-      border: 1px solid #ddd;
-      height: 50px;
-      padding: 0 10px;
-    }
-    textarea {
-      border: 1px solid #ddd;
-      padding: 10px;
-    }
-    input[type=text]:focus,
-    input[type=email]:focus,
-    input[type=tel]:focus,
-    textarea:focus {
-      background: #fff;
-    }
-    .textarea-block {
-      border-top: 2px solid #ddd;
-      label {
-        display: block;
-        margin: 20px 0 12px 0;
-        .selected-category,
-        .please-input-txt {
-          display: block;
-          @include screen-tablet {
-            display: inline-block;
-          }
-        }
-        .selected-category {
-          font-size: 19px;
-          color: $txt-base-color02;
-        }
-        .please-input-txt {
-          @include screen-tablet {
-            margin-left: 10px;
-          }
-        }
-      }
-    }
-    .link-area {
-      overflow: hidden;
-      margin: 20px auto;
-      .link-area__pdf {
-        float: left;
-        a {
-          font-size: 14px;
-          padding: 5px 10px;
-          background-color: #f5f5f5;
-          border-radius: 4px;
-          border: 1px solid #ddd;
-          display: block;
-          text-decoration: none;
-          color: $txt-base-color01;
-          i {
-            margin-right: 5px;
-          }
-          &:hover {
-            @include screen-pc {
-              background-color: #eaeaea;
-            }
-          }
-        }
-      }
-      .link-area__page {
-        float: right;
-        @include link-with-arrow($color:$primary-color, $width:6px);
-        padding-left: 13px;
-        a {
-          font-size: 14px;
-          color: $txt-base-color01;
-          &:hover {
-            @include screen-pc {
-              color: $secondary-color;
-            }
-          }
-        }
-      }
-    }
-    .btn-area {
-      margin: 20px 0 0;
-    }
 
-    input[type="submit"],
-    input[type="button"].wpcf7c-btn-back {
-      display: block;
-      position: relative;
-      width: 200px;
+.wpcf7 {
+  /* table layout */
+  .form-table,
+  .form-leading,
+  .textarea-block,
+  .link-area,
+  .notice-area {
+    width: 100%;
+    @include screen-pc {
+      width: 800px;
       margin: 0 auto;
-      padding: 15px 0;
-      border-radius: 4px;
-      letter-spacing: 0.1em;
-      background-image: url(./images/white_arrow.png);
-      background-repeat: no-repeat;
-      background-position: 15px center;
-      background-size: 6px auto;
+    }
+  }
+  .form-leading {
+    margin-bottom: 25px;
+  }
+  .form-table {
+    border: 0;
+    border-collapse: collapse;
+    margin-bottom: 0;
+    tr, th, td {
+      border: 0;
+      padding: 0;
+      background-color: transparent !important;
+    }
+    tr {
+      border-top: 2px solid #ddd;
+    }
+    th,
+    td {
+      display: block;
       @include screen-tablet {
-        width: 300px;
+        display: table-cell;
+        padding: 20px 0;
       }
-      &:hover {
-        @include screen-pc {
-          transform: translateY(3px);
-          box-shadow: none;
+    }
+    th {
+      width: 100%;
+      text-align: left;
+      font-weight: normal;
+      padding: 20px 0 12px 0;
+      @include screen-tablet {
+        width: 30%;
+      }
+      @include screen-pc {
+        width: 270px;
+      }
+    }
+    td {
+      width: 100%;
+      padding-bottom: 20px;
+      @include screen-tablet {
+        width: auto;
+      }
+    }
+  }
+  label {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: $txt-base-color01;
+  }
+  .required {
+    font-size: 0.8em;
+    padding: 0 0.5em;
+    background: $highlight-color02;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+  .note {
+    margin-top: 8px;
+  }
+  /* error message */
+  span.wpcf7-not-valid-tip {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel] {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    background: none;
+  }
+  input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  select,
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    font-size: 16px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  select {
+    border-bottom: 2px solid #ddd;
+    height: 50px;
+    padding: 0 10px;
+    background-image: url(./images/select_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 8px auto;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel] {
+    border: 1px solid #ddd;
+    height: 50px;
+    padding: 0 10px;
+  }
+  textarea {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=tel]:focus,
+  textarea:focus {
+    background: #fff;
+  }
+  .textarea-block {
+    border-top: 2px solid #ddd;
+    label {
+      display: block;
+      margin: 20px 0 12px 0;
+      .selected-category,
+      .please-input-txt {
+        display: block;
+        @include screen-tablet {
+          display: inline-block;
+        }
+      }
+      .selected-category {
+        font-size: 19px;
+        color: $txt-base-color02;
+      }
+      .please-input-txt {
+        @include screen-tablet {
+          margin-left: 10px;
         }
       }
     }
-    input[type="submit"] {
-      background-color: $primary-color;
-      color: #fff;
-      box-shadow: 0px 3px 0px 0px #7EB02F;
+  }
+  .link-area {
+    overflow: hidden;
+    margin: 20px auto;
+    .link-area__pdf {
+      float: left;
+      a {
+        font-size: 14px;
+        padding: 5px 10px;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        display: block;
+        text-decoration: none;
+        color: $txt-base-color01;
+        i {
+          margin-right: 5px;
+        }
+        &:hover {
+          @include screen-pc {
+            background-color: #eaeaea;
+          }
+        }
+      }
     }
-    input[type="button"].wpcf7c-btn-back {
-      background-color: #d4d4d4;
-      color: $txt-base-color01;
-      box-shadow: 0px 3px 0px 0px #bfbfbf;
-      margin-bottom: 15px;
+    .link-area__page {
+      float: right;
+      @include link-with-arrow($color:$primary-color, $width:6px);
+      padding-left: 13px;
+      a {
+        font-size: 14px;
+        color: $txt-base-color01;
+        &:hover {
+          @include screen-pc {
+            color: $secondary-color;
+          }
+        }
+      }
     }
+  }
+  .btn-area {
+    margin: 20px 0 0;
+  }
 
-    /* confirm */
+  input[type="submit"],
+  input[type="button"].wpcf7c-btn-back {
+    display: block;
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    background-image: url(./images/white_arrow.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 6px auto;
+    @include screen-tablet {
+      width: 300px;
+    }
+    &:hover {
+      @include screen-pc {
+        transform: translateY(3px);
+        box-shadow: none;
+      }
+    }
+  }
+  input[type="submit"] {
+    background-color: $primary-color;
+    color: #fff;
+    box-shadow: 0px 3px 0px 0px #7EB02F;
+  }
+  input[type="button"].wpcf7c-btn-back {
+    background-color: #d4d4d4;
+    color: $txt-base-color01;
+    box-shadow: 0px 3px 0px 0px #bfbfbf;
+    margin-bottom: 15px;
   }
 }
