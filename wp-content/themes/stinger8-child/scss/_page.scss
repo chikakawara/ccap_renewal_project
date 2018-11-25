@@ -4,15 +4,14 @@
   margin: 0 15px;
   /* base font */
   color: $txt-base-color01;
-  font-size: 16px;
-  letter-spacing: 0.05em;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  .post ul li {
+    font-size: 15px;
+  }
   @include screen-pc {
     // margin: 0 0 30px;
   }
-  /* base font */
-  color: $txt-base-color01;
-  font-size: 14px;
-  letter-spacing: 0.05em;
 
   /* 記事全体 */
   article {
@@ -25,7 +24,10 @@
   /* タイトル */
   .entry-title {
     text-align: center;
-    margin-bottom: 0;
+    margin: 20px 0 10px;
+    @include screen-pc {
+      margin-bottom: 0 !important;
+    }
     .static-page-title {
       color: $txt-base-color02;
       font-size: 26px;
@@ -48,6 +50,9 @@
 .hotline {
   .contents-box {
     margin-bottom: 30px;
+    @include screen-pc {
+      margin-bottom: 40px;
+    }
     h2 {
       @include font-rounded;
       font-size: 24px;
@@ -79,8 +84,10 @@
       color: $primary-color;
       @include screen-pc {
         padding-left: 310px;
+        letter-spacing: 0.18em;
       }
       li {
+        font-size: 18px;
         line-height: 1.2;
         @include screen-pc {
           font-size: 22px;
@@ -121,9 +128,15 @@
       flex-flow: column;
       padding: 10px 0;
       @include screen-pc {
+        background-color: transparent;
+        border-radius: 0;
+        background-image: url(./images/pages/telno_bg.png);
+        background-repeat: no-repeat;
         flex-flow: row;
         align-items: center;
-        padding: 25px 45px;
+        justify-content: center;
+        padding: 0 40px;
+        height: 127px;
       }
       dl {
         width: 90%;
@@ -184,6 +197,7 @@
       @include screen-pc {
         text-align: right;
         margin-top: 10px;
+        font-size: 14px;
       }
     }
   }
@@ -197,6 +211,9 @@
       background-color: $base-color;
       border-radius: 10px;
       padding: 15px;
+      @include screen-pc {
+        padding: 25px;
+      }
     }
   }
   /* 体験談 */
@@ -222,6 +239,7 @@
       padding: 20px !important;
       position: relative;
       margin-bottom: 25px;
+      line-height: 1.8;
       &::after {
         content: '';
         display: inline-block;
@@ -236,6 +254,7 @@
       }
       @include screen-pc {
         width: 440px;
+        font-size: 13px;
         &:first-child {
           margin-right: 20px;
         }
@@ -253,11 +272,12 @@
     border-radius: 10px;
     display: flex;
     flex-flow: column;
-    padding: 10px 0;
+    padding: 20px 10px 10px;
     @include screen-pc {
       display: flex;
       flex-flow: row;
       align-items: center;
+      padding: 10px 0;
     }
     h2 {
       color: $secondary-color;
@@ -278,6 +298,7 @@
     .contents-box-inner {
       padding: 15px;
       @include screen-pc {
+        font-size: 13px;
         padding: 15px 40px 15px 0;
       }
     }

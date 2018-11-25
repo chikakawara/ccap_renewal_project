@@ -33,7 +33,6 @@ $txt-base-color02: #333;
 }
 
 /* css arrow */
-
 @mixin css-arrow($color:#fff, $width:5px, $top:3px, $left:0) {
   display: block;
   content: '';
@@ -58,7 +57,6 @@ $txt-base-color02: #333;
 }
 
 /* 角丸四角形リンク */
-
 @mixin rounded-rectangle-link($pc-width:300px) {
   @include link-with-arrow($width:8px, $left:14px);
   width: 80%;
@@ -83,7 +81,6 @@ $txt-base-color02: #333;
 }
 
 /* ハイライト */
-
 @mixin string-highlight {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2f091+0,e2f091+100&0+0,0+69,1+70,1+90,0+91 */
   background: -moz-linear-gradient(top, rgba(226,240,145,0) 0%, rgba(226,240,145,0) 69%, rgba(226,240,145,1) 70%, rgba(226,240,145,1) 90%, rgba(226,240,145,0) 91%, rgba(226,240,145,0) 100%); /* FF3.6-15 */

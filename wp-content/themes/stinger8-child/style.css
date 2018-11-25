@@ -1898,14 +1898,14 @@ p {
   margin: 0 15px;
   /* base font */
   color: #666;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  /* base font */
-  color: #666;
-  font-size: 14px;
-  letter-spacing: 0.05em;
+  font-size: 15px;
+  letter-spacing: 0.1em;
   /* 記事全体 */
   /* タイトル */
+}
+
+.static-page .post ul li {
+  font-size: 15px;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1917,7 +1917,13 @@ p {
 
 .static-page .entry-title {
   text-align: center;
-  margin-bottom: 0;
+  margin: 20px 0 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .static-page .entry-title {
+    margin-bottom: 0 !important;
+  }
 }
 
 .static-page .entry-title .static-page-title {
@@ -1960,6 +1966,12 @@ p {
   margin-bottom: 30px;
 }
 
+@media print, screen and (min-width: 960px) {
+  .hotline .contents-box {
+    margin-bottom: 40px;
+  }
+}
+
 .hotline .contents-box h2 {
   font-family: "M PLUS Rounded 1c";
   font-size: 24px;
@@ -2000,10 +2012,12 @@ p {
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-01 .catch {
     padding-left: 310px;
+    letter-spacing: 0.18em;
   }
 }
 
 .hotline .contents-box-01 .catch li {
+  font-size: 18px;
   line-height: 1.2;
 }
 
@@ -2049,9 +2063,15 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-02 .contents-box-inner {
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(./images/pages/telno_bg.png);
+    background-repeat: no-repeat;
     flex-flow: row;
     align-items: center;
-    padding: 25px 45px;
+    justify-content: center;
+    padding: 0 40px;
+    height: 127px;
   }
 }
 
@@ -2130,6 +2150,7 @@ p {
   .hotline .contents-box-02 .addition {
     text-align: right;
     margin-top: 10px;
+    font-size: 14px;
   }
 }
 
@@ -2141,6 +2162,12 @@ p {
   background-color: #eaf9d3;
   border-radius: 10px;
   padding: 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .hotline .contents-box-03 .contents-box-inner {
+    padding: 25px;
+  }
 }
 
 .hotline .contents-box-04 {
@@ -2175,6 +2202,7 @@ p {
   padding: 20px !important;
   position: relative;
   margin-bottom: 25px;
+  line-height: 1.8;
 }
 
 .hotline .contents-box-04 li::after {
@@ -2193,6 +2221,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-04 li {
     width: 440px;
+    font-size: 13px;
   }
   .hotline .contents-box-04 li:first-child {
     margin-right: 20px;
@@ -2208,7 +2237,7 @@ p {
   border-radius: 10px;
   display: flex;
   flex-flow: column;
-  padding: 10px 0;
+  padding: 20px 10px 10px;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2217,6 +2246,7 @@ p {
     display: flex;
     flex-flow: row;
     align-items: center;
+    padding: 10px 0;
   }
 }
 
@@ -2250,6 +2280,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-05 .contents-box-inner,
   .hotline .contents-box-06 .contents-box-inner {
+    font-size: 13px;
     padding: 15px 40px 15px 0;
   }
 }
