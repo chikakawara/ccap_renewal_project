@@ -1902,6 +1902,7 @@ p {
   letter-spacing: 0.1em;
   /* 記事全体 */
   /* タイトル */
+  /* content box */
 }
 
 .static-page .post ul li {
@@ -1918,12 +1919,6 @@ p {
 .static-page .entry-title {
   text-align: center;
   margin: 20px 0 10px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .static-page .entry-title {
-    margin-bottom: 0 !important;
-  }
 }
 
 .static-page .entry-title .static-page-title {
@@ -1949,8 +1944,29 @@ p {
   letter-spacing: 0.15em;
 }
 
-/* 電話で相談する hotline */
+.static-page .contents-box {
+  margin-bottom: 30px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .static-page .contents-box {
+    margin-bottom: 40px;
+  }
+}
+
+.static-page .contents-box h2 {
+  font-family: "M PLUS Rounded 1c";
+  font-size: 24px;
+  color: #95cb40;
+}
+
+.static-page .contents-box:last-child {
+  margin-bottom: 0;
+}
+
+/* 電話で相談する for-parent/hotline */
 .hotline {
+  /* タイトル */
   /* 導入 */
   /* 電話番号 */
   /* メッセージ */
@@ -1962,24 +1978,10 @@ p {
   /* 体験談 */
 }
 
-.hotline .contents-box {
-  margin-bottom: 30px;
-}
-
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box {
-    margin-bottom: 40px;
+  .hotline .entry-title {
+    margin-bottom: 0 !important;
   }
-}
-
-.hotline .contents-box h2 {
-  font-family: "M PLUS Rounded 1c";
-  font-size: 24px;
-  color: #95cb40;
-}
-
-.hotline .contents-box:last-child {
-  margin-bottom: 0;
 }
 
 .hotline .contents-box-01 {
@@ -2350,6 +2352,299 @@ p {
 .hotline .contents-box-07 .contents-box-inner ul li:last-child {
   border-bottom: 0;
   padding-bottom: 0;
+}
+
+/* ペアレンティングプログラムに参加する for-parent/parenting */
+.parenting {
+  /* 導入 */
+  /* 参加者の声 */
+  /* 参加するには */
+  /* FAQ */
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-01 {
+    background-image: url(./images/pages/main-parenting.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.parenting .contents-box-01 .contents-box-inner h2 {
+  margin-bottom: 10px;
+}
+
+.parenting .contents-box-01 .contents-box-inner p {
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-01 .contents-box-inner p {
+    margin-bottom: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-01 .contents-box-inner {
+    min-height: calc( 431px * (300/640));
+  }
+  .parenting .contents-box-01 .contents-box-inner h2,
+  .parenting .contents-box-01 .contents-box-inner p {
+    padding-left: 310px;
+  }
+}
+
+.parenting .contents-box-01 .contents-box-inner::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-parenting.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-01 .contents-box-inner::after {
+    display: none;
+  }
+}
+
+.parenting .contents-box-01 .special-box {
+  background-color: #eaf9d3;
+  border-radius: 10px;
+  padding: 10px 20px 20px;
+  position: relative;
+  margin-top: 40px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-01 .special-box {
+    padding: 10px 30px 20px;
+  }
+}
+
+.parenting .contents-box-01 .special-box::before {
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url(./images/pages/hukidashi-basecolor.png);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  position: absolute;
+  top: -22px;
+  left: calc((100vw - 30px) / 2);
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-01 .special-box::before {
+    left: 439px;
+  }
+}
+
+.parenting .contents-box-01 .special-box h3 {
+  font-family: "M PLUS Rounded 1c";
+  color: #1b8924;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/pages/letter-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 60px;
+  min-height: 60px;
+  padding-left: 60px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-01 .special-box h3 {
+    line-height: 60px;
+  }
+}
+
+.parenting .contents-box-01 .special-box p {
+  font-size: 14px;
+}
+
+.parenting .contents-box-02 {
+  padding-bottom: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-02 {
+    padding-bottom: 0;
+  }
+}
+
+.parenting .contents-box-02 h2 {
+  margin-bottom: 10px;
+}
+
+.parenting .contents-box-02 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-02 ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.parenting .contents-box-02 li {
+  border-radius: 10px;
+  border: 3px solid #95cb40;
+  padding: 20px !important;
+  position: relative;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.parenting .contents-box-02 li::after {
+  content: '';
+  display: inline-block;
+  background-image: url(./images/pages/fukidashi.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 25px;
+  width: 32px;
+  height: 22px;
+  bottom: -22px;
+  position: absolute;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-02 li {
+    width: 440px;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+  .parenting .contents-box-02 li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.parenting .contents-box-03 {
+  background-color: #eaf9d3;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-03 {
+    padding: 20px 30px;
+  }
+}
+
+.parenting .contents-box-03 .contents-box-inner {
+  margin-bottom: 20px;
+}
+
+.parenting .contents-box-03 .link-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.parenting .contents-box-03 .link-box::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+.parenting .contents-box-03 .link-box a {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-03 .link-box {
+    width: 400px;
+  }
+}
+
+.parenting .contents-box-03 .link-box a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-03 .link-box a:hover {
+    background-color: #1b8924;
+  }
+}
+
+.parenting .contents-box-04 h2 {
+  background-image: url(./images/pages/fukidashi-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+  line-height: 50px;
+  padding-left: 56px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .parenting .contents-box-04 h2 {
+    display: inline-block;
+  }
+}
+
+.parenting .contents-box-04 .contents-box-inner {
+  border: 3px solid #eee;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.parenting .contents-box-04 .contents-box-inner dl {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 0 40px;
+}
+
+.parenting .contents-box-04 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+}
+
+.parenting .contents-box-04 .contents-box-inner dl dt {
+  position: relative;
+  background-image: url(./images/pages/accordion-close.png);
+  background-repeat: no-repeat;
+  background-size: 28px 15px;
+  background-position: right;
+  padding: 15px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.parenting .contents-box-04 .contents-box-inner dl dt:hover {
+  color: #1b8924;
+}
+
+.parenting .contents-box-04 .contents-box-inner dl dt.open {
+  background-image: url(./images/pages/accordion-open.png);
+}
+
+.parenting .contents-box-04 .contents-box-inner dl dt .question-no {
+  color: #95cb40;
+  position: absolute;
+  left: -40px;
+}
+
+.parenting .contents-box-04 .contents-box-inner dl dd {
+  padding: 0 0 15px 0;
 }
 
 /* list */

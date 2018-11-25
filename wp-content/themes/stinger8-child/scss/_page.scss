@@ -25,9 +25,6 @@
   .entry-title {
     text-align: center;
     margin: 20px 0 10px;
-    @include screen-pc {
-      margin-bottom: 0 !important;
-    }
     .static-page-title {
       color: $txt-base-color02;
       font-size: 26px;
@@ -44,10 +41,8 @@
       }
     }
   }
-}
 
-/* 電話で相談する hotline */
-.hotline {
+  /* content box */
   .contents-box {
     margin-bottom: 30px;
     @include screen-pc {
@@ -60,6 +55,16 @@
     }
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+/* 電話で相談する for-parent/hotline */
+.hotline {
+  /* タイトル */
+  .entry-title {
+    @include screen-pc {
+      margin-bottom: 0 !important;
     }
   }
   /* 導入 */
@@ -364,6 +369,205 @@
           }
         }
       }
+    }
+  }
+}
+
+/* ペアレンティングプログラムに参加する for-parent/parenting */
+.parenting {
+  /* 導入 */
+  .contents-box-01 {
+    @include screen-pc {
+      background-image: url(./images/pages/main-parenting.png);
+      background-size: 300px auto;
+      background-repeat: no-repeat;
+    }
+    .contents-box-inner {
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 20px;
+        @include screen-pc {
+          margin-bottom: 0;
+        }
+      }
+      @include screen-pc {
+        min-height: calc( 431px * (300/640));
+        h2,
+        p {
+          padding-left: 310px;
+        }
+      }
+      &::after {
+        display: block;
+        content: '';
+        width: calc(100vw * 0.8);
+        max-width: 640px;
+        height: calc(100vw * 0.8 / 640 * 431);
+        max-height: 431px;
+        margin: 0 auto;
+        background-image: url(./images/pages/main-parenting.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include screen-pc {
+          display: none;
+        }
+      }
+    }
+    .special-box {
+      background-color: $base-color;
+      border-radius: 10px;
+      padding: 10px 20px 20px;
+      position: relative;
+      margin-top: 40px;
+      @include screen-pc {
+        padding: 10px 30px 20px;
+      }
+      &::before {
+        display: block;
+        content: '';
+        width: 22px;
+        height: 22px;
+        background-image: url(./images/pages/hukidashi-basecolor.png);
+        background-repeat: no-repeat;
+        background-size: 22px 22px;
+        position: absolute;
+        top: -22px;
+        left: calc((100vw - 30px) / 2);
+        @include screen-pc {
+          left: 439px;
+        }
+      }
+      h3 {
+        @include font-rounded;
+        color: $secondary-color;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/pages/letter-icon.png);
+        background-repeat: no-repeat;
+        background-size: auto 60px;
+        min-height: 60px;
+        padding-left: 60px;
+        @include screen-pc {
+          line-height: 60px;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  /* 参加者の声 */
+  .contents-box-02 {
+    padding-bottom: 10px;
+    @include screen-pc {
+      padding-bottom: 0;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      @include screen-pc {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    li {
+      border-radius: 10px;
+      border: 3px solid $primary-color;
+      padding: 20px !important;
+      position: relative;
+      margin-bottom: 25px;
+      line-height: 1.8;
+      &::after {
+        content: '';
+        display: inline-block;
+        background-image: url(./images/pages/fukidashi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 25px;
+        width: 32px;
+        height: 22px;
+        bottom: -22px;
+        position: absolute;
+      }
+      @include screen-pc {
+        width: 440px;
+        font-size: 13px;
+        margin-right: 20px;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  /* 参加するには */
+  .contents-box-03 {
+    background-color: $base-color;
+    border-radius: 10px;
+    padding: 20px;
+    @include screen-pc {
+      padding: 20px 30px;
+    }
+    .contents-box-inner {
+      margin-bottom: 20px;
+    }
+    .link-box {
+      @include rounded-rectangle-link(400px);
+    }
+  }
+  /* FAQ */
+  .contents-box-04 {
+    h2 {
+      background-image: url(./images/pages/fukidashi-icon.png);
+      background-repeat: no-repeat;
+      background-size: auto 50px;
+      line-height: 50px;
+      padding-left: 56px;
+      @include screen-pc {
+        display: inline-block;
+      }
+    }
+    .contents-box-inner {
+      border: 3px solid #eee;
+      border-radius: 10px;
+      padding: 10px 20px;
+      dl {
+        border-bottom: 1px solid #eee;
+        padding: 0 0 0 40px;
+        &:last-child {
+          border-bottom: 0;
+        }
+        dt {
+          position: relative;
+          background-image: url(./images/pages/accordion-close.png);
+          background-repeat: no-repeat;
+          background-size: 28px 15px;
+          background-position: right;
+          padding: 15px 0;
+          font-size: 18px;
+          cursor: pointer;
+          &:hover {
+            color: $secondary-color;
+          }
+          &.open {
+            background-image: url(./images/pages/accordion-open.png);
+          }
+          .question-no {
+            color: $primary-color;
+            position: absolute;
+            left: -40px;
+          }
+        }
+        dd {
+          padding: 0 0 15px 0;
+        }
+      }
+
     }
   }
 }

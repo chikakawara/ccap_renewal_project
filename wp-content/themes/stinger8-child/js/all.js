@@ -38,3 +38,15 @@ $(function() {
 
   });
 });
+
+// accordion
+$(function() {
+  $('.js-accordion-box dd').hide();
+  $('.js-accordion-box dt').on('click', function() {
+    if($(this).siblings('dd').is(':hidden')) {
+      $(this).addClass('open').siblings('dd').slideDown('fast');
+    } else {
+      $(this).removeClass('open').siblings('dd').slideUp('fast');
+    }
+  });
+});
