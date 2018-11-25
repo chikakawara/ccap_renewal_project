@@ -1897,9 +1897,10 @@ p {
 .static-page {
   margin: 0 15px;
   /* base font */
-  color: #666;
+  color: #333;
   font-size: 15px;
   letter-spacing: 0.1em;
+  line-height: 1.8;
   /* 記事全体 */
   /* タイトル */
   /* content box */
@@ -1958,6 +1959,7 @@ p {
   font-family: "M PLUS Rounded 1c";
   font-size: 24px;
   color: #95cb40;
+  margin-bottom: 10px;
 }
 
 .static-page .contents-box:last-child {
@@ -2030,12 +2032,6 @@ p {
   }
 }
 
-@media print, screen and (min-width: 960px) {
-  .hotline .contents-box-01 .contents-box-inner-02 p {
-    margin-bottom: 5px;
-  }
-}
-
 .hotline .contents-box-01 .contents-box-inner-02::after {
   display: block;
   content: '';
@@ -2056,7 +2052,7 @@ p {
 }
 
 .hotline .contents-box-02 .contents-box-inner {
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   border-radius: 10px;
   display: flex;
   flex-flow: column;
@@ -2120,7 +2116,7 @@ p {
 }
 
 .hotline .contents-box-02 .contents-box-inner dl:last-of-type dd {
-  letter-spacing: 0;
+  overflow: hidden;
 }
 
 .hotline .contents-box-02 .contents-box-inner dl:last-of-type dd p {
@@ -2129,23 +2125,16 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-02 .contents-box-inner dl:last-of-type dd p {
-    font-size: 14px;
-    display: inline-block;
-  }
-  .hotline .contents-box-02 .contents-box-inner dl:last-of-type dd p:first-child {
-    margin-right: 10px;
+    font-size: 15px;
+    float: left;
+    line-height: 1.4;
+    letter-spacing: 0;
   }
 }
 
 .hotline .contents-box-02 .contents-box-inner dl dt {
   color: #1b8924;
   font-size: 18px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .hotline .contents-box-02 .contents-box-inner dl dt {
-    font-size: 16px;
-  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2161,7 +2150,7 @@ p {
 }
 
 .hotline .contents-box-03 .contents-box-inner {
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   border-radius: 10px;
   padding: 15px;
 }
@@ -2223,7 +2212,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-04 li {
     width: 440px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .hotline .contents-box-04 li:first-child {
     margin-right: 20px;
@@ -2235,7 +2224,7 @@ p {
 
 .hotline .contents-box-05,
 .hotline .contents-box-06 {
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   border-radius: 10px;
   display: flex;
   flex-flow: column;
@@ -2282,9 +2271,13 @@ p {
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-05 .contents-box-inner,
   .hotline .contents-box-06 .contents-box-inner {
-    font-size: 13px;
+    font-size: 14px;
     padding: 15px 40px 15px 0;
   }
+}
+
+.hotline .contents-box-05 {
+  margin-bottom: 10px;
 }
 
 .hotline .contents-box-05 h2 {
@@ -2319,6 +2312,7 @@ p {
   background-size: auto 50px;
   line-height: 50px;
   padding-left: 56px;
+  margin-bottom: 0;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2414,7 +2408,7 @@ p {
 }
 
 .parenting .contents-box-01 .special-box {
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   border-radius: 10px;
   padding: 10px 20px 20px;
   position: relative;
@@ -2520,7 +2514,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .parenting .contents-box-02 li {
     width: 440px;
-    font-size: 13px;
+    font-size: 14px;
     margin-right: 20px;
   }
   .parenting .contents-box-02 li:nth-child(2n) {
@@ -2529,7 +2523,7 @@ p {
 }
 
 .parenting .contents-box-03 {
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   border-radius: 10px;
   padding: 20px;
 }
@@ -2538,6 +2532,11 @@ p {
   .parenting .contents-box-03 {
     padding: 20px 30px;
   }
+}
+
+.parenting .contents-box-03 h2 {
+  color: #1b8924;
+  margin-bottom: 0;
 }
 
 .parenting .contents-box-03 .contents-box-inner {
@@ -2569,7 +2568,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .parenting .contents-box-03 .link-box {
-    width: 400px;
+    width: 360px;
   }
 }
 
@@ -2595,6 +2594,7 @@ p {
   background-size: auto 50px;
   line-height: 50px;
   padding-left: 56px;
+  margin-bottom: 0;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2645,6 +2645,170 @@ p {
 
 .parenting .contents-box-04 .contents-box-inner dl dd {
   padding: 0 0 15px 0;
+}
+
+/* 虐待はなぜ... /for-parent/childabuse */
+.childabuse {
+  /* 導入 */
+  /* 子どもの虐待とは */
+  /* 親を責めないで */
+}
+
+.childabuse .special-box {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  margin-top: 30px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .special-box {
+    padding: 20px 30px;
+  }
+}
+
+.childabuse .special-box::before {
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url(./images/pages/hukidashi-basecolor.png);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  position: absolute;
+  top: -22px;
+  left: calc((100vw - 30px) / 2);
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .special-box::before {
+    left: 439px;
+  }
+}
+
+.childabuse .special-box p {
+  color: #1b8924;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .special-box p {
+    font-size: 18px;
+  }
+}
+
+.childabuse .contents-box-02 .contents-box-inner {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner {
+    padding: 20px 30px;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+}
+
+.childabuse .contents-box-02 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl {
+    width: 417px;
+  }
+}
+
+.childabuse .contents-box-02 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl:nth-child(3) dt, .childabuse .contents-box-02 .contents-box-inner dl:nth-child(3) dd {
+    border-right: 2px dotted #95cb40;
+    margin-bottom: 2px;
+    padding-right: 20px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl:first-child {
+    padding-right: 20px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl:nth-child(2) dt, .childabuse .contents-box-02 .contents-box-inner dl:nth-child(2) dd {
+    border-left: 2px dotted #95cb40;
+    margin-bottom: 2px;
+    padding-left: 20px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl:nth-child(3), .childabuse .contents-box-02 .contents-box-inner dl:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl:last-child {
+    padding-left: 20px;
+  }
+}
+
+.childabuse .contents-box-02 .contents-box-inner dl dt {
+  color: #95cb40;
+  font-size: 16px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl dt {
+    font-size: 18px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-02 .contents-box-inner dl dd {
+    font-size: 14px;
+  }
+}
+
+.childabuse .contents-box-03 .contents-box-inner {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  background-image: url(./images/pages/town.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  padding: 20px 20px 100px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-03 .contents-box-inner {
+    background-size: 560px 90px;
+    padding: 30px 40px 100px;
+  }
+}
+
+.childabuse .contents-box-03 .contents-box-inner h3 {
+  color: #1b8924;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "M PLUS Rounded 1c";
 }
 
 /* list */
