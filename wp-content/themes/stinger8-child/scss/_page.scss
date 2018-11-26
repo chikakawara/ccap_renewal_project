@@ -299,6 +299,14 @@
         font-size: 14px;
         padding: 15px 40px 15px 0;
       }
+      .note {
+        margin-top: 10px;
+        font-size: 14px;
+        @include screen-pc {
+          font-size: 13px;
+          line-height: 1.5;
+        }
+      }
     }
   }
 

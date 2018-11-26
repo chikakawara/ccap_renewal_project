@@ -2280,6 +2280,20 @@ p {
   }
 }
 
+.hotline .contents-box-05 .contents-box-inner .note,
+.hotline .contents-box-06 .contents-box-inner .note {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .hotline .contents-box-05 .contents-box-inner .note,
+  .hotline .contents-box-06 .contents-box-inner .note {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
 .hotline .contents-box-05 {
   margin-bottom: 10px;
 }
