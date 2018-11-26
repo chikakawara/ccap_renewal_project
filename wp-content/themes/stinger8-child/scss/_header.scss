@@ -122,6 +122,10 @@
   display: none;
   @include screen-tablet {
     display: flex;
+    /* for IE */
+    img {
+      max-height: 100%;
+    }
   }
 }
 .telno__forsp {

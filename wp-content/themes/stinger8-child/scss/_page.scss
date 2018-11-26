@@ -87,7 +87,6 @@
     .catch {
       padding: 0;
       list-style: none;
-      @include font-rounded;
       color: $primary-color;
       @include screen-pc {
         padding-left: 310px;
@@ -96,6 +95,7 @@
       li {
         font-size: 18px;
         line-height: 1.2;
+        @include font-rounded;
         @include screen-pc {
           font-size: 22px;
           margin-bottom: 4px;

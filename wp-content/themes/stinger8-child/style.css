@@ -263,6 +263,10 @@ p {
 @media screen and (min-width: 600px) {
   .telno {
     display: flex;
+    /* for IE */
+  }
+  .telno img {
+    max-height: 100%;
   }
 }
 
@@ -2009,7 +2013,6 @@ p {
 .hotline .contents-box-01 .catch {
   padding: 0;
   list-style: none;
-  font-family: "M PLUS Rounded 1c";
   color: #95cb40;
 }
 
@@ -2023,6 +2026,7 @@ p {
 .hotline .contents-box-01 .catch li {
   font-size: 18px;
   line-height: 1.2;
+  font-family: "M PLUS Rounded 1c";
 }
 
 @media print, screen and (min-width: 960px) {
