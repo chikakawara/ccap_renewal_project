@@ -525,6 +525,16 @@
     }
     .link-box {
       @include rounded-rectangle-link(360px);
+      width: 100%;
+      a {
+        letter-spacing: 0;
+      }
+      @include screen-tablet {
+        width: 60%;
+        a {
+          letter-spacing: 0.1em;
+        }
+      }
     }
   }
   /* FAQ */

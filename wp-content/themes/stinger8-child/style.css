@@ -2565,6 +2565,7 @@ p {
   position: relative;
   width: 80%;
   margin: 0 auto;
+  width: 100%;
 }
 
 .parenting .contents-box-03 .link-box::before {
@@ -2603,6 +2604,19 @@ p {
 @media print, screen and (min-width: 960px) {
   .parenting .contents-box-03 .link-box a:hover {
     background-color: #1b8924;
+  }
+}
+
+.parenting .contents-box-03 .link-box a {
+  letter-spacing: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .parenting .contents-box-03 .link-box {
+    width: 60%;
+  }
+  .parenting .contents-box-03 .link-box a {
+    letter-spacing: 0.1em;
   }
 }
 
