@@ -8,6 +8,7 @@
 /* 角丸四角形リンク */
 /* ハイライト */
 /* 斜め線アンダーラインタイトル */
+/* 波背景 */
 /*
 Theme Name: STINGER8 Child
 Template: stinger8
@@ -454,7 +455,7 @@ p {
 
 #st-menubox .sub-menu > li > a {
   border: 0;
-  border-bottom: 1px dotted #eaf9d3;
+  border-bottom: 1px dotted #f3fCe6;
   background-color: #95cb40;
   font-family: "Noto Sans JP";
   color: #fff;
@@ -602,7 +603,7 @@ p {
 #breadcrumb {
   margin: 0;
   padding: 0 0 5px;
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   padding: 5px 0;
   margin: 20px 0 0;
 }
@@ -630,8 +631,21 @@ p {
 /* footer */
 #footer {
   padding: 30px 0 0;
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   /* utility menu */
+}
+
+#footer::before {
+  display: block;
+  content: '';
+  background-image: url(./images/wavebg-green.png);
+  background-repeat: repeat-x;
+  background-size: 175px 10px;
+  width: 100%;
+  height: 10px;
+  max-height: 20px;
+  position: relative;
+  top: -40px;
 }
 
 #footer #footer-in {
@@ -1076,7 +1090,7 @@ p {
 
 /* sidebar */
 #mybox .ad {
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   border-radius: 4px;
   padding: 15px;
   margin: 40px 0 0;
@@ -1619,10 +1633,23 @@ p {
 /* 最新のお知らせ */
 .latest-news-box {
   font-size: 16px;
-  background-color: #eaf9d3;
+  background-color: #f3fCe6;
   padding: 20px 20px 40px;
   text-align: center;
   /* h2 center揃えのため */
+}
+
+.latest-news-box::before {
+  display: block;
+  content: '';
+  background-image: url(./images/wavebg-green.png);
+  background-repeat: repeat-x;
+  background-size: 175px 10px;
+  width: 100%;
+  height: 10px;
+  max-height: 20px;
+  position: relative;
+  top: -30px;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1739,6 +1766,19 @@ p {
   width: 100%;
   text-align: center;
   /* h2 center揃えのため */
+}
+
+.actions-box::before {
+  display: block;
+  content: '';
+  background-image: url(./images/wavebg-white.png);
+  background-repeat: repeat-x;
+  background-size: 175px 10px;
+  width: 100%;
+  height: 10px;
+  max-height: 20px;
+  position: relative;
+  top: -58px;
 }
 
 @media print, screen and (min-width: 960px) {

@@ -269,6 +269,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   background-color: $base-color;
   padding: 20px 20px 40px;
   text-align: center; /* h2 center揃えのため */
+  @include wavebg($imgname: wavebg-green, $top_padding: 20px);
   @include screen-pc {
     margin-bottom: 0;
   }
@@ -328,6 +329,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 .actions-box {
   width: 100%;
   text-align: center; /* h2 center揃えのため */
+  @include wavebg($imgname: wavebg-white, $top_padding: 48px);
   @include screen-pc {
     /* 背景ドットを隠して白くするため幅100% */
     background-color: #fff;

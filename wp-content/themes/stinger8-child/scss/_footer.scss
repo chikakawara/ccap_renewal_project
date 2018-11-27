@@ -1,7 +1,9 @@
 /* footer */
+
 #footer {
   padding: 30px 0 0;
   background-color: $base-color;
+  @include wavebg($imgname: wavebg-green, $top_padding: 30px);
   #footer-in {
 
     margin: 0 auto 20px;

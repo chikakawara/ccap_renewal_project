@@ -1,6 +1,6 @@
 $primary-color: #95cb40; //黄緑
 $secondary-color: #1b8924; //緑
-$base-color: #eaf9d3; //薄緑
+$base-color: #f3fCe6; //薄緑
 $base-lighten-color: #f3fCe6; //base-colorのlight版
 $base-layerd-color: #d8f3b0; //重ねた薄緑
 $highlight-color01: #f2bd1c; //オレンジ
@@ -99,4 +99,20 @@ $txt-base-color02: #333;
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: auto 7px;
+}
+
+/* 波背景 */
+@mixin wavebg($imgname, $top_padding) {
+  &::before {
+    display: block;
+    content: '';
+    background-image: url(./images/#{$imgname}.png);
+    background-repeat: repeat-x;
+    background-size: 175px 10px;
+    width: 100%;
+    height: 10px;
+    max-height: 20px;
+    position: relative;
+    top: (10 + $top_padding) * -1;
+  }
 }
