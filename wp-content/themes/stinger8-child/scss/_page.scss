@@ -125,7 +125,7 @@
   /* 電話番号 */
   .contents-box-02 {
     .contents-box-inner {
-      background-color: $base-lighten-color;
+      background-color: $base-color;
       border-radius: 10px;
       display: flex;
       flex-flow: column;
@@ -207,7 +207,7 @@
       margin-bottom: 5px;
     }
     .contents-box-inner {
-      background-color: $base-lighten-color;
+      background-color: $base-color;
       border-radius: 10px;
       padding: 15px;
       @include screen-pc {
@@ -267,7 +267,7 @@
   /* CCAPの電話相談、電話による法律相談 */
   .contents-box-05,
   .contents-box-06 {
-    background-color: $base-lighten-color;
+    background-color: $base-color;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
@@ -419,7 +419,7 @@
       }
     }
     .special-box {
-      background-color: $base-lighten-color;
+      background-color: $base-color;
       border-radius: 10px;
       padding: 10px 20px 20px;
       position: relative;
@@ -510,7 +510,7 @@
   }
   /* 参加するには */
   .contents-box-03 {
-    background-color: $base-lighten-color;
+    background-color: $base-color;
     border-radius: 10px;
     padding: 20px;
     @include screen-pc {
@@ -595,7 +595,7 @@
 .childabuse {
   /* 導入 */
   .special-box {
-    background-color: $base-lighten-color;
+    background-color: $base-color;
     border-radius: 10px;
     padding: 20px;
     position: relative;
@@ -705,7 +705,7 @@
   /* 親を責めないで */
   .contents-box-03 {
     .contents-box-inner {
-      background-color: $base-lighten-color;
+      background-color: $base-color;
       border-radius: 10px;
       background-image: url(./images/pages/town.png);
       background-repeat: no-repeat;
