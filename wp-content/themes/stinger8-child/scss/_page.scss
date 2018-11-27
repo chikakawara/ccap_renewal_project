@@ -54,6 +54,7 @@
       font-size: 24px;
       color: $primary-color;
       margin-bottom: 10px;
+      line-height: 1.2;
     }
     &:last-child {
       margin-bottom: 0;
@@ -344,9 +345,8 @@
       background-image: url(./images/pages/fukidashi-icon.png);
       background-repeat: no-repeat;
       background-size: auto 50px;
-      line-height: 50px;
+      background-position: left center;
       padding-left: 56px;
-      margin-bottom: 0;
       @include screen-pc {
         display: inline-block;
       }
@@ -518,7 +518,7 @@
     }
     h2 {
       color: $secondary-color;
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
     .contents-box-inner {
       margin-bottom: 20px;
@@ -543,9 +543,8 @@
       background-image: url(./images/pages/fukidashi-icon.png);
       background-repeat: no-repeat;
       background-size: auto 50px;
-      line-height: 50px;
+      background-position: left center;
       padding-left: 56px;
-      margin-bottom: 0;
       @include screen-pc {
         display: inline-block;
       }
@@ -566,9 +565,12 @@
           background-repeat: no-repeat;
           background-size: 28px 15px;
           background-position: right;
-          padding: 15px 0;
-          font-size: 18px;
+          padding: 15px 30px 15px 0;
+          font-size: 16px;
           cursor: pointer;
+          @include screen-tablet {
+            font-size: 18px;
+          }
           &:hover {
             color: $secondary-color;
           }

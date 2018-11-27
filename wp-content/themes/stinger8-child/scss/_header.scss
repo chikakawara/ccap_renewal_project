@@ -45,6 +45,11 @@
   }
 }
 
+#header-r {
+  a {
+    @include font-noto;
+  }
+}
 .header-r__top {
   display: none;
   @include screen-pc {
@@ -208,6 +213,7 @@
 /* PC用global menu */
 #st-menubox {
   border: 0;
+  margin: 30px 0;
   .menu {
     display: flex;
     justify-content: center;
@@ -226,6 +232,7 @@
       }
       > a {
         line-height: 24px;
+        @include font-noto;
         &:hover {
           color: $secondary-color;
         }
@@ -246,6 +253,7 @@
         border: 0;
         border-bottom: 1px dotted $base-color;
         background-color: $primary-color;
+        @include font-noto;
         color: #fff;
         line-height: 1.5;
         padding: 10px 0;
