@@ -94,7 +94,7 @@ p {
 #header-l {
   width: 100%;
   height: auto;
-  margin: 15px 30px 10px 0;
+  margin: 5px 0 5px 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -106,7 +106,9 @@ p {
 
 .ccap-logo {
   margin-left: 15px;
-  width: 100%;
+  width: 208px;
+  height: 70px;
+  max-height: 70px;
 }
 
 @media screen and (min-width: 600px) {
@@ -125,7 +127,11 @@ p {
   }
 }
 
-.ccap-logo img {
+.ccap-logo a {
+  display: block;
+}
+
+.ccap-logo a img {
   width: 100%;
   height: auto;
 }
@@ -406,7 +412,12 @@ p {
 /* PC用global menu */
 #st-menubox {
   border: 0;
-  margin: 30px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  #st-menubox {
+    margin: 30px 0;
+  }
 }
 
 #st-menubox .menu {

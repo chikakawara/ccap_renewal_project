@@ -20,7 +20,7 @@
 #header-l {
   width: 100%;
   height: auto;
-  margin: 15px 30px 10px 0;
+  margin: 5px 0 5px 0;
   @include screen-tablet {
     width: auto;
     margin: 0;
@@ -28,7 +28,9 @@
 }
 .ccap-logo {
   margin-left: 15px;
-  width: 100%;
+  width: 208px;
+  height: 70px;
+  max-height: 70px;
   @include screen-tablet {
     width: 178px;
     height: 60px;
@@ -39,9 +41,12 @@
     margin-top: 15px;
     margin-left: 0;
   }
-  img {
-    width: 100%;
-    height: auto;
+  a {
+    display: block;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -213,7 +218,9 @@
 /* PC用global menu */
 #st-menubox {
   border: 0;
-  margin: 30px 0;
+  @include screen-pc {
+    margin: 30px 0;
+  }
   .menu {
     display: flex;
     justify-content: center;
