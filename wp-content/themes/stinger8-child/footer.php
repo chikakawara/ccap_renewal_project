@@ -42,7 +42,6 @@
 <div class="footer-bottom-box">
 	<div class="footer-bottom-inner">
 		<ul class="footer-bottom-links">
-			<li><a href="">サイトマップ</a></li>
 			<li><a href="">プライバシーポリシー</a></li>
 		</ul>
 		<ul class="footer-bottom-banners">
