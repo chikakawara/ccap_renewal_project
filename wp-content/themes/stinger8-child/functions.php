@@ -13,6 +13,11 @@ function add_page_slug_class_name( $classes ) {
   if ( is_page() ) {
     $page = get_post( get_the_ID() );
     $classes[] = $page->post_name;
+
+    $parent_id = $page->post_parent;
+    if ( $parent_id ) {
+      $classes[] = get_post($parent_id)->post_name . '-child';
+    }
   }
   return $classes;
 }
