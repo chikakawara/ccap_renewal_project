@@ -2425,7 +2425,7 @@ p {
 }
 
 /* ペアレンティングプログラムに参加する for-parent/parenting */
-.parenting {
+.for-parent.parenting {
   /* 導入 */
   /* 参加者の声 */
   /* 参加するには */
@@ -2433,38 +2433,38 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-01 {
+  .for-parent.parenting .contents-box-01 {
     background-image: url(./images/pages/main-parenting.png);
     background-size: 300px auto;
     background-repeat: no-repeat;
   }
 }
 
-.parenting .contents-box-01 .contents-box-inner h2 {
+.for-parent.parenting .contents-box-01 .contents-box-inner h2 {
   margin-bottom: 10px;
 }
 
-.parenting .contents-box-01 .contents-box-inner p {
+.for-parent.parenting .contents-box-01 .contents-box-inner p {
   margin-bottom: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-01 .contents-box-inner p {
+  .for-parent.parenting .contents-box-01 .contents-box-inner p {
     margin-bottom: 0;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-01 .contents-box-inner {
+  .for-parent.parenting .contents-box-01 .contents-box-inner {
     min-height: calc( 431px * (300/640));
   }
-  .parenting .contents-box-01 .contents-box-inner h2,
-  .parenting .contents-box-01 .contents-box-inner p {
+  .for-parent.parenting .contents-box-01 .contents-box-inner h2,
+  .for-parent.parenting .contents-box-01 .contents-box-inner p {
     padding-left: 310px;
   }
 }
 
-.parenting .contents-box-01 .contents-box-inner::after {
+.for-parent.parenting .contents-box-01 .contents-box-inner::after {
   display: block;
   content: '';
   width: calc(100vw * 0.8);
@@ -2478,12 +2478,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-01 .contents-box-inner::after {
+  .for-parent.parenting .contents-box-01 .contents-box-inner::after {
     display: none;
   }
 }
 
-.parenting .contents-box-01 .special-box {
+.for-parent.parenting .contents-box-01 .special-box {
   background-color: #f3fCe6;
   border-radius: 10px;
   padding: 10px 20px 20px;
@@ -2492,12 +2492,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-01 .special-box {
+  .for-parent.parenting .contents-box-01 .special-box {
     padding: 10px 30px 20px;
   }
 }
 
-.parenting .contents-box-01 .special-box::before {
+.for-parent.parenting .contents-box-01 .special-box::before {
   display: block;
   content: '';
   width: 22px;
@@ -2511,12 +2511,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-01 .special-box::before {
+  .for-parent.parenting .contents-box-01 .special-box::before {
     left: 439px;
   }
 }
 
-.parenting .contents-box-01 .special-box h3 {
+.for-parent.parenting .contents-box-01 .special-box h3 {
   font-family: "M PLUS Rounded 1c";
   color: #1b8924;
   border: 0;
@@ -2530,42 +2530,42 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-01 .special-box h3 {
+  .for-parent.parenting .contents-box-01 .special-box h3 {
     line-height: 60px;
   }
 }
 
-.parenting .contents-box-01 .special-box p {
+.for-parent.parenting .contents-box-01 .special-box p {
   font-size: 14px;
 }
 
-.parenting .contents-box-02 {
+.for-parent.parenting .contents-box-02 {
   padding-bottom: 10px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-02 {
+  .for-parent.parenting .contents-box-02 {
     padding-bottom: 0;
   }
 }
 
-.parenting .contents-box-02 h2 {
+.for-parent.parenting .contents-box-02 h2 {
   margin-bottom: 10px;
 }
 
-.parenting .contents-box-02 ul {
+.for-parent.parenting .contents-box-02 ul {
   list-style-type: none;
   padding: 0;
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-02 ul {
+  .for-parent.parenting .contents-box-02 ul {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-.parenting .contents-box-02 li {
+.for-parent.parenting .contents-box-02 li {
   border-radius: 10px;
   border: 3px solid #95cb40;
   padding: 20px !important;
@@ -2574,7 +2574,7 @@ p {
   line-height: 1.8;
 }
 
-.parenting .contents-box-02 li::after {
+.for-parent.parenting .contents-box-02 li::after {
   content: '';
   display: inline-block;
   background-image: url(./images/pages/fukidashi.png);
@@ -2588,44 +2588,44 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-02 li {
+  .for-parent.parenting .contents-box-02 li {
     width: 440px;
     font-size: 14px;
     margin-right: 20px;
   }
-  .parenting .contents-box-02 li:nth-child(2n) {
+  .for-parent.parenting .contents-box-02 li:nth-child(2n) {
     margin-right: 0;
   }
 }
 
-.parenting .contents-box-03 {
+.for-parent.parenting .contents-box-03 {
   background-color: #f3fCe6;
   border-radius: 10px;
   padding: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-03 {
+  .for-parent.parenting .contents-box-03 {
     padding: 20px 30px;
   }
 }
 
-.parenting .contents-box-03 h2 {
+.for-parent.parenting .contents-box-03 h2 {
   color: #1b8924;
 }
 
-.parenting .contents-box-03 .contents-box-inner {
+.for-parent.parenting .contents-box-03 .contents-box-inner {
   margin-bottom: 20px;
 }
 
-.parenting .contents-box-03 .link-box {
+.for-parent.parenting .contents-box-03 .link-box {
   position: relative;
   width: 80%;
   margin: 0 auto;
   width: 100%;
 }
 
-.parenting .contents-box-03 .link-box::before {
+.for-parent.parenting .contents-box-03 .link-box::before {
   display: block;
   content: '';
   width: 0;
@@ -2638,17 +2638,17 @@ p {
   left: 14px;
 }
 
-.parenting .contents-box-03 .link-box a {
+.for-parent.parenting .contents-box-03 .link-box a {
   text-decoration: none;
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-03 .link-box {
+  .for-parent.parenting .contents-box-03 .link-box {
     width: 360px;
   }
 }
 
-.parenting .contents-box-03 .link-box a {
+.for-parent.parenting .contents-box-03 .link-box a {
   background-color: #95cb40;
   color: #fff;
   padding: 14px 4px;
@@ -2659,25 +2659,25 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-03 .link-box a:hover {
+  .for-parent.parenting .contents-box-03 .link-box a:hover {
     background-color: #1b8924;
   }
 }
 
-.parenting .contents-box-03 .link-box a {
+.for-parent.parenting .contents-box-03 .link-box a {
   letter-spacing: 0;
 }
 
 @media screen and (min-width: 600px) {
-  .parenting .contents-box-03 .link-box {
+  .for-parent.parenting .contents-box-03 .link-box {
     width: 60%;
   }
-  .parenting .contents-box-03 .link-box a {
+  .for-parent.parenting .contents-box-03 .link-box a {
     letter-spacing: 0.1em;
   }
 }
 
-.parenting .contents-box-04 h2 {
+.for-parent.parenting .contents-box-04 h2 {
   background-image: url(./images/pages/fukidashi-icon.png);
   background-repeat: no-repeat;
   background-size: auto 50px;
@@ -2686,27 +2686,27 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .parenting .contents-box-04 h2 {
+  .for-parent.parenting .contents-box-04 h2 {
     display: inline-block;
   }
 }
 
-.parenting .contents-box-04 .contents-box-inner {
+.for-parent.parenting .contents-box-04 .contents-box-inner {
   border: 3px solid #eee;
   border-radius: 10px;
   padding: 10px 20px;
 }
 
-.parenting .contents-box-04 .contents-box-inner dl {
+.for-parent.parenting .contents-box-04 .contents-box-inner dl {
   border-bottom: 1px solid #eee;
   padding: 0 0 0 40px;
 }
 
-.parenting .contents-box-04 .contents-box-inner dl:last-child {
+.for-parent.parenting .contents-box-04 .contents-box-inner dl:last-child {
   border-bottom: 0;
 }
 
-.parenting .contents-box-04 .contents-box-inner dl dt {
+.for-parent.parenting .contents-box-04 .contents-box-inner dl dt {
   position: relative;
   background-image: url(./images/pages/accordion-close.png);
   background-repeat: no-repeat;
@@ -2718,26 +2718,26 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  .parenting .contents-box-04 .contents-box-inner dl dt {
+  .for-parent.parenting .contents-box-04 .contents-box-inner dl dt {
     font-size: 18px;
   }
 }
 
-.parenting .contents-box-04 .contents-box-inner dl dt:hover {
+.for-parent.parenting .contents-box-04 .contents-box-inner dl dt:hover {
   color: #1b8924;
 }
 
-.parenting .contents-box-04 .contents-box-inner dl dt.open {
+.for-parent.parenting .contents-box-04 .contents-box-inner dl dt.open {
   background-image: url(./images/pages/accordion-open.png);
 }
 
-.parenting .contents-box-04 .contents-box-inner dl dt .question-no {
+.for-parent.parenting .contents-box-04 .contents-box-inner dl dt .question-no {
   color: #95cb40;
   position: absolute;
   left: -40px;
 }
 
-.parenting .contents-box-04 .contents-box-inner dl dd {
+.for-parent.parenting .contents-box-04 .contents-box-inner dl dd {
   padding: 0 0 15px 0;
 }
 
