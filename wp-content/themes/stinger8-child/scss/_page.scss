@@ -1,4 +1,13 @@
 /* page */
+/* 打ち消し */
+.post ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    font-size: 15px;
+  }
+}
 /* 共通 */
 .static-page {
   margin: 0 15px;
@@ -7,9 +16,7 @@
   font-size: 15px;
   letter-spacing: 0.1em;
   line-height: 1.8;
-  .post ul li {
-    font-size: 15px;
-  }
+
   @include screen-pc {
     // margin: 0 0 30px;
   }
@@ -56,6 +63,19 @@
       margin-bottom: 10px;
       line-height: 1.2;
     }
+    h3 {
+      @include font-rounded;
+      color: $secondary-color;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.5;
+      @include screen-tablet {
+        font-size: 22px;
+        line-height: 1.4;
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -96,10 +116,10 @@
       li {
         font-size: 18px;
         line-height: 1.2;
+        margin-bottom: 4px;
         @include font-rounded;
         @include screen-pc {
           font-size: 22px;
-          margin-bottom: 4px;
         }
       }
     }
@@ -124,81 +144,7 @@
 
   /* 電話番号 */
   .contents-box-02 {
-    .contents-box-inner {
-      background-color: $base-color;
-      border-radius: 10px;
-      display: flex;
-      flex-flow: column;
-      padding: 10px 0;
-      @include screen-pc {
-        background-color: transparent;
-        border-radius: 0;
-        background-image: url(./images/pages/telno_bg.png);
-        background-repeat: no-repeat;
-        flex-flow: row;
-        align-items: center;
-        justify-content: center;
-        padding: 0 40px;
-        height: 127px;
-      }
-      dl {
-        width: 90%;
-        margin: 0 auto 10px;
-        &:first-of-type {
-          @include screen-pc {
-            width: 420px;
-            min-width: 420px;
-          }
-          dd {
-            &:last-child {
-              background-image: url(./images/pages/telno.png);
-              background-size: contain;
-              background-repeat: no-repeat;
-              color: transparent;
-              width: 80%;
-              max-width: 370px;
-              height: calc(100vw * 0.8 / 740 * 80);
-              max-height: 40px;
-              @include screen-pc {
-                width: 370px;
-              }
-            }
-          }
-        }
-        &:last-of-type {
-          background-color: #fff;
-          padding: 10px;
-          @include screen-pc {
-            background-color: transparent;
-            margin: 0;
-            padding: 0;
-          }
-          dd {
-            overflow: hidden;
-            p {
-              margin: 0;
-              @include screen-pc {
-                font-size: 15px;
-                float: left;
-                line-height: 1.4;
-                letter-spacing: 0;
-              }
-            }
-          }
-        }
-        dt {
-          color: $secondary-color;
-          font-size: 18px;
-        }
-      }
-    }
-    .addition {
-      @include screen-pc {
-        text-align: right;
-        margin-top: 10px;
-        font-size: 14px;
-      }
-    }
+    @include tel-within-contents;
   }
 
   /* メッセージ */
@@ -368,7 +314,6 @@
           padding: 10px 0;
           &:last-child {
             border-bottom: 0;
-            padding-bottom: 0;
           }
         }
       }
@@ -377,7 +322,7 @@
 }
 
 /* ペアレンティングプログラムに参加する for-parent/parenting */
-.for-parent.parenting {
+.for-parent-child.parenting {
   /* 導入 */
   .contents-box-01 {
     @include screen-pc {
@@ -443,11 +388,6 @@
         }
       }
       h3 {
-        @include font-rounded;
-        color: $secondary-color;
-        border: 0;
-        margin: 0;
-        padding: 0;
         background-image: url(./images/pages/letter-icon.png);
         background-repeat: no-repeat;
         background-size: auto 60px;
@@ -717,13 +657,162 @@
         padding: 30px 40px 100px;
       }
       h3 {
-        color: $secondary-color;
-        border: 0;
-        padding: 0;
-        margin: 0;
         margin-bottom: 10px;
-        @include font-rounded;
       }
+    }
+  }
+}
+
+/* 里親・養親支援 activity/fosterparent */
+.activity-child.fosterparent {
+  /* 導入 */
+  .contents-box-01 {
+    @include screen-pc {
+      background-image: url(./images/pages/main-fosterparent.png);
+      background-size: 300px auto;
+      background-repeat: no-repeat;
+    }
+    .contents-box-inner {
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 20px;
+        @include screen-pc {
+          margin-bottom: 0;
+        }
+      }
+      @include screen-pc {
+        min-height: calc( 431px * (300/640));
+        display: flex;
+        align-items: center;
+        h2,
+        p {
+          padding-left: 310px;
+        }
+      }
+      &::after {
+        display: block;
+        content: '';
+        width: calc(100vw * 0.8);
+        max-width: 640px;
+        height: calc(100vw * 0.8 / 640 * 431);
+        max-height: 431px;
+        margin: 0 auto;
+        background-image: url(./images/pages/main-fosterparent.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include screen-pc {
+          display: none;
+        }
+      }
+    }
+  }
+  /* 電話番号 */
+  .contents-box-02 {
+    > p {
+      margin-bottom: 10px;
+    }
+    @include tel-within-contents;
+  }
+  /* 特別養親サロン */
+  .contents-box-03 {
+    h3 {
+      margin-bottom: 10px;
+    }
+    > p {
+      margin-bottom: 10px;
+    }
+    .schedule-box {
+      border: 3px solid $primary-color;
+      border-radius: 10px;
+      padding: 0 15px;
+      display: flex;
+      flex-flow: column;
+      @include screen-pc {
+        padding: 0 45px;
+      }
+      dl {
+        border-bottom: 2px dotted $primary-color;
+        padding-bottom: 20px;
+        @include screen-pc {
+          display: flex;
+          align-items: center;
+          padding: 15px 0;
+        }
+        &:last-child {
+          border-bottom: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        dt {
+          color: $secondary-color;
+          font-size: 18px;
+          margin: 20px 0 5px;
+          @include screen-pc {
+            font-size: 20px;
+            width: 110px;
+            min-width: 110px;
+            text-align: center;
+          }
+          .title-highlight {
+            @include string-highlight;
+          }
+        }
+        dd {
+          @include screen-pc {
+            font-size: 14px;
+            margin-left: 15px;
+          }
+          ul {
+            li {
+              padding-bottom: 0;
+            }
+            li:first-child {
+              @include screen-pc {
+                font-size: 13px;
+              }
+            }
+            li:nth-child(2) {
+              font-size: 18px;
+              color: $secondary-color;
+              @include screen-pc {
+                font-size: 20px;
+              }
+            }
+          }
+          table {
+            margin-top: 10px;
+            font-size: 14px;
+            border-color: #ddd;
+            tr {
+              background-color: transparent;
+            }
+            th,td {
+              border-color: #ddd;
+            }
+            th {
+              font-weight: normal;
+              background-color: #f5f5f5;
+            }
+            td {
+              background-color: transparent;
+              padding-left: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contents-box-04 {
+    background-color: #f3fCe6;
+    border-radius: 10px;
+    padding: 15px;
+    @include screen-pc {
+      padding: 20px 30px;
+    }
+    h2 {
+      color: $secondary-color;
     }
   }
 }

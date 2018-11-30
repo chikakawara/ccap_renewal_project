@@ -9,6 +9,7 @@
 /* ハイライト */
 /* 斜め線アンダーラインタイトル */
 /* 波背景 */
+/* コンテンツ内電話番号 */
 /*
 Theme Name: STINGER8 Child
 Template: stinger8
@@ -1955,6 +1956,17 @@ p {
 }
 
 /* page */
+/* 打ち消し */
+.post ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post ul li {
+  font-size: 15px;
+}
+
 /* 共通 */
 .static-page {
   margin: 0 15px;
@@ -1966,10 +1978,6 @@ p {
   /* 記事全体 */
   /* タイトル */
   /* content box */
-}
-
-.static-page .post ul li {
-  font-size: 15px;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2023,6 +2031,23 @@ p {
   color: #95cb40;
   margin-bottom: 10px;
   line-height: 1.2;
+}
+
+.static-page .contents-box h3 {
+  font-family: "M PLUS Rounded 1c";
+  color: #1b8924;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 600px) {
+  .static-page .contents-box h3 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
 }
 
 .static-page .contents-box:last-child {
@@ -2085,13 +2110,13 @@ p {
 .hotline .contents-box-01 .catch li {
   font-size: 18px;
   line-height: 1.2;
+  margin-bottom: 4px;
   font-family: "M PLUS Rounded 1c";
 }
 
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-01 .catch li {
     font-size: 22px;
-    margin-bottom: 4px;
   }
 }
 
@@ -2421,11 +2446,10 @@ p {
 
 .hotline .contents-box-07 .contents-box-inner ul li:last-child {
   border-bottom: 0;
-  padding-bottom: 0;
 }
 
 /* ペアレンティングプログラムに参加する for-parent/parenting */
-.for-parent.parenting {
+.for-parent-child.parenting {
   /* 導入 */
   /* 参加者の声 */
   /* 参加するには */
@@ -2433,38 +2457,38 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-01 {
+  .for-parent-child.parenting .contents-box-01 {
     background-image: url(./images/pages/main-parenting.png);
     background-size: 300px auto;
     background-repeat: no-repeat;
   }
 }
 
-.for-parent.parenting .contents-box-01 .contents-box-inner h2 {
+.for-parent-child.parenting .contents-box-01 .contents-box-inner h2 {
   margin-bottom: 10px;
 }
 
-.for-parent.parenting .contents-box-01 .contents-box-inner p {
+.for-parent-child.parenting .contents-box-01 .contents-box-inner p {
   margin-bottom: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-01 .contents-box-inner p {
+  .for-parent-child.parenting .contents-box-01 .contents-box-inner p {
     margin-bottom: 0;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-01 .contents-box-inner {
+  .for-parent-child.parenting .contents-box-01 .contents-box-inner {
     min-height: calc( 431px * (300/640));
   }
-  .for-parent.parenting .contents-box-01 .contents-box-inner h2,
-  .for-parent.parenting .contents-box-01 .contents-box-inner p {
+  .for-parent-child.parenting .contents-box-01 .contents-box-inner h2,
+  .for-parent-child.parenting .contents-box-01 .contents-box-inner p {
     padding-left: 310px;
   }
 }
 
-.for-parent.parenting .contents-box-01 .contents-box-inner::after {
+.for-parent-child.parenting .contents-box-01 .contents-box-inner::after {
   display: block;
   content: '';
   width: calc(100vw * 0.8);
@@ -2478,12 +2502,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-01 .contents-box-inner::after {
+  .for-parent-child.parenting .contents-box-01 .contents-box-inner::after {
     display: none;
   }
 }
 
-.for-parent.parenting .contents-box-01 .special-box {
+.for-parent-child.parenting .contents-box-01 .special-box {
   background-color: #f3fCe6;
   border-radius: 10px;
   padding: 10px 20px 20px;
@@ -2492,12 +2516,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-01 .special-box {
+  .for-parent-child.parenting .contents-box-01 .special-box {
     padding: 10px 30px 20px;
   }
 }
 
-.for-parent.parenting .contents-box-01 .special-box::before {
+.for-parent-child.parenting .contents-box-01 .special-box::before {
   display: block;
   content: '';
   width: 22px;
@@ -2511,17 +2535,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-01 .special-box::before {
+  .for-parent-child.parenting .contents-box-01 .special-box::before {
     left: 439px;
   }
 }
 
-.for-parent.parenting .contents-box-01 .special-box h3 {
-  font-family: "M PLUS Rounded 1c";
-  color: #1b8924;
-  border: 0;
-  margin: 0;
-  padding: 0;
+.for-parent-child.parenting .contents-box-01 .special-box h3 {
   background-image: url(./images/pages/letter-icon.png);
   background-repeat: no-repeat;
   background-size: auto 60px;
@@ -2530,42 +2549,42 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-01 .special-box h3 {
+  .for-parent-child.parenting .contents-box-01 .special-box h3 {
     line-height: 60px;
   }
 }
 
-.for-parent.parenting .contents-box-01 .special-box p {
+.for-parent-child.parenting .contents-box-01 .special-box p {
   font-size: 14px;
 }
 
-.for-parent.parenting .contents-box-02 {
+.for-parent-child.parenting .contents-box-02 {
   padding-bottom: 10px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-02 {
+  .for-parent-child.parenting .contents-box-02 {
     padding-bottom: 0;
   }
 }
 
-.for-parent.parenting .contents-box-02 h2 {
+.for-parent-child.parenting .contents-box-02 h2 {
   margin-bottom: 10px;
 }
 
-.for-parent.parenting .contents-box-02 ul {
+.for-parent-child.parenting .contents-box-02 ul {
   list-style-type: none;
   padding: 0;
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-02 ul {
+  .for-parent-child.parenting .contents-box-02 ul {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-.for-parent.parenting .contents-box-02 li {
+.for-parent-child.parenting .contents-box-02 li {
   border-radius: 10px;
   border: 3px solid #95cb40;
   padding: 20px !important;
@@ -2574,7 +2593,7 @@ p {
   line-height: 1.8;
 }
 
-.for-parent.parenting .contents-box-02 li::after {
+.for-parent-child.parenting .contents-box-02 li::after {
   content: '';
   display: inline-block;
   background-image: url(./images/pages/fukidashi.png);
@@ -2588,44 +2607,44 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-02 li {
+  .for-parent-child.parenting .contents-box-02 li {
     width: 440px;
     font-size: 14px;
     margin-right: 20px;
   }
-  .for-parent.parenting .contents-box-02 li:nth-child(2n) {
+  .for-parent-child.parenting .contents-box-02 li:nth-child(2n) {
     margin-right: 0;
   }
 }
 
-.for-parent.parenting .contents-box-03 {
+.for-parent-child.parenting .contents-box-03 {
   background-color: #f3fCe6;
   border-radius: 10px;
   padding: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-03 {
+  .for-parent-child.parenting .contents-box-03 {
     padding: 20px 30px;
   }
 }
 
-.for-parent.parenting .contents-box-03 h2 {
+.for-parent-child.parenting .contents-box-03 h2 {
   color: #1b8924;
 }
 
-.for-parent.parenting .contents-box-03 .contents-box-inner {
+.for-parent-child.parenting .contents-box-03 .contents-box-inner {
   margin-bottom: 20px;
 }
 
-.for-parent.parenting .contents-box-03 .link-box {
+.for-parent-child.parenting .contents-box-03 .link-box {
   position: relative;
   width: 80%;
   margin: 0 auto;
   width: 100%;
 }
 
-.for-parent.parenting .contents-box-03 .link-box::before {
+.for-parent-child.parenting .contents-box-03 .link-box::before {
   display: block;
   content: '';
   width: 0;
@@ -2638,17 +2657,17 @@ p {
   left: 14px;
 }
 
-.for-parent.parenting .contents-box-03 .link-box a {
+.for-parent-child.parenting .contents-box-03 .link-box a {
   text-decoration: none;
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-03 .link-box {
+  .for-parent-child.parenting .contents-box-03 .link-box {
     width: 360px;
   }
 }
 
-.for-parent.parenting .contents-box-03 .link-box a {
+.for-parent-child.parenting .contents-box-03 .link-box a {
   background-color: #95cb40;
   color: #fff;
   padding: 14px 4px;
@@ -2659,25 +2678,25 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-03 .link-box a:hover {
+  .for-parent-child.parenting .contents-box-03 .link-box a:hover {
     background-color: #1b8924;
   }
 }
 
-.for-parent.parenting .contents-box-03 .link-box a {
+.for-parent-child.parenting .contents-box-03 .link-box a {
   letter-spacing: 0;
 }
 
 @media screen and (min-width: 600px) {
-  .for-parent.parenting .contents-box-03 .link-box {
+  .for-parent-child.parenting .contents-box-03 .link-box {
     width: 60%;
   }
-  .for-parent.parenting .contents-box-03 .link-box a {
+  .for-parent-child.parenting .contents-box-03 .link-box a {
     letter-spacing: 0.1em;
   }
 }
 
-.for-parent.parenting .contents-box-04 h2 {
+.for-parent-child.parenting .contents-box-04 h2 {
   background-image: url(./images/pages/fukidashi-icon.png);
   background-repeat: no-repeat;
   background-size: auto 50px;
@@ -2686,27 +2705,27 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent.parenting .contents-box-04 h2 {
+  .for-parent-child.parenting .contents-box-04 h2 {
     display: inline-block;
   }
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner {
   border: 3px solid #eee;
   border-radius: 10px;
   padding: 10px 20px;
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner dl {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner dl {
   border-bottom: 1px solid #eee;
   padding: 0 0 0 40px;
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner dl:last-child {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner dl:last-child {
   border-bottom: 0;
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner dl dt {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner dl dt {
   position: relative;
   background-image: url(./images/pages/accordion-close.png);
   background-repeat: no-repeat;
@@ -2718,26 +2737,26 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  .for-parent.parenting .contents-box-04 .contents-box-inner dl dt {
+  .for-parent-child.parenting .contents-box-04 .contents-box-inner dl dt {
     font-size: 18px;
   }
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner dl dt:hover {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner dl dt:hover {
   color: #1b8924;
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner dl dt.open {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner dl dt.open {
   background-image: url(./images/pages/accordion-open.png);
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner dl dt .question-no {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner dl dt .question-no {
   color: #95cb40;
   position: absolute;
   left: -40px;
 }
 
-.for-parent.parenting .contents-box-04 .contents-box-inner dl dd {
+.for-parent-child.parenting .contents-box-04 .contents-box-inner dl dd {
   padding: 0 0 15px 0;
 }
 
@@ -2897,12 +2916,301 @@ p {
 }
 
 .childabuse .contents-box-03 .contents-box-inner h3 {
-  color: #1b8924;
-  border: 0;
-  padding: 0;
-  margin: 0;
   margin-bottom: 10px;
-  font-family: "M PLUS Rounded 1c";
+}
+
+/* 里親・養親支援 activity/fosterparent */
+.activity-child.fosterparent {
+  /* 導入 */
+  /* 電話番号 */
+  /* 特別養親サロン */
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-01 {
+    background-image: url(./images/pages/main-fosterparent.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.activity-child.fosterparent .contents-box-01 .contents-box-inner h2 {
+  margin-bottom: 10px;
+}
+
+.activity-child.fosterparent .contents-box-01 .contents-box-inner p {
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-01 .contents-box-inner p {
+    margin-bottom: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-01 .contents-box-inner {
+    min-height: calc( 431px * (300/640));
+    display: flex;
+    align-items: center;
+  }
+  .activity-child.fosterparent .contents-box-01 .contents-box-inner h2,
+  .activity-child.fosterparent .contents-box-01 .contents-box-inner p {
+    padding-left: 310px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-fosterparent.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
+    display: none;
+  }
+}
+
+.activity-child.fosterparent .contents-box-02 > p {
+  margin-bottom: 10px;
+}
+
+.activity-child.fosterparent .contents-box-02 .contents-box-inner {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  padding: 10px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-02 .contents-box-inner {
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(./images/pages/telno_bg.png);
+    background-repeat: no-repeat;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    height: 127px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-02 .contents-box-inner dl {
+  width: 90%;
+  margin: 0 auto 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-02 .contents-box-inner dl:first-of-type {
+    width: 420px;
+    min-width: 420px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
+  background-image: url(./images/pages/telno.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: 80%;
+  max-width: 370px;
+  height: calc(100vw * 0.8 / 740 * 80);
+  max-height: 40px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
+    width: 370px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-02 .contents-box-inner dl:last-of-type {
+  background-color: #fff;
+  padding: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-02 .contents-box-inner dl:last-of-type {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.activity-child.fosterparent .contents-box-02 .contents-box-inner dl:last-of-type dd {
+  overflow: hidden;
+}
+
+.activity-child.fosterparent .contents-box-02 .contents-box-inner dl:last-of-type dd p {
+  margin: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-02 .contents-box-inner dl:last-of-type dd p {
+    font-size: 15px;
+    float: left;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+}
+
+.activity-child.fosterparent .contents-box-02 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-02 .addition {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 h3 {
+  margin-bottom: 10px;
+}
+
+.activity-child.fosterparent .contents-box-03 > p {
+  margin-bottom: 10px;
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box {
+    padding: 0 45px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box dl {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box dl dt {
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dt .title-highlight {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2f091+0,e2f091+100&0+0,0+69,1+70,1+90,0+91 */
+  background: -moz-linear-gradient(top, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e2f091', endColorstr='#00e2f091',GradientType=0 );
+  /* IE6-9 */
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li {
+  padding-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li:first-child {
+    font-size: 13px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li:nth-child(2) {
+  font-size: 18px;
+  color: #1b8924;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li:nth-child(2) {
+    font-size: 20px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table tr {
+  background-color: transparent;
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table th, .activity-child.fosterparent .contents-box-03 .schedule-box dl dd table td {
+  border-color: #ddd;
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table td {
+  background-color: transparent;
+  padding-left: 25px;
+}
+
+.activity-child.fosterparent .contents-box-04 {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-04 {
+    padding: 20px 30px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-04 h2 {
+  color: #1b8924;
 }
 
 /* list */

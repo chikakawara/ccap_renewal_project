@@ -115,3 +115,82 @@ $txt-base-color02: #333;
     top: (10 + $top_padding) * -1;
   }
 }
+
+/* コンテンツ内電話番号 */
+@mixin tel-within-contents {
+  .contents-box-inner {
+    background-color: $base-color;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px 0;
+    @include screen-pc {
+      background-color: transparent;
+      border-radius: 0;
+      background-image: url(./images/pages/telno_bg.png);
+      background-repeat: no-repeat;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0 40px;
+      height: 127px;
+    }
+    dl {
+      width: 90%;
+      margin: 0 auto 10px;
+      &:first-of-type {
+        @include screen-pc {
+          width: 420px;
+          min-width: 420px;
+        }
+        dd {
+          &:last-child {
+            background-image: url(./images/pages/telno.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: transparent;
+            width: 80%;
+            max-width: 370px;
+            height: calc(100vw * 0.8 / 740 * 80);
+            max-height: 40px;
+            @include screen-pc {
+              width: 370px;
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        background-color: #fff;
+        padding: 10px;
+        @include screen-pc {
+          background-color: transparent;
+          margin: 0;
+          padding: 0;
+        }
+        dd {
+          overflow: hidden;
+          p {
+            margin: 0;
+            @include screen-pc {
+              font-size: 15px;
+              float: left;
+              line-height: 1.4;
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+      dt {
+        color: $secondary-color;
+        font-size: 18px;
+      }
+    }
+  }
+  .addition {
+    @include screen-pc {
+      text-align: right;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+}
