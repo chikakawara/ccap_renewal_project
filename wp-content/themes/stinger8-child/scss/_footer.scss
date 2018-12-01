@@ -1,8 +1,32 @@
 /* footer */
+/* pageTopBtn用variable */
+$pagetopBtnHeight: 60px;
+$pagetopBtnBottomMargin: 20px;
+
+/* pagetop btn */
+.pagetop-wrapper {
+  cursor: pointer;
+  z-index: 100;
+  &.fixed {
+    position: fixed;
+    bottom: $pagetopBtnBottomMargin;
+    right: 10px;
+  }
+  &.static {
+    position: static;
+    text-align: right;
+    margin: 0 10px $pagetopBtnBottomMargin 0;
+  }
+  a {
+    width: 60px;
+    height: auto;
+    display: inline-block;
+  }
+}
 
 #footer {
   padding: 30px 0 0;
-  margin-top: 20px;
+  margin-top: $pagetopBtnHeight + $pagetopBtnBottomMargin;
   background-color: $base-color;
   @include wavebg($imgname: wavebg-green, $top_padding: 30px);
   #footer-in {
@@ -281,26 +305,5 @@
         margin: 0;
       }
     }
-  }
-}
-
-/* pagetop btn */
-.pagetop-wrapper {
-  cursor: pointer;
-  z-index: 100;
-  &.fixed {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-  }
-  &.static {
-    position: static;
-    text-align: right;
-    margin: 0 10px 10px 0;
-  }
-  a {
-    width: 60px;
-    height: auto;
-    display: inline-block;
   }
 }

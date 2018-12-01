@@ -641,9 +641,34 @@ p {
 }
 
 /* footer */
+/* pageTopBtn用variable */
+/* pagetop btn */
+.pagetop-wrapper {
+  cursor: pointer;
+  z-index: 100;
+}
+
+.pagetop-wrapper.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.pagetop-wrapper.static {
+  position: static;
+  text-align: right;
+  margin: 0 10px 20px 0;
+}
+
+.pagetop-wrapper a {
+  width: 60px;
+  height: auto;
+  display: inline-block;
+}
+
 #footer {
   padding: 30px 0 0;
-  margin-top: 20px;
+  margin-top: 80px;
   background-color: #f3fCe6;
   /* utility menu */
 }
@@ -1075,30 +1100,6 @@ p {
     right: 0;
     margin: 0;
   }
-}
-
-/* pagetop btn */
-.pagetop-wrapper {
-  cursor: pointer;
-  z-index: 100;
-}
-
-.pagetop-wrapper.fixed {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-.pagetop-wrapper.static {
-  position: static;
-  text-align: right;
-  margin: 0 10px 10px 0;
-}
-
-.pagetop-wrapper a {
-  width: 60px;
-  height: auto;
-  display: inline-block;
 }
 
 /* sidebar */
