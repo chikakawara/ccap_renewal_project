@@ -2923,6 +2923,423 @@ p {
   margin-bottom: 10px;
 }
 
+/* グループケアを申し込む for-parent/groupcare */
+.for-parent-child.groupcare {
+  /* 導入 */
+  /* グループの種類 */
+  /* お母さんへの手紙 */
+  /* 参加者の声 */
+  /* あなたを待っています */
+  /* 申し込み方法 */
+}
+
+.for-parent-child.groupcare h2 {
+  color: #1b8924;
+}
+
+.for-parent-child.groupcare .contents-box-01 h2 {
+  margin-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 h2 {
+    background-image: url(./images/pages/main-groupcare.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    padding-left: 330px;
+    display: flex;
+    align-items: center;
+    min-height: calc( 431px * (300/640));
+  }
+}
+
+.for-parent-child.groupcare .contents-box-01 h2::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-groupcare.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 h2::after {
+    display: none;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-01 ul {
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 ul {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-01 ul li {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 ul li {
+    width: 440px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-01 ul li:last-child {
+  margin-top: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 ul li:last-child {
+    margin-top: 0;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-01 ul li strong {
+  color: #1b8924;
+  font-weight: normal;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 ul li strong {
+    font-size: 18px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-02 .contents-box-inner {
+  border-radius: 10px;
+  border: 3px solid #95cb40;
+  padding: 0 20px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-02 .contents-box-inner {
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-02 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-02 .contents-box-inner dl {
+    border-bottom: 0;
+    border-right: 2px dotted #95cb40;
+    width: 295px;
+    padding: 0 20px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-02 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-02 .contents-box-inner dl:last-child {
+    border-right: 0;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-02 .contents-box-inner dl dt {
+  color: #1b8924;
+}
+
+.for-parent-child.groupcare .contents-box-02 .contents-box-inner dl dd {
+  font-size: 0.9em;
+}
+
+.for-parent-child.groupcare .contents-box-03 h2 small {
+  color: #666;
+  font-size: 0.7em;
+}
+
+.for-parent-child.groupcare .contents-box-03 .contents-box-inner {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px;
+  color: #666;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-03 .contents-box-inner {
+    padding: 30px 40px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-03 .contents-box-inner strong {
+  color: #1b8924;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 35px 0;
+  display: block;
+}
+
+.for-parent-child.groupcare .contents-box-04 .contents-box-inner {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-04 .contents-box-inner {
+    padding: 10px 45px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-04 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-04 .contents-box-inner dl {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-04 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.for-parent-child.groupcare .contents-box-04 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-04 .contents-box-inner dl dt {
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+    align-self: flex-start;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-04 .contents-box-inner dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-04 .contents-box-inner dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-05 {
+    position: relative;
+    margin-top: 90px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-05 h2 {
+  color: #333;
+  font-size: 16px;
+  background-color: #f8f664;
+  padding: 20px 10px;
+  border-radius: 28px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-05 h2 {
+    color: transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-image: url(./images/pages/waitingforyou.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 132px;
+    height: 100px;
+    position: absolute;
+    top: -68px;
+    right: 20px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-05 h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: calc( 50% - 10px);
+  border-color: transparent;
+  border-width: 10px;
+  border-style: solid;
+  border-top-color: #f8f664;
+  border-bottom-width: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-05 h2::after {
+    display: none;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-05 .catch {
+  margin-bottom: 5px;
+}
+
+.for-parent-child.groupcare .contents-box-05 .catch li {
+  font-size: 18px;
+  color: #1b8924;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-05 .catch li {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 14px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-05 .contents-box-inner p {
+    text-align: center;
+  }
+}
+
+.for-parent-child.groupcare .register-btn {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.for-parent-child.groupcare .register-btn::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+.for-parent-child.groupcare .register-btn a {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .register-btn {
+    width: 300px;
+  }
+}
+
+.for-parent-child.groupcare .register-btn a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .register-btn a:hover {
+    background-color: #1b8924;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-06 .contents-box-inner {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  color: #666;
+  padding: 20px 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-06 .contents-box-inner {
+    padding: 20px 30px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
+  padding-left: 40px;
+  position: relative;
+  font-size: 16px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
+    font-size: 18px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li:first-child {
+  margin-bottom: 10px;
+}
+
+.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  background-color: #95cb40;
+  color: #fff;
+  display: block;
+  float: left;
+  line-height: 22px;
+  margin-left: -40px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li::before {
+    font-size: 16px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-06 .note {
+  text-align: right;
+  margin-top: 5px;
+}
+
 /* 里親・養親支援 activity/fosterparent */
 .activity-child.fosterparent {
   /* 導入 */
