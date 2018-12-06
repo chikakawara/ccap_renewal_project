@@ -10,6 +10,16 @@
 /* 斜め線アンダーラインタイトル */
 /* 波背景 */
 /* コンテンツ内電話番号 */
+/* table */
+/* dl角丸枠 dtとddがpcで並列、spで直列になるもの dlの外側divに入れる */
+/*  */
+/* base-color角丸枠 */
+/* base-color角丸枠用吹き出し矢印 */
+/* 吹き出しコメント ulの外側のdivに設定 */
+/* pc用 main画像 */
+/* sp用 after擬似要素main画像 */
+/* アイコン付き小見出し */
+/* 丸数字リスト olに設定 */
 /*
 Theme Name: STINGER8 Child
 Template: stinger8
@@ -2086,12 +2096,17 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-01 .contents-box-inner-01 {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
     background-image: url(./images/pages/main-hotline.png);
     background-size: 300px auto;
     background-repeat: no-repeat;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .hotline .contents-box-01 .contents-box-inner-01 {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
     min-height: calc( 431px * (300/640));
   }
 }
@@ -2240,14 +2255,15 @@ p {
 }
 
 .hotline .contents-box-03 .contents-box-inner {
-  background-color: #f3fCe6;
   border-radius: 10px;
-  padding: 15px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
 }
 
 @media print, screen and (min-width: 960px) {
   .hotline .contents-box-03 .contents-box-inner {
-    padding: 25px;
+    padding: 25px 25px;
   }
 }
 
@@ -2303,12 +2319,17 @@ p {
   .hotline .contents-box-04 li {
     width: 440px;
     font-size: 14px;
-  }
-  .hotline .contents-box-04 li:first-child {
     margin-right: 20px;
   }
+  .hotline .contents-box-04 li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
   .hotline .contents-box-04 li:last-child {
     width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -2466,6 +2487,25 @@ p {
   }
 }
 
+.for-parent-child.parenting .contents-box-01 .contents-box-inner::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-parenting.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.parenting .contents-box-01 .contents-box-inner::after {
+    display: none;
+  }
+}
+
 .for-parent-child.parenting .contents-box-01 .contents-box-inner h2 {
   margin-bottom: 10px;
 }
@@ -2490,36 +2530,19 @@ p {
   }
 }
 
-.for-parent-child.parenting .contents-box-01 .contents-box-inner::after {
-  display: block;
-  content: '';
-  width: calc(100vw * 0.8);
-  max-width: 640px;
-  height: calc(100vw * 0.8 / 640 * 431);
-  max-height: 431px;
-  margin: 0 auto;
-  background-image: url(./images/pages/main-parenting.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@media print, screen and (min-width: 960px) {
-  .for-parent-child.parenting .contents-box-01 .contents-box-inner::after {
-    display: none;
-  }
-}
-
 .for-parent-child.parenting .contents-box-01 .special-box {
-  background-color: #f3fCe6;
   border-radius: 10px;
-  padding: 10px 20px 20px;
+  background-color: #f3fCe6;
+  padding: 10px 20px;
+  color: #666;
+  padding-bottom: 20px;
   position: relative;
   margin-top: 40px;
 }
 
 @media print, screen and (min-width: 960px) {
   .for-parent-child.parenting .contents-box-01 .special-box {
-    padding: 10px 30px 20px;
+    padding: 10px 30px;
   }
 }
 
@@ -2539,6 +2562,12 @@ p {
 @media print, screen and (min-width: 960px) {
   .for-parent-child.parenting .contents-box-01 .special-box::before {
     left: 439px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.parenting .contents-box-01 .special-box {
+    padding-bottom: 20px;
   }
 }
 
@@ -2563,7 +2592,7 @@ p {
 }
 
 .for-parent-child.parenting .contents-box-02 {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2622,9 +2651,10 @@ p {
 }
 
 .for-parent-child.parenting .contents-box-03 {
-  background-color: #f3fCe6;
   border-radius: 10px;
-  padding: 20px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2772,9 +2802,10 @@ p {
 }
 
 .childabuse .special-box {
-  background-color: #f3fCe6;
   border-radius: 10px;
-  padding: 20px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
   position: relative;
   margin-top: 30px;
 }
@@ -2903,19 +2934,27 @@ p {
 }
 
 .childabuse .contents-box-03 .contents-box-inner {
-  background-color: #f3fCe6;
   border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
   background-image: url(./images/pages/town.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
-  padding: 20px 20px 100px;
+  padding-bottom: 100px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .contents-box-03 .contents-box-inner {
+    padding: 30px 40px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
   .childabuse .contents-box-03 .contents-box-inner {
     background-size: 560px 90px;
-    padding: 30px 40px 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -2941,18 +2980,6 @@ p {
   margin-bottom: 0;
 }
 
-@media print, screen and (min-width: 960px) {
-  .for-parent-child.groupcare .contents-box-01 h2 {
-    background-image: url(./images/pages/main-groupcare.png);
-    background-size: 300px auto;
-    background-repeat: no-repeat;
-    padding-left: 330px;
-    display: flex;
-    align-items: center;
-    min-height: calc( 431px * (300/640));
-  }
-}
-
 .for-parent-child.groupcare .contents-box-01 h2::after {
   display: block;
   content: '';
@@ -2972,6 +2999,23 @@ p {
   }
 }
 
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 h2 {
+    background-image: url(./images/pages/main-groupcare.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 h2 {
+    padding-left: 330px;
+    display: flex;
+    align-items: center;
+    min-height: calc( 431px * (300/640));
+  }
+}
+
 .for-parent-child.groupcare .contents-box-01 ul {
   display: flex;
   flex-flow: column;
@@ -2985,11 +3029,18 @@ p {
 }
 
 .for-parent-child.groupcare .contents-box-01 ul li {
-  background-color: #f3fCe6;
   border-radius: 10px;
-  width: 100%;
+  background-color: #f3fCe6;
   padding: 30px 20px;
+  color: #666;
+  width: 100%;
   text-align: center;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-01 ul li {
+    padding: 30px 20px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -3076,7 +3127,7 @@ p {
 .for-parent-child.groupcare .contents-box-03 .contents-box-inner {
   border-radius: 10px;
   background-color: #f3fCe6;
-  padding: 20px;
+  padding: 20px 20px;
   color: #666;
 }
 
@@ -3281,8 +3332,8 @@ p {
 .for-parent-child.groupcare .contents-box-06 .contents-box-inner {
   border-radius: 10px;
   background-color: #f3fCe6;
-  color: #666;
   padding: 20px 15px;
+  color: #666;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -3359,6 +3410,25 @@ p {
   }
 }
 
+.activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-fosterparent.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
+    display: none;
+  }
+}
+
 .activity-child.fosterparent .contents-box-01 .contents-box-inner h2 {
   margin-bottom: 10px;
 }
@@ -3382,25 +3452,6 @@ p {
   .activity-child.fosterparent .contents-box-01 .contents-box-inner h2,
   .activity-child.fosterparent .contents-box-01 .contents-box-inner p {
     padding-left: 310px;
-  }
-}
-
-.activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
-  display: block;
-  content: '';
-  width: calc(100vw * 0.8);
-  max-width: 640px;
-  height: calc(100vw * 0.8 / 640 * 431);
-  max-height: 431px;
-  margin: 0 auto;
-  background-image: url(./images/pages/main-fosterparent.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
-    display: none;
   }
 }
 
@@ -3528,7 +3579,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.fosterparent .contents-box-03 .schedule-box {
-    padding: 0 45px;
+    padding: 10px 45px;
   }
 }
 
@@ -3548,7 +3599,6 @@ p {
 .activity-child.fosterparent .contents-box-03 .schedule-box dl:last-child {
   border-bottom: 0;
   margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .activity-child.fosterparent .contents-box-03 .schedule-box dl dt {
@@ -3575,6 +3625,21 @@ p {
 }
 
 .activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box {
+    padding: 0 45px;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl:last-child {
+  padding-bottom: 0;
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li {
   padding-bottom: 0;
 }
 
@@ -3595,26 +3660,26 @@ p {
   }
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table {
   margin-top: 10px;
   font-size: 14px;
   border-color: #ddd;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table tr {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table tr {
   background-color: transparent;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table th, .activity-child.fosterparent .contents-box-03 .schedule-box dl dd table td {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table th, .activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table td {
   border-color: #ddd;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table th {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table th {
   font-weight: normal;
   background-color: #f5f5f5;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table td {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table td {
   background-color: transparent;
   padding-left: 25px;
 }
