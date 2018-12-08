@@ -51,6 +51,13 @@ wp_enqueue_script(
     true
 );
 
+// theme配下のimage path取得
+function imagepassshort($arg) {
+$content = str_replace('"images/', '"' . get_bloginfo('stylesheet_directory') . '/images/', $arg);
+return $content;
+}
+add_action('the_content', 'imagepassshort');
+
 // メニューカスタム版
 register_nav_menus(
  array(

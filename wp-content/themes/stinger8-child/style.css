@@ -1809,7 +1809,7 @@ p {
   .actions-box {
     /* 背景ドットを隠して白くするため幅100% */
     background-color: #fff;
-    padding: 50px 0;
+    padding: 50px 0 20px;
     margin-bottom: 0;
   }
 }
@@ -1839,6 +1839,7 @@ p {
   width: 100%;
   text-align: center;
   margin-right: 0;
+  margin-bottom: 20px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -1867,9 +1868,17 @@ p {
   flex-flow: column;
 }
 
+@media print, screen and (min-width: 960px) {
+  .actions-box .actions-item .actions-item-contents > a {
+    display: block;
+    height: 202px;
+    max-height: 202px;
+  }
+}
+
 .actions-box .actions-item .actions-item-description {
   width: 90%;
-  margin: 20px auto;
+  margin: 10px auto 20px;
   text-align: center;
 }
 
@@ -2067,7 +2076,7 @@ p {
 }
 
 /* 電話で相談する for-parent/hotline */
-.hotline {
+.for-parent-child.hotline {
   /* タイトル */
   /* 導入 */
   /* 電話番号 */
@@ -2081,21 +2090,21 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .entry-title {
+  .for-parent-child.hotline .entry-title {
     margin-bottom: 0 !important;
   }
 }
 
-.hotline .contents-box-01 {
+.for-parent-child.hotline .contents-box-01 {
   /* キャッチ */
 }
 
-.hotline .contents-box-01 .contents-box-inner-01 {
+.for-parent-child.hotline .contents-box-01 .contents-box-inner-01 {
   margin-bottom: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-01 .contents-box-inner-01 {
+  .for-parent-child.hotline .contents-box-01 .contents-box-inner-01 {
     background-image: url(./images/pages/main-hotline.png);
     background-size: 300px auto;
     background-repeat: no-repeat;
@@ -2103,7 +2112,7 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-01 .contents-box-inner-01 {
+  .for-parent-child.hotline .contents-box-01 .contents-box-inner-01 {
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -2111,20 +2120,20 @@ p {
   }
 }
 
-.hotline .contents-box-01 .catch {
+.for-parent-child.hotline .contents-box-01 .catch {
   padding: 0;
   list-style: none;
   color: #95cb40;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-01 .catch {
+  .for-parent-child.hotline .contents-box-01 .catch {
     padding-left: 310px;
     letter-spacing: 0.18em;
   }
 }
 
-.hotline .contents-box-01 .catch li {
+.for-parent-child.hotline .contents-box-01 .catch li {
   font-size: 18px;
   line-height: 1.2;
   margin-bottom: 4px;
@@ -2132,12 +2141,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-01 .catch li {
+  .for-parent-child.hotline .contents-box-01 .catch li {
     font-size: 22px;
   }
 }
 
-.hotline .contents-box-01 .contents-box-inner-02::after {
+.for-parent-child.hotline .contents-box-01 .contents-box-inner-02::after {
   display: block;
   content: '';
   width: calc(100vw * 0.8);
@@ -2151,12 +2160,12 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-01 .contents-box-inner-02::after {
+  .for-parent-child.hotline .contents-box-01 .contents-box-inner-02::after {
     display: none;
   }
 }
 
-.hotline .contents-box-02 .contents-box-inner {
+.for-parent-child.hotline .contents-box-02 .contents-box-inner {
   background-color: #f3fCe6;
   border-radius: 10px;
   display: flex;
@@ -2165,7 +2174,7 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-02 .contents-box-inner {
+  .for-parent-child.hotline .contents-box-02 .contents-box-inner {
     background-color: transparent;
     border-radius: 0;
     background-image: url(./images/pages/telno_bg.png);
@@ -2178,19 +2187,19 @@ p {
   }
 }
 
-.hotline .contents-box-02 .contents-box-inner dl {
+.for-parent-child.hotline .contents-box-02 .contents-box-inner dl {
   width: 90%;
   margin: 0 auto 10px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-02 .contents-box-inner dl:first-of-type {
+  .for-parent-child.hotline .contents-box-02 .contents-box-inner dl:first-of-type {
     width: 420px;
     min-width: 420px;
   }
 }
 
-.hotline .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
+.for-parent-child.hotline .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
   background-image: url(./images/pages/telno.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -2202,34 +2211,34 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
+  .for-parent-child.hotline .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
     width: 370px;
   }
 }
 
-.hotline .contents-box-02 .contents-box-inner dl:last-of-type {
+.for-parent-child.hotline .contents-box-02 .contents-box-inner dl:last-of-type {
   background-color: #fff;
   padding: 10px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-02 .contents-box-inner dl:last-of-type {
+  .for-parent-child.hotline .contents-box-02 .contents-box-inner dl:last-of-type {
     background-color: transparent;
     margin: 0;
     padding: 0;
   }
 }
 
-.hotline .contents-box-02 .contents-box-inner dl:last-of-type dd {
+.for-parent-child.hotline .contents-box-02 .contents-box-inner dl:last-of-type dd {
   overflow: hidden;
 }
 
-.hotline .contents-box-02 .contents-box-inner dl:last-of-type dd p {
+.for-parent-child.hotline .contents-box-02 .contents-box-inner dl:last-of-type dd p {
   margin: 0;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-02 .contents-box-inner dl:last-of-type dd p {
+  .for-parent-child.hotline .contents-box-02 .contents-box-inner dl:last-of-type dd p {
     font-size: 15px;
     float: left;
     line-height: 1.4;
@@ -2237,24 +2246,24 @@ p {
   }
 }
 
-.hotline .contents-box-02 .contents-box-inner dl dt {
+.for-parent-child.hotline .contents-box-02 .contents-box-inner dl dt {
   color: #1b8924;
   font-size: 18px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-02 .addition {
+  .for-parent-child.hotline .contents-box-02 .addition {
     text-align: right;
     margin-top: 10px;
     font-size: 14px;
   }
 }
 
-.hotline .contents-box-03 h2 {
+.for-parent-child.hotline .contents-box-03 h2 {
   margin-bottom: 5px;
 }
 
-.hotline .contents-box-03 .contents-box-inner {
+.for-parent-child.hotline .contents-box-03 .contents-box-inner {
   border-radius: 10px;
   background-color: #f3fCe6;
   padding: 20px 20px;
@@ -2262,38 +2271,38 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-03 .contents-box-inner {
+  .for-parent-child.hotline .contents-box-03 .contents-box-inner {
     padding: 25px 25px;
   }
 }
 
-.hotline .contents-box-04 {
+.for-parent-child.hotline .contents-box-04 {
   padding-bottom: 5px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-04 {
+  .for-parent-child.hotline .contents-box-04 {
     padding-bottom: 0;
   }
 }
 
-.hotline .contents-box-04 h2 {
+.for-parent-child.hotline .contents-box-04 h2 {
   margin-bottom: 10px;
 }
 
-.hotline .contents-box-04 ul {
+.for-parent-child.hotline .contents-box-04 ul {
   list-style-type: none;
   padding: 0;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-04 ul {
+  .for-parent-child.hotline .contents-box-04 ul {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-.hotline .contents-box-04 li {
+.for-parent-child.hotline .contents-box-04 li {
   border-radius: 10px;
   border: 3px solid #95cb40;
   padding: 20px !important;
@@ -2302,7 +2311,7 @@ p {
   line-height: 1.8;
 }
 
-.hotline .contents-box-04 li::after {
+.for-parent-child.hotline .contents-box-04 li::after {
   content: '';
   display: inline-block;
   background-image: url(./images/pages/fukidashi.png);
@@ -2316,25 +2325,25 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-04 li {
+  .for-parent-child.hotline .contents-box-04 li {
     width: 440px;
     font-size: 14px;
     margin-right: 20px;
   }
-  .hotline .contents-box-04 li:nth-child(2n) {
+  .for-parent-child.hotline .contents-box-04 li:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-04 li:last-child {
+  .for-parent-child.hotline .contents-box-04 li:last-child {
     width: 100%;
     margin-right: 0;
   }
 }
 
-.hotline .contents-box-05,
-.hotline .contents-box-06 {
+.for-parent-child.hotline .contents-box-05,
+.for-parent-child.hotline .contents-box-06 {
   background-color: #f3fCe6;
   border-radius: 10px;
   display: flex;
@@ -2343,8 +2352,8 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-05,
-  .hotline .contents-box-06 {
+  .for-parent-child.hotline .contents-box-05,
+  .for-parent-child.hotline .contents-box-06 {
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -2352,8 +2361,8 @@ p {
   }
 }
 
-.hotline .contents-box-05 h2,
-.hotline .contents-box-06 h2 {
+.for-parent-child.hotline .contents-box-05 h2,
+.for-parent-child.hotline .contents-box-06 h2 {
   color: #1b8924;
   font-size: 18px;
   background-repeat: no-repeat;
@@ -2364,8 +2373,8 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-05 h2,
-  .hotline .contents-box-06 h2 {
+  .for-parent-child.hotline .contents-box-05 h2,
+  .for-parent-child.hotline .contents-box-06 h2 {
     width: 280px;
     min-width: 280px;
     max-width: 280px;
@@ -2374,64 +2383,64 @@ p {
   }
 }
 
-.hotline .contents-box-05 .contents-box-inner,
-.hotline .contents-box-06 .contents-box-inner {
+.for-parent-child.hotline .contents-box-05 .contents-box-inner,
+.for-parent-child.hotline .contents-box-06 .contents-box-inner {
   padding: 15px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-05 .contents-box-inner,
-  .hotline .contents-box-06 .contents-box-inner {
+  .for-parent-child.hotline .contents-box-05 .contents-box-inner,
+  .for-parent-child.hotline .contents-box-06 .contents-box-inner {
     font-size: 14px;
     padding: 15px 40px 15px 0;
   }
 }
 
-.hotline .contents-box-05 .contents-box-inner .note,
-.hotline .contents-box-06 .contents-box-inner .note {
+.for-parent-child.hotline .contents-box-05 .contents-box-inner .note,
+.for-parent-child.hotline .contents-box-06 .contents-box-inner .note {
   margin-top: 10px;
   font-size: 14px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-05 .contents-box-inner .note,
-  .hotline .contents-box-06 .contents-box-inner .note {
+  .for-parent-child.hotline .contents-box-05 .contents-box-inner .note,
+  .for-parent-child.hotline .contents-box-06 .contents-box-inner .note {
     font-size: 13px;
     line-height: 1.5;
   }
 }
 
-.hotline .contents-box-05 {
+.for-parent-child.hotline .contents-box-05 {
   margin-bottom: 10px;
 }
 
-.hotline .contents-box-05 h2 {
+.for-parent-child.hotline .contents-box-05 h2 {
   background-image: url(./images/pages/smartphone-icon.png);
   background-position: 0;
   padding-left: 50px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-05 h2 {
+  .for-parent-child.hotline .contents-box-05 h2 {
     background-position: top center;
     padding: 60px 0 0 0;
   }
 }
 
-.hotline .contents-box-06 h2 {
+.for-parent-child.hotline .contents-box-06 h2 {
   background-image: url(./images/pages/scale-icon.png);
   background-position: 10px;
   padding-left: 75px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-06 h2 {
+  .for-parent-child.hotline .contents-box-06 h2 {
     background-position: top center;
     padding: 60px 0 0 0;
   }
 }
 
-.hotline .contents-box-07 h2 {
+.for-parent-child.hotline .contents-box-07 h2 {
   background-image: url(./images/pages/fukidashi-icon.png);
   background-repeat: no-repeat;
   background-size: auto 50px;
@@ -2440,34 +2449,34 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-07 h2 {
+  .for-parent-child.hotline .contents-box-07 h2 {
     display: inline-block;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .hotline .contents-box-07 .lead {
+  .for-parent-child.hotline .contents-box-07 .lead {
     display: inline-block;
     margin-left: 10px;
   }
 }
 
-.hotline .contents-box-07 .contents-box-inner {
+.for-parent-child.hotline .contents-box-07 .contents-box-inner {
   border: 3px solid #eee;
   border-radius: 10px;
 }
 
-.hotline .contents-box-07 .contents-box-inner ul {
+.for-parent-child.hotline .contents-box-07 .contents-box-inner ul {
   padding: 0 20px;
   list-style-type: none;
 }
 
-.hotline .contents-box-07 .contents-box-inner ul li {
+.for-parent-child.hotline .contents-box-07 .contents-box-inner ul li {
   border-bottom: 1px solid #eee;
   padding: 10px 0;
 }
 
-.hotline .contents-box-07 .contents-box-inner ul li:last-child {
+.for-parent-child.hotline .contents-box-07 .contents-box-inner ul li:last-child {
   border-bottom: 0;
 }
 
@@ -3389,6 +3398,169 @@ p {
 .for-parent-child.groupcare .contents-box-06 .note {
   text-align: right;
   margin-top: 5px;
+}
+
+/* 活動内容 activity/fosterparent */
+.page-parent.activity {
+  /* 導入 */
+}
+
+.page-parent.activity h2 {
+  color: #1b8924;
+}
+
+.page-parent.activity .contents-box-01 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .page-parent.activity .contents-box-01 ul {
+    margin-left: 2%;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul {
+    justify-content: space-between;
+    padding-left: 15px;
+  }
+}
+
+.page-parent.activity .contents-box-01 ul li {
+  width: 100%;
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  .page-parent.activity .contents-box-01 ul li {
+    width: 47%;
+    margin-right: 2%;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul li {
+    width: calc((867px / 3) - 15px);
+    margin-right: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+.page-parent.activity .contents-box-01 ul li a {
+  display: block;
+}
+
+.page-parent.activity .contents-box-01 ul li .actions-items-inner > a {
+  height: 185px;
+  max-height: 185px;
+}
+
+.page-parent.activity .contents-box-01 ul li dl {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.page-parent.activity .contents-box-01 ul li dl dt {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul li dl dt {
+    font-size: 18px;
+  }
+}
+
+.page-parent.activity .contents-box-01 ul li dl dt span {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2f091+0,e2f091+100&0+0,0+69,1+70,1+90,0+91 */
+  background: -moz-linear-gradient(top, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(226, 240, 145, 0) 0%, rgba(226, 240, 145, 0) 69%, #e2f091 70%, #e2f091 90%, rgba(226, 240, 145, 0) 91%, rgba(226, 240, 145, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e2f091', endColorstr='#00e2f091',GradientType=0 );
+  /* IE6-9 */
+}
+
+.page-parent.activity .contents-box-01 ul li dl dd {
+  font-size: 18px;
+  color: #666;
+  letter-spacing: 0.05em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul li dl dd {
+    font-size: 14px;
+  }
+}
+
+.page-parent.activity .contents-box-01 ul li dl dd p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul li:nth-child(4) dt {
+    font-size: 16px;
+  }
+}
+
+.page-parent.activity .contents-box-01 ul .actions-more-link {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page-parent.activity .contents-box-01 ul .actions-more-link::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+.page-parent.activity .contents-box-01 ul .actions-more-link a {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul .actions-more-link {
+    width: 80%;
+  }
+}
+
+.page-parent.activity .contents-box-01 ul .actions-more-link a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul .actions-more-link a:hover {
+    background-color: #1b8924;
+  }
 }
 
 /* 里親・養親支援 activity/fosterparent */

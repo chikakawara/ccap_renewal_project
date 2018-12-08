@@ -333,7 +333,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   @include screen-pc {
     /* 背景ドットを隠して白くするため幅100% */
     background-color: #fff;
-    padding: 50px 0;
+    padding: 50px 0 20px;
     margin-bottom: 0;
   }
   .actions-items-wrapper {
@@ -355,6 +355,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
     width: 100%;
     text-align: center;
     margin-right: 0;
+    margin-bottom: 20px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -372,10 +373,17 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
     .actions-item-contents {
       display: flex;
       flex-flow: column;
+      > a {
+        @include screen-pc {
+          display: block;
+          height: 202px;
+          max-height: 202px;
+        }
+      }
     }
     .actions-item-description {
       width: 90%;
-      margin: 20px auto;
+      margin: 10px auto 20px;
       text-align: center;
       strong {
         display: inline-block;

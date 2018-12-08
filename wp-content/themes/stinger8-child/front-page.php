@@ -131,8 +131,8 @@
 
 						<div class="actions-item">
 							<div class="actions-item-contents">
-								<a href="">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="電話相談">
+								<a href="./activity/consultation">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-hotline.png" alt="電話相談">
 								</a>
 								<div class="actions-item-description">
 									<strong>電話相談</strong>
@@ -140,14 +140,14 @@
 								</div>
 							</div>
 							<div class="actions-more-link">
-								<a href="">詳しくはこちら</a>
+								<a href="./activity/consultation">詳しくはこちら</a>
 							</div>
 						</div>
 
 						<div class="actions-item">
 							<div class="actions-item-contents">
-								<a href="">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="グループケア">
+								<a href="./activity/groupcare">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-groupcare.png" alt="グループケア">
 								</a>
 								<div class="actions-item-description">
 									<strong>グループケア</strong>
@@ -155,14 +155,14 @@
 								</div>
 							</div>
 							<div class="actions-more-link">
-								<a href="">詳しくはこちら</a>
+								<a href="./activity/groupcare">詳しくはこちら</a>
 							</div>
 						</div>
 
 						<div class="actions-item">
 							<div class="actions-item-contents">
-								<a href="">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="里親・養親支援">
+								<a href="./activity/fosterparent">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-fosterparent.png" alt="里親・養親支援">
 								</a>
 								<div class="actions-item-description">
 									<strong>里親・養親支援</strong>
@@ -170,14 +170,14 @@
 								</div>
 							</div>
 							<div class="actions-more-link">
-								<a href="">詳しくはこちら</a>
+								<a href="./activity/fosterparent">詳しくはこちら</a>
 							</div>
 						</div>
 
 						<div class="actions-item">
 							<div class="actions-item-contents">
-								<a href="">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="子どもケア">
+								<a href="./activity/childcare">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-childcare.png" alt="子どもケア">
 								</a>
 								<div class="actions-item-description">
 									<strong>子どもケア</strong>
@@ -185,14 +185,14 @@
 								</div>
 							</div>
 							<div class="actions-more-link">
-								<a href="">詳しくはこちら</a>
+								<a href="./activity/childcare">詳しくはこちら</a>
 							</div>
 						</div>
 
 						<div class="actions-item">
 							<div class="actions-item-contents">
-							<a href="">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="ペアレンティングプログラム">
+							<a href="./activity/parenting">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-parenting.png" alt="ペアレンティングプログラム">
 							</a>
 								<div class="actions-item-description">
 									<strong>ペアレンティングプログラム</strong>
@@ -200,14 +200,14 @@
 								</div>
 							</div>
 							<div class="actions-more-link">
-								<a href="">詳しくはこちら</a>
+								<a href="./activity/parenting">詳しくはこちら</a>
 							</div>
 						</div>
 
 						<div class="actions-item">
 							<div class="actions-item-contents">
-								<a href="">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/actions-img01.png" alt="研修・セミナー">
+								<a href="./info">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-seminar.png" alt="研修・セミナー">
 								</a>
 								<div class="actions-item-description">
 									<strong>研修・セミナー</strong>
@@ -215,7 +215,7 @@
 								</div>
 							</div>
 							<div class="actions-more-link">
-								<a href="">詳しくはこちら</a>
+								<a href="./info">詳しくはこちら</a>
 							</div>
 						</div>
 
