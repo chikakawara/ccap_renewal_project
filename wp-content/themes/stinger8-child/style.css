@@ -10,7 +10,7 @@
 /* 斜め線アンダーラインタイトル */
 /* 波背景 */
 /* コンテンツ内電話番号 */
-/* table */
+/* table thとtdが並列の場合だけ使用すること sp表示ではthとtdが並列になる */
 /* dl角丸枠 dtとddがpcで並列、spで直列になるもの dlの外側divに入れる */
 /*  */
 /* base-color角丸枠 */
@@ -3838,26 +3838,34 @@ p {
   }
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table {
   margin-top: 10px;
   font-size: 14px;
   border-color: #ddd;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table tr {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table tr {
   background-color: transparent;
+  display: flex;
+  flex-flow: column;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table th, .activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table td {
+@media screen and (min-width: 600px) {
+  .activity-child.fosterparent .contents-box-03 .schedule-box dl dd table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table th, .activity-child.fosterparent .contents-box-03 .schedule-box dl dd table td {
   border-color: #ddd;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table th {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table th {
   font-weight: normal;
   background-color: #f5f5f5;
 }
 
-.activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li table td {
+.activity-child.fosterparent .contents-box-03 .schedule-box dl dd table td {
   background-color: transparent;
   padding-left: 25px;
 }

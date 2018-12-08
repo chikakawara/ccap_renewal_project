@@ -195,13 +195,18 @@ $txt-base-color02: #333;
   }
 }
 
-/* table */
+/* table thとtdが並列の場合だけ使用すること sp表示ではthとtdが並列になる */
 @mixin table-simple {
   margin-top: 10px;
   font-size: 14px;
   border-color: #ddd;
   tr {
     background-color: transparent;
+    display: flex;
+    flex-flow: column;
+    @include screen-tablet {
+      display: table-row;
+    }
   }
   th,td {
     border-color: #ddd;
