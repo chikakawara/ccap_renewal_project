@@ -58,6 +58,12 @@ return $content;
 }
 add_action('the_content', 'imagepassshort');
 
+// 投稿画面からサイト内ページのpath取得
+add_shortcode('url', 'shortcode_url');
+function shortcode_url() {
+return get_bloginfo('url');
+}
+
 // メニューカスタム版
 register_nav_menus(
  array(
