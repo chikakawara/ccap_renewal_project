@@ -3424,7 +3424,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .page-parent.activity .contents-box-01 ul {
     justify-content: space-between;
-    padding-left: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -3448,7 +3448,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .page-parent.activity .contents-box-01 ul li {
-    width: calc((867px / 3) - 15px);
+    width: calc((885px / 3) - 15px);
     margin-right: 15px;
     margin-bottom: 40px;
   }
@@ -3458,9 +3458,11 @@ p {
   display: block;
 }
 
-.page-parent.activity .contents-box-01 ul li .actions-items-inner > a {
-  height: 185px;
-  max-height: 185px;
+@media print, screen and (min-width: 960px) {
+  .page-parent.activity .contents-box-01 ul li .actions-items-inner > a {
+    height: 185px;
+    max-height: 185px;
+  }
 }
 
 .page-parent.activity .contents-box-01 ul li dl {
@@ -3518,13 +3520,13 @@ p {
   }
 }
 
-.page-parent.activity .contents-box-01 ul .actions-more-link {
+.page-parent.activity .contents-box-01 ul .link-box {
   position: relative;
   width: 80%;
   margin: 0 auto;
 }
 
-.page-parent.activity .contents-box-01 ul .actions-more-link::before {
+.page-parent.activity .contents-box-01 ul .link-box::before {
   display: block;
   content: '';
   width: 0;
@@ -3537,17 +3539,17 @@ p {
   left: 14px;
 }
 
-.page-parent.activity .contents-box-01 ul .actions-more-link a {
+.page-parent.activity .contents-box-01 ul .link-box a {
   text-decoration: none;
 }
 
 @media print, screen and (min-width: 960px) {
-  .page-parent.activity .contents-box-01 ul .actions-more-link {
+  .page-parent.activity .contents-box-01 ul .link-box {
     width: 80%;
   }
 }
 
-.page-parent.activity .contents-box-01 ul .actions-more-link a {
+.page-parent.activity .contents-box-01 ul .link-box a {
   background-color: #95cb40;
   color: #fff;
   padding: 14px 4px;
@@ -3558,7 +3560,7 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .page-parent.activity .contents-box-01 ul .actions-more-link a:hover {
+  .page-parent.activity .contents-box-01 ul .link-box a:hover {
     background-color: #1b8924;
   }
 }

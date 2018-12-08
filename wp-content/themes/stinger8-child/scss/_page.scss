@@ -722,7 +722,7 @@
       }
       @include screen-pc {
         justify-content: space-between;
-        padding-left: 15px;
+        margin-left: 15px;
       }
       li {
         width: 100%;
@@ -738,7 +738,7 @@
           margin-right: 2%;
         }
         @include screen-pc {
-          width: calc((867px / 3) - 15px);
+          width: calc((885px / 3) - 15px);
           margin-right: 15px;
           margin-bottom: 40px;
         }
@@ -746,8 +746,10 @@
           display: block;
         }
         .actions-items-inner > a {
-          height: 185px;
-          max-height: 185px;
+          @include screen-pc {
+            height: 185px;
+            max-height: 185px;
+          }
         }
         dl {
           display: flex;
@@ -787,7 +789,7 @@
           }
         }
       }
-      .actions-more-link {
+      .link-box {
         @include rounded-rectangle-link($pc-width:80%);
       }
     }
