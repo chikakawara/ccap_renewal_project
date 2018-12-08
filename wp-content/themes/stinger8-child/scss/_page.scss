@@ -783,6 +783,7 @@
         }
         &:nth-child(4) {
           dt {
+            font-size: 18px;
             @include screen-pc {
             font-size: 16px;
             }
