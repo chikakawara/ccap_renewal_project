@@ -217,7 +217,6 @@ $txt-base-color02: #333;
   }
   td {
     background-color: transparent;
-    padding-left: 25px;
   }
 }
 
@@ -422,5 +421,15 @@ $txt-base-color02: #333;
         font-size: 16px;
       }
     }
+  }
+}
+
+/* 注意書き */
+@mixin note {
+  margin-top: 10px;
+  font-size: 14px;
+  @include screen-pc {
+    font-size: 13px;
+    line-height: 1.5;
   }
 }

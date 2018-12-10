@@ -20,6 +20,7 @@
 /* sp用 after擬似要素main画像 */
 /* アイコン付き小見出し */
 /* 丸数字リスト olに設定 */
+/* 注意書き */
 /*
 Theme Name: STINGER8 Child
 Template: stinger8
@@ -1988,6 +1989,11 @@ p {
   font-size: 15px;
 }
 
+.post table tr th, .post table tr td {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 /* 共通 */
 .static-page {
   margin: 0 15px;
@@ -3413,7 +3419,7 @@ p {
   margin-top: 5px;
 }
 
-/* 活動内容 activity/fosterparent */
+/* 活動内容 activity */
 .page-parent.activity {
   /* 導入 */
 }
@@ -3872,7 +3878,6 @@ p {
 
 .activity-child.fosterparent .contents-box-03 .schedule-box dl dd table td {
   background-color: transparent;
-  padding-left: 25px;
 }
 
 .activity-child.fosterparent .contents-box-04 {
@@ -3884,6 +3889,224 @@ p {
 @media print, screen and (min-width: 960px) {
   .activity-child.fosterparent .contents-box-04 {
     padding: 20px 30px;
+  }
+}
+
+/* 電話相談 activity/consultation */
+.activity-child.consultation {
+  /* 導入 */
+  /* 法律相談説明 */
+  /* 電話番号 */
+}
+
+.activity-child.consultation .contents-box-01 p {
+  margin-bottom: 0;
+}
+
+.activity-child.consultation .contents-box-01 p::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-hotline.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-01 p::after {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-01 p {
+    background-image: url(./images/pages/main-hotline.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-01 p {
+    padding-left: 330px;
+    display: flex;
+    align-items: center;
+    min-height: calc( 431px * (300/640));
+  }
+}
+
+.activity-child.consultation .contents-box-03 h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-image: url(./images/pages/calendar-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.consultation .contents-box-03 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.activity-child.consultation .contents-box-03 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.consultation .contents-box-03 table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.consultation .contents-box-03 table th, .activity-child.consultation .contents-box-03 table td {
+  border-color: #ddd;
+}
+
+.activity-child.consultation .contents-box-03 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.consultation .contents-box-03 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-03 table th {
+    width: 200px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-03 table td {
+    padding: 15px 20px !important;
+  }
+}
+
+.activity-child.consultation .contents-box-03 table td dt {
+  color: #1b8924;
+}
+
+.activity-child.consultation .contents-box-03 table td dd {
+  font-size: 14px;
+}
+
+.activity-child.consultation .contents-box-03 .note {
+  font-size: 14px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-03 .note {
+    text-align: right;
+    line-height: 1.4;
+  }
+}
+
+.activity-child.consultation .contents-box-04 .contents-box-inner {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  padding: 10px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-04 .contents-box-inner {
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(./images/pages/telno_bg.png);
+    background-repeat: no-repeat;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    height: 127px;
+  }
+}
+
+.activity-child.consultation .contents-box-04 .contents-box-inner dl {
+  width: 90%;
+  margin: 0 auto 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-04 .contents-box-inner dl:first-of-type {
+    width: 420px;
+    min-width: 420px;
+  }
+}
+
+.activity-child.consultation .contents-box-04 .contents-box-inner dl:first-of-type dd:last-child {
+  background-image: url(./images/pages/telno.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: 80%;
+  max-width: 370px;
+  height: calc(100vw * 0.8 / 740 * 80);
+  max-height: 40px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-04 .contents-box-inner dl:first-of-type dd:last-child {
+    width: 370px;
+  }
+}
+
+.activity-child.consultation .contents-box-04 .contents-box-inner dl:last-of-type {
+  background-color: #fff;
+  padding: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-04 .contents-box-inner dl:last-of-type {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.activity-child.consultation .contents-box-04 .contents-box-inner dl:last-of-type dd {
+  overflow: hidden;
+}
+
+.activity-child.consultation .contents-box-04 .contents-box-inner dl:last-of-type dd p {
+  margin: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-04 .contents-box-inner dl:last-of-type dd p {
+    font-size: 15px;
+    float: left;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+}
+
+.activity-child.consultation .contents-box-04 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-04 .addition {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
   }
 }
 
