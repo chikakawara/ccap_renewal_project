@@ -88,6 +88,18 @@
       margin-bottom: 0;
     }
   }
+
+  /* hr */
+  hr {
+    height: 1px;
+    background-color: #ddd;
+    color: #ddd;
+    border: none;
+    margin-bottom: 30px;
+    @include screen-pc {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 /* 電話で相談する for-parent/hotline */
@@ -710,6 +722,12 @@
       @include base-color-box(20px, 30px, 20px, 15px);
       ol {
         @include circle-num-list;
+        li {
+          font-size: 16px;
+          @include screen-pc {
+            font-size: 18px;
+          }
+        }
       }
     }
     .note {
@@ -946,5 +964,164 @@
   /* 電話番号 */
   .contents-box-04 {
     @include tel-within-contents;
+  }
+}
+
+/* グループケア activity/groupcare*/
+.activity-child.groupcare{
+  /* 導入 */
+  .contents-box-01 {
+    p {
+      margin-bottom: 0;
+      @include sp-main-img(main-groupcare);
+      @include pc-main-img(main-groupcare);
+      @include screen-pc {
+        padding-left: 330px;
+        display: flex;
+        align-items: center;
+        min-height: calc( 431px * (300/640));
+      }
+    }
+  }
+  /* どんなところ？ */
+  .contents-box-02 {
+    .contents-box-inner-01,
+    .contents-box-inner-02 {
+      @include base-color-box($padding-pc-topbottom:20px, $padding-pc-side:30px);
+      h3 {
+        margin-bottom: 10px;
+      }
+      margin-bottom: 20px;
+      @include screen-pc {
+        margin-bottom: 10px;
+      }
+    }
+    .contents-box-inner-01 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include screen-pc {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      ol {
+        @include circle-num-list;
+      }
+    }
+    .contents-box-inner-02 {
+      margin-bottom: 20px;
+    }
+    /* MCG実施日時 */
+    > h3 {
+      margin-top: 20px;
+      @include heading-with-icon($imgname:'calendar-icon');
+    }
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 200px;
+        }
+      }
+      td {
+        @include screen-pc {
+          padding: 15px 20px !important;
+        }
+      }
+    }
+  }
+  /* 電話番号 */
+  .contents-box-03 {
+    @include tel-within-contents;
+  }
+  /* 子育てひとやすみ */
+  .contents-box-04 {
+     ul {
+       margin: 10px auto;
+       @include screen-pc {
+         display: inline-block;
+       }
+      li {
+        background-color: $base-color;
+        color: $secondary-color;
+        border-radius: 4px;
+        padding: 15px;
+        font-size: 16px;
+        line-height: 1;
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        @include screen-pc {
+          display: inline-block;
+          margin-bottom: 0;
+        }
+      }
+    }
+    ul + p {
+      @include screen-pc {
+        display: inline-block;
+      }
+    }
+    h3 {
+      margin-top: 20px;
+      @include heading-with-icon($imgname:'calendar-icon');
+    }
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 200px;
+        }
+      }
+      td {
+        dt {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  /* ほっとホットサロン */
+  .contents-box-05 {
+    h3 {
+      margin-top: 20px;
+      &:first-of-type {
+        @include heading-with-icon($imgname:'groupcare-member-icon');
+      }
+      &:nth-of-type(2) {
+        @include heading-with-icon($imgname:'calendar-icon');
+      }
+    }
+    .contents-box-inner-02 {
+      border: 3px solid $primary-color;
+      border-radius: 10px;
+      padding: 15px;
+      @include screen-pc {
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 200px;
+        }
+      }
+      td {
+        p {
+          background-color: #eee;
+          padding: 5px;
+          display: inline-block;
+        }
+        dt {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  /* 申込問い合わせ */
+  .contents-box-06 {
+    @include base-color-box;
   }
 }

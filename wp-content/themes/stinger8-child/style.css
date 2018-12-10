@@ -20,7 +20,6 @@
 /* sp用 after擬似要素main画像 */
 /* アイコン付き小見出し */
 /* 丸数字リスト olに設定 */
-/* 注意書き */
 /*
 Theme Name: STINGER8 Child
 Template: stinger8
@@ -2005,6 +2004,7 @@ p {
   /* 記事全体 */
   /* タイトル */
   /* content box */
+  /* hr */
 }
 
 @media print, screen and (min-width: 960px) {
@@ -2079,6 +2079,20 @@ p {
 
 .static-page .contents-box:last-child {
   margin-bottom: 0;
+}
+
+.static-page hr {
+  height: 1px;
+  background-color: #ddd;
+  color: #ddd;
+  border: none;
+  margin-bottom: 30px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .static-page hr {
+    margin-bottom: 40px;
+  }
 }
 
 /* 電話で相談する for-parent/hotline */
@@ -3380,17 +3394,7 @@ p {
 .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
   padding-left: 40px;
   position: relative;
-  font-size: 16px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
-    font-size: 18px;
-  }
-}
-
-.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li:first-child {
-  margin-bottom: 10px;
+  font-size: inherit;
 }
 
 .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li::before {
@@ -3411,6 +3415,16 @@ p {
 @media print, screen and (min-width: 960px) {
   .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li::before {
     font-size: 16px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
+  font-size: 16px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
+    font-size: 18px;
   }
 }
 
@@ -4107,6 +4121,481 @@ p {
     text-align: right;
     margin-top: 10px;
     font-size: 14px;
+  }
+}
+
+/* グループケア activity/groupcare*/
+.activity-child.groupcare {
+  /* 導入 */
+  /* どんなところ？ */
+  /* 電話番号 */
+  /* 子育てひとやすみ */
+  /* ほっとホットサロン */
+  /* 申込問い合わせ */
+}
+
+.activity-child.groupcare .contents-box-01 p {
+  margin-bottom: 0;
+}
+
+.activity-child.groupcare .contents-box-01 p::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-groupcare.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-01 p::after {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-01 p {
+    background-image: url(./images/pages/main-groupcare.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-01 p {
+    padding-left: 330px;
+    display: flex;
+    align-items: center;
+    min-height: calc( 431px * (300/640));
+  }
+}
+
+.activity-child.groupcare .contents-box-02 {
+  /* MCG実施日時 */
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-01,
+.activity-child.groupcare .contents-box-02 .contents-box-inner-02 {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-02 .contents-box-inner-01,
+  .activity-child.groupcare .contents-box-02 .contents-box-inner-02 {
+    padding: 20px 30px;
+  }
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-01 h3,
+.activity-child.groupcare .contents-box-02 .contents-box-inner-02 h3 {
+  margin-bottom: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-02 .contents-box-inner-01,
+  .activity-child.groupcare .contents-box-02 .contents-box-inner-02 {
+    margin-bottom: 10px;
+  }
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-01 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-02 .contents-box-inner-01 {
+    margin-bottom: 10px;
+  }
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-01 p {
+  margin-bottom: 15px;
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-01 ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-01 ol li {
+  padding-left: 40px;
+  position: relative;
+  font-size: inherit;
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-01 ol li::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  background-color: #95cb40;
+  color: #fff;
+  display: block;
+  float: left;
+  line-height: 22px;
+  margin-left: -40px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-02 .contents-box-inner-01 ol li::before {
+    font-size: 16px;
+  }
+}
+
+.activity-child.groupcare .contents-box-02 .contents-box-inner-02 {
+  margin-bottom: 20px;
+}
+
+.activity-child.groupcare .contents-box-02 > h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-image: url(./images/pages/calendar-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.groupcare .contents-box-02 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.activity-child.groupcare .contents-box-02 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.groupcare .contents-box-02 table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.groupcare .contents-box-02 table th, .activity-child.groupcare .contents-box-02 table td {
+  border-color: #ddd;
+}
+
+.activity-child.groupcare .contents-box-02 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.groupcare .contents-box-02 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-02 table th {
+    width: 200px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-02 table td {
+    padding: 15px 20px !important;
+  }
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  padding: 10px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .contents-box-inner {
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(./images/pages/telno_bg.png);
+    background-repeat: no-repeat;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    height: 127px;
+  }
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner dl {
+  width: 90%;
+  margin: 0 auto 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:first-of-type {
+    width: 420px;
+    min-width: 420px;
+  }
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner dl:first-of-type dd:last-child {
+  background-image: url(./images/pages/telno.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: 80%;
+  max-width: 370px;
+  height: calc(100vw * 0.8 / 740 * 80);
+  max-height: 40px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:first-of-type dd:last-child {
+    width: 370px;
+  }
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type {
+  background-color: #fff;
+  padding: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd {
+  overflow: hidden;
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd p {
+  margin: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd p {
+    font-size: 15px;
+    float: left;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .addition {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.activity-child.groupcare .contents-box-04 ul {
+  margin: 10px auto;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-04 ul {
+    display: inline-block;
+  }
+}
+
+.activity-child.groupcare .contents-box-04 ul li {
+  background-color: #f3fCe6;
+  color: #1b8924;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-04 ul li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-04 ul + p {
+    display: inline-block;
+  }
+}
+
+.activity-child.groupcare .contents-box-04 h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-image: url(./images/pages/calendar-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.groupcare .contents-box-04 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.activity-child.groupcare .contents-box-04 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.groupcare .contents-box-04 table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.groupcare .contents-box-04 table th, .activity-child.groupcare .contents-box-04 table td {
+  border-color: #ddd;
+}
+
+.activity-child.groupcare .contents-box-04 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.groupcare .contents-box-04 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-04 table th {
+    width: 200px;
+  }
+}
+
+.activity-child.groupcare .contents-box-04 table td dt {
+  color: #1b8924;
+}
+
+.activity-child.groupcare .contents-box-05 h3 {
+  margin-top: 20px;
+}
+
+.activity-child.groupcare .contents-box-05 h3:first-of-type {
+  margin-bottom: 10px;
+  background-image: url(./images/pages/groupcare-member-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.groupcare .contents-box-05 h3:nth-of-type(2) {
+  margin-bottom: 10px;
+  background-image: url(./images/pages/calendar-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.groupcare .contents-box-05 .contents-box-inner-02 {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-05 .contents-box-inner-02 {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.activity-child.groupcare .contents-box-05 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.activity-child.groupcare .contents-box-05 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.groupcare .contents-box-05 table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.groupcare .contents-box-05 table th, .activity-child.groupcare .contents-box-05 table td {
+  border-color: #ddd;
+}
+
+.activity-child.groupcare .contents-box-05 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.groupcare .contents-box-05 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-05 table th {
+    width: 200px;
+  }
+}
+
+.activity-child.groupcare .contents-box-05 table td p {
+  background-color: #eee;
+  padding: 5px;
+  display: inline-block;
+}
+
+.activity-child.groupcare .contents-box-05 table td dt {
+  color: #1b8924;
+}
+
+.activity-child.groupcare .contents-box-06 {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-06 {
+    padding: 30px 40px;
   }
 }
 

@@ -397,13 +397,7 @@ $txt-base-color02: #333;
   li {
     padding-left: 40px;
     position: relative;
-    font-size: 16px;
-    @include screen-pc {
-      font-size: 18px;
-    }
-    &:first-child {
-      margin-bottom: 10px;
-    }
+    font-size: inherit;
     &::before {
       content: counter(my-counter);
       counter-increment: my-counter;
@@ -421,15 +415,5 @@ $txt-base-color02: #333;
         font-size: 16px;
       }
     }
-  }
-}
-
-/* 注意書き */
-@mixin note {
-  margin-top: 10px;
-  font-size: 14px;
-  @include screen-pc {
-    font-size: 13px;
-    line-height: 1.5;
   }
 }
