@@ -2800,9 +2800,31 @@ p {
 
 /* 虐待はなぜ... /for-parent/childabuse */
 .childabuse {
+  /* title */
   /* 導入 */
   /* 子どもの虐待とは */
   /* 親を責めないで */
+}
+
+.childabuse .static-page-title {
+  margin-bottom: 0 !important;
+  font-size: 24px !important;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse .static-page-title {
+    font-size: 26px !important;
+  }
+}
+
+.childabuse h2 {
+  font-size: 22px !important;
+}
+
+@media print, screen and (min-width: 960px) {
+  .childabuse h2 {
+    font-size: 24px !important;
+  }
 }
 
 .childabuse .special-box {
