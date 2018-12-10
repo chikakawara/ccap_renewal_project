@@ -2049,7 +2049,7 @@ p {
 .static-page .contents-box h2 {
   font-family: "M PLUS Rounded 1c";
   font-size: 24px;
-  color: #95cb40;
+  color: #1b8924;
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -2363,7 +2363,6 @@ p {
 
 .for-parent-child.hotline .contents-box-05 h2,
 .for-parent-child.hotline .contents-box-06 h2 {
-  color: #1b8924;
   font-size: 18px;
   background-repeat: no-repeat;
   background-size: auto 30px;
@@ -2672,10 +2671,6 @@ p {
   }
 }
 
-.for-parent-child.parenting .contents-box-03 h2 {
-  color: #1b8924;
-}
-
 .for-parent-child.parenting .contents-box-03 .contents-box-inner {
   margin-bottom: 20px;
 }
@@ -2979,10 +2974,6 @@ p {
   /* 参加者の声 */
   /* あなたを待っています */
   /* 申し込み方法 */
-}
-
-.for-parent-child.groupcare h2 {
-  color: #1b8924;
 }
 
 .for-parent-child.groupcare .contents-box-01 h2 {
@@ -3405,10 +3396,6 @@ p {
   /* 導入 */
 }
 
-.page-parent.activity h2 {
-  color: #1b8924;
-}
-
 .page-parent.activity .contents-box-01 ul {
   display: flex;
   flex-wrap: wrap;
@@ -3574,10 +3561,6 @@ p {
   /* 導入 */
   /* 電話番号 */
   /* 特別養親サロン */
-}
-
-.activity-child.fosterparent h2 {
-  color: #1b8924;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -3880,10 +3863,6 @@ p {
   .activity-child.fosterparent .contents-box-04 {
     padding: 20px 30px;
   }
-}
-
-.activity-child.fosterparent .contents-box-04 h2 {
-  color: #1b8924;
 }
 
 /* list */

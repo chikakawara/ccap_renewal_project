@@ -59,7 +59,7 @@
     h2 {
       @include font-rounded;
       font-size: 24px;
-      color: $primary-color;
+      color: $secondary-color;
       margin-bottom: 10px;
       line-height: 1.2;
     }
@@ -168,7 +168,6 @@
       padding: 10px 0;
     }
     h2 {
-      color: $secondary-color;
       font-size: 18px;
       background-repeat: no-repeat;
       background-size: auto 30px;
@@ -321,10 +320,6 @@
   /* 参加するには */
   .contents-box-03 {
     @include base-color-box($padding-pc-topbottom:20px, $padding-pc-side:30px);
-    h2 {
-      color: $secondary-color;
-      // margin-bottom: 0;
-    }
     .contents-box-inner {
       margin-bottom: 20px;
     }
@@ -511,9 +506,6 @@
 
 /* グループケアを申し込む for-parent/groupcare */
 .for-parent-child.groupcare {
-  h2 {
-    color: $secondary-color;
-  }
   /* 導入 */
   .contents-box-01 {
     h2 {
@@ -708,9 +700,6 @@
 
 /* 活動内容 activity/fosterparent */
 .page-parent.activity {
-  h2 {
-    color: $secondary-color;
-  }
   /* 導入 */
   .contents-box-01 {
     ul {
@@ -799,9 +788,6 @@
 
 /* 里親・養親支援 activity/fosterparent */
 .activity-child.fosterparent {
-  h2 {
-    color: $secondary-color;
-  }
   /* 導入 */
   .contents-box-01 {
     @include pc-main-img(main-fosterparent);
@@ -880,9 +866,6 @@
     padding: 15px;
     @include screen-pc {
       padding: 20px 30px;
-    }
-    h2 {
-      color: $secondary-color;
     }
   }
 }
