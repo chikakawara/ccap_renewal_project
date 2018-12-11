@@ -4888,6 +4888,287 @@ p {
   }
 }
 
+/* 電話相談 activity/childcare */
+.activity-child.childcare {
+  /* 導入 */
+  /* アタッチメント形成のための... */
+  /* 心理相談 */
+}
+
+.activity-child.childcare .contents-box-01 p {
+  margin-bottom: 0;
+}
+
+.activity-child.childcare .contents-box-01 p::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-childcare.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-01 p::after {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-01 p {
+    background-image: url(./images/pages/main-childcare.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-01 p {
+    padding-left: 330px;
+    display: flex;
+    align-items: center;
+    min-height: calc( 431px * (300/640));
+  }
+}
+
+.activity-child.childcare .contents-box-02 {
+  /* スケジュール */
+}
+
+.activity-child.childcare .contents-box-02 ul {
+  display: flex;
+  flex-flow: column;
+  margin: 20px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-02 ul {
+    flex-flow: row;
+  }
+}
+
+.activity-child.childcare .contents-box-02 ul li {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-02 ul li {
+    padding: 30px 40px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-02 ul li {
+    width: calc(100% / 3);
+    margin-right: 5px;
+  }
+  .activity-child.childcare .contents-box-02 ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+.activity-child.childcare .contents-box-02 ul li p:first-child {
+  color: #1b8924;
+  font-size: 16px;
+}
+
+.activity-child.childcare .contents-box-02 ul li:last-child p {
+  display: inline;
+}
+
+.activity-child.childcare .contents-box-02 h3 {
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  background-image: url(./images/pages/calendar-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.childcare .contents-box-02 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.activity-child.childcare .contents-box-02 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.childcare .contents-box-02 table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.childcare .contents-box-02 table th, .activity-child.childcare .contents-box-02 table td {
+  border-color: #ddd;
+}
+
+.activity-child.childcare .contents-box-02 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.childcare .contents-box-02 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-02 table th {
+    width: 200px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-02 table td {
+    padding: 10px 20px;
+  }
+}
+
+.activity-child.childcare .contents-box-03 {
+  /* 完全予約制 */
+  /* 対象 */
+  /* スケジュール */
+}
+
+.activity-child.childcare .contents-box-03 h3 {
+  margin-bottom: 10px;
+}
+
+.activity-child.childcare .contents-box-03 h3:last-of-type {
+  margin-bottom: 10px;
+  background-image: url(./images/pages/calendar-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.childcare .contents-box-03 p:nth-of-type(2) {
+  display: inline-block;
+  background-color: #F8F664;
+  padding: 2px 50px;
+  border-radius: 4px;
+}
+
+.activity-child.childcare .contents-box-03 p:nth-of-type(2) strong {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.activity-child.childcare .contents-box-03 .contents-box-inner {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-03 .contents-box-inner {
+    padding: 30px 40px;
+  }
+}
+
+.activity-child.childcare .contents-box-03 .contents-box-inner ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-child.childcare .contents-box-03 .contents-box-inner ol li {
+  padding-left: 40px;
+  position: relative;
+  font-size: inherit;
+}
+
+.activity-child.childcare .contents-box-03 .contents-box-inner ol li::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  background-color: #95cb40;
+  color: #fff;
+  display: block;
+  float: left;
+  line-height: 22px;
+  margin-left: -40px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-03 .contents-box-inner ol li::before {
+    font-size: 16px;
+  }
+}
+
+.activity-child.childcare .contents-box-03 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.activity-child.childcare .contents-box-03 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.childcare .contents-box-03 table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.childcare .contents-box-03 table th, .activity-child.childcare .contents-box-03 table td {
+  border-color: #ddd;
+}
+
+.activity-child.childcare .contents-box-03 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.childcare .contents-box-03 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-03 table th {
+    width: 200px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-03 table td {
+    padding: 20px;
+  }
+}
+
+.activity-child.childcare .contents-box-03 table td dt {
+  color: #1b8924;
+}
+
 /* list */
 @media print, screen and (min-width: 960px) {
   .list-box--wrapper {

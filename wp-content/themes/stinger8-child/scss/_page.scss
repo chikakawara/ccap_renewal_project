@@ -1250,3 +1250,117 @@
     }
   }
 }
+
+/* 電話相談 activity/childcare */
+.activity-child.childcare {
+  /* 導入 */
+  .contents-box-01 {
+    p {
+      margin-bottom: 0;
+      @include sp-main-img(main-childcare);
+      @include pc-main-img(main-childcare);
+      @include screen-pc {
+        padding-left: 330px;
+        display: flex;
+        align-items: center;
+        min-height: calc( 431px * (300/640));
+      }
+    }
+  }
+  /* アタッチメント形成のための... */
+  .contents-box-02 {
+    ul {
+      display: flex;
+      flex-flow: column;
+      margin: 20px 0;
+      @include screen-pc {
+        flex-flow: row;
+      }
+      li {
+        @include base-color-box;
+        margin-bottom: 10px;
+        @include screen-pc {
+          width: calc(100% / 3);
+          margin-right: 5px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        p {
+          &:first-child {
+            color: $secondary-color;
+            font-size: 16px;
+          }
+        }
+        &:last-child {
+          p {
+            display: inline;
+          }
+        }
+      }
+    }
+    /* スケジュール */
+    h3 {
+      margin-bottom: 10px;
+      @include heading-with-icon($imgname:'calendar-icon');
+    }
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 200px;
+        }
+      }
+      td {
+        @include screen-pc {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+  /* 心理相談 */
+  .contents-box-03 {
+    h3 {
+      margin-bottom: 10px;
+      &:last-of-type {
+        @include heading-with-icon($imgname:'calendar-icon');
+      }
+    }
+    /* 完全予約制 */
+    p:nth-of-type(2) {
+      display: inline-block;
+      background-color: #F8F664;
+      padding: 2px 50px;
+      border-radius: 4px;
+      strong {
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+    /* 対象 */
+    .contents-box-inner {
+      margin-bottom: 20px;
+      @include base-color-box;
+      ol {
+        @include circle-num-list;
+      }
+    }
+    /* スケジュール */
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 200px;
+        }
+      }
+      td {
+        @include screen-pc {
+          padding: 20px;
+        }
+        dt {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
