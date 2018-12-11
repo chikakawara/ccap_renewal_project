@@ -61,10 +61,10 @@ $pagetopBtnBottomMargin: 20px;
       }
     }
     > li {
-      width: calc((100vw - 30px) / 2);
+      width: calc(100% / 2);
       margin: 0 1px 1px 0;
       &:nth-child(2n) {
-        width: calc((100vw - 30px) / 2 - 1px);
+        width: calc(100% / 2 - 1px);
         margin-right: 0;
         @include screen-pc {
           width: 220px;
@@ -200,7 +200,7 @@ $pagetopBtnBottomMargin: 20px;
       @include link-with-arrow($left:8px);
       margin-right: 4px;
       margin-bottom: 4px;
-      width: calc((100vw - 30px) / 2 - 2px);
+      width: calc(100% / 2 - 2px);
       @include screen-pc {
         width: 164px;
       }
