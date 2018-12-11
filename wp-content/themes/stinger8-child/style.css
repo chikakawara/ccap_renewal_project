@@ -1993,6 +1993,15 @@ p {
   line-height: inherit;
 }
 
+.post h4 {
+  background-color: transparent;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
 /* 共通 */
 .static-page {
   margin: 0 15px;
@@ -4601,6 +4610,281 @@ p {
 @media print, screen and (min-width: 960px) {
   .activity-child.groupcare .contents-box-06 {
     padding: 30px 40px;
+  }
+}
+
+/* ペアレンティングプログラム activity/parenting */
+.activity-child.parenting {
+  /* 導入 */
+  /* プログラム内容 */
+  /* プログラムに参加するには */
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-01 {
+    background-image: url(./images/pages/main-parenting.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.activity-child.parenting .contents-box-01 .contents-box-inner::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-parenting.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-01 .contents-box-inner::after {
+    display: none;
+  }
+}
+
+.activity-child.parenting .contents-box-01 .contents-box-inner h2 {
+  margin-bottom: 10px;
+}
+
+.activity-child.parenting .contents-box-01 .contents-box-inner p {
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-01 .contents-box-inner p {
+    margin-bottom: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-01 .contents-box-inner {
+    min-height: calc( 431px * (300/640));
+  }
+  .activity-child.parenting .contents-box-01 .contents-box-inner h2,
+  .activity-child.parenting .contents-box-01 .contents-box-inner p {
+    padding-left: 310px;
+  }
+}
+
+.activity-child.parenting .contents-box-02 h2 small {
+  color: #333;
+  font-size: 16px;
+  display: block;
+  margin-top: 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 h2 small {
+    display: inline;
+    margin-top: 0;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner {
+    padding: 10px 45px;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+    align-self: flex-start;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
+  border-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dt {
+    align-self: center !important;
+    margin: 0;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dd h4 {
+  color: #1b8924;
+  font-size: 16px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dd h4 {
+    font-size: 15px;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner > p {
+  background-color: #f3fCe6;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 10px 0 30px;
+  color: #1b8924;
+  font-size: 16px;
+  position: relative;
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner > p::before {
+  content: '';
+  display: block;
+  background-image: url(./images/pages/plus.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  left: calc( 50% - 20px);
+  background-size: contain;
+}
+
+.activity-child.parenting .contents-box-03 {
+  /* 申込方法 */
+}
+
+.activity-child.parenting .contents-box-03 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.activity-child.parenting .contents-box-03 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.parenting .contents-box-03 table tr {
+    display: table-row;
+  }
+}
+
+.activity-child.parenting .contents-box-03 table th, .activity-child.parenting .contents-box-03 table td {
+  border-color: #ddd;
+}
+
+.activity-child.parenting .contents-box-03 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.activity-child.parenting .contents-box-03 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-03 table th {
+    width: 200px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-03 table td {
+    padding-left: 20px;
+  }
+}
+
+.activity-child.parenting .contents-box-03 .contents-box-inner {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-03 .contents-box-inner {
+    padding: 30px 40px;
+  }
+}
+
+.activity-child.parenting .contents-box-03 .contents-box-inner h3 {
+  margin-bottom: 15px;
+}
+
+.activity-child.parenting .contents-box-03 .contents-box-inner ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-child.parenting .contents-box-03 .contents-box-inner ol li {
+  padding-left: 40px;
+  position: relative;
+  font-size: inherit;
+}
+
+.activity-child.parenting .contents-box-03 .contents-box-inner ol li::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  background-color: #95cb40;
+  color: #fff;
+  display: block;
+  float: left;
+  line-height: 22px;
+  margin-left: -40px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-03 .contents-box-inner ol li::before {
+    font-size: 16px;
   }
 }
 
