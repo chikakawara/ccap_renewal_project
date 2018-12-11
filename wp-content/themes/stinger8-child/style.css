@@ -3329,7 +3329,8 @@ p {
   position: relative;
   width: 80%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin: 20px auto;
+  width: 100%;
 }
 
 .for-parent-child.groupcare .register-btn::before {
@@ -3351,7 +3352,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .for-parent-child.groupcare .register-btn {
-    width: 300px;
+    width: 320px;
   }
 }
 
@@ -3369,6 +3370,10 @@ p {
   .for-parent-child.groupcare .register-btn a:hover {
     background-color: #1b8924;
   }
+}
+
+.for-parent-child.groupcare .register-btn a {
+  letter-spacing: 0;
 }
 
 .for-parent-child.groupcare .contents-box-06 .contents-box-inner {

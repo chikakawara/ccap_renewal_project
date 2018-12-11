@@ -713,8 +713,12 @@
     }
   }
   .register-btn {
-    @include rounded-rectangle-link();
-    margin-top: 20px;
+    @include rounded-rectangle-link(320px);
+    margin: 20px auto;
+    width: 100%;
+    a {
+      letter-spacing: 0;
+    }
   }
   /* 申し込み方法 */
   .contents-box-06 {
