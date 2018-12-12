@@ -248,11 +248,11 @@ $txt-base-color02: #333;
       font-size: 18px;
       margin: 20px 0 5px;
       @include screen-pc {
+        margin: 0;
         font-size: 20px;
         width: 110px;
         min-width: 110px;
         text-align: center;
-        align-self: flex-start;
       }
     }
     dd {
@@ -281,7 +281,7 @@ $txt-base-color02: #333;
   }
 }
 
-/* base-color角丸枠用吹き出し矢印 */
+/* base-color角丸枠用吹き出し矢印 必ず本体にposition:relativeを入れる*/
 @mixin fukidashi-for-base-color-box {
   &::before {
     display: block;

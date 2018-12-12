@@ -14,7 +14,7 @@
 /* dl角丸枠 dtとddがpcで並列、spで直列になるもの dlの外側divに入れる */
 /*  */
 /* base-color角丸枠 */
-/* base-color角丸枠用吹き出し矢印 */
+/* base-color角丸枠用吹き出し矢印 必ず本体にposition:relativeを入れる*/
 /* 吹き出しコメント ulの外側のdivに設定 */
 /* pc用 main画像 */
 /* sp用 after擬似要素main画像 */
@@ -3236,11 +3236,11 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .for-parent-child.groupcare .contents-box-04 .contents-box-inner dl dt {
+    margin: 0;
     font-size: 20px;
     width: 110px;
     min-width: 110px;
     text-align: center;
-    align-self: flex-start;
   }
 }
 
@@ -3826,11 +3826,11 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.fosterparent .contents-box-03 .schedule-box dl dt {
+    margin: 0;
     font-size: 20px;
     width: 110px;
     min-width: 110px;
     text-align: center;
-    align-self: flex-start;
   }
 }
 
@@ -4725,11 +4725,11 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
+    margin: 0;
     font-size: 20px;
     width: 110px;
     min-width: 110px;
     text-align: center;
-    align-self: flex-start;
   }
 }
 
@@ -4747,13 +4747,6 @@ p {
 
 .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
   border-bottom: 0;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dt {
-    align-self: center !important;
-    margin: 0;
-  }
 }
 
 .activity-child.parenting .contents-box-02 .contents-box-inner dd h4 {
@@ -5167,6 +5160,210 @@ p {
 
 .activity-child.childcare .contents-box-03 table td dt {
   color: #1b8924;
+}
+
+/* 電話相談 activity/education */
+.activity-child.education {
+  /* 講師派遣 */
+  /* マスコミ */
+}
+
+.activity-child.education .contents-box-02 {
+  /* 講師派遣を希望される場合は */
+}
+
+.activity-child.education .contents-box-02 .special-box {
+  margin: 20px 0 30px;
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+  position: relative;
+  color: #1b8924;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 .special-box {
+    padding: 30px 40px;
+  }
+}
+
+.activity-child.education .contents-box-02 .special-box::before {
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url(./images/pages/hukidashi-basecolor.png);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  position: absolute;
+  top: -22px;
+  left: calc((100vw - 30px) / 2);
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 .special-box::before {
+    left: 439px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 .special-box {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.activity-child.education .contents-box-02 h3 {
+  margin-bottom: 10px;
+  background-image: url(./images/pages/speaker-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.education .contents-box-02 .contents-box-inner {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 .contents-box-inner {
+    padding: 10px 45px;
+  }
+}
+
+.activity-child.education .contents-box-02 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 .contents-box-inner dl {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.activity-child.education .contents-box-02 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.activity-child.education .contents-box-02 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 .contents-box-inner dl dt {
+    margin: 0;
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 .contents-box-inner dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.activity-child.education .contents-box-02 .contents-box-inner dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.activity-child.education .contents-box-03 {
+  /* 取材を希望される場合は */
+}
+
+.activity-child.education .contents-box-03 p {
+  margin-bottom: 20px;
+}
+
+.activity-child.education .contents-box-03 h3 {
+  margin-bottom: 10px;
+  background-image: url(./images/pages/camera-icon.png);
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  min-height: 30px;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.activity-child.education .contents-box-03 .contents-box-inner {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-03 .contents-box-inner {
+    padding: 10px 45px;
+  }
+}
+
+.activity-child.education .contents-box-03 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-03 .contents-box-inner dl {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.activity-child.education .contents-box-03 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.activity-child.education .contents-box-03 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-03 .contents-box-inner dl dt {
+    margin: 0;
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-03 .contents-box-inner dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.activity-child.education .contents-box-03 .contents-box-inner dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
 }
 
 /* list */

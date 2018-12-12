@@ -1185,12 +1185,6 @@
       dl:last-of-type {
         border-bottom: 0;
       }
-      dt {
-        @include screen-pc {
-          align-self: center !important;
-          margin: 0;
-        }
-      }
       dd {
         h4 {
           color: $secondary-color;
@@ -1361,6 +1355,44 @@
           color: $secondary-color;
         }
       }
+    }
+  }
+}
+
+/* 電話相談 activity/education */
+.activity-child.education {
+  /* 講師派遣 */
+  .contents-box-02 {
+    .special-box {
+      margin: 20px 0 30px;
+      @include base-color-box;
+      @include fukidashi-for-base-color-box;
+      position: relative;
+      color: $secondary-color;
+      @include screen-pc {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    /* 講師派遣を希望される場合は */
+    h3 {
+      @include heading-with-icon($imgname:'speaker-icon', $padding-left:60px);
+    }
+    .contents-box-inner {
+      @include dl-rounded-box;
+    }
+  }
+  /* マスコミ */
+  .contents-box-03 {
+    p {
+      margin-bottom: 20px;
+    }
+    /* 取材を希望される場合は */
+    h3 {
+      @include heading-with-icon($imgname:'camera-icon', $padding-left:60px);
+    }
+    .contents-box-inner {
+      @include dl-rounded-box;
     }
   }
 }
