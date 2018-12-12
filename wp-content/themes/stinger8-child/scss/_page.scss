@@ -1396,3 +1396,58 @@
     }
   }
 }
+
+/* 応援する support */
+.page-parent.support {
+  /* 導入 */
+  .contents-box-01 {
+    @include screen-pc {
+      text-align: center;
+    }
+  }
+  /* 法人の方 */
+  .contents-box-02,
+  .contents-box-03 {
+    .contents-box-inner {
+      @include dl-rounded-box;
+      dl {
+        @include screen-pc {
+          justify-content: space-between;
+        }
+      }
+      dt {
+        @include screen-pc {
+          width: 140px !important;
+          min-width: 140px !important;
+          text-align: left !important;
+          font-size: 18px !important;
+        }
+      }
+      dd {
+        display: flex;
+        flex-flow: column;
+        @include screen-pc {
+          flex-flow: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+        p {
+          margin-bottom: 10px;
+          @include screen-pc {
+            width: 454px;
+            margin-right: 20px;
+            margin-bottom: 0;
+          }
+        }
+        .link-box {
+          @include rounded-rectangle-link(180px);
+          a {
+            @include screen-pc {
+              padding: 6px 4px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
