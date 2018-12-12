@@ -417,3 +417,46 @@ $txt-base-color02: #333;
     }
   }
 }
+
+/* 黄色い吹き出し(PCは画像、SPはCSS) h2またはh3に使用 */
+/* 親要素にposition:relative指定 */
+@mixin yellow-fukidashi($imgname, $top, $right) {
+  color: $txt-base-color02;
+  font-size: 16px;
+  background-color: #f8f664;
+  padding: 20px 10px;
+  border-radius: 28px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  @include screen-pc {
+    color: transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-image: url(./images/pages/#{$imgname}.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 132px;
+    height: 100px;
+    position: absolute;
+    top: $top;
+    right: $right;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: calc( 50% - 10px );
+    border-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-top-color: #f8f664;
+    border-bottom-width: 0;
+    @include screen-pc {
+      display: none;
+    }
+  }
+}

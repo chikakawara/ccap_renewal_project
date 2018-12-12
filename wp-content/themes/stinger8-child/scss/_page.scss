@@ -7,11 +7,13 @@
     margin: 0;
     li {
       font-size: 15px;
+      line-height: 1.2;
     }
   }
   ol {
     li {
       font-size: inherit;
+      line-height: inherit;
     }
   }
   table {
@@ -558,7 +560,7 @@
 }
 
 
-/* グループケアを申し込む for-parent/groupcare */
+/* グループケアに参加する for-parent/groupcare */
 .for-parent-child.groupcare {
   /* 導入 */
   .contents-box-01 {
@@ -673,44 +675,7 @@
       margin-top: 90px;
     }
     h2 {
-      color: $txt-base-color02;
-      font-size: 16px;
-      background-color: #f8f664;
-      padding: 20px 10px;
-      border-radius: 28px;
-      text-align: center;
-      position: relative;
-      margin-bottom: 20px;
-      @include screen-pc {
-        color: transparent;
-        background-color: transparent;
-        padding: 0;
-        margin: 0;
-        border-radius: 0;
-        background-image: url(./images/pages/waitingforyou.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 132px;
-        height: 100px;
-        position: absolute;
-        top: -68px;
-        right: 20px;
-      }
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: -10px;
-        left: calc( 50% - 10px );
-        border-color: transparent;
-        border-width: 10px;
-        border-style: solid;
-        border-top-color: #f8f664;
-        border-bottom-width: 0;
-        @include screen-pc {
-          display: none;
-        }
-      }
+      @include yellow-fukidashi(waitingforyou, -68px, 20px);
     }
     .catch {
       margin-bottom: 5px;
@@ -1502,6 +1467,104 @@
 
 /* パンフレットを設置する support-child/advertisement */
 .support-child.advertisement {
+  /* 導入 */
+  .contents-box-01 {
+    h2 {
+      text-align: center;
+    }
+  }
+  /* パンフレット設置場所 */
+  .contents-box-02 {
+    .contents-box-inner {
+      @include base-color-box($padding-pc-topbottom:20px, $padding-pc-side:20px);
+      color: $secondary-color;
+      @include screen-pc {
+        position: relative;
+        text-align: center;
+      }
+      h3 {
+        @include yellow-fukidashi(waitingforyou, -68px, 20px);
+      }
+      ul li {
+        font-size: 16px;
+        small {
+          color: $txt-base-color02;
+        }
+      }
+    }
+    .note {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+  }
+  /* 配布物 */
+  .contents-box-03 {
+    .contents-box-inner {
+      margin-bottom: 10px;
+      @include dl-rounded-box;
+      @include screen-pc {
+        flex-flow: row;
+        padding: 20px 5px;
+      }
+      dl {
+        @include screen-pc {
+          flex-flow: column ;
+          border-bottom: 0;
+          width: 50%;
+          justify-content: space-between;
+          padding: 10px;
+          &:first-child {
+            border-right: 2px dotted $primary-color;
+          }
+        }
+        dt {
+          text-align: center;
+          margin-bottom: 10px;
+          @include screen-pc {
+            margin-bottom: 20px;
+          }
+          p {
+            line-height: 1.2;
+            margin-bottom: 0;
+            small {
+              font-size: 0.8em;
+              display: block;
+              @include screen-pc {
+                font-size: 12px;
+                display: inline;
+              }
+              color: $txt-base-color02;
+            }
+          }
+          @include screen-pc {
+            width: auto;
+            min-width: auto;
+          }
+        }
+        dd {
+          text-align: center;
+        }
+        &:last-child {
+          dt {
+            p {
+              &:last-child {
+                font-size: 0.8em;
+                text-align: left;
+                @include screen-pc {
+                  font-size: 13px;
+                  text-align: center;
+                }
+                color: $txt-base-color02;
+              }
+            }
+          }
+        }
+      }
+    }
+    .note {
+      font-size: 0.8em;
+    }
+  }
 }
 
 /* 相談員になる support-child/volunteer */
