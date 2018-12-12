@@ -1451,3 +1451,50 @@
     }
   }
 }
+
+/* 賛助会員になる support-child/member */
+.support-child.member {
+  /* 導入 */
+  .contents-box-01 {
+    h2 {
+      text-align: center;
+    }
+  }
+  /* 賛助会員とは */
+  .contents-box-02 {
+    .special-box {
+      @include base-color-box($padding-pc-topbottom:10px, $padding-pc-side:0);
+      color: $secondary-color;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+  /* 申込方法 */
+  .contents-box-03 {
+    .contents-box-inner {
+      @include dl-rounded-box;
+      table {
+        margin-bottom: 0;
+        @include table-simple;
+        th {
+          @include screen-pc {
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 寄付をする support-child/donate */
+.support-child.donate {
+}
+
+/* パンフレットを設置する support-child/advertisement */
+.support-child.advertisement {
+}
+
+/* 相談員になる support-child/volunteer */
+.support-child.volunteer {
+}
