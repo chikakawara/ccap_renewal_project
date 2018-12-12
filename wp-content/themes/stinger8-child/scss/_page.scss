@@ -9,11 +9,20 @@
       font-size: 15px;
     }
   }
+  ol {
+    li {
+      font-size: inherit;
+    }
+  }
   table {
     tr {
       th,td {
         font-size: inherit;
         line-height: inherit;
+        p {
+          font-size: inherit;
+          line-height: inherit;
+        }
       }
     }
   }
@@ -1497,4 +1506,60 @@
 
 /* 相談員になる support-child/volunteer */
 .support-child.volunteer {
+  /* 導入 */
+  .contents-box-01 {
+    h2 {
+      text-align: center;
+    }
+    .note {
+      font-size: 0.9em;
+    }
+  }
+  /* 養成講座 */
+  .contents-box-02 {
+    h2 {
+      small {
+        color: $txt-base-color02;
+        font-size: 0.7em;
+      }
+    }
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 200px;
+        }
+      }
+      td {
+        ol {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style-type: none;
+            list-style-position: inside;
+            counter-increment: cnt;
+            &::before {
+              display: marker;
+              content: '(' counter(cnt) ') ';
+            }
+          }
+        }
+        ul {
+          li {
+            font-size: inherit;
+            line-height: inherit;
+            list-style-type: disc;
+            list-style-position: inside;
+          }
+        }
+        @include screen-pc {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  /* お問い合わせ先 */
+  .contents-box-03 {
+    @include base-color-box;
+  }
 }

@@ -1988,7 +1988,16 @@ p {
   font-size: 15px;
 }
 
+.post ol li {
+  font-size: inherit;
+}
+
 .post table tr th, .post table tr td {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.post table tr th p, .post table tr td p {
   font-size: inherit;
   line-height: inherit;
 }
@@ -5680,6 +5689,104 @@ p {
 /* 寄付をする support-child/donate */
 /* パンフレットを設置する support-child/advertisement */
 /* 相談員になる support-child/volunteer */
+.support-child.volunteer {
+  /* 導入 */
+  /* 養成講座 */
+  /* お問い合わせ先 */
+}
+
+.support-child.volunteer .contents-box-01 h2 {
+  text-align: center;
+}
+
+.support-child.volunteer .contents-box-01 .note {
+  font-size: 0.9em;
+}
+
+.support-child.volunteer .contents-box-02 h2 small {
+  color: #333;
+  font-size: 0.7em;
+}
+
+.support-child.volunteer .contents-box-02 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.support-child.volunteer .contents-box-02 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .support-child.volunteer .contents-box-02 table tr {
+    display: table-row;
+  }
+}
+
+.support-child.volunteer .contents-box-02 table th, .support-child.volunteer .contents-box-02 table td {
+  border-color: #ddd;
+}
+
+.support-child.volunteer .contents-box-02 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.support-child.volunteer .contents-box-02 table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.volunteer .contents-box-02 table th {
+    width: 200px;
+  }
+}
+
+.support-child.volunteer .contents-box-02 table td ol {
+  padding: 0;
+  margin: 0;
+}
+
+.support-child.volunteer .contents-box-02 table td ol li {
+  list-style-type: none;
+  list-style-position: inside;
+  counter-increment: cnt;
+}
+
+.support-child.volunteer .contents-box-02 table td ol li::before {
+  display: marker;
+  content: "(" counter(cnt) ") ";
+}
+
+.support-child.volunteer .contents-box-02 table td ul li {
+  font-size: inherit;
+  line-height: inherit;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.volunteer .contents-box-02 table td {
+    padding: 20px;
+  }
+}
+
+.support-child.volunteer .contents-box-03 {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.volunteer .contents-box-03 {
+    padding: 30px 40px;
+  }
+}
+
 /* list */
 @media print, screen and (min-width: 960px) {
   .list-box--wrapper {
