@@ -293,7 +293,7 @@ $txt-base-color02: #333;
     background-size: 22px 22px;
     position: absolute;
     top: -22px;
-    left: calc((100vw - 30px) / 2);
+    left: calc((100% / 2) - 11px);
     @include screen-pc {
       left: 439px;
     }

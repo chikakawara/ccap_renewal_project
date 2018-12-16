@@ -1626,3 +1626,180 @@
     @include base-color-box;
   }
 }
+
+/* 講師依頼について enlightenment/lecture */
+.enlightenment-child.lecture {
+  /* 導入 */
+  .contents-box-01 {
+    .special-box {
+      @include base-color-box;
+      @include fukidashi-for-base-color-box;
+      position: relative;
+      color: $secondary-color;
+      padding-bottom: 20px;
+      margin-top: 20px;
+      @include screen-pc {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+  }
+  /* 講師派遣を希望される場合は */
+  .contents-box-02 {
+    h2 {
+      @include heading-with-icon('speaker-icon', 24px, 50px);
+    }
+    .contents-box-inner {
+      @include dl-rounded-box;
+    }
+    .note {
+      margin-top: 5px;
+      font-size: 0.9em;
+      @include screen-pc {
+        text-align: right;
+      }
+    }
+  }
+  /* 講演実績 */
+  .contents-box-03 {
+    .special-box {
+      @include base-color-box($padding-pc-topbottom:10px, $padding-pc-side:10px);
+      @include fukidashi-for-base-color-box;
+      position: relative;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 18px;
+      &::before {
+        top: auto;
+        bottom: -22px;
+        transform: rotate(180deg);
+      }
+      strong {
+        color: #dd0000;
+        font-weight: normal;
+        font-size: 1.4em;
+      }
+    }
+    table {
+      @include table-simple;
+      tr {
+        td {
+          vertical-align: middle;
+          padding: 0 10px;
+          br {
+            display: none;
+            @include screen-pc {
+              display: inline;
+            }
+          }
+          &::before {
+            color: $secondary-color;
+          }
+          @include screen-pc {
+            padding: 10px;
+          }
+          &:first-child {
+            border-bottom: 0;
+            padding-top: 10px;
+            @include screen-pc {
+              border: 1px solid #ddd;
+            }
+            &::before {
+              content: '主催: ';
+              @include screen-pc {
+                display: none;
+              }
+            }
+          }
+          &:nth-child(2) {
+            border-top: 0;
+            border-bottom: 0;
+            @include screen-pc {
+              border: 1px solid #ddd;
+            }
+            &::before {
+              content: 'タイトル: ';
+              @include screen-pc {
+                display: none;
+              }
+            }
+          }
+          &:nth-child(3) {
+            border-top: 0;
+            border-bottom: 0;
+            @include screen-pc {
+              border: 1px solid #ddd;
+            }
+            &::before {
+              content: '対象: ';
+              @include screen-pc {
+                display: none;
+              }
+            }
+          }
+          &:last-child {
+            padding-bottom: 10px;
+            &::before {
+              content: '講師: ';
+              @include screen-pc {
+                display: none;
+              }
+            }
+          }
+        }
+        &:first-child {
+          display: none;
+          @include screen-pc {
+            display: table-row;
+          }
+        }
+      }
+    }
+    h3 {
+      margin-bottom: 5px;
+    }
+  }
+  /* お問い合わせ先 */
+  .contents-box-05 {
+    @include base-color-box;
+
+  }
+}
+
+/* 取材について enlightenment/interview */
+.enlightenment-child.interview {
+  /* 導入 */
+  .contents-box-01 {
+    .note {
+      margin-top: 5px;
+      font-size: 0.9em;
+    }
+  }
+  /* 取材を希望される場合は */
+  .contents-box-02 {
+    h2 {
+      @include heading-with-icon('camera-icon', 24px, 50px);
+    }
+    .contents-box-inner {
+      @include dl-rounded-box;
+    }
+    .note {
+      margin-top: 5px;
+      font-size: 0.9em;
+      @include screen-pc {
+        text-align: right;
+      }
+    }
+  }
+  /* お願い */
+  .contents-box-03 {
+    .link-box {
+      @include rounded-rectangle-link(360px);
+      margin-top: 10px;
+    }
+  }
+  /* お問い合わせ先 */
+  .contents-box-04 {
+    @include base-color-box;
+  }
+}
