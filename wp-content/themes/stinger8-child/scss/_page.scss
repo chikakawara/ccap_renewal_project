@@ -1803,3 +1803,53 @@
     @include base-color-box;
   }
 }
+
+/* 組織 about/organization */
+.about-child.organization {
+  /* 導入 */
+  .contents-box-01 {
+    > table {
+      @include table-simple;
+      > tbody > tr {
+        th {
+          @include screen-pc {
+            width: 140px;
+          }
+          br {
+            display: none;
+            @include screen-pc {
+              display: inline;
+            }
+          }
+        }
+        td {
+          @include screen-pc {
+            padding: 20px 40px;
+          }
+        }
+      }
+
+
+      .table-inner {
+        border: 0;
+        margin: 0;
+        tr, th, td {
+          border: 0;
+          padding: 0;
+          background-color: transparent;
+          font-weight: normal;
+        }
+        tr {
+          flex-flow: row;
+          justify-content: flex-start;
+        }
+        th {
+          width: 8em;
+          max-width: 8em;
+          min-width: 8em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

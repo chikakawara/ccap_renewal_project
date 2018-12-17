@@ -6518,6 +6518,88 @@ p {
   }
 }
 
+/* 組織 about/organization */
+.about-child.organization {
+  /* 導入 */
+}
+
+.about-child.organization .contents-box-01 > table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.about-child.organization .contents-box-01 > table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .about-child.organization .contents-box-01 > table tr {
+    display: table-row;
+  }
+}
+
+.about-child.organization .contents-box-01 > table th, .about-child.organization .contents-box-01 > table td {
+  border-color: #ddd;
+}
+
+.about-child.organization .contents-box-01 > table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.about-child.organization .contents-box-01 > table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about-child.organization .contents-box-01 > table > tbody > tr th {
+    width: 140px;
+  }
+}
+
+.about-child.organization .contents-box-01 > table > tbody > tr th br {
+  display: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about-child.organization .contents-box-01 > table > tbody > tr th br {
+    display: inline;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .about-child.organization .contents-box-01 > table > tbody > tr td {
+    padding: 20px 40px;
+  }
+}
+
+.about-child.organization .contents-box-01 > table .table-inner {
+  border: 0;
+  margin: 0;
+}
+
+.about-child.organization .contents-box-01 > table .table-inner tr, .about-child.organization .contents-box-01 > table .table-inner th, .about-child.organization .contents-box-01 > table .table-inner td {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-weight: normal;
+}
+
+.about-child.organization .contents-box-01 > table .table-inner tr {
+  flex-flow: row;
+  justify-content: flex-start;
+}
+
+.about-child.organization .contents-box-01 > table .table-inner th {
+  width: 8em;
+  max-width: 8em;
+  min-width: 8em;
+  text-align: left;
+}
+
 /* list */
 @media print, screen and (min-width: 960px) {
   .list-box--wrapper {
