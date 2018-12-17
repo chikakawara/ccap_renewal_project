@@ -1828,8 +1828,6 @@
           }
         }
       }
-
-
       .table-inner {
         border: 0;
         margin: 0;
@@ -1848,6 +1846,75 @@
           max-width: 8em;
           min-width: 8em;
           text-align: left;
+        }
+      }
+    }
+  }
+}
+
+/* 沿革 about/history */
+.about-child.history {
+  /* 導入 */
+  .contents-box-01 {
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 190px;
+        }
+      }
+      td {
+        @include screen-pc {
+          padding: 20px 30px
+        }
+      }
+    }
+  }
+}
+
+/* 支援・関連団体 about/related */
+.about-child.related {
+  /* 関連団体・支援企業・団体 */
+  .contents-box-01,
+  .contents-box-02 {
+    ul {
+      @include base-color-box;
+      padding-left: 40px;
+      li {
+        position: relative;
+        margin-bottom: 5px;
+        @include screen-pc {
+          margin-bottom: 8px;
+        }
+        &::before {
+          content: '・';
+          color: $primary-color;
+          position: absolute;
+          left: -20px;
+        }
+        .note {
+          font-size: 0.9em;
+          line-height: 1.4;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+  /* 民間団体 */
+  .contents-box-03 {
+    .note {
+      font-size: 0.9em;
+    }
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 140px;
+        }
+      }
+      td {
+        @include screen-pc {
+          padding: 20px 40px;
         }
       }
     }
