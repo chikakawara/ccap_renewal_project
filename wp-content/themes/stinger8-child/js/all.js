@@ -11,7 +11,7 @@ $(function() {
 // pageTopBtn表示切替
 $(function() {
   var pageTopBtn = $('.pagetop-wrapper');
-  var currentY, targetY;
+  var currentY, lastY, targetY;
   var footerHeight = $('footer').height();
   var windowHeight = $(window).height();
   var documentHeight = $(document).height();
@@ -20,38 +20,39 @@ $(function() {
 
   // footer上部のY座標
   var footerTopY = documentHeight - footerHeight;
+  // pagetop btnをstaticに切り替える位置
+  targetY = documentHeight - footerHeight - windowHeight - pagetopBtnHeight;
 
   // documentHeightが小さい場合は切替を行わない
   if (documentHeight - windowHeight < 700) {
-    pageTopBtn.removeClass('fixed').addClass('static');
-    $('#footer').css('margin-top', 0);
+    if (pageTopBtn.hasClass("fixed")) {
+      pageTopBtn.removeClass('fixed').addClass('static');
+    }
   } else {
-    // 初期状態ではpageTopBtnは隠しておく
-    pageTopBtn.addClass('fixed').hide();
     $(window).scroll(function() {
-      if (currentY >= 50) {
+      // 現在位置
+      currentY = $(window).scrollTop();
+      if ((currentY >= 100) && (currentY > lastY)) {
         setTimeout(function(){
           pageTopBtn.fadeIn('slow');
         }, 1000);
       }
-      // 現在位置
-      currentY = $(window).scrollTop();
-      // pagetop btnをstaticに切り替える位置
-      targetY = documentHeight - footerHeight - windowHeight - pagetopBtnHeight;
-
       if (currentY >= targetY) {
-        pageTopBtn.removeClass('fixed').addClass('static');
-        $('#footer').css('margin-top', 0);
+        if (pageTopBtn.hasClass("fixed")) {
+          pageTopBtn.removeClass('fixed').addClass('static');
+        }
       } else {
-        pageTopBtn.addClass('fixed').removeClass('static');
-        $('#footer').css('margin-top', pagetopBtnHeight + pagetopBtnBottomMargin + 'px');
+        if (!pageTopBtn.hasClass("fixed")) {
+          pageTopBtn.addClass('fixed').removeClass('static');
+        }
       }
-      if (currentY < 50) {
+      if ((currentY < 100) && (currentY < lastY)) {
         setTimeout(function(){
-          pageTopBtn.fadeOut('slow');
-          $('#footer').css('margin-top', pagetopBtnHeight + pagetopBtnBottomMargin + 'px');
+          pageTopBtn.fadeOut('fast');
         }, 1000);
       }
+      // 直前のY座標
+      lastY = currentY;
     });
   }
 });

@@ -1,6 +1,6 @@
 </div><!-- /contentw -->
 <!-- ページトップへ戻る -->
-<div class="pagetop-wrapper">
+<div class="pagetop-wrapper static">
 	<a href="" id="pageTop">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pagetop.png" alt="トップへ戻る">
 	</a>
