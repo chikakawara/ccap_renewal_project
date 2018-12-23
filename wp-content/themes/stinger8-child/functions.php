@@ -64,6 +64,9 @@ function shortcode_url() {
 return get_bloginfo('url');
 }
 
+// 勝手にタグ追加機能を無効に
+remove_filter( 'the_content', 'wpautop' );
+
 // メニューカスタム版
 register_nav_menus(
  array(
