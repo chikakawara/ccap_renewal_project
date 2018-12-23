@@ -2007,6 +2007,31 @@
   }
 }
 
+/* 事業報告、会計報告、定款 about/report */
+.about-child.report {
+  /* 導入 */
+  .contents-box-01 {
+    h2 {
+      small {
+        display: block;
+      }
+    }
+    table {
+      @include table-simple;
+      th {
+        @include screen-pc {
+          width: 190px;
+        }
+      }
+      td {
+        @include screen-pc {
+          padding: 20px 30px
+        }
+      }
+    }
+  }
+}
+
 /* 支援・関連団体 about/related */
 .about-child.related {
   /* 関連団体・支援企業・団体 */
