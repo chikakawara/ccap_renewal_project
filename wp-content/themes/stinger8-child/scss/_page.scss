@@ -1463,6 +1463,35 @@
 
 /* 寄付をする support-child/donate */
 .support-child.donate {
+  /* 導入 */
+  .contents-box-01 {
+    h2 {
+      text-align: center;
+    }
+  }
+  /* 寄附金の使途 */
+  .contents-box-02 {
+    @include base-color-box($padding-pc-topbottom:30px, $padding-pc-side:40px);
+    background-color: #f5f5f5;
+    h2 {
+      color: $txt-base-color02;
+    }
+  }
+  /* 申込方法 */
+  .contents-box-03 {
+    .contents-box-inner {
+      @include dl-rounded-box;
+      table {
+        margin-bottom: 0;
+        @include table-simple;
+        th {
+          @include screen-pc {
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* パンフレットを設置する support-child/advertisement */

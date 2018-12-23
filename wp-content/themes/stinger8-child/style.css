@@ -5691,6 +5691,132 @@ p {
 }
 
 /* 寄付をする support-child/donate */
+.support-child.donate {
+  /* 導入 */
+  /* 寄附金の使途 */
+  /* 申込方法 */
+}
+
+.support-child.donate .contents-box-01 h2 {
+  text-align: center;
+}
+
+.support-child.donate .contents-box-02 {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+  background-color: #f5f5f5;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.donate .contents-box-02 {
+    padding: 30px 40px;
+  }
+}
+
+.support-child.donate .contents-box-02 h2 {
+  color: #333;
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.donate .contents-box-03 .contents-box-inner {
+    padding: 10px 45px;
+  }
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.donate .contents-box-03 .contents-box-inner dl {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.donate .contents-box-03 .contents-box-inner dl dt {
+    margin: 0;
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.donate .contents-box-03 .contents-box-inner dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner table {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .support-child.donate .contents-box-03 .contents-box-inner table tr {
+    display: table-row;
+  }
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner table th, .support-child.donate .contents-box-03 .contents-box-inner table td {
+  border-color: #ddd;
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.support-child.donate .contents-box-03 .contents-box-inner table td {
+  background-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.donate .contents-box-03 .contents-box-inner table th {
+    width: 140px;
+  }
+}
+
 /* パンフレットを設置する support-child/advertisement */
 .support-child.advertisement {
   /* 導入 */
