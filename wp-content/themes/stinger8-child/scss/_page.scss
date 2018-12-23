@@ -1627,6 +1627,112 @@
   }
 }
 
+/* 発行図書  enlightenment/book */
+.enlightenment-child.book {
+  /* 導入 */
+  .contents-box-01 {
+    .note {
+      font-size: 0.9em;
+    }
+  }
+  /*　ご注文方法 */
+  .contents-box-02 {
+    .contents-box-inner {
+      @include dl-rounded-box;
+      dl {
+        @include screen-pc {
+          flex-flow: column;
+          align-items: flex-start;
+        }
+        dt {
+          @include screen-pc {
+            width: auto;
+            min-width: auto;
+            text-align: left;
+          }
+        }
+        dd {
+          @include screen-pc {
+            margin-left: 0;
+          }
+          table {
+            @include table-simple;
+          }
+        }
+      }
+    }
+  }
+  /* 発行書籍のご案内 */
+  .contents-box-03 {
+    table {
+      @include table-simple;
+      tr {
+        display: flex;
+        @include screen-pc {
+          display: table-row;
+        }
+      }
+      td {
+        overflow: hidden;
+        @include screen-pc {
+          padding: 20px 10px;
+        }
+        img {
+          display: block;
+          margin: 0 auto 10px;
+          @include screen-pc {
+            float: left;
+            margin-left: 10px;
+          }
+        }
+        dl {
+          @include screen-pc {
+            margin: 0 10px;
+          }
+        }
+        img + dl {
+          @include screen-pc {
+            margin-left: 130px;
+          }
+        }
+        .book-title {
+          font-size: 1.1em;
+          font-weight: bold;
+        }
+        .book-author {
+          font-size: 0.9em;
+        }
+        &:last-child {
+          @include screen-pc {
+            width: 90px;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+      }
+      &:not(:first-of-type) {
+        td {
+          &:first-child {
+            border-bottom-color: transparent;
+            @include screen-pc {
+              border-bottom-color: #ddd;
+            }
+          }
+          &:last-child {
+            border-top-color: transparent;
+            padding-top: 0;
+            @include screen-pc {
+              border-top-color: #ddd;
+              padding-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
 /* 講師依頼について enlightenment/lecture */
 .enlightenment-child.lecture {
   /* 導入 */

@@ -6021,6 +6021,243 @@ p {
   }
 }
 
+/* 発行図書  enlightenment/book */
+.enlightenment-child.book {
+  /* 導入 */
+  /*　ご注文方法 */
+  /* 発行書籍のご案内 */
+}
+
+.enlightenment-child.book .contents-box-01 .note {
+  font-size: 0.9em;
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner {
+  border: 3px solid #95cb40;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner {
+    padding: 10px 45px;
+  }
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner dl {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner dl dt {
+    margin: 0;
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner dl {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner dl dt {
+    width: auto;
+    min-width: auto;
+    text-align: left;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner dl dd {
+    margin-left: 0;
+  }
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl dd table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl dd table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .enlightenment-child.book .contents-box-02 .contents-box-inner dl dd table tr {
+    display: table-row;
+  }
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl dd table th, .enlightenment-child.book .contents-box-02 .contents-box-inner dl dd table td {
+  border-color: #ddd;
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl dd table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl dd table td {
+  background-color: transparent;
+}
+
+.enlightenment-child.book .contents-box-03 table {
+  margin-top: 10px;
+  font-size: 14px;
+  border-color: #ddd;
+}
+
+.enlightenment-child.book .contents-box-03 table tr {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 600px) {
+  .enlightenment-child.book .contents-box-03 table tr {
+    display: table-row;
+  }
+}
+
+.enlightenment-child.book .contents-box-03 table th, .enlightenment-child.book .contents-box-03 table td {
+  border-color: #ddd;
+}
+
+.enlightenment-child.book .contents-box-03 table th {
+  font-weight: normal;
+  background-color: #f5f5f5;
+}
+
+.enlightenment-child.book .contents-box-03 table td {
+  background-color: transparent;
+}
+
+.enlightenment-child.book .contents-box-03 table tr {
+  display: flex;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table tr {
+    display: table-row;
+  }
+}
+
+.enlightenment-child.book .contents-box-03 table td {
+  overflow: hidden;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table td {
+    padding: 20px 10px;
+  }
+}
+
+.enlightenment-child.book .contents-box-03 table td img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table td img {
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table td dl {
+    margin: 0 10px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table td img + dl {
+    margin-left: 130px;
+  }
+}
+
+.enlightenment-child.book .contents-box-03 table td .book-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.enlightenment-child.book .contents-box-03 table td .book-author {
+  font-size: 0.9em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table td:last-child {
+    width: 90px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.enlightenment-child.book .contents-box-03 table:not(:first-of-type) td:first-child {
+  border-bottom-color: transparent;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table:not(:first-of-type) td:first-child {
+    border-bottom-color: #ddd;
+  }
+}
+
+.enlightenment-child.book .contents-box-03 table:not(:first-of-type) td:last-child {
+  border-top-color: transparent;
+  padding-top: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.book .contents-box-03 table:not(:first-of-type) td:last-child {
+    border-top-color: #ddd;
+    padding-top: 20px;
+  }
+}
+
 /* 講師依頼について enlightenment/lecture */
 .enlightenment-child.lecture {
   /* 導入 */
