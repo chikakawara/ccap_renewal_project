@@ -124,6 +124,77 @@
   }
 }
 
+/* 子育て中の方へ for-parent */
+.page-parent.for-parent {
+  /* 導入 */
+  .contents-box-01 {
+    @include pc-main-img(hearts);
+    .contents-box-inner {
+      @include sp-main-img(hearts);
+      &::after {
+        max-width: 790px;
+        height: calc(100vw * 0.8 / 790 * 720);
+        max-height: 720px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      p:last-of-type {
+        margin-bottom: 20px;
+        @include screen-pc {
+          margin-bottom: 0;
+        }
+      }
+      @include screen-pc {
+        min-height: calc( 720px * (300/790));
+        padding-left: 330px;
+      }
+    }
+  }
+  /* リンク集 */
+  .contents-box-02 {
+    @include dl-rounded-box;
+    @include screen-pc {
+      padding: 0 45px;
+    }
+    dl {
+      @include screen-pc {
+        padding: 25px 0;
+      }
+      dt {
+        br {
+          display: none;
+        }
+        @include screen-pc {
+          font-size: 18px !important;
+          width: 250px !important;
+          min-width: 250px !important;
+          line-height: 1.3;
+          br {
+            display: inline;
+          }
+        }
+      }
+      dd {
+        p {
+          margin-bottom: 10px;
+        }
+        .link-box {
+          @include rounded-rectangle-link(180px);
+          @include screen-pc {
+            margin: 0;
+          }
+          a {
+            @include screen-pc {
+              padding: 6px 4px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /* 電話で相談する for-parent/hotline */
 .for-parent-child.hotline {
   /* タイトル */
@@ -1367,6 +1438,33 @@
     }
     .contents-box-inner {
       @include dl-rounded-box;
+    }
+  }
+}
+
+/* スケジュール info/schedule */
+.info-child.schedule {
+  .contents-box-01 {
+    table {
+      @include table-simple;
+      th {
+        br {
+          display: none;
+          @include screen-pc {
+            display: inline;
+          }
+        }
+        @include screen-pc {
+          width: 200px;
+          text-align: left;
+          padding: 10px 20px;
+        }
+      }
+      td {
+        @include screen-pc {
+          padding: 10px 20px;
+        }
+      }
     }
   }
 }
