@@ -42,7 +42,7 @@
 <div class="footer-bottom-box">
 	<div class="footer-bottom-inner">
 		<ul class="footer-bottom-links">
-			<li><a href="">プライバシーポリシー</a></li>
+			<li><a href="./policy">プライバシーポリシー</a></li>
 		</ul>
 		<ul class="footer-bottom-banners">
 			<li class="banner-orangeribbon">

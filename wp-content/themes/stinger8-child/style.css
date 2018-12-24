@@ -7425,6 +7425,46 @@ p {
   }
 }
 
+/* プライバシーポリシー policy */
+@media print, screen and (min-width: 960px) {
+  .policy .contents-box-01 .note {
+    text-align: right;
+  }
+}
+
+.policy .contents-box-01 .contents-box-inner {
+  margin: 20px 0 0;
+}
+
+.policy .contents-box-01 .contents-box-inner h3 {
+  margin: 20px 0 15px;
+  color: #333;
+}
+
+@media print, screen and (min-width: 960px) {
+  .policy .contents-box-01 .contents-box-inner h3 {
+    font-size: 18px;
+  }
+}
+
+.policy .contents-box-01 .contents-box-inner dl {
+  margin: 20px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .policy .contents-box-01 .contents-box-inner dl {
+    float: right;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .policy .contents-box-01 .contents-box-inner dl::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
 /* list */
 @media print, screen and (min-width: 960px) {
   .list-box--wrapper {
