@@ -1187,10 +1187,20 @@ p {
 
 #mybox .ad ul li a {
   display: block;
-  height: 38px;
-  line-height: 38px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
+  height: 44px;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+@media print, screen and (min-width: 960px) {
+  #mybox .ad ul li a {
+    font-size: 14px;
+    height: 38px;
+    min-height: 38px;
+    line-height: 38px;
+  }
 }
 
 #mybox .ad .menu {
@@ -1212,18 +1222,30 @@ p {
 }
 
 #mybox .ad .menu > li:first-child {
-  height: 38px;
-  min-height: 38px;
-  margin-bottom: calc( 10px + 38px * 4);
+  margin-bottom: calc( 10px + 44px * 4);
+}
+
+@media print, screen and (min-width: 960px) {
+  #mybox .ad .menu > li:first-child {
+    margin-bottom: calc( 10px + 38px * 4);
+  }
 }
 
 #mybox .ad .menu > li .sub-menu {
   padding: 0;
   position: absolute;
-  top: 38px;
+  top: 44px;
   width: 100%;
-  height: calc(38px * 4);
-  min-height: calc(38px * 4);
+  height: calc(44px * 4);
+  min-height: calc(44px * 4);
+}
+
+@media print, screen and (min-width: 960px) {
+  #mybox .ad .menu > li .sub-menu {
+    top: 38px;
+    height: calc(38px * 4);
+    min-height: calc(38px * 4);
+  }
 }
 
 #mybox .ad .menu > li .sub-menu li {

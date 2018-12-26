@@ -42,10 +42,17 @@
         border-radius: 2px;
         a {
           display: block;
-          height: 38px;
-          line-height: 38px;
           text-decoration: none;
-          font-size: 14px;
+          font-size: 18px;
+          height: 44px;
+          min-height: 44px;
+          line-height: 44px;
+          @include screen-pc {
+            font-size: 14px;
+            height: 38px;
+            min-height: 38px;
+            line-height: 38px;
+          }
         }
       }
     }
@@ -61,18 +68,24 @@
           }
         }
         &:first-child {
-          height: 38px;
-          min-height: 38px;
-          margin-bottom: calc( 10px + 38px * 4 );
+          margin-bottom: calc( 10px + 44px * 4 );
+          @include screen-pc {
+            margin-bottom: calc( 10px + 38px * 4 );
+          }
         }
         /* 第二階層 */
         .sub-menu {
           padding: 0;
           position: absolute;
-          top: 38px;
+          top: 44px;
           width: 100%;
-          height: calc(38px * 4);
-          min-height: calc(38px * 4);
+          height: calc(44px * 4);
+          min-height: calc(44px * 4);
+          @include screen-pc {
+            top: 38px;
+            height: calc(38px * 4);
+            min-height: calc(38px * 4);
+          }
           li {
             @include link-with-arrow($color:$primary-color, $left:14px);
             background-color: #fff;
