@@ -94,7 +94,7 @@
 						} ?>
 
 						<!--関連記事-->
-						<?php get_template_part( 'kanren' ); ?>
+						<!-- <?php get_template_part( 'kanren' ); ?> -->
 
 						<!--ページナビ-->
 						<div class="p-navi clearfix">

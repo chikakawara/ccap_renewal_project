@@ -12,12 +12,16 @@
 }
 
 /* 投稿ページ */
+/* 投稿ページでのみpadding有効 */
+.st-post {
+  padding: 20px 15px;
+}
 .article-post {
   @include screen-pc {
     border: 2px solid $primary-color;
     border-radius: 10px;
     padding: 20px 40px;
-    margin-right: 20px;
+    margin: 0 0 20px 20px;
     box-shadow: 3px 3px 0px 0px $primary-color;
   }
   /* カテゴリと日付 */
