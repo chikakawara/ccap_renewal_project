@@ -66,6 +66,13 @@ return get_bloginfo('url');
 
 // 勝手にタグ追加機能を無効に
 remove_filter( 'the_content', 'wpautop' );
+// 固定ページ以外はタグ追加機能を有効にする
+if ( !function_exists( 're_wpautop' ) ) {
+    add_action('wp', 're_wpautop');
+    function re_wpautop() {
+        if(!is_page()) add_filter('the_content', 'wpautop');
+    }
+}
 
 // メニューカスタム版
 register_nav_menus(

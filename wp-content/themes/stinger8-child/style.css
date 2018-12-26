@@ -2076,33 +2076,33 @@ p {
 
 /* page */
 /* 打ち消し */
-.post ul {
+.page .post ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.post ul li {
+.page .post ul li {
   font-size: 15px;
   line-height: 1.2;
 }
 
-.post ol li {
+.page .post ol li {
   font-size: inherit;
   line-height: inherit;
 }
 
-.post table tr th, .post table tr td {
+.page .post table tr th, .page .post table tr td {
   font-size: inherit;
   line-height: inherit;
 }
 
-.post table tr th p, .post table tr td p {
+.page .post table tr th p, .page .post table tr td p {
   font-size: inherit;
   line-height: inherit;
 }
 
-.post h4 {
+.page .post h4 {
   background-color: transparent;
   font-size: inherit;
   line-height: inherit;
