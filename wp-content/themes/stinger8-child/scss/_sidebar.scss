@@ -1,4 +1,19 @@
 /* sidebar */
+/* 打ち消し */
+#side .st-aside .menu_underh2 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: normal;
+}
+#side .st-aside ul li {
+  font-size: inherit;
+  line-height: inherit;
+}
+#side .st-aside #mybox ul li ul li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 #mybox {
   .ad {
     background-color: $base-color;
@@ -24,19 +39,51 @@
     ul {
       li {
         @include link-with-arrow($left:14px);
-        background-color: $primary-color;
-        margin-bottom: 2px;
-        border-radius: 3px;
-        &:hover {
-          background-color: $secondary-color;
-        }
+        border-radius: 2px;
         a {
           display: block;
-          color: #fff;
-          height: 36px;
-          line-height: 36px;
+          height: 38px;
+          line-height: 38px;
           text-decoration: none;
+          font-size: 14px;
+        }
+      }
+    }
+    .menu {
+      /* 第一階層 */
+      > li {
+        background-color: $primary-color;
+        > a {
+          color: #fff;
           text-align: center;
+          &:hover {
+            background-color: $secondary-color;
+          }
+        }
+        &:first-child {
+          height: 38px;
+          min-height: 38px;
+          margin-bottom: calc( 10px + 38px * 4 );
+        }
+        /* 第二階層 */
+        .sub-menu {
+          padding: 0;
+          position: absolute;
+          top: 38px;
+          width: 100%;
+          height: calc(38px * 4);
+          min-height: calc(38px * 4);
+          li {
+            @include link-with-arrow($color:$primary-color, $left:14px);
+            background-color: #fff;
+            > a {
+              padding-left: 32px;
+              color: $txt-base-color02;
+              &:hover {
+                color: $secondary-color;
+              }
+            }
+          }
         }
       }
     }

@@ -1115,6 +1115,23 @@ p {
 }
 
 /* sidebar */
+/* 打ち消し */
+#side .st-aside .menu_underh2 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: normal;
+}
+
+#side .st-aside ul li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#side .st-aside #mybox ul li ul li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 #mybox .ad {
   background-color: #f3fCe6;
   border-radius: 4px;
@@ -1148,9 +1165,7 @@ p {
 
 #mybox .ad ul li {
   position: relative;
-  background-color: #95cb40;
-  margin-bottom: 2px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 #mybox .ad ul li::before {
@@ -1170,17 +1185,76 @@ p {
   text-decoration: none;
 }
 
-#mybox .ad ul li:hover {
+#mybox .ad ul li a {
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#mybox .ad .menu {
+  /* 第一階層 */
+}
+
+#mybox .ad .menu > li {
+  background-color: #95cb40;
+  /* 第二階層 */
+}
+
+#mybox .ad .menu > li > a {
+  color: #fff;
+  text-align: center;
+}
+
+#mybox .ad .menu > li > a:hover {
   background-color: #1b8924;
 }
 
-#mybox .ad ul li a {
+#mybox .ad .menu > li:first-child {
+  height: 38px;
+  min-height: 38px;
+  margin-bottom: calc( 10px + 38px * 4);
+}
+
+#mybox .ad .menu > li .sub-menu {
+  padding: 0;
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  height: calc(38px * 4);
+  min-height: calc(38px * 4);
+}
+
+#mybox .ad .menu > li .sub-menu li {
+  position: relative;
+  background-color: #fff;
+}
+
+#mybox .ad .menu > li .sub-menu li::before {
   display: block;
-  color: #fff;
-  height: 36px;
-  line-height: 36px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.5px 5px;
+  position: absolute;
+  border-color: transparent transparent transparent #95cb40;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+#mybox .ad .menu > li .sub-menu li a {
   text-decoration: none;
-  text-align: center;
+}
+
+#mybox .ad .menu > li .sub-menu li > a {
+  padding-left: 32px;
+  color: #333;
+}
+
+#mybox .ad .menu > li .sub-menu li > a:hover {
+  color: #1b8924;
 }
 
 #mybox .ad label {
