@@ -3939,13 +3939,15 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.fosterparent .contents-box-01 {
-    background-image: url(./images/pages/main-fosterparent.png);
-    background-size: 300px auto;
-    background-repeat: no-repeat;
+    display: flex;
   }
 }
 
-.activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
+.activity-child.fosterparent .contents-box-01 p {
+  margin-bottom: 0;
+}
+
+.activity-child.fosterparent .contents-box-01 p::after {
   display: block;
   content: '';
   width: calc(100vw * 0.8);
@@ -3959,34 +3961,25 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.fosterparent .contents-box-01 .contents-box-inner::after {
+  .activity-child.fosterparent .contents-box-01 p::after {
     display: none;
   }
 }
 
-.activity-child.fosterparent .contents-box-01 .contents-box-inner h2 {
-  margin-bottom: 10px;
-}
-
-.activity-child.fosterparent .contents-box-01 .contents-box-inner p {
-  margin-bottom: 20px;
-}
-
 @media print, screen and (min-width: 960px) {
-  .activity-child.fosterparent .contents-box-01 .contents-box-inner p {
-    margin-bottom: 0;
+  .activity-child.fosterparent .contents-box-01 p {
+    background-image: url(./images/pages/main-fosterparent.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.fosterparent .contents-box-01 .contents-box-inner {
-    min-height: calc( 431px * (300/640));
+  .activity-child.fosterparent .contents-box-01 p {
+    padding-left: 330px;
     display: flex;
     align-items: center;
-  }
-  .activity-child.fosterparent .contents-box-01 .contents-box-inner h2,
-  .activity-child.fosterparent .contents-box-01 .contents-box-inner p {
-    padding-left: 310px;
+    min-height: calc( 431px * (300/640));
   }
 }
 
@@ -4245,6 +4238,12 @@ p {
   /* 電話番号 */
 }
 
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-01 {
+    display: flex;
+  }
+}
+
 .activity-child.consultation .contents-box-01 p {
   margin-bottom: 0;
 }
@@ -4464,6 +4463,12 @@ p {
   /* 子育てひとやすみ */
   /* ほっとホットサロン */
   /* 申込問い合わせ */
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-01 {
+    display: flex;
+  }
 }
 
 .activity-child.groupcare .contents-box-01 p {
@@ -5199,11 +5204,17 @@ p {
   }
 }
 
-/* 電話相談 activity/childcare */
+/* 子どもケア activity/childcare */
 .activity-child.childcare {
   /* 導入 */
   /* アタッチメント形成のための... */
   /* 心理相談 */
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-01 {
+    display: flex;
+  }
 }
 
 .activity-child.childcare .contents-box-01 p {
@@ -5480,7 +5491,7 @@ p {
   color: #1b8924;
 }
 
-/* 電話相談 activity/education */
+/* 教育広報 activity/education */
 .activity-child.education {
   /* 講師派遣 */
   /* マスコミ */

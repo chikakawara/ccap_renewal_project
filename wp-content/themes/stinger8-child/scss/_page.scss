@@ -892,26 +892,18 @@
 .activity-child.fosterparent {
   /* 導入 */
   .contents-box-01 {
-    @include pc-main-img(main-fosterparent);
-    .contents-box-inner {
+    @include screen-pc {
+      display: flex;
+    }
+    p {
+      margin-bottom: 0;
       @include sp-main-img(main-fosterparent);
-      h2 {
-        margin-bottom: 10px;
-      }
-      p {
-        margin-bottom: 20px;
-        @include screen-pc {
-          margin-bottom: 0;
-        }
-      }
+      @include pc-main-img(main-fosterparent);
       @include screen-pc {
-        min-height: calc( 431px * (300/640));
+        padding-left: 330px;
         display: flex;
         align-items: center;
-        h2,
-        p {
-          padding-left: 310px;
-        }
+        min-height: calc( 431px * (300/640));
       }
     }
   }
@@ -976,6 +968,9 @@
 .activity-child.consultation {
   /* 導入 */
   .contents-box-01 {
+    @include screen-pc {
+      display: flex;
+    }
     p {
       margin-bottom: 0;
       @include sp-main-img(main-hotline);
@@ -1033,6 +1028,9 @@
 .activity-child.groupcare{
   /* 導入 */
   .contents-box-01 {
+    @include screen-pc {
+      display: flex;
+    }
     p {
       margin-bottom: 0;
       @include sp-main-img(main-groupcare);
@@ -1292,10 +1290,13 @@
   }
 }
 
-/* 電話相談 activity/childcare */
+/* 子どもケア activity/childcare */
 .activity-child.childcare {
   /* 導入 */
   .contents-box-01 {
+    @include screen-pc {
+      display: flex;
+    }
     p {
       margin-bottom: 0;
       @include sp-main-img(main-childcare);
@@ -1406,7 +1407,7 @@
   }
 }
 
-/* 電話相談 activity/education */
+/* 教育広報 activity/education */
 .activity-child.education {
   /* 講師派遣 */
   .contents-box-02 {
