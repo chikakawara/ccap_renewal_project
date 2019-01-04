@@ -1418,7 +1418,7 @@
       position: relative;
       color: $secondary-color;
       @include screen-pc {
-        font-size: 18px;
+        font-size: 17px;
         text-align: center;
       }
     }
@@ -1770,10 +1770,7 @@
     .contents-box-inner {
       @include dl-rounded-box;
       dl {
-        @include screen-pc {
-          flex-flow: column;
-          align-items: flex-start;
-        }
+        display: block; /* IE対策 */
         dt {
           @include screen-pc {
             width: auto;
@@ -2076,12 +2073,14 @@
         tr {
           flex-flow: row;
           justify-content: flex-start;
+          vertical-align: top;
         }
         th {
           width: 8em;
           max-width: 8em;
           min-width: 8em;
           text-align: left;
+          vertical-align: top;
         }
       }
     }

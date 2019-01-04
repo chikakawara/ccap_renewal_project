@@ -5538,7 +5538,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.education .contents-box-02 .special-box {
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
   }
 }
@@ -6590,11 +6590,9 @@ p {
   padding-bottom: 0;
 }
 
-@media print, screen and (min-width: 960px) {
-  .enlightenment-child.book .contents-box-02 .contents-box-inner dl {
-    flex-flow: column;
-    align-items: flex-start;
-  }
+.enlightenment-child.book .contents-box-02 .contents-box-inner dl {
+  display: block;
+  /* IE対策 */
 }
 
 @media print, screen and (min-width: 960px) {
@@ -7326,6 +7324,7 @@ p {
 .about-child.organization .contents-box-01 > table .table-inner tr {
   flex-flow: row;
   justify-content: flex-start;
+  vertical-align: top;
 }
 
 .about-child.organization .contents-box-01 > table .table-inner th {
@@ -7333,6 +7332,7 @@ p {
   max-width: 8em;
   min-width: 8em;
   text-align: left;
+  vertical-align: top;
 }
 
 /* 沿革 about/history */
