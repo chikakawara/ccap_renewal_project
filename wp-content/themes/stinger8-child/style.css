@@ -441,18 +441,27 @@ p {
 
 #st-menubox .menu li {
   border: 0;
-  width: 176px;
 }
 
 #st-menubox .menu > li {
   float: none;
   border: 0;
   border-right: 2px dotted #95cb40;
+  width: 140px;
   height: 24px;
 }
 
 #st-menubox .menu > li:first-child {
+  width: 180px;
   border-left: 2px dotted #95cb40;
+}
+
+#st-menubox .menu > li:nth-child(3) {
+  width: 180px;
+}
+
+#st-menubox .menu > li:nth-child(5) {
+  width: 280px;
 }
 
 #st-menubox .menu > li > a {
@@ -474,6 +483,7 @@ p {
 }
 
 #st-menubox .sub-menu > li {
+  width: 100%;
   height: auto;
 }
 

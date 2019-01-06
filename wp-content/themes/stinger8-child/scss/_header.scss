@@ -227,15 +227,22 @@
     margin-top: 20px;
     li {
       border: 0;
-      width: 176px;
     }
     > li {
       float: none;
       border: 0;
       border-right: 2px dotted $primary-color;
+      width: 140px;
       height: 24px;
       &:first-child {
+        width: 180px;
         border-left: 2px dotted $primary-color;
+      }
+      &:nth-child(3) {
+        width: 180px;
+      }
+      &:nth-child(5) {
+        width: 280px;
       }
       > a {
         line-height: 24px;
@@ -255,6 +262,7 @@
     position: absolute;
     left: -1px;
     > li {
+      width: 100%;
       height: auto;
       > a {
         border: 0;
