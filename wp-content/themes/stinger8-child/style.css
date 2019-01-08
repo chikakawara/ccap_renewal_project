@@ -392,7 +392,7 @@ p {
   position: absolute;
   border-color: transparent transparent transparent #fff;
   top: calc(50% - 3px);
-  left: 14px;
+  left: 22px;
 }
 
 #nav-content .link-clinic::before {
@@ -405,20 +405,20 @@ p {
   position: absolute;
   border-color: transparent transparent transparent #333;
   top: calc(50% - 3px);
-  left: 14px;
+  left: 22px;
 }
 
 #nav-content .link-orange-ribbon,
 #nav-content .link-clinic {
   width: 80%;
-  margin: 10px auto;
+  margin: 0 auto 5px;
 }
 
 #nav-content .link-orange-ribbon a,
 #nav-content .link-clinic a {
-  height: 34px;
-  line-height: 34px;
-  border-radius: 17px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 22px;
   font-size: 14px;
 }
 
@@ -533,14 +533,15 @@ p {
   /* 第二階層用設定 二行以上に対応 */
   height: auto;
   line-height: 1.5;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 #nav-content .menu-global-container .menu > li > a {
   position: relative;
   /* 第一階層は一行のみ対応 */
-  height: 38px;
-  line-height: 38px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0;
 }
 
 #nav-content .menu-global-container .menu > li > a::after {
@@ -550,7 +551,7 @@ p {
   display: inline-block;
   padding: 4px;
   position: absolute;
-  top: 12px;
+  top: 15px;
   right: 0;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -568,11 +569,7 @@ p {
 
 #nav-content .st-submenu-box {
   width: 80%;
-  margin: 20px auto;
-}
-
-#nav-content .menu-utility__sp-sub-top {
-  margin-bottom: 10px;
+  margin: 20px auto 10px;
 }
 
 #nav-content .menu-utility__sp-sub-top li {
@@ -597,19 +594,25 @@ p {
   text-decoration: none;
 }
 
+#nav-content .menu-utility__sp-sub-top li:last-child {
+  margin-bottom: 0;
+}
+
 #nav-content .menu-utility__sp-sub-top li a {
   background-color: #95cb40;
   color: #fff;
-  padding: 5px 4px;
+  padding: 10px 4px;
   border-radius: 2px;
   display: block;
   text-align: center;
 }
 
+#nav-content .menu-utility__sp-sub-bottom {
+  margin: 10px 0;
+}
+
 #nav-content .menu-utility__sp-sub-bottom li {
   position: relative;
-  padding-left: 13px;
-  margin-right: 15px;
 }
 
 #nav-content .menu-utility__sp-sub-bottom li::before {
@@ -629,8 +632,14 @@ p {
   text-decoration: none;
 }
 
+#nav-content .menu-utility__sp-sub-bottom li:last-child {
+  margin-bottom: 0;
+}
+
 #nav-content .menu-utility__sp-sub-bottom li a {
   color: #666;
+  display: block;
+  padding: 6px 15px 6px 13px;
 }
 
 /* ぱんくず */
@@ -639,7 +648,7 @@ p {
   padding: 0 0 5px;
   background-color: #f3fCe6;
   padding: 5px 0;
-  margin: 20px 0 0;
+  margin: 0;
 }
 
 #breadcrumb ol {
@@ -1340,7 +1349,7 @@ p {
 /*ハンバーガーアイコンをCSSだけで表現*/
 #nav-open span, #nav-open span:before, #nav-open span:after {
   position: absolute;
-  height: 4px;
+  height: 3px;
   /*線の太さ*/
   width: 40px;
   /*長さ*/
@@ -1394,6 +1403,7 @@ p {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
   /*左に隠しておく*/
+  padding-bottom: 20px;
 }
 
 /*チェックが入ったらもろもろ表示*/
