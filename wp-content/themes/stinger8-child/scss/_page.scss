@@ -124,6 +124,14 @@
       margin-bottom: 40px;
     }
   }
+
+  /* br PCでのみ改行する */
+  .br-only-pc {
+    display: none;
+    @include screen-pc {
+      display: inline;
+    }
+  }
 }
 
 /* 子育て中の方へ for-parent */
@@ -221,7 +229,7 @@
     .catch {
       padding: 0;
       list-style: none;
-      color: $primary-color;
+      color: $secondary-color;
       @include screen-pc {
         padding-left: 310px;
         letter-spacing: 0.18em;
@@ -303,6 +311,18 @@
         font-size: 14px;
         padding: 15px 40px 15px 0;
       }
+      .link-box {
+        @include rounded-rectangle-link(180px);
+        margin: 10px auto 0;
+        @include screen-pc {
+          margin: 10px 0 0;
+        }
+        a {
+          @include screen-pc {
+            padding: 6px 4px !important;
+          }
+        }
+      }
       .note {
         margin-top: 10px;
         font-size: 14px;
@@ -364,8 +384,11 @@
       border: 3px solid #eee;
       border-radius: 10px;
       ul {
-        padding: 0 20px;
+        padding: 10px 20px;
         list-style-type: none;
+        @include screen-pc {
+          padding: 0 20px;
+        }
         li {
           border-bottom: 1px solid #eee;
           padding: 10px 0;

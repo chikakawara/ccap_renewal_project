@@ -132,7 +132,7 @@ $txt-base-color02: #333;
       flex-flow: row;
       align-items: center;
       justify-content: center;
-      padding: 0 40px;
+      padding: 0 80px;
       height: 127px;
     }
     dl {
@@ -171,6 +171,13 @@ $txt-base-color02: #333;
           overflow: hidden;
           p {
             margin: 0;
+            .day {
+              width: 5.5em;
+              display: block;
+              @include screen-pc {
+                display: inline-block;
+              }
+            }
             @include screen-pc {
               font-size: 15px;
               float: left;
