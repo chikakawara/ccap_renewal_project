@@ -132,7 +132,7 @@ $txt-base-color02: #333;
       flex-flow: row;
       align-items: center;
       justify-content: center;
-      padding: 0 80px;
+      padding: 0 60px;
       height: 127px;
     }
     dl {
@@ -140,8 +140,8 @@ $txt-base-color02: #333;
       margin: 0 auto 10px;
       &:first-of-type {
         @include screen-pc {
-          width: 420px;
-          min-width: 420px;
+          width: 400px;
+          min-width: 400px;
         }
         dd {
           &:last-child {
@@ -166,16 +166,18 @@ $txt-base-color02: #333;
           background-color: transparent;
           margin: 0;
           padding: 0;
+          width: auto;
         }
         dd {
           overflow: hidden;
           p {
             margin: 0;
             .day {
-              width: 5.5em;
-              display: block;
+              min-width: 6em;
+              display: inline-block;
               @include screen-pc {
-                display: inline-block;
+                margin-right: 0.5em;
+                display: inline;
               }
             }
             @include screen-pc {
@@ -183,6 +185,11 @@ $txt-base-color02: #333;
               float: left;
               line-height: 1.4;
               letter-spacing: 0;
+            }
+            &:first-child {
+              @include screen-pc {
+                margin-right: 1em;
+              }
             }
           }
         }
