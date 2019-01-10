@@ -172,17 +172,11 @@
         padding: 25px 0;
       }
       dt {
-        br {
-          display: none;
-        }
         @include screen-pc {
           font-size: 18px !important;
           width: 250px !important;
           min-width: 250px !important;
           line-height: 1.3;
-          br {
-            display: inline;
-          }
         }
       }
       dd {
@@ -1488,12 +1482,6 @@
     table {
       @include table-simple;
       th {
-        br {
-          display: none;
-          @include screen-pc {
-            display: inline;
-          }
-        }
         @include screen-pc {
           width: 200px;
           text-align: left;
@@ -1956,12 +1944,6 @@
         td {
           vertical-align: middle;
           padding: 0 10px;
-          br {
-            display: none;
-            @include screen-pc {
-              display: inline;
-            }
-          }
           &::before {
             color: $secondary-color;
           }
@@ -2084,12 +2066,6 @@
         th {
           @include screen-pc {
             width: 140px;
-          }
-          br {
-            display: none;
-            @include screen-pc {
-              display: inline;
-            }
           }
         }
         td {
