@@ -1159,35 +1159,68 @@ p {
   line-height: inherit;
 }
 
+/* 幅 */
+#side {
+  float: none;
+  width: auto;
+  padding-top: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  #side {
+    float: right;
+    width: 240px;
+    padding-top: 0;
+  }
+}
+
+#side .st-aside {
+  float: none;
+  width: auto;
+}
+
 #mybox .ad {
   background-color: #f3fCe6;
   border-radius: 4px;
   padding: 15px;
-  margin: 40px 0 0;
+  margin: 70px 0 0;
   position: relative;
 }
 
-@media print, screen and (min-width: 960px) {
-  #mybox .ad {
-    margin-top: 26px;
-  }
+#mybox .ad:first-child {
+  margin-top: 40px;
 }
 
-#mybox .ad:last-child {
-  margin-top: 60px;
+#mybox .ad:first-child .menu_underh2::after {
+  content: 'Category';
+}
+
+#mybox .ad:last-child .menu_underh2::after {
+  content: 'Archive';
 }
 
 #mybox .ad .menu_underh2 {
   color: #333;
   position: absolute;
-  top: -30px;
+  top: -40px;
   left: 0;
+  font-family: "Noto Sans JP";
+  font-size: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
   #mybox .ad .menu_underh2 {
-    font-size: 16px;
+    font-size: 17px;
   }
+}
+
+#mybox .ad .menu_underh2::after {
+  display: inline-block;
+  margin-left: 0.8em;
+  font-size: 0.8em;
+  color: #95cb40;
+  letter-spacing: 0.1em;
+  font-family: "M PLUS Rounded 1c";
 }
 
 #mybox .ad ul li {
@@ -7743,12 +7776,63 @@ p {
 }
 
 /* list */
+.archive {
+  /* 一覧周囲にマージン */
+  /* 一覧タイトル */
+  /* 打ち消し */
+}
+
+.archive .st-main {
+  margin: 10px 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .archive .st-main {
+    margin: 0 280px 0 0;
+  }
+}
+
+.archive .entry-title {
+  background-color: #f3fCe6;
+  color: #1b8924;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 16px 10px 16px 60px;
+  background-image: url(./images/pages/memo.png);
+  background-repeat: no-repeat;
+  background-size: 36px auto;
+  background-position: 20px 50%;
+  border-radius: 5px;
+  margin: 0 0 20px;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.archive .kanren {
+  padding-top: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .archive .kanren {
+    padding-top: 20px;
+  }
+}
+
+.st-main {
+  margin: 10px 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .st-main {
+    margin: 0 280px 0 0;
+  }
+}
+
 @media print, screen and (min-width: 960px) {
   .list-box--wrapper {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px 30px 0;
-    margin-right: 10px;
   }
 }
 
@@ -7830,11 +7914,6 @@ p {
 }
 
 /* 投稿ページ */
-/* 投稿ページでのみpadding有効 */
-.st-post {
-  padding: 20px 15px;
-}
-
 .article-post {
   /* カテゴリと日付 */
   /* 見出し */
@@ -7846,7 +7925,7 @@ p {
     border: 2px solid #95cb40;
     border-radius: 10px;
     padding: 20px 40px;
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 0;
     box-shadow: 3px 3px 0px 0px #95cb40;
   }
 }
