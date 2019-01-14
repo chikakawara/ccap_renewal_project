@@ -91,3 +91,46 @@
     }
   }
 }
+
+/* page送り */
+.st-pagelink .page-numbers {
+  padding: 0;
+  height: auto;
+  min-width: auto;
+  width: auto;
+  border: 0;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  &.next,
+  &.prev {
+    position: relative;
+    padding: 5px 20px;
+    &::before {
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      top: calc(50% - 3px);
+    }
+  }
+  &.next {
+    padding-right: 28px;
+    &::before {
+      right: 8px;
+      border-width: 2.5px 0 2.5px 5px;
+      border-color: transparent transparent transparent #fff;
+    }
+  }
+  &.prev {
+    padding-left: 28px;
+    &::before {
+      left: 8px;
+      border-width: 2.5px 5px 2.5px 0;
+      border-color: transparent #fff transparent transparent;
+    }
+  }
+}

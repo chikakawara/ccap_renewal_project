@@ -7896,6 +7896,54 @@ p {
   }
 }
 
+/* page送り */
+.st-pagelink .page-numbers {
+  padding: 0;
+  height: auto;
+  min-width: auto;
+  width: auto;
+  border: 0;
+  background-color: #95cb40;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.st-pagelink .page-numbers.next, .st-pagelink .page-numbers.prev {
+  position: relative;
+  padding: 5px 20px;
+}
+
+.st-pagelink .page-numbers.next::before, .st-pagelink .page-numbers.prev::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  top: calc(50% - 3px);
+}
+
+.st-pagelink .page-numbers.next {
+  padding-right: 28px;
+}
+
+.st-pagelink .page-numbers.next::before {
+  right: 8px;
+  border-width: 2.5px 0 2.5px 5px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.st-pagelink .page-numbers.prev {
+  padding-left: 28px;
+}
+
+.st-pagelink .page-numbers.prev::before {
+  left: 8px;
+  border-width: 2.5px 5px 2.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
 /* single */
 /* カテゴリーラベル */
 .post .st-catgroup {

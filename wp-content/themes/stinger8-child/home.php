@@ -8,8 +8,6 @@
 					<?php get_template_part( 'itiran' ); ?>
 					<?php get_template_part( 'st-pagenavi' ); //ページナビ読み込み ?>
 				</div>
-					<?php echo 'home.php' ?>
-
 			</article>
 		</div>
 	</div>
