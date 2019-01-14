@@ -20,12 +20,15 @@
 
 				<div class="blog_info">
 					<p>
-						<span class="pcone">
+						<span class="category-group">
 							<?php the_category( ' ' ) ?>
+						</span>
+						<span class="tag-group">
 							<?php the_tags( '<i class="fa fa-tags"></i>&nbsp;', ', ' ); ?>
           	</span>
-						&nbsp;
-						<?php the_time( 'Y/m/d' ); ?>
+						<span class="update-time">
+							<?php the_time( 'Y/m/d' ); ?>
+						</span>
 					</p>
 				</div>
 				<div class="smanone2 excerpt">

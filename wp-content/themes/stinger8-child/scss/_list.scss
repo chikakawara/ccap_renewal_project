@@ -58,7 +58,7 @@
       padding: 0;
       /* 見出し　*/
       .kanren-t {
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: 0.05em;
         @include screen-pc {
           font-size: 14px;
@@ -70,12 +70,26 @@
           }
         }
       }
-      .blog_info p a {
-        display: inline-block;
-        color: #fff;
-        background: #f2bd1c;
-        padding: 2px 6px;
-        border-radius: 2px;
+      .blog_info {
+        .category-group a {
+          display: inline-block;
+          color: #fff;
+          background: #f2bd1c;
+          padding: 2px 6px;
+          border-radius: 5px;
+        }
+        .update-time {
+          display: block;
+          margin-top: 2px;
+          @include screen-pc {
+            display: inline-block;
+            margin-top: 0;
+            float: right;
+          }
+          &::before {
+            content: '更新日: ';
+          }
+        }
       }
       .excerpt {
         margin-top: 10px;

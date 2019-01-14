@@ -7854,7 +7854,7 @@ p {
 }
 
 .list-box--wrapper .list-box dd .kanren-t {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.05em;
 }
 
@@ -7872,12 +7872,29 @@ p {
   color: #1b8924;
 }
 
-.list-box--wrapper .list-box dd .blog_info p a {
+.list-box--wrapper .list-box dd .blog_info .category-group a {
   display: inline-block;
   color: #fff;
   background: #f2bd1c;
   padding: 2px 6px;
-  border-radius: 2px;
+  border-radius: 5px;
+}
+
+.list-box--wrapper .list-box dd .blog_info .update-time {
+  display: block;
+  margin-top: 2px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .list-box--wrapper .list-box dd .blog_info .update-time {
+    display: inline-block;
+    margin-top: 0;
+    float: right;
+  }
+}
+
+.list-box--wrapper .list-box dd .blog_info .update-time::before {
+  content: '更新日: ';
 }
 
 .list-box--wrapper .list-box dd .excerpt {
@@ -8025,6 +8042,16 @@ p {
 @media print, screen and (min-width: 960px) {
   .article-post .entry-content {
     font-size: 15px;
+  }
+}
+
+.p-navi {
+  margin-top: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .p-navi {
+    margin-top: 0;
   }
 }
 

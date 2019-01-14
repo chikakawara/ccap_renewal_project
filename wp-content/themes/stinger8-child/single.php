@@ -40,12 +40,7 @@
 						<!-- 日付 -->
 						<div class="article-post--header--date">
 							<span class="kdate">
-								<?php if ( get_the_date() != get_the_modified_date() ) : //更新がある場合 ?>
-									投稿日：<?php echo esc_html( get_the_date() ); ?>
-									更新日：<time class="updated" datetime="<?php echo esc_attr( get_the_modified_date( DATE_ISO8601 ) ); ?>"><?php echo esc_html( get_the_modified_date() ); ?></time>
-								<?php else: //更新がない場合 ?>
-									投稿日：<time class="updated" datetime="<?php echo esc_attr( get_the_date( DATE_ISO8601 ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
-								<?php endif; ?>
+								更新日：<time class="updated" datetime="<?php echo esc_attr( get_the_date( DATE_ISO8601 ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
 							</span>
 						</div>
 
