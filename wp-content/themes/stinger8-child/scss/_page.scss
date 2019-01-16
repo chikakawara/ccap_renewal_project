@@ -86,7 +86,7 @@
   .contents-box {
     margin-bottom: 30px;
     @include screen-pc {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
     h2 {
       @include font-rounded;
@@ -1563,11 +1563,13 @@
   /* 賛助会員とは */
   .contents-box-02 {
     .special-box {
-      @include base-color-box($padding-pc-topbottom:10px, $padding-pc-side:0);
+      @include base-color-box($padding-pc-topbottom:20px, $padding-pc-side:0);
       color: $secondary-color;
       text-align: center;
-      font-size: 16px;
       margin-top: 10px;
+      @include screen-pc {
+        font-size: 18px;
+      }
     }
   }
   /* 申込方法 */
@@ -1612,7 +1614,8 @@
         @include table-simple;
         th {
           @include screen-pc {
-            width: 140px;
+            width: 12em;
+            padding: 10px;
           }
         }
       }
@@ -1642,6 +1645,10 @@
       }
       ul li {
         font-size: 16px;
+        padding: 0;
+        @include screen-pc {
+          font-size: 18px;
+        }
         small {
           color: $txt-base-color02;
         }
@@ -1698,6 +1705,10 @@
         }
         dd {
           text-align: center;
+          img {
+            width: 100px;
+            max-width: 100px;
+          }
         }
         &:last-child {
           dt {
@@ -1711,6 +1722,12 @@
                 }
                 color: $txt-base-color02;
               }
+            }
+          }
+          dd {
+            img {
+              width: 300px;
+              max-width: 300px;
             }
           }
         }

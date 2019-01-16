@@ -243,7 +243,7 @@ $txt-base-color02: #333;
   display: flex;
   flex-flow: column;
   @include screen-pc {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
   dl {
     border-bottom: 2px dotted $primary-color;
@@ -251,7 +251,7 @@ $txt-base-color02: #333;
     @include screen-pc {
       display: flex;
       align-items: center;
-      padding: 15px 0;
+      padding: 20px 0;
     }
     &:last-child {
       border-bottom: 0;

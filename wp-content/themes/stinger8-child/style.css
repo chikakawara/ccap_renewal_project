@@ -2228,7 +2228,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .static-page .contents-box {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 
@@ -2355,7 +2355,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .page-parent.for-parent .contents-box-02 {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -2368,7 +2368,7 @@ p {
   .page-parent.for-parent .contents-box-02 dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -3688,7 +3688,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .for-parent-child.groupcare .contents-box-04 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -3701,7 +3701,7 @@ p {
   .for-parent-child.groupcare .contents-box-04 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -4302,7 +4302,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.fosterparent .contents-box-03 .schedule-box {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -4315,7 +4315,7 @@ p {
   .activity-child.fosterparent .contents-box-03 .schedule-box dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -5251,7 +5251,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.parenting .contents-box-02 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -5264,7 +5264,7 @@ p {
   .activity-child.parenting .contents-box-02 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -5798,7 +5798,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.education .contents-box-02 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -5811,7 +5811,7 @@ p {
   .activity-child.education .contents-box-02 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -5878,7 +5878,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.education .contents-box-03 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -5891,7 +5891,7 @@ p {
   .activity-child.education .contents-box-03 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -5998,7 +5998,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .page-parent.support .contents-box-02 .contents-box-inner,
   .page-parent.support .contents-box-03 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -6013,7 +6013,7 @@ p {
   .page-parent.support .contents-box-03 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -6177,13 +6177,18 @@ p {
   color: #666;
   color: #1b8924;
   text-align: center;
-  font-size: 16px;
   margin-top: 10px;
 }
 
 @media print, screen and (min-width: 960px) {
   .support-child.member .contents-box-02 .special-box {
-    padding: 10px 0;
+    padding: 20px 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.member .contents-box-02 .special-box {
+    font-size: 18px;
   }
 }
 
@@ -6197,7 +6202,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .support-child.member .contents-box-03 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -6210,7 +6215,7 @@ p {
   .support-child.member .contents-box-03 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -6324,7 +6329,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .support-child.donate .contents-box-03 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -6337,7 +6342,7 @@ p {
   .support-child.donate .contents-box-03 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -6408,7 +6413,8 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .support-child.donate .contents-box-03 .contents-box-inner table th {
-    width: 140px;
+    width: 12em;
+    padding: 10px;
   }
 }
 
@@ -6494,6 +6500,13 @@ p {
 
 .support-child.advertisement .contents-box-02 .contents-box-inner ul li {
   font-size: 16px;
+  padding: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .support-child.advertisement .contents-box-02 .contents-box-inner ul li {
+    font-size: 18px;
+  }
 }
 
 .support-child.advertisement .contents-box-02 .contents-box-inner ul li small {
@@ -6516,7 +6529,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .support-child.advertisement .contents-box-03 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -6529,7 +6542,7 @@ p {
   .support-child.advertisement .contents-box-03 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -6626,6 +6639,11 @@ p {
   text-align: center;
 }
 
+.support-child.advertisement .contents-box-03 .contents-box-inner dl dd img {
+  width: 100px;
+  max-width: 100px;
+}
+
 .support-child.advertisement .contents-box-03 .contents-box-inner dl:last-child dt p:last-child {
   font-size: 0.8em;
   text-align: left;
@@ -6637,6 +6655,11 @@ p {
     font-size: 13px;
     text-align: center;
   }
+}
+
+.support-child.advertisement .contents-box-03 .contents-box-inner dl:last-child dd img {
+  width: 300px;
+  max-width: 300px;
 }
 
 .support-child.advertisement .contents-box-03 .note {
@@ -6763,7 +6786,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .enlightenment-child.book .contents-box-02 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -6776,7 +6799,7 @@ p {
   .enlightenment-child.book .contents-box-02 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -7050,7 +7073,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .enlightenment-child.lecture .contents-box-02 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -7063,7 +7086,7 @@ p {
   .enlightenment-child.lecture .contents-box-02 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -7344,7 +7367,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .enlightenment-child.interview .contents-box-02 .contents-box-inner {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 }
 
@@ -7357,7 +7380,7 @@ p {
   .enlightenment-child.interview .contents-box-02 .contents-box-inner dl {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
