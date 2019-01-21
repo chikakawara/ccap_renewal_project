@@ -4352,12 +4352,6 @@ p {
   padding-bottom: 0;
 }
 
-@media print, screen and (min-width: 960px) {
-  .activity-child.fosterparent .contents-box-03 .schedule-box {
-    padding: 0 45px;
-  }
-}
-
 .activity-child.fosterparent .contents-box-03 .schedule-box dl:last-child {
   padding-bottom: 0;
 }
@@ -4369,6 +4363,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li:first-child {
     font-size: 13px;
+    margin-bottom: 4px;
   }
 }
 
@@ -4380,6 +4375,7 @@ p {
 @media print, screen and (min-width: 960px) {
   .activity-child.fosterparent .contents-box-03 .schedule-box dl dd ul li:nth-child(2) {
     font-size: 20px;
+    margin-bottom: 2px;
   }
 }
 
@@ -4429,6 +4425,7 @@ p {
 /* 電話相談 activity/consultation */
 .activity-child.consultation {
   /* 導入 */
+  /* 図表 */
   /* 法律相談説明 */
   /* 電話番号 */
 }
@@ -4476,6 +4473,28 @@ p {
     display: flex;
     align-items: center;
     min-height: calc( 431px * (300/640));
+  }
+}
+
+.activity-child.consultation .contents-box-02 .contents-box-inner {
+  width: calc(100vw * 0.9);
+  height: calc(100vw * 0.9 / 640 * 2800);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./images/pages/activity_consultation_stat_sp.png);
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.consultation .contents-box-02 .contents-box-inner {
+    height: calc(100vw * 0.9 / 1800 * 1560);
+    background-image: url(./images/pages/activity_consultation_stat_pc.png);
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.consultation .contents-box-02 .contents-box-inner {
+    width: 100%;
+    height: 780px;
   }
 }
 
@@ -4546,14 +4565,7 @@ p {
 }
 
 .activity-child.consultation .contents-box-03 .note {
-  font-size: 14px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.consultation .contents-box-03 .note {
-    text-align: right;
-    line-height: 1.4;
-  }
+  font-size: 13px;
 }
 
 .activity-child.consultation .contents-box-04 .contents-box-inner {
@@ -5316,11 +5328,16 @@ p {
   }
 }
 
+.activity-child.parenting .contents-box-02 .contents-box-inner dd p {
+  margin-bottom: 0;
+}
+
 .activity-child.parenting .contents-box-02 .contents-box-inner > p {
   background-color: #f3fCe6;
   border-radius: 4px;
   text-align: center;
   padding: 20px 0;
+  padding-top: 25px;
   margin: 10px 0 30px;
   color: #1b8924;
   font-size: 16px;
@@ -5516,7 +5533,7 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .activity-child.childcare .contents-box-02 ul li {
-    padding: 30px 40px;
+    padding: 20px 30px;
   }
 }
 
@@ -5528,6 +5545,10 @@ p {
   .activity-child.childcare .contents-box-02 ul li:last-child {
     margin-right: 0;
   }
+}
+
+.activity-child.childcare .contents-box-02 ul li p {
+  font-size: 14px;
 }
 
 .activity-child.childcare .contents-box-02 ul li p:first-child {
@@ -5622,6 +5643,7 @@ p {
   background-color: #F8F664;
   padding: 2px 50px;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .activity-child.childcare .contents-box-03 p:nth-of-type(2) strong {
@@ -5675,6 +5697,17 @@ p {
   .activity-child.childcare .contents-box-03 .contents-box-inner ol li::before {
     font-size: 16px;
   }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.childcare .contents-box-03 .contents-box-inner ol {
+    font-size: 18px;
+  }
+}
+
+.activity-child.childcare .contents-box-03 .contents-box-inner ol li::before {
+  top: 4px;
+  position: absolute;
 }
 
 .activity-child.childcare .contents-box-03 table {

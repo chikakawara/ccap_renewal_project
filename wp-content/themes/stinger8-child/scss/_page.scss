@@ -955,9 +955,6 @@
     }
     .schedule-box {
       @include dl-rounded-box;
-      @include screen-pc {
-        padding: 0 45px;
-      }
       dl {
         &:last-child {
           padding-bottom: 0;
@@ -968,6 +965,7 @@
             &:first-child {
               @include screen-pc {
                 font-size: 13px;
+                margin-bottom: 4px;
               }
             }
             &:nth-child(2) {
@@ -975,6 +973,7 @@
               color: $secondary-color;
               @include screen-pc {
                 font-size: 20px;
+                margin-bottom: 2px;
               }
             }
           }
@@ -1014,6 +1013,24 @@
       }
     }
   }
+  /* 図表 */
+  .contents-box-02 {
+    .contents-box-inner {
+      width: calc(100vw * 0.9);
+      height: calc(100vw * 0.9 / 640 * 2800);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(./images/pages/activity_consultation_stat_sp.png);
+      @include screen-tablet {
+        height: calc(100vw * 0.9 / 1800 * 1560);
+        background-image: url(./images/pages/activity_consultation_stat_pc.png);
+      }
+      @include screen-pc {
+        width: 100%;
+        height: 780px;
+      }
+    }
+  }
   /* 法律相談説明 */
   .contents-box-03 {
     h3 {
@@ -1042,11 +1059,7 @@
       }
     }
     .note {
-      font-size: 14px;
-      @include screen-pc {
-        text-align: right;
-        line-height: 1.4;
-      }
+      font-size: 13px;
     }
   }
   /* 電話番号 */
@@ -1269,12 +1282,16 @@
             font-size: 15px;
           }
         }
+        p {
+          margin-bottom: 0;
+        }
       }
       > p {
         background-color: $base-color;
         border-radius: 4px;
         text-align: center;
         padding: 20px 0;
+        padding-top: 25px;
         margin: 10px 0 30px;
         color: $secondary-color;
         font-size: 16px;
@@ -1350,7 +1367,7 @@
         flex-flow: row;
       }
       li {
-        @include base-color-box;
+        @include base-color-box($padding-pc-topbottom:20px, $padding-pc-side:30px)
         margin-bottom: 10px;
         @include screen-pc {
           width: calc(100% / 3);
@@ -1360,6 +1377,7 @@
           }
         }
         p {
+          font-size: 14px;
           &:first-child {
             color: $secondary-color;
             font-size: 16px;
@@ -1405,6 +1423,7 @@
       background-color: #F8F664;
       padding: 2px 50px;
       border-radius: 4px;
+      margin-bottom: 20px;
       strong {
         font-weight: normal;
         font-size: 14px;
@@ -1416,6 +1435,13 @@
       @include base-color-box;
       ol {
         @include circle-num-list;
+        @include screen-pc {
+          font-size: 18px;
+        }
+        li::before {
+          top: 4px;
+          position: absolute;
+        }
       }
     }
     /* スケジュール */
