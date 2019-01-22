@@ -6973,10 +6973,14 @@ p {
 .enlightenment-child.book .contents-box-03 table td img {
   display: block;
   margin: 0 auto 10px;
+  width: 180px;
+  max-width: 180px;
 }
 
 @media print, screen and (min-width: 960px) {
   .enlightenment-child.book .contents-box-03 table td img {
+    width: 90px;
+    max-width: 90px;
     float: left;
     margin-left: 10px;
   }
