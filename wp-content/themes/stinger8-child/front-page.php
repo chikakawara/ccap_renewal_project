@@ -81,7 +81,7 @@
 
 				<!-- 最新のお知らせ -->
 				<section class="latest-news-box">
-					<h2 class="section-title">最新のお知らせ<span class="section-title__en">Latest news</a></h2>
+					<h2 class="section-title">最新のお知らせ</h2>
 					<?php
 					  $arg = array(
 					             'posts_per_page' => 4, // 表示する件数
@@ -122,10 +122,7 @@
 
 				<!-- 活動 -->
 				<section class="actions-box">
-					<h2 class="section-title">
-						CCAPの活動
-						<span class="section-title__en">Action</a>
-					</h2>
+					<h2 class="section-title">CCAPの活動</h2>
 
 					<div class="actions-items-wrapper">
 
