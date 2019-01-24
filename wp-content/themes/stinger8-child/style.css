@@ -473,10 +473,6 @@ p {
   color: #1b8924;
 }
 
-#st-menubox .menu > li:hover .sub-menu {
-  display: block;
-}
-
 #st-menubox .sub-menu {
   position: absolute;
   left: -1px;
