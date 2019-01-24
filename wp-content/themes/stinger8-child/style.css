@@ -447,7 +447,7 @@ p {
   float: none;
   border: 0;
   border-right: 2px dotted #95cb40;
-  width: 140px;
+  width: 160px;
   height: 24px;
 }
 
@@ -456,12 +456,12 @@ p {
   border-left: 2px dotted #95cb40;
 }
 
-#st-menubox .menu > li:nth-child(3) {
+#st-menubox .menu > li:nth-child(2), #st-menubox .menu > li:nth-child(3) {
   width: 180px;
 }
 
 #st-menubox .menu > li:nth-child(5) {
-  width: 280px;
+  width: 200px;
 }
 
 #st-menubox .menu > li > a {
