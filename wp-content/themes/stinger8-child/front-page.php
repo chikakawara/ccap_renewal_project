@@ -69,7 +69,7 @@
 						</a>
 						<a href="./for-profession">
 							<dl>
-								<dt><span class="people-category">行政・<br>専門職員</span><br>の方へ</dt>
+								<dt><span class="people-category">専門職<br>・行政</span><br>の方へ</dt>
 								<dd>
 									<strong>児童虐待問題に関して協力する</strong>
 									<p>公的機関に対するアドバイス、講師派遣、セミナーをはじめたし、立法・行政に対して積極的に事業協力を行なっています。</p>
