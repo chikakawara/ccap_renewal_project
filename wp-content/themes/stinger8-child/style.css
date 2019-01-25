@@ -1853,7 +1853,7 @@ p {
   }
 }
 
-.latest-news-box ul li a {
+.latest-news-box ul li {
   display: block;
   border-bottom: 2px solid #ddd;
   padding: 10px 0;
@@ -1862,9 +1862,50 @@ p {
 }
 
 @media print, screen and (min-width: 960px) {
-  .latest-news-box ul li a {
+  .latest-news-box ul li {
     overflow: hidden;
   }
+}
+
+.latest-news-box ul li span {
+  font-size: inherit;
+  margin: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .latest-news-box ul li span {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.latest-news-box ul li span.latest-news-category a {
+  display: inline-block;
+  color: #fff;
+  background: #f2bd1c;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.latest-news-box ul li span.latest-news-title {
+  display: block;
+  float: none;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .latest-news-box ul li span.latest-news-title {
+    margin-top: 0;
+    margin-right: 0;
+    font-size: inherit;
+  }
+}
+
+.latest-news-box ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1873,25 +1914,7 @@ p {
   }
 }
 
-.latest-news-box ul li a p {
-  font-size: inherit;
-  margin: 0;
-}
-
-@media print, screen and (min-width: 960px) {
-  .latest-news-box ul li a p {
-    float: left;
-    margin-right: 10px;
-  }
-}
-
-@media print, screen and (min-width: 960px) {
-  .latest-news-box ul li a p:last-child {
-    margin-right: 0;
-  }
-}
-
-.latest-news-box ul li:last-child a {
+.latest-news-box ul li:last-child {
   border: 0;
 }
 

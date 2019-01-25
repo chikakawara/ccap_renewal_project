@@ -84,10 +84,9 @@
 					<h2 class="section-title">最新のお知らせ</h2>
 					<?php
 					  $arg = array(
-					             'posts_per_page' => 4, // 表示する件数
+					             'posts_per_page' => 5, // 表示する件数
 					             'orderby' => 'date', // 日付でソート
-					             'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
-					             'category_name' => 'news' // 表示したいカテゴリーのスラッグを指定
+					             'order' => 'DESC' // DESCで最新から表示、ASCで最古から表示
 					         );
 					  $posts = get_posts( $arg );
 					  if( $posts ): ?>
@@ -97,10 +96,9 @@
 					        setup_postdata( $post ); ?>
 
 								<li>
-									<a href="<?php the_permalink(); ?>">
-										<p><?php the_time( 'Y.m.d' ); ?></p>
-										<p><?php the_title(); ?></p>
-									</a>
+									<span class="latest-news-time"><?php the_time( 'Y.m.d' ); ?></span>
+									<span class="latest-news-category"><?php the_category( ' ' ) ?></span>
+									<span class="latest-news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
 								</li>
 
 					<?php endforeach; ?>

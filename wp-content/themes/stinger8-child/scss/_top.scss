@@ -285,38 +285,56 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
       margin: 20px auto;
     }
     li {
-      a {
-        display: block;
-        border-bottom: 2px solid #ddd;
-        padding: 10px 0;
-        color: $txt-base-color02;
-        text-decoration: none;
+      display: block;
+      border-bottom: 2px solid #ddd;
+      padding: 10px 0;
+      color: $txt-base-color02;
+      text-decoration: none;
+      @include screen-pc {
+        overflow: hidden;
+      }
+      span {
+        font-size: inherit;
+        margin: 0;
         @include screen-pc {
-          overflow: hidden;
+          float: left;
+          margin-right: 10px;
         }
+        &.latest-news-category {
+          a {
+            display: inline-block;
+            color: #fff;
+            background: #f2bd1c;
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-size: 13px;
+          }
+        }
+        &.latest-news-title {
+          display: block;
+          float: none;
+          font-size: 18px;
+          margin-top: 5px;
+          @include screen-pc {
+            margin-top: 0;
+            margin-right: 0;
+            font-size: inherit;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
         &:hover {
           @include screen-pc {
             color: $secondary-color;
           }
         }
-        p {
-          font-size: inherit;
-          margin: 0;
-          @include screen-pc {
-            float: left;
-            margin-right: 10px;
-          }
-          &:last-child {
-            @include screen-pc {
-              margin-right: 0;
-            }
-          }
-        }
       }
       &:last-child {
-        a {
-          border: 0;
-        }
+
+        border: 0;
+
       }
     }
   }
