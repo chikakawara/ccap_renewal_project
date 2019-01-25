@@ -104,13 +104,7 @@
 					<?php endforeach; ?>
 					    </ul>
 							<div class="latest-news-more-link">
-								<?php
-									// 指定したカテゴリーの ID を取得
-									$category_id = get_category_by_slug( 'news' );
-									// このカテゴリーの URL を取得
-									$category_link = get_category_link( $category_id );
-								?>
-								<a href="<?php echo esc_url( $category_link ); ?>">全てのお知らせを見る</a>
+								<a href="./info">全てのお知らせを見る</a>
 							</div>
 					<?php
 					  endif;
