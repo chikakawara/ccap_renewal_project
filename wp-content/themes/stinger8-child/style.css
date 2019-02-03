@@ -3777,7 +3777,9 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .for-parent-child.groupcare .contents-box-05 h2 {
-    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -6515,7 +6517,9 @@ p {
 
 @media print, screen and (min-width: 960px) {
   .support-child.advertisement .contents-box-02 .contents-box-inner h3 {
-    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-color: transparent;
     padding: 0;
     margin: 0;

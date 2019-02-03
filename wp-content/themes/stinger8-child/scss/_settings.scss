@@ -444,7 +444,9 @@ $txt-base-color02: #333;
   position: relative;
   margin-bottom: 20px;
   @include screen-pc {
-    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-color: transparent;
     padding: 0;
     margin: 0;
