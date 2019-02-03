@@ -140,7 +140,7 @@
 								</a>
 								<div class="actions-item-description">
 									<strong>グループケア</strong>
-									<p>「子どもがかわいく思えない」「イライラや怒りを子どもにぶつけてしまう」MCGはそんな子どもへの虐待の悩みを抱えたおかあさんたちのグループです。</p>
+									<p>「子どもがかわいく思えない」「イライラや怒りを子どもにぶつけてしまう」MCGはそんな子どもとの関係に悩むおかあさんたちのグループです。</p>
 								</div>
 							</div>
 							<div class="actions-more-link">
@@ -155,7 +155,7 @@
 								</a>
 								<div class="actions-item-description">
 									<strong>里親・養親支援</strong>
-									<p>専門家による相談、里親会への講師派遣、里親対象研修などさまざまな支援を行なっています。</p>
+									<p>専門家による相談、里親会への講師派遣、里親・養子縁組家庭対象研修などさまざまな支援を行なっています。</p>
 								</div>
 							</div>
 							<div class="actions-more-link">
