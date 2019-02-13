@@ -8111,10 +8111,6 @@ select::-ms-expand {
   }
 }
 
-.st-main {
-  margin: 10px 15px;
-}
-
 @media print, screen and (min-width: 960px) {
   .st-main {
     margin: 0 280px 0 0;
