@@ -8335,6 +8335,26 @@ p {
   }
 }
 
+.article-post .entry-content h2, .article-post .entry-content h3 {
+  font-size: 18px;
+}
+
+.article-post .entry-content h2 {
+  font-weight: bold;
+}
+
+.article-post .entry-content h3 {
+  padding-left: 0;
+}
+
+.article-post .entry-content p {
+  margin-bottom: 20px;
+}
+
+.article-post .entry-content table tr:nth-child(even) {
+  background-color: transparent;
+}
+
 .p-navi {
   margin-top: 20px;
 }

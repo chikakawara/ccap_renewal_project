@@ -59,6 +59,21 @@
     @include screen-pc {
       font-size: 15px;
     }
+    h2,h3 {
+      font-size: 18px;
+    }
+    h2 {
+      font-weight: bold;
+    }
+    h3 {
+      padding-left: 0;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    table tr:nth-child(even) {
+      background-color: transparent;
+    }
   }
 }
 .p-navi {
