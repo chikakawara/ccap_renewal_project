@@ -39,3 +39,7 @@ p {
     margin-bottom: 0;
   }
 }
+
+select::-ms-expand {
+    display: none;
+}

@@ -79,6 +79,10 @@ p {
   }
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 /* header */
 #headbox-bg {
   border-top: 4px solid #95cb40;
