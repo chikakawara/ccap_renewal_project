@@ -451,21 +451,12 @@ select::-ms-expand {
   float: none;
   border: 0;
   border-right: 2px dotted #95cb40;
-  width: 160px;
+  width: 176.66667px;
   height: 24px;
 }
 
 #st-menubox .menu > li:first-child {
-  width: 180px;
   border-left: 2px dotted #95cb40;
-}
-
-#st-menubox .menu > li:nth-child(2), #st-menubox .menu > li:nth-child(3) {
-  width: 180px;
-}
-
-#st-menubox .menu > li:nth-child(5) {
-  width: 200px;
 }
 
 #st-menubox .menu > li > a {
