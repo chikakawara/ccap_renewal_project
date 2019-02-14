@@ -7576,6 +7576,7 @@ select::-ms-expand {
   margin-top: 10px;
   font-size: 14px;
   border-color: #ddd;
+  margin-bottom: 5px;
 }
 
 .about-child.organization .contents-box-01 > table tr {
@@ -7639,6 +7640,11 @@ select::-ms-expand {
   min-width: 8em;
   text-align: left;
   vertical-align: top;
+}
+
+.about-child.organization .contents-box-01 .note {
+  font-size: 0.9em;
+  text-align: right;
 }
 
 /* 沿革 about/history */
