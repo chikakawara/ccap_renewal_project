@@ -64,15 +64,31 @@
     }
     h2 {
       font-weight: bold;
+      background: #f3f3f3;
+      padding: 8px;
+      border-left: 3px solid #ccc;
+      margin: 20px 0;
     }
     h3 {
-      padding-left: 0;
+      padding: 0 10px 5px 0;
+      font-size: 18px;
+      line-height: 1.4;
+      border-bottom: 1px dashed #8a8a8a;
     }
+     h4 {
+      background: none;
+      padding: 0;
+      margin-bottom: 10px;
+     }
     p {
       margin-bottom: 20px;
     }
     table tr:nth-child(even) {
       background-color: transparent;
+    }
+    .post ol,
+    .post ul {
+      padding-top: 0;
     }
   }
 }
