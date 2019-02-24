@@ -941,45 +941,21 @@
     @include tel-within-contents;
   }
   /* 特別養親サロン */
-  .contents-box-03 {
+  .contents-box-04 {
     h3 {
       @include heading-with-icon($imgname:'calendar-icon');
     }
-    > p {
-      margin-bottom: 10px;
-    }
-    .schedule-box {
-      @include dl-rounded-box;
-      dl {
-        &:last-child {
-          padding-bottom: 0;
-        }
-        dd {
-          ul li {
-            padding-bottom: 0;
-            &:first-child {
-              @include screen-pc {
-                font-size: 13px;
-                margin-bottom: 4px;
-              }
-            }
-            &:nth-child(2) {
-              font-size: 18px;
-              color: $secondary-color;
-              @include screen-pc {
-                font-size: 20px;
-                margin-bottom: 2px;
-              }
-            }
-          }
-          table {
-            @include table-simple;
-          }
-        }
+    .link-box {
+      @include rounded-rectangle-link(360px);
+      width: 100%;
+      margin: 20px auto;
+      @include screen-tablet {
+        width: 360px;
+        margin: 20px auto 20px 0;
       }
     }
   }
-  .contents-box-04 {
+  .contents-box-05 {
     background-color: #f3fCe6;
     border-radius: 10px;
     padding: 15px;
@@ -1318,8 +1294,12 @@
       }
     }
   }
-  /* アタッチメント形成のための... */
+  /* 電話番号 */
   .contents-box-02 {
+    @include tel-within-contents;
+  }
+  /* アタッチメント形成のための... */
+  .contents-box-03 {
     ul {
       display: flex;
       flex-flow: column;
@@ -1344,39 +1324,22 @@
             font-size: 16px;
           }
         }
-        &:last-child {
-          p {
-            display: inline;
-          }
-        }
       }
     }
-    /* スケジュール */
-    h3 {
-      margin-bottom: 10px;
-      @include heading-with-icon($imgname:'calendar-icon');
-    }
-    table {
-      @include table-simple;
-      th {
-        @include screen-pc {
-          width: 200px;
-        }
-      }
-      td {
-        @include screen-pc {
-          padding: 10px 20px;
-        }
+    .link-box {
+      @include rounded-rectangle-link(360px);
+      width: 100%;
+      margin: 20px auto;
+      @include screen-tablet {
+        width: 360px;
+        margin: 20px auto 20px 0;
       }
     }
   }
   /* 心理相談 */
-  .contents-box-03 {
+  .contents-box-04 {
     h3 {
       margin-bottom: 10px;
-      &:last-of-type {
-        @include heading-with-icon($imgname:'calendar-icon');
-      }
     }
     /* 完全予約制 */
     p:nth-of-type(2) {
@@ -1405,21 +1368,13 @@
         }
       }
     }
-    /* スケジュール */
-    table {
-      @include table-simple;
-      th {
-        @include screen-pc {
-          width: 200px;
-        }
-      }
-      td {
-        @include screen-pc {
-          padding: 20px;
-        }
-        dt {
-          color: $secondary-color;
-        }
+    .link-box {
+      @include rounded-rectangle-link(360px);
+      width: 100%;
+      margin: 20px auto;
+      @include screen-tablet {
+        width: 360px;
+        margin: 20px auto 20px 0;
       }
     }
   }
