@@ -13,7 +13,6 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   width: $mainimg-width;
   height: calc(#{$mainimg-width} * 0.46);
   margin: 15px auto 0;
-  // background-color: $base-color;
   background-color: #F3FCE6;
   display: flex;
   align-items: center;
