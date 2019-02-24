@@ -4586,6 +4586,13 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .activity-child.consultation .contents-box-03 .link-box {
+    width: 360px;
+    margin: 20px auto 20px 0;
+  }
+}
+
 .activity-child.consultation .contents-box-03 .note {
   font-size: 13px;
 }
