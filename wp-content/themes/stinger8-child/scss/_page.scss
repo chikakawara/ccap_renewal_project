@@ -809,23 +809,24 @@
 
     }
   }
-  /* 申し込み方法 */
+  /* 参加するには */
   .contents-box-06 {
+    @include base-color-box($padding-pc-topbottom:20px, $padding-pc-side:30px);
     .contents-box-inner {
-      @include base-color-box(20px, 30px, 20px, 15px);
-      ol {
-        @include circle-num-list;
-        li {
-          font-size: 16px;
-          @include screen-pc {
-            font-size: 18px;
-          }
+      margin-bottom: 20px;
+    }
+    .link-box {
+      @include rounded-rectangle-link(360px);
+      width: 100%;
+      a {
+        letter-spacing: 0;
+      }
+      @include screen-tablet {
+        width: 60%;
+        a {
+          letter-spacing: 0.1em;
         }
       }
-    }
-    .note {
-      text-align: right;
-      margin-top: 5px;
     }
   }
 }

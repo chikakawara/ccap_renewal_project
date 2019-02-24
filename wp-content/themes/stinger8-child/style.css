@@ -3512,7 +3512,7 @@ select::-ms-expand {
   /* お母さんへの手紙 */
   /* 参加者の声 */
   /* あなたを待っています */
-  /* 申し込み方法 */
+  /* 参加するには */
 }
 
 .for-parent-child.groupcare .contents-box-01 h2 {
@@ -3895,66 +3895,80 @@ select::-ms-expand {
   }
 }
 
-.for-parent-child.groupcare .contents-box-06 .contents-box-inner {
+.for-parent-child.groupcare .contents-box-06 {
   border-radius: 10px;
   background-color: #f3fCe6;
-  padding: 20px 15px;
+  padding: 20px 20px;
   color: #666;
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent-child.groupcare .contents-box-06 .contents-box-inner {
+  .for-parent-child.groupcare .contents-box-06 {
     padding: 20px 30px;
   }
 }
 
-.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol {
-  counter-reset: my-counter;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.for-parent-child.groupcare .contents-box-06 .contents-box-inner {
+  margin-bottom: 20px;
 }
 
-.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
-  padding-left: 40px;
+.for-parent-child.groupcare .contents-box-06 .link-box {
   position: relative;
-  font-size: inherit;
+  width: 80%;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li::before {
-  content: counter(my-counter);
-  counter-increment: my-counter;
+.for-parent-child.groupcare .contents-box-06 .link-box::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+.for-parent-child.groupcare .contents-box-06 .link-box a {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-06 .link-box {
+    width: 360px;
+  }
+}
+
+.for-parent-child.groupcare .contents-box-06 .link-box a {
   background-color: #95cb40;
   color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
   display: block;
-  float: left;
-  line-height: 22px;
-  margin-left: -40px;
   text-align: center;
-  height: 22px;
-  width: 22px;
-  border-radius: 50%;
+  letter-spacing: 0.1em;
 }
 
 @media print, screen and (min-width: 960px) {
-  .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li::before {
-    font-size: 16px;
+  .for-parent-child.groupcare .contents-box-06 .link-box a:hover {
+    background-color: #1b8924;
   }
 }
 
-.for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
-  font-size: 16px;
+.for-parent-child.groupcare .contents-box-06 .link-box a {
+  letter-spacing: 0;
 }
 
-@media print, screen and (min-width: 960px) {
-  .for-parent-child.groupcare .contents-box-06 .contents-box-inner ol li {
-    font-size: 18px;
+@media screen and (min-width: 600px) {
+  .for-parent-child.groupcare .contents-box-06 .link-box {
+    width: 60%;
   }
-}
-
-.for-parent-child.groupcare .contents-box-06 .note {
-  text-align: right;
-  margin-top: 5px;
+  .for-parent-child.groupcare .contents-box-06 .link-box a {
+    letter-spacing: 0.1em;
+  }
 }
 
 /* 活動内容 activity */
