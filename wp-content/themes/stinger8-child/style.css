@@ -5121,6 +5121,7 @@ select::-ms-expand {
 /* ペアレンティングプログラム activity/parenting */
 .activity-child.parenting {
   /* 導入 */
+  /* 電話番号 */
   /* プログラム内容 */
   /* プログラムに参加するには */
 }
@@ -5176,7 +5177,120 @@ select::-ms-expand {
   }
 }
 
-.activity-child.parenting .contents-box-02 h2 small {
+.activity-child.parenting .contents-box-02 .contents-box-inner {
+  background-color: #f3fCe6;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  padding: 10px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner {
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(./images/pages/telno_bg.png);
+    background-repeat: no-repeat;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    height: 127px;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl {
+  width: 90%;
+  margin: 0 auto 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl:first-of-type {
+    width: 400px;
+    min-width: 400px;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
+  background-image: url(./images/pages/telno.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: 80%;
+  max-width: 370px;
+  height: calc(100vw * 0.8 / 740 * 80);
+  max-height: 40px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
+    width: 370px;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
+  background-color: #fff;
+  padding: 10px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd {
+  overflow: hidden;
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p {
+  margin: 0;
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p .day {
+  min-width: 6em;
+  display: inline-block;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p .day {
+    margin-right: 0.5em;
+    display: inline;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p {
+    font-size: 15px;
+    float: left;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p:first-child {
+    margin-right: 1em;
+  }
+}
+
+.activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
+  color: #1b8924;
+  font-size: 18px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-02 .addition {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.activity-child.parenting .contents-box-03 h2 small {
   color: #333;
   font-size: 16px;
   display: block;
@@ -5184,13 +5298,13 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 h2 small {
+  .activity-child.parenting .contents-box-03 h2 small {
     display: inline;
     margin-top: 0;
   }
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner {
+.activity-child.parenting .contents-box-03 .contents-box-inner {
   border: 3px solid #95cb40;
   border-radius: 10px;
   padding: 0 15px;
@@ -5199,37 +5313,37 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner {
+  .activity-child.parenting .contents-box-03 .contents-box-inner {
     padding: 10px 30px;
   }
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner dl {
+.activity-child.parenting .contents-box-03 .contents-box-inner dl {
   border-bottom: 2px dotted #95cb40;
   padding-bottom: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl {
+  .activity-child.parenting .contents-box-03 .contents-box-inner dl {
     display: flex;
     align-items: center;
     padding: 20px 0;
   }
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-child {
+.activity-child.parenting .contents-box-03 .contents-box-inner dl:last-child {
   border-bottom: 0;
   margin-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
+.activity-child.parenting .contents-box-03 .contents-box-inner dl dt {
   color: #1b8924;
   font-size: 18px;
   margin: 20px 0 5px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
+  .activity-child.parenting .contents-box-03 .contents-box-inner dl dt {
     margin: 0;
     font-size: 20px;
     width: 110px;
@@ -5239,37 +5353,37 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl dd {
+  .activity-child.parenting .contents-box-03 .contents-box-inner dl dd {
     font-size: 14px;
     margin-left: 15px;
   }
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner dl dd ul li {
+.activity-child.parenting .contents-box-03 .contents-box-inner dl dd ul li {
   font-size: 14px;
   padding-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
+.activity-child.parenting .contents-box-03 .contents-box-inner dl:last-of-type {
   border-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner dd h4 {
+.activity-child.parenting .contents-box-03 .contents-box-inner dd h4 {
   color: #1b8924;
   font-size: 16px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dd h4 {
+  .activity-child.parenting .contents-box-03 .contents-box-inner dd h4 {
     font-size: 15px;
   }
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner dd p {
+.activity-child.parenting .contents-box-03 .contents-box-inner dd p {
   margin-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner > p {
+.activity-child.parenting .contents-box-03 .contents-box-inner > p {
   background-color: #f3fCe6;
   border-radius: 4px;
   text-align: center;
@@ -5281,7 +5395,7 @@ select::-ms-expand {
   position: relative;
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner > p::before {
+.activity-child.parenting .contents-box-03 .contents-box-inner > p::before {
   content: '';
   display: block;
   background-image: url(./images/pages/plus.png);
@@ -5293,54 +5407,54 @@ select::-ms-expand {
   background-size: contain;
 }
 
-.activity-child.parenting .contents-box-03 {
+.activity-child.parenting .contents-box-04 {
   /* 申込方法 */
 }
 
-.activity-child.parenting .contents-box-03 table {
+.activity-child.parenting .contents-box-04 table {
   margin-top: 10px;
   font-size: 14px;
   border-color: #ddd;
 }
 
-.activity-child.parenting .contents-box-03 table tr {
+.activity-child.parenting .contents-box-04 table tr {
   background-color: transparent;
   display: flex;
   flex-flow: column;
 }
 
 @media screen and (min-width: 600px) {
-  .activity-child.parenting .contents-box-03 table tr {
+  .activity-child.parenting .contents-box-04 table tr {
     display: table-row;
   }
 }
 
-.activity-child.parenting .contents-box-03 table th, .activity-child.parenting .contents-box-03 table td {
+.activity-child.parenting .contents-box-04 table th, .activity-child.parenting .contents-box-04 table td {
   border-color: #ddd;
 }
 
-.activity-child.parenting .contents-box-03 table th {
+.activity-child.parenting .contents-box-04 table th {
   font-weight: normal;
   background-color: #f5f5f5;
 }
 
-.activity-child.parenting .contents-box-03 table td {
+.activity-child.parenting .contents-box-04 table td {
   background-color: transparent;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 table th {
+  .activity-child.parenting .contents-box-04 table th {
     width: 200px;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 table td {
+  .activity-child.parenting .contents-box-04 table td {
     padding-left: 20px;
   }
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner {
+.activity-child.parenting .contents-box-04 .contents-box-inner {
   border-radius: 10px;
   background-color: #f3fCe6;
   padding: 20px 20px;
@@ -5348,29 +5462,29 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 .contents-box-inner {
+  .activity-child.parenting .contents-box-04 .contents-box-inner {
     padding: 30px 40px;
   }
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner h3 {
+.activity-child.parenting .contents-box-04 .contents-box-inner h3 {
   margin-bottom: 15px;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner ol {
+.activity-child.parenting .contents-box-04 .contents-box-inner ol {
   counter-reset: my-counter;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner ol li {
+.activity-child.parenting .contents-box-04 .contents-box-inner ol li {
   padding-left: 40px;
   position: relative;
   font-size: inherit;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner ol li::before {
+.activity-child.parenting .contents-box-04 .contents-box-inner ol li::before {
   content: counter(my-counter);
   counter-increment: my-counter;
   background-color: #95cb40;
@@ -5386,7 +5500,7 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 .contents-box-inner ol li::before {
+  .activity-child.parenting .contents-box-04 .contents-box-inner ol li::before {
     font-size: 16px;
   }
 }
@@ -5794,206 +5908,200 @@ select::-ms-expand {
 
 /* 教育広報 activity/education */
 .activity-child.education {
-  /* 講師派遣 */
-  /* マスコミ */
+  /* 導入 */
+  /* リンク集 */
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-01 {
+    display: flex;
+  }
+}
+
+.activity-child.education .contents-box-01 p {
+  margin-bottom: 0;
+}
+
+.activity-child.education .contents-box-01 p::after {
+  display: block;
+  content: '';
+  width: calc(100vw * 0.8);
+  max-width: 640px;
+  height: calc(100vw * 0.8 / 640 * 431);
+  max-height: 431px;
+  margin: 0 auto;
+  background-image: url(./images/pages/main-seminar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-01 p::after {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-01 p {
+    background-image: url(./images/pages/main-seminar.png);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-01 p {
+    padding-left: 330px;
+    display: flex;
+    align-items: center;
+    min-height: calc( 431px * (300/640));
+  }
 }
 
 .activity-child.education .contents-box-02 {
-  /* 講師派遣を希望される場合は */
-}
-
-.activity-child.education .contents-box-02 .special-box {
-  margin: 20px 0 30px;
+  border: 3px solid #95cb40;
   border-radius: 10px;
-  background-color: #f3fCe6;
-  padding: 20px 20px;
-  color: #666;
-  position: relative;
-  color: #1b8924;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-02 .special-box {
-    padding: 30px 40px;
+  .activity-child.education .contents-box-02 {
+    padding: 10px 30px;
   }
 }
 
-.activity-child.education .contents-box-02 .special-box::before {
+.activity-child.education .contents-box-02 dl {
+  border-bottom: 2px dotted #95cb40;
+  padding-bottom: 20px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 dl {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+
+.activity-child.education .contents-box-02 dl:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.activity-child.education .contents-box-02 dl dt {
+  color: #1b8924;
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 dl dt {
+    margin: 0;
+    font-size: 20px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 dl dd {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.activity-child.education .contents-box-02 dl dd ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 {
+    padding: 0 45px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 dl {
+    padding: 25px 0;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 dl dt {
+    font-size: 18px !important;
+    width: 200px !important;
+    min-width: 200px !important;
+    line-height: 1.3;
+  }
+}
+
+.activity-child.education .contents-box-02 dl dd p {
+  margin-bottom: 10px;
+}
+
+.activity-child.education .contents-box-02 dl dd p.note {
+  font-size: 0.9em;
+}
+
+.activity-child.education .contents-box-02 dl dd .link-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.activity-child.education .contents-box-02 dl dd .link-box::before {
   display: block;
   content: '';
-  width: 22px;
-  height: 22px;
-  background-image: url(./images/pages/hukidashi-basecolor.png);
-  background-repeat: no-repeat;
-  background-size: 22px 22px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
   position: absolute;
-  top: -22px;
-  left: calc((100% / 2) - 11px);
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+.activity-child.education .contents-box-02 dl dd .link-box a {
+  text-decoration: none;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-02 .special-box::before {
-    left: 439px;
+  .activity-child.education .contents-box-02 dl dd .link-box {
+    width: 180px;
+  }
+}
+
+.activity-child.education .contents-box-02 dl dd .link-box a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.education .contents-box-02 dl dd .link-box a:hover {
+    background-color: #1b8924;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-02 .special-box {
-    font-size: 17px;
-    text-align: center;
-  }
-}
-
-.activity-child.education .contents-box-02 h3 {
-  margin-bottom: 10px;
-  background-image: url(./images/pages/speaker-icon.png);
-  background-repeat: no-repeat;
-  background-size: auto 30px;
-  min-height: 30px;
-  padding-left: 60px;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-}
-
-.activity-child.education .contents-box-02 .contents-box-inner {
-  border: 3px solid #95cb40;
-  border-radius: 10px;
-  padding: 0 15px;
-  display: flex;
-  flex-flow: column;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-02 .contents-box-inner {
-    padding: 10px 30px;
-  }
-}
-
-.activity-child.education .contents-box-02 .contents-box-inner dl {
-  border-bottom: 2px dotted #95cb40;
-  padding-bottom: 20px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-02 .contents-box-inner dl {
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-  }
-}
-
-.activity-child.education .contents-box-02 .contents-box-inner dl:last-child {
-  border-bottom: 0;
-  margin-bottom: 0;
-}
-
-.activity-child.education .contents-box-02 .contents-box-inner dl dt {
-  color: #1b8924;
-  font-size: 18px;
-  margin: 20px 0 5px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-02 .contents-box-inner dl dt {
+  .activity-child.education .contents-box-02 dl dd .link-box {
     margin: 0;
-    font-size: 20px;
-    width: 110px;
-    min-width: 110px;
-    text-align: center;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-02 .contents-box-inner dl dd {
-    font-size: 14px;
-    margin-left: 15px;
+  .activity-child.education .contents-box-02 dl dd .link-box a {
+    padding: 6px 4px !important;
   }
-}
-
-.activity-child.education .contents-box-02 .contents-box-inner dl dd ul li {
-  font-size: 14px;
-  padding-bottom: 0;
-}
-
-.activity-child.education .contents-box-03 {
-  /* 取材を希望される場合は */
-}
-
-.activity-child.education .contents-box-03 p {
-  margin-bottom: 20px;
-}
-
-.activity-child.education .contents-box-03 h3 {
-  margin-bottom: 10px;
-  background-image: url(./images/pages/camera-icon.png);
-  background-repeat: no-repeat;
-  background-size: auto 30px;
-  min-height: 30px;
-  padding-left: 60px;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-}
-
-.activity-child.education .contents-box-03 .contents-box-inner {
-  border: 3px solid #95cb40;
-  border-radius: 10px;
-  padding: 0 15px;
-  display: flex;
-  flex-flow: column;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-03 .contents-box-inner {
-    padding: 10px 30px;
-  }
-}
-
-.activity-child.education .contents-box-03 .contents-box-inner dl {
-  border-bottom: 2px dotted #95cb40;
-  padding-bottom: 20px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-03 .contents-box-inner dl {
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-  }
-}
-
-.activity-child.education .contents-box-03 .contents-box-inner dl:last-child {
-  border-bottom: 0;
-  margin-bottom: 0;
-}
-
-.activity-child.education .contents-box-03 .contents-box-inner dl dt {
-  color: #1b8924;
-  font-size: 18px;
-  margin: 20px 0 5px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-03 .contents-box-inner dl dt {
-    margin: 0;
-    font-size: 20px;
-    width: 110px;
-    min-width: 110px;
-    text-align: center;
-  }
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.education .contents-box-03 .contents-box-inner dl dd {
-    font-size: 14px;
-    margin-left: 15px;
-  }
-}
-
-.activity-child.education .contents-box-03 .contents-box-inner dl dd ul li {
-  font-size: 14px;
-  padding-bottom: 0;
 }
 
 /* スケジュール info/schedule */

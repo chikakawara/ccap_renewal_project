@@ -1192,8 +1192,12 @@
       }
     }
   }
-  /* プログラム内容 */
+  /* 電話番号 */
   .contents-box-02 {
+    @include tel-within-contents;
+  }
+  /* プログラム内容 */
+  .contents-box-03 {
     h2 {
       small {
         color: $txt-base-color02;
@@ -1248,7 +1252,7 @@
     }
   }
   /* プログラムに参加するには */
-  .contents-box-03 {
+  .contents-box-04 {
     table {
       @include table-simple;
       th {
@@ -1382,38 +1386,61 @@
 
 /* 教育広報 activity/education */
 .activity-child.education {
-  /* 講師派遣 */
-  .contents-box-02 {
-    .special-box {
-      margin: 20px 0 30px;
-      @include base-color-box;
-      @include fukidashi-for-base-color-box;
-      position: relative;
-      color: $secondary-color;
+  /* 導入 */
+  .contents-box-01 {
+    @include screen-pc {
+      display: flex;
+    }
+    p {
+      margin-bottom: 0;
+      @include sp-main-img(main-seminar);
+      @include pc-main-img(main-seminar);
       @include screen-pc {
-        font-size: 17px;
-        text-align: center;
+        padding-left: 330px;
+        display: flex;
+        align-items: center;
+        min-height: calc( 431px * (300/640));
       }
     }
-    /* 講師派遣を希望される場合は */
-    h3 {
-      @include heading-with-icon($imgname:'speaker-icon', $padding-left:60px);
-    }
-    .contents-box-inner {
-      @include dl-rounded-box;
-    }
   }
-  /* マスコミ */
-  .contents-box-03 {
-    p {
-      margin-bottom: 20px;
+
+  /* リンク集 */
+  .contents-box-02 {
+    @include dl-rounded-box;
+    @include screen-pc {
+      padding: 0 45px;
     }
-    /* 取材を希望される場合は */
-    h3 {
-      @include heading-with-icon($imgname:'camera-icon', $padding-left:60px);
-    }
-    .contents-box-inner {
-      @include dl-rounded-box;
+    dl {
+      @include screen-pc {
+        padding: 25px 0;
+      }
+      dt {
+        @include screen-pc {
+          font-size: 18px !important;
+          width: 200px !important;
+          min-width: 200px !important;
+          line-height: 1.3;
+        }
+      }
+      dd {
+        p {
+          margin-bottom: 10px;
+          &.note {
+            font-size: 0.9em;
+          }
+        }
+        .link-box {
+          @include rounded-rectangle-link(180px);
+          @include screen-pc {
+            margin: 0;
+          }
+          a {
+            @include screen-pc {
+              padding: 6px 4px !important;
+            }
+          }
+        }
+      }
     }
   }
 }
