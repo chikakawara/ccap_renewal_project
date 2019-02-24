@@ -27,9 +27,9 @@
    'menu_class' => 'menu-utility__sp-sub-bottom'
   ) ); ?>
 </div>
-<div class="link-orange-ribbon">
-  <a href="" target="_blank">オレンジリボン運動</a>
-</div>
 <div class="link-clinic">
   <a href="">クリニック（開設予定）</a>
+</div>
+<div class="link-orange-ribbon">
+  <a href="http://www.orangeribbon.jp/" target="_blank">オレンジリボン運動</a>
 </div>
