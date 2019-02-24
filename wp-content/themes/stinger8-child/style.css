@@ -4717,7 +4717,6 @@ select::-ms-expand {
   /* 電話番号 */
   /* 子育てひとやすみ */
   /* ほっとホットサロン */
-  /* 申込問い合わせ */
 }
 
 @media print, screen and (min-width: 960px) {
@@ -5055,58 +5054,58 @@ select::-ms-expand {
   }
 }
 
-.activity-child.groupcare .contents-box-04 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background-image: url(./images/pages/calendar-icon.png);
-  background-repeat: no-repeat;
-  background-size: auto 30px;
-  min-height: 30px;
-  padding-left: 45px;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
+.activity-child.groupcare .contents-box-04 .link-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
 }
 
-.activity-child.groupcare .contents-box-04 table {
-  margin-top: 10px;
-  font-size: 14px;
-  border-color: #ddd;
+.activity-child.groupcare .contents-box-04 .link-box::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
 }
 
-.activity-child.groupcare .contents-box-04 table tr {
-  background-color: transparent;
-  display: flex;
-  flex-flow: column;
-}
-
-@media screen and (min-width: 600px) {
-  .activity-child.groupcare .contents-box-04 table tr {
-    display: table-row;
-  }
-}
-
-.activity-child.groupcare .contents-box-04 table th, .activity-child.groupcare .contents-box-04 table td {
-  border-color: #ddd;
-}
-
-.activity-child.groupcare .contents-box-04 table th {
-  font-weight: normal;
-  background-color: #f5f5f5;
-}
-
-.activity-child.groupcare .contents-box-04 table td {
-  background-color: transparent;
+.activity-child.groupcare .contents-box-04 .link-box a {
+  text-decoration: none;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-04 table th {
-    width: 200px;
+  .activity-child.groupcare .contents-box-04 .link-box {
+    width: 360px;
   }
 }
 
-.activity-child.groupcare .contents-box-04 table td dt {
-  color: #1b8924;
+.activity-child.groupcare .contents-box-04 .link-box a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-04 .link-box a:hover {
+    background-color: #1b8924;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.groupcare .contents-box-04 .link-box {
+    width: 360px;
+    margin: 20px auto 20px 0;
+  }
 }
 
 .activity-child.groupcare .contents-box-05 h3 {
@@ -5184,29 +5183,6 @@ select::-ms-expand {
 @media print, screen and (min-width: 960px) {
   .activity-child.groupcare .contents-box-05 table th {
     width: 200px;
-  }
-}
-
-.activity-child.groupcare .contents-box-05 table td p {
-  background-color: #eee;
-  padding: 5px;
-  display: inline-block;
-}
-
-.activity-child.groupcare .contents-box-05 table td dt {
-  color: #1b8924;
-}
-
-.activity-child.groupcare .contents-box-06 {
-  border-radius: 10px;
-  background-color: #f3fCe6;
-  padding: 20px 20px;
-  color: #666;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-06 {
-    padding: 30px 40px;
   }
 }
 

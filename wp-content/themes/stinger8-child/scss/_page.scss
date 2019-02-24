@@ -1150,21 +1150,13 @@
         display: inline-block;
       }
     }
-    h3 {
-      margin-top: 20px;
-      @include heading-with-icon($imgname:'calendar-icon');
-    }
-    table {
-      @include table-simple;
-      th {
-        @include screen-pc {
-          width: 200px;
-        }
-      }
-      td {
-        dt {
-          color: $secondary-color;
-        }
+    .link-box {
+      @include rounded-rectangle-link(360px);
+      width: 100%;
+      margin: 20px auto;
+      @include screen-tablet {
+        width: 360px;
+        margin: 20px auto 20px 0;
       }
     }
   }
@@ -1195,21 +1187,7 @@
           width: 200px;
         }
       }
-      td {
-        p {
-          background-color: #eee;
-          padding: 5px;
-          display: inline-block;
-        }
-        dt {
-          color: $secondary-color;
-        }
-      }
     }
-  }
-  /* 申込問い合わせ */
-  .contents-box-06 {
-    @include base-color-box;
   }
 }
 
