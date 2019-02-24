@@ -456,16 +456,13 @@
       margin-bottom: 20px;
     }
     .link-box {
-      @include rounded-rectangle-link(360px);
+      @include rounded-rectangle-link;
       width: 100%;
-      a {
-        letter-spacing: 0;
-      }
       @include screen-tablet {
         width: 60%;
-        a {
-          letter-spacing: 0.1em;
-        }
+      }
+      @include screen-pc {
+        width: 300px;
       }
     }
   }
@@ -816,16 +813,13 @@
       margin-bottom: 20px;
     }
     .link-box {
-      @include rounded-rectangle-link(360px);
+      @include rounded-rectangle-link;
       width: 100%;
-      a {
-        letter-spacing: 0;
-      }
       @include screen-tablet {
         width: 60%;
-        a {
-          letter-spacing: 0.1em;
-        }
+      }
+      @include screen-pc {
+        width: 300px;
       }
     }
   }
@@ -1038,26 +1032,10 @@
       margin-top: 20px;
       @include heading-with-icon($imgname:'calendar-icon');
     }
-    table {
-      @include table-simple;
-      font-size: 16px;
-      margin-bottom: 10px;
-      th {
-        @include screen-pc {
-          width: 200px;
-        }
-      }
-      td {
-        @include screen-pc {
-          padding: 15px 20px !important;
-        }
-        dt {
-        color: $secondary-color;
-        }
-        dd {
-          font-size: 14px;
-        }
-      }
+    .link-box {
+      @include rounded-rectangle-link(360px);
+      width: 100%;
+      margin: 20px auto;
     }
     .note {
       font-size: 13px;

@@ -3218,7 +3218,7 @@ select::-ms-expand {
 
 @media print, screen and (min-width: 960px) {
   .for-parent-child.parenting .contents-box-03 .link-box {
-    width: 360px;
+    width: 300px;
   }
 }
 
@@ -3238,16 +3238,15 @@ select::-ms-expand {
   }
 }
 
-.for-parent-child.parenting .contents-box-03 .link-box a {
-  letter-spacing: 0;
-}
-
 @media screen and (min-width: 600px) {
   .for-parent-child.parenting .contents-box-03 .link-box {
     width: 60%;
   }
-  .for-parent-child.parenting .contents-box-03 .link-box a {
-    letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.parenting .contents-box-03 .link-box {
+    width: 300px;
   }
 }
 
@@ -3938,7 +3937,7 @@ select::-ms-expand {
 
 @media print, screen and (min-width: 960px) {
   .for-parent-child.groupcare .contents-box-06 .link-box {
-    width: 360px;
+    width: 300px;
   }
 }
 
@@ -3958,16 +3957,15 @@ select::-ms-expand {
   }
 }
 
-.for-parent-child.groupcare .contents-box-06 .link-box a {
-  letter-spacing: 0;
-}
-
 @media screen and (min-width: 600px) {
   .for-parent-child.groupcare .contents-box-06 .link-box {
     width: 60%;
   }
-  .for-parent-child.groupcare .contents-box-06 .link-box a {
-    letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .for-parent-child.groupcare .contents-box-06 .link-box {
+    width: 300px;
   }
 }
 
@@ -4541,57 +4539,51 @@ select::-ms-expand {
   font-size: 18px;
 }
 
-.activity-child.consultation .contents-box-03 table {
-  margin-top: 10px;
-  font-size: 14px;
-  border-color: #ddd;
-  font-size: 16px;
-  margin-bottom: 10px;
+.activity-child.consultation .contents-box-03 .link-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
 }
 
-.activity-child.consultation .contents-box-03 table tr {
-  background-color: transparent;
-  display: flex;
-  flex-flow: column;
+.activity-child.consultation .contents-box-03 .link-box::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
 }
 
-@media screen and (min-width: 600px) {
-  .activity-child.consultation .contents-box-03 table tr {
-    display: table-row;
-  }
-}
-
-.activity-child.consultation .contents-box-03 table th, .activity-child.consultation .contents-box-03 table td {
-  border-color: #ddd;
-}
-
-.activity-child.consultation .contents-box-03 table th {
-  font-weight: normal;
-  background-color: #f5f5f5;
-}
-
-.activity-child.consultation .contents-box-03 table td {
-  background-color: transparent;
+.activity-child.consultation .contents-box-03 .link-box a {
+  text-decoration: none;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.consultation .contents-box-03 table th {
-    width: 200px;
+  .activity-child.consultation .contents-box-03 .link-box {
+    width: 360px;
   }
+}
+
+.activity-child.consultation .contents-box-03 .link-box a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.consultation .contents-box-03 table td {
-    padding: 15px 20px !important;
+  .activity-child.consultation .contents-box-03 .link-box a:hover {
+    background-color: #1b8924;
   }
-}
-
-.activity-child.consultation .contents-box-03 table td dt {
-  color: #1b8924;
-}
-
-.activity-child.consultation .contents-box-03 table td dd {
-  font-size: 14px;
 }
 
 .activity-child.consultation .contents-box-03 .note {
