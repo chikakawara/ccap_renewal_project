@@ -1462,7 +1462,7 @@ select::-ms-expand {
 /* メイン画像横幅=画面横幅-margin*2 */
 .header-image {
   width: calc(100vw - ( 20px * 2 ));
-  height: calc(calc(100vw - ( 20px * 2 )) * 0.46);
+  height: calc((100vw - 80px) * 0.83);
   margin: 15px auto 0;
   background-color: #F3FCE6;
   display: flex;
@@ -1475,6 +1475,8 @@ select::-ms-expand {
 @media screen and (min-width: 414px) {
   .header-image {
     justify-content: flex-end;
+    position: relative;
+    height: calc((calc(100vw - ( 20px * 2 )) * 0.55 - 40px) * 0.82);
   }
 }
 
@@ -1489,7 +1491,6 @@ select::-ms-expand {
     width: 960px;
     height: 320px;
     margin: 0 auto;
-    position: relative;
     align-items: flex-start;
   }
   .header-image img {
@@ -1499,7 +1500,25 @@ select::-ms-expand {
 }
 
 .header-image .header-image-animation {
-  display: none;
+  width: calc(100vw - 80px);
+  height: calc((100vw - 80px) * 0.83);
+  position: relative;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 414px) {
+  .header-image .header-image-animation {
+    display: block;
+    position: absolute;
+    left: 30px;
+    width: calc(calc(100vw - ( 20px * 2 )) * 0.55 - 40px);
+    height: calc((calc(100vw - ( 20px * 2 )) * 0.55 - 40px) * 0.82);
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1529,20 +1548,27 @@ select::-ms-expand {
 }
 
 .header-image .header-image-copy {
-  width: 94%;
-  text-align: left;
-  letter-spacing: .02em;
+  display: none;
 }
 
 @media screen and (min-width: 414px) {
   .header-image .header-image-copy {
-    width: calc(calc(100vw - ( 20px * 2 )) / 2);
+    display: block;
+    width: calc(calc(100vw - ( 20px * 2 )) * 0.45);
+    text-align: left;
+    letter-spacing: .02em;
+  }
+  .header-image .header-image-copy > p {
+    display: none;
   }
 }
 
 @media screen and (min-width: 600px) {
   .header-image .header-image-copy {
-    width: calc(calc(100vw - ( 20px * 2 )) * 0.45);
+    width: calc(calc(100vw - ( 20px * 2 )) * 0.4);
+  }
+  .header-image .header-image-copy > p {
+    display: block;
   }
 }
 

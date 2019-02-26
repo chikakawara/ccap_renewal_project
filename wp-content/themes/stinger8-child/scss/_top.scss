@@ -11,7 +11,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 
 .header-image {
   width: $mainimg-width;
-  height: calc(#{$mainimg-width} * 0.46);
+  height: calc((100vw - 80px) * 0.83);
   margin: 15px auto 0;
   background-color: #F3FCE6;
   display: flex;
@@ -20,6 +20,8 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   border-radius: 10px;
   @include screen-iphoneplus {
     justify-content: flex-end;
+    position: relative;
+    height: calc((#{$mainimg-width} * 0.55 - 40px) * 0.82);
   }
   @include screen-tablet {
     margin-top: 0;
@@ -28,7 +30,6 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
     width: 960px;
     height: 320px;
     margin: 0 auto;
-    position: relative;
     align-items: flex-start;
     img {
       width: 100%;
@@ -37,7 +38,22 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   }
   /* メイン画像 */
   .header-image-animation {
-    display: none;
+    width: calc(100vw - 80px);
+    height: calc((100vw - 80px) * 0.83);
+    position: relative;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    @include screen-iphoneplus {
+      display: block;
+      position: absolute;
+      left: 30px;
+      width: calc(#{$mainimg-width} * 0.55 - 40px);
+      height: calc((#{$mainimg-width} * 0.55 - 40px) * 0.82);
+    }
     @include screen-pc {
       display: block;
       position: absolute;
@@ -61,14 +77,23 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
     }
   }
   .header-image-copy {
-    width: 94%;
-    text-align: left;
-    letter-spacing: .02em;
+    display: none;
+
     @include screen-iphoneplus {
-      width: calc(#{$mainimg-width} / 2);
+      display: block;
+      width: calc(#{$mainimg-width} * 0.45);
+
+      text-align: left;
+      letter-spacing: .02em;
+      > p {
+        display: none;
+      }
     }
     @include screen-tablet {
-      width: calc(#{$mainimg-width} * 0.45);
+      width: calc(#{$mainimg-width} * 0.4);
+      > p {
+        display: block;
+      }
     }
     @include screen-pc {
       width: 500px;
