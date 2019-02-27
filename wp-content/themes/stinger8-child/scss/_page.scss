@@ -1848,6 +1848,12 @@
         .book-title {
           font-size: 1.1em;
           font-weight: bold;
+          .no-bold {
+            font-weight: normal;
+          }
+          .reduce-size {
+            font-size: 1em;
+          }
         }
         .book-author {
         }
@@ -1890,18 +1896,6 @@
 .enlightenment-child.lecture {
   /* 導入 */
   .contents-box-01 {
-    .special-box {
-      @include base-color-box;
-      @include fukidashi-for-base-color-box;
-      position: relative;
-      color: $secondary-color;
-      padding-bottom: 20px;
-      margin-top: 20px;
-      @include screen-pc {
-        text-align: center;
-        font-size: 18px;
-      }
-    }
   }
   /* 講師派遣を希望される場合は */
   .contents-box-02 {
@@ -1910,6 +1904,17 @@
     }
     .contents-box-inner {
       @include dl-rounded-box;
+    }
+    .special-box {
+      @include base-color-box;
+      @include fukidashi-for-base-color-box;
+      position: relative;
+      color: $txt-base-color02;
+      padding-bottom: 20px;
+      margin-top: 30px;
+      @include screen-pc {
+        text-align: center;
+      }
     }
     .note {
       margin-top: 5px;
@@ -2012,6 +2017,13 @@
       margin-bottom: 5px;
     }
   }
+  /* その他にも... */
+  .contents-box-04 {
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
   /* お問い合わせ先 */
   .contents-box-05 {
     @include base-color-box;
@@ -2039,9 +2051,6 @@
     .note {
       margin-top: 5px;
       font-size: 0.9em;
-      @include screen-pc {
-        text-align: right;
-      }
     }
   }
   /* お願い */

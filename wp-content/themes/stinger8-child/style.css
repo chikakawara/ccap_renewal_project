@@ -4353,6 +4353,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .activity-child.fosterparent .contents-box-04 .link-box {
@@ -4508,6 +4509,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .activity-child.consultation .contents-box-03 .link-box {
@@ -4832,6 +4834,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .activity-child.groupcare .contents-box-02 table {
@@ -5093,6 +5096,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .activity-child.groupcare .contents-box-05 h3:nth-of-type(2) {
@@ -5105,6 +5109,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .activity-child.groupcare .contents-box-05 .contents-box-inner-02 {
@@ -7202,6 +7207,14 @@ select::-ms-expand {
   font-weight: bold;
 }
 
+.enlightenment-child.book .contents-box-03 table td .book-title .no-bold {
+  font-weight: normal;
+}
+
+.enlightenment-child.book .contents-box-03 table td .book-title .reduce-size {
+  font-size: 1em;
+}
+
 .enlightenment-child.book .contents-box-03 table td .book-description {
   font-size: 0.9em;
   margin-top: 5px;
@@ -7242,50 +7255,8 @@ select::-ms-expand {
   /* 導入 */
   /* 講師派遣を希望される場合は */
   /* 講演実績 */
+  /* その他にも... */
   /* お問い合わせ先 */
-}
-
-.enlightenment-child.lecture .contents-box-01 .special-box {
-  border-radius: 10px;
-  background-color: #f3fCe6;
-  padding: 20px 20px;
-  color: #666;
-  position: relative;
-  color: #1b8924;
-  padding-bottom: 20px;
-  margin-top: 20px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .enlightenment-child.lecture .contents-box-01 .special-box {
-    padding: 30px 40px;
-  }
-}
-
-.enlightenment-child.lecture .contents-box-01 .special-box::before {
-  display: block;
-  content: '';
-  width: 22px;
-  height: 22px;
-  background-image: url(./images/pages/hukidashi-basecolor.png);
-  background-repeat: no-repeat;
-  background-size: 22px 22px;
-  position: absolute;
-  top: -22px;
-  left: calc((100% / 2) - 11px);
-}
-
-@media print, screen and (min-width: 960px) {
-  .enlightenment-child.lecture .contents-box-01 .special-box::before {
-    left: 439px;
-  }
-}
-
-@media print, screen and (min-width: 960px) {
-  .enlightenment-child.lecture .contents-box-01 .special-box {
-    text-align: center;
-    font-size: 18px;
-  }
 }
 
 .enlightenment-child.lecture .contents-box-02 h2 {
@@ -7298,6 +7269,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .enlightenment-child.lecture .contents-box-02 .contents-box-inner {
@@ -7358,6 +7330,48 @@ select::-ms-expand {
 .enlightenment-child.lecture .contents-box-02 .contents-box-inner dl dd ul li {
   font-size: 14px;
   padding-bottom: 0;
+}
+
+.enlightenment-child.lecture .contents-box-02 .special-box {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+  position: relative;
+  color: #333;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.lecture .contents-box-02 .special-box {
+    padding: 30px 40px;
+  }
+}
+
+.enlightenment-child.lecture .contents-box-02 .special-box::before {
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url(./images/pages/hukidashi-basecolor.png);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  position: absolute;
+  top: -22px;
+  left: calc((100% / 2) - 11px);
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.lecture .contents-box-02 .special-box::before {
+    left: 439px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .enlightenment-child.lecture .contents-box-02 .special-box {
+    text-align: center;
+  }
 }
 
 .enlightenment-child.lecture .contents-box-02 .note {
@@ -7556,6 +7570,11 @@ select::-ms-expand {
   margin-bottom: 5px;
 }
 
+.enlightenment-child.lecture .contents-box-04 h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .enlightenment-child.lecture .contents-box-05 {
   border-radius: 10px;
   background-color: #f3fCe6;
@@ -7592,6 +7611,7 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .enlightenment-child.interview .contents-box-02 .contents-box-inner {
@@ -7657,12 +7677,6 @@ select::-ms-expand {
 .enlightenment-child.interview .contents-box-02 .note {
   margin-top: 5px;
   font-size: 0.9em;
-}
-
-@media print, screen and (min-width: 960px) {
-  .enlightenment-child.interview .contents-box-02 .note {
-    text-align: right;
-  }
 }
 
 .enlightenment-child.interview .contents-box-03 .link-box {
