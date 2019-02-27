@@ -21,10 +21,11 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   @include screen-iphoneplus {
     justify-content: flex-end;
     position: relative;
-    height: calc((#{$mainimg-width} * 0.55 - 40px) * 0.82);
+    height: calc((#{$mainimg-width} * 0.52 - 20px) * 0.82);
   }
   @include screen-tablet {
     margin-top: 0;
+    height: calc((#{$mainimg-width} * 0.55 - 40px) * 0.83);
   }
   @include screen-pc {
     width: 960px;
@@ -48,14 +49,17 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
     margin: 0;
     padding: 0;
     @include screen-iphoneplus {
-      display: block;
       position: absolute;
+      left: 10px;
+      width: calc(#{$mainimg-width} * 0.52 - 20px);
+      height: calc((#{$mainimg-width} * 0.52 - 20px) * 0.83);
+    }
+    @include screen-tablet {
       left: 30px;
       width: calc(#{$mainimg-width} * 0.55 - 40px);
-      height: calc((#{$mainimg-width} * 0.55 - 40px) * 0.82);
+      height: calc((#{$mainimg-width} * 0.55 - 40px) * 0.83);
     }
     @include screen-pc {
-      display: block;
       position: absolute;
       top: 0;
       left: 40px;
@@ -81,19 +85,12 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 
     @include screen-iphoneplus {
       display: block;
-      width: calc(#{$mainimg-width} * 0.45);
-
+      width: calc(#{$mainimg-width} * 0.48);
       text-align: left;
       letter-spacing: .02em;
-      > p {
-        display: none;
-      }
     }
     @include screen-tablet {
       width: calc(#{$mainimg-width} * 0.4);
-      > p {
-        display: block;
-      }
     }
     @include screen-pc {
       width: 500px;
@@ -114,7 +111,13 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
       line-height: 1.4;
       font-weight: normal;
       display: block;
-      margin-bottom: 0.3em;;
+      margin-bottom: 0.3em;
+      @include screen-iphoneplus {
+        display: none;
+      }
+      @include screen-tablet {
+        display: block;
+      }
       @include screen-pc {
         font-size: 25px;
         letter-spacing: .1em;

@@ -1476,13 +1476,14 @@ select::-ms-expand {
   .header-image {
     justify-content: flex-end;
     position: relative;
-    height: calc((calc(100vw - ( 20px * 2 )) * 0.55 - 40px) * 0.82);
+    height: calc((calc(100vw - ( 20px * 2 )) * 0.52 - 20px) * 0.82);
   }
 }
 
 @media screen and (min-width: 600px) {
   .header-image {
     margin-top: 0;
+    height: calc((calc(100vw - ( 20px * 2 )) * 0.55 - 40px) * 0.83);
   }
 }
 
@@ -1513,17 +1514,23 @@ select::-ms-expand {
 
 @media screen and (min-width: 414px) {
   .header-image .header-image-animation {
-    display: block;
     position: absolute;
+    left: 10px;
+    width: calc(calc(100vw - ( 20px * 2 )) * 0.52 - 20px);
+    height: calc((calc(100vw - ( 20px * 2 )) * 0.52 - 20px) * 0.83);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header-image .header-image-animation {
     left: 30px;
     width: calc(calc(100vw - ( 20px * 2 )) * 0.55 - 40px);
-    height: calc((calc(100vw - ( 20px * 2 )) * 0.55 - 40px) * 0.82);
+    height: calc((calc(100vw - ( 20px * 2 )) * 0.55 - 40px) * 0.83);
   }
 }
 
 @media print, screen and (min-width: 960px) {
   .header-image .header-image-animation {
-    display: block;
     position: absolute;
     top: 0;
     left: 40px;
@@ -1554,21 +1561,15 @@ select::-ms-expand {
 @media screen and (min-width: 414px) {
   .header-image .header-image-copy {
     display: block;
-    width: calc(calc(100vw - ( 20px * 2 )) * 0.45);
+    width: calc(calc(100vw - ( 20px * 2 )) * 0.48);
     text-align: left;
     letter-spacing: .02em;
-  }
-  .header-image .header-image-copy > p {
-    display: none;
   }
 }
 
 @media screen and (min-width: 600px) {
   .header-image .header-image-copy {
     width: calc(calc(100vw - ( 20px * 2 )) * 0.4);
-  }
-  .header-image .header-image-copy > p {
-    display: block;
   }
 }
 
@@ -1602,6 +1603,18 @@ select::-ms-expand {
   font-weight: normal;
   display: block;
   margin-bottom: 0.3em;
+}
+
+@media screen and (min-width: 414px) {
+  .header-image .header-image-copy strong {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header-image .header-image-copy strong {
+    display: block;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
