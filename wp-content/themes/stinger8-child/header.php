@@ -36,64 +36,57 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?> >
-			<div id="st-ami">
-				<div id="wrapper">
+		<div id="st-ami">
+			<div id="wrapper">
 				<div id="wrapper-in">
 					<header>
 						<div id="headbox-bg">
 							<div id="headbox">
-									<div id="header-l">
+								<div id="header-l">
 									<!-- ロゴ又はブログ名 -->
-										<div class="ccap-logo">
-											<a href="<?php echo esc_url( home_url() ); ?>">
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="子どもの虐待防止センター">
+									<div class="ccap-logo">
+										<a href="<?php echo esc_url( home_url() ); ?>">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="子どもの虐待防止センター">
+										</a>
+									</div>
+									<!-- ロゴ又はブログ名ここまで -->
+								</div><!-- /#header-l -->
+
+								<div id="header-r">
+									<div class="header-r__top">
+										<!-- utility_top -->
+										<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'menu_class' => 'menu-utility__header-top' ) ); ?>
+										<!-- links -->
+										<div class="link-clinic">
+											<a href="">クリニック（開設予定）</a>
+										</div>
+										<div class="link-twitter">
+											<a href="https://twitter.com/ccap27117136" target="_blank">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="twitter">
 											</a>
 										</div>
-										<!-- ロゴ又はブログ名ここまで -->
-									</div><!-- /#header-l -->
-
-									<div id="header-r">
-										<div class="header-r__top">
-											<!-- utility_top -->
-											<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'menu_class' => 'menu-utility__header-top' ) ); ?>
-
-											<!-- links -->
-											<!-- <div class="link-orange-ribbon">
-											  <a href="" target="_blank">オレンジリボン運動</a>
-											</div> -->
-											<div class="link-clinic">
-											  <a href="">クリニック（開設予定）</a>
-											</div>
-											<div class="link-twitter">
-												<a href="https://twitter.com/ccap27117136" target="_blank">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="twitter">
-												</a>
-											</div>
+									</div><!-- /.header-r__top -->
+									<div class="header-r__bottom">
+										<!-- utility_bottom -->
+										<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'menu_class' => 'menu-utility__header-bottom' ) ); ?>
+										<div class="telno">
+											<span data-action="call" data-tel="0353002990">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
+											</span>
 										</div>
-										<div class="header-r__bottom">
-											<!-- utility_bottom -->
-											<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'menu_class' => 'menu-utility__header-bottom' ) ); ?>
-											<div class="telno">
-												<span data-action="call" data-tel="0353002990">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
-												</span>
-											</div>
-
-											<!-- custom accordion -->
-											<div class="accordion-custom">
-												<div id="nav-drawer">
-													<input id="nav-input" type="checkbox" class="nav-unshown">
-													<label id="nav-open" for="nav-input"><span></span></label>
-													<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-		      								<div id="nav-content">
-														<?php get_template_part( 'accordion-custom' ); //アコーディオンの中身 ?>
-													</div>
+										<!-- custom accordion -->
+										<div class="accordion-custom">
+											<div id="nav-drawer">
+												<input id="nav-input" type="checkbox" class="nav-unshown">
+												<label id="nav-open" for="nav-input"><span></span></label>
+												<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+	      								<div id="nav-content">
+													<?php get_template_part( 'accordion-custom' ); //アコーディオンの中身 ?>
 												</div>
 											</div>
-
 										</div>
-
-									</div><!-- /#header-r -->
+									</div><!-- /.header-r__bottom -->
+								</div><!-- /#header-r -->
 							</div><!-- /#headbox -->
 							<!-- SP用電話番号 topにのみ表示 -->
 							<?php if ( is_front_page() ) : ?>
@@ -104,9 +97,9 @@
 								</div>
 							<?php endif; ?>
 						</div><!-- /#headbox-bg -->
-
 						<div id="gazou-wide">
 							<?php get_template_part( 'st-header-menu' ); //カスタムヘッダーメニュー ?>
+						</div>
 
 						<!-- /gazou -->
 
