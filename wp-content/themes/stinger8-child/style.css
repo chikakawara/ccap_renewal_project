@@ -8040,18 +8040,18 @@ select::-ms-expand {
   }
 }
 
-.policy .contents-box-01 .contents-box-inner dl {
+.policy .contents-box-01 .contents-box-inner .signature {
   margin: 20px 0;
 }
 
 @media print, screen and (min-width: 960px) {
-  .policy .contents-box-01 .contents-box-inner dl {
+  .policy .contents-box-01 .contents-box-inner .signature {
     float: right;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .policy .contents-box-01 .contents-box-inner dl::after {
+  .policy .contents-box-01 .contents-box-inner .signature::after {
     content: '';
     display: block;
     clear: both;
