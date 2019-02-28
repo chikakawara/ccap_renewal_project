@@ -1539,7 +1539,7 @@
       @include screen-pc {
         font-size: 18px;
       }
-      p:last-child {
+      dd {
         font-size: inherit;
         line-height: 1;
         color: $txt-base-color02;

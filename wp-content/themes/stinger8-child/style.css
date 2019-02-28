@@ -6418,14 +6418,14 @@ select::-ms-expand {
   }
 }
 
-.support-child.member .contents-box-02 .special-box p:last-child {
+.support-child.member .contents-box-02 .special-box dd {
   font-size: inherit;
   line-height: 1;
   color: #333;
 }
 
 @media print, screen and (min-width: 960px) {
-  .support-child.member .contents-box-02 .special-box p:last-child {
+  .support-child.member .contents-box-02 .special-box dd {
     font-size: 16px;
   }
 }
