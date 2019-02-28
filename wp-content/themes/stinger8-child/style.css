@@ -293,7 +293,10 @@ select::-ms-expand {
     display: flex;
     /* for IE */
   }
-  .telno img {
+  .telno span {
+    width: 280px;
+  }
+  .telno span img {
     max-height: 100%;
   }
 }
