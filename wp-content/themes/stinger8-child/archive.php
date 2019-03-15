@@ -9,7 +9,7 @@
 			<article>
 
 				<!--ループ開始-->
-				<h1 class="entry-title">「
+				<h1 class="entry-title">
 					<?php if ( is_category() ) { ?>
 						<?php single_cat_title(); ?>
 					<?php } elseif ( is_tag() ) { ?>
@@ -27,7 +27,7 @@
 					<?php } elseif ( isset( $_GET['paged'] ) && !empty( $_GET['paged'] ) ) { ?>
 						ブログアーカイブ
 					<?php } ?>
-					」 一覧 </h1>
+					</h1>
 
 				<?php get_template_part( 'itiran' ); //投稿一覧読み込み ?>
 				<?php get_template_part( 'st-pagenavi' ); //ページナビ読み込み ?>
