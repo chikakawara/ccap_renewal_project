@@ -159,6 +159,21 @@
 
 						<div class="actions-item">
 							<div class="actions-item-contents">
+							<a href="./activity/parenting">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-parenting.png" alt="ペアレンティングプログラム">
+							</a>
+								<div class="actions-item-description">
+									<strong>ペアレンティングプログラム</strong>
+									<p>子どもが言うことを聞かない、つい怒鳴ってしまう、子どものしつけってどうすればいいの？　そんな思いを抱えている方への親と子のコミュニケーションを学ぶプログラムです。</p>
+								</div>
+							</div>
+							<div class="actions-more-link">
+								<a href="./activity/parenting">詳しくはこちら</a>
+							</div>
+						</div>
+
+						<div class="actions-item">
+							<div class="actions-item-contents">
 								<a href="./activity/fosterparent">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-fosterparent.png" alt="里親・養親支援">
 								</a>
@@ -184,21 +199,6 @@
 							</div>
 							<div class="actions-more-link">
 								<a href="./activity/childcare">詳しくはこちら</a>
-							</div>
-						</div>
-
-						<div class="actions-item">
-							<div class="actions-item-contents">
-							<a href="./activity/parenting">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pages/main-parenting.png" alt="ペアレンティングプログラム">
-							</a>
-								<div class="actions-item-description">
-									<strong>ペアレンティングプログラム</strong>
-									<p>子どもが言うことを聞かない、つい怒鳴ってしまう、子どものしつけってどうすればいいの？　そんな思いを抱えている方への親と子のコミュニケーションを学ぶプログラムです。</p>
-								</div>
-							</div>
-							<div class="actions-more-link">
-								<a href="./activity/parenting">詳しくはこちら</a>
 							</div>
 						</div>
 
