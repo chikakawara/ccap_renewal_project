@@ -94,7 +94,19 @@
 
 								<li>
 									<span class="latest-news-time"><?php the_time( 'Y.m.d' ); ?></span>
-									<span class="latest-news-category"><?php the_category( ' ' ) ?></span>
+									<!-- 親カテゴリー（セミナー・お知らせ）ラベル1つのみ表示 -->
+									<?php
+										$parentscategory = "";
+										foreach((get_the_category()) as $category) {
+											if (!empty($parentscategory)) {
+												break;
+											}
+											if ($category->category_parent == 0) {
+												$parentscategory .= '<span class="latest-news-category"><a href="' . get_category_link($category->cat_ID) . '" title="' . $category->name . '">' . $category->name . '</a></span>';
+											}
+										}
+										echo $parentscategory;
+									?>
 									<span class="latest-news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
 								</li>
 
