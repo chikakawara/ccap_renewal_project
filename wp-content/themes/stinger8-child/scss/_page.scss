@@ -1008,6 +1008,10 @@
       margin-top: 20px;
       @include heading-with-icon($imgname:'calendar-icon');
     }
+    .note {
+      font-size: 13px;
+      margin-top: 10px;
+    }
     .link-box {
       @include rounded-rectangle-link(360px);
       width: 100%;
@@ -1016,9 +1020,6 @@
         width: 360px;
         margin: 20px auto 20px 0;
       }
-    }
-    .note {
-      font-size: 13px;
     }
   }
   /* 電話番号 */

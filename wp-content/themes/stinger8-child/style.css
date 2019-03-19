@@ -4515,6 +4515,11 @@ select::-ms-expand {
   font-weight: bold;
 }
 
+.activity-child.consultation .contents-box-03 .note {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 .activity-child.consultation .contents-box-03 .link-box {
   position: relative;
   width: 80%;
@@ -4567,10 +4572,6 @@ select::-ms-expand {
     width: 360px;
     margin: 20px auto 20px 0;
   }
-}
-
-.activity-child.consultation .contents-box-03 .note {
-  font-size: 13px;
 }
 
 .activity-child.consultation .contents-box-04 .contents-box-inner {
