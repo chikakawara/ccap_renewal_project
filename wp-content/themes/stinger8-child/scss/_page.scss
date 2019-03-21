@@ -1813,6 +1813,52 @@
   }
 }
 
+/* 啓発活動 enlightenment */
+.page-parent.enlightenment {
+  .contents-box-02 {
+    .contents-box-inner {
+      @include dl-rounded-box;
+      dl {
+        @include screen-pc {
+          justify-content: space-between;
+        }
+      }
+      dt {
+        @include screen-pc {
+          width: 140px !important;
+          min-width: 140px !important;
+          font-size: 18px !important;
+        }
+      }
+      dd {
+        display: flex;
+        flex-flow: column;
+        @include screen-pc {
+          flex-flow: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+        p {
+          margin-bottom: 10px;
+          @include screen-pc {
+            width: 454px;
+            margin-right: 20px;
+            margin-bottom: 0;
+          }
+        }
+        .link-box {
+          @include rounded-rectangle-link(180px);
+          a {
+            @include screen-pc {
+              padding: 6px 4px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /* 発行図書のご紹介  enlightenment/book */
 .enlightenment-child.book {
   /* 導入 */
