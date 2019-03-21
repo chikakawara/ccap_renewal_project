@@ -1095,12 +1095,24 @@
       }
     }
   }
-  /* 電話番号 */
+  /* 申し込み方法 */
   .contents-box-03 {
+    .contents-box-inner {
+      @include base-color-box;
+      h3 {
+        margin-bottom: 15px;
+      }
+      ol {
+        @include circle-num-list;
+      }
+    }
+  }
+  /* 電話番号 */
+  .contents-box-04 {
     @include tel-within-contents;
   }
   /* 子育てひとやすみ */
-  .contents-box-04 {
+  .contents-box-05 {
      ul {
        margin: 10px auto;
        @include screen-pc {
@@ -1138,7 +1150,7 @@
     }
   }
   /* ほっとホットサロン */
-  .contents-box-05 {
+  .contents-box-06 {
     h3 {
       margin-top: 20px;
       &:first-of-type {

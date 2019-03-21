@@ -4691,6 +4691,7 @@ select::-ms-expand {
 .activity-child.groupcare {
   /* 導入 */
   /* どんなところ？ */
+  /* 申し込み方法 */
   /* 電話番号 */
   /* 子育てひとやすみ */
   /* ほっとホットサロン */
@@ -4885,6 +4886,57 @@ select::-ms-expand {
 }
 
 .activity-child.groupcare .contents-box-03 .contents-box-inner {
+  border-radius: 10px;
+  background-color: #f3fCe6;
+  padding: 20px 20px;
+  color: #666;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .contents-box-inner {
+    padding: 30px 40px;
+  }
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner h3 {
+  margin-bottom: 15px;
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner ol li {
+  padding-left: 40px;
+  position: relative;
+  font-size: inherit;
+}
+
+.activity-child.groupcare .contents-box-03 .contents-box-inner ol li::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  background-color: #95cb40;
+  color: #fff;
+  display: block;
+  float: left;
+  line-height: 22px;
+  margin-left: -40px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-03 .contents-box-inner ol li::before {
+    font-size: 16px;
+  }
+}
+
+.activity-child.groupcare .contents-box-04 .contents-box-inner {
   background-color: #f3fCe6;
   border-radius: 10px;
   display: flex;
@@ -4893,7 +4945,7 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .contents-box-inner {
+  .activity-child.groupcare .contents-box-04 .contents-box-inner {
     background-color: transparent;
     border-radius: 0;
     background-image: url(./images/pages/telno_bg.png);
@@ -4906,19 +4958,19 @@ select::-ms-expand {
   }
 }
 
-.activity-child.groupcare .contents-box-03 .contents-box-inner dl {
+.activity-child.groupcare .contents-box-04 .contents-box-inner dl {
   width: 90%;
   margin: 0 auto 10px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:first-of-type {
+  .activity-child.groupcare .contents-box-04 .contents-box-inner dl:first-of-type {
     width: 400px;
     min-width: 400px;
   }
 }
 
-.activity-child.groupcare .contents-box-03 .contents-box-inner dl:first-of-type dd:last-child {
+.activity-child.groupcare .contents-box-04 .contents-box-inner dl:first-of-type dd:last-child {
   background-image: url(./images/pages/telno.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -4930,18 +4982,18 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:first-of-type dd:last-child {
+  .activity-child.groupcare .contents-box-04 .contents-box-inner dl:first-of-type dd:last-child {
     width: 370px;
   }
 }
 
-.activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type {
+.activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type {
   background-color: #fff;
   padding: 10px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type {
+  .activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type {
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -4949,28 +5001,28 @@ select::-ms-expand {
   }
 }
 
-.activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd {
+.activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type dd {
   overflow: hidden;
 }
 
-.activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd p {
+.activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type dd p {
   margin: 0;
 }
 
-.activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd p .day {
+.activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type dd p .day {
   min-width: 6em;
   display: inline-block;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd p .day {
+  .activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type dd p .day {
     margin-right: 0.5em;
     display: inline;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd p {
+  .activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type dd p {
     font-size: 15px;
     float: left;
     line-height: 1.4;
@@ -4979,35 +5031,35 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .contents-box-inner dl:last-of-type dd p:first-child {
+  .activity-child.groupcare .contents-box-04 .contents-box-inner dl:last-of-type dd p:first-child {
     margin-right: 1em;
   }
 }
 
-.activity-child.groupcare .contents-box-03 .contents-box-inner dl dt {
+.activity-child.groupcare .contents-box-04 .contents-box-inner dl dt {
   color: #1b8924;
   font-size: 18px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-03 .addition {
+  .activity-child.groupcare .contents-box-04 .addition {
     text-align: right;
     margin-top: 10px;
     font-size: 14px;
   }
 }
 
-.activity-child.groupcare .contents-box-04 ul {
+.activity-child.groupcare .contents-box-05 ul {
   margin: 10px auto;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-04 ul {
+  .activity-child.groupcare .contents-box-05 ul {
     display: inline-block;
   }
 }
 
-.activity-child.groupcare .contents-box-04 ul li {
+.activity-child.groupcare .contents-box-05 ul li {
   background-color: #f3fCe6;
   color: #1b8924;
   border-radius: 4px;
@@ -5020,19 +5072,19 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-04 ul li {
+  .activity-child.groupcare .contents-box-05 ul li {
     display: inline-block;
     margin-bottom: 0;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-04 ul + p {
+  .activity-child.groupcare .contents-box-05 ul + p {
     display: inline-block;
   }
 }
 
-.activity-child.groupcare .contents-box-04 .link-box {
+.activity-child.groupcare .contents-box-05 .link-box {
   position: relative;
   width: 80%;
   margin: 0 auto;
@@ -5040,7 +5092,7 @@ select::-ms-expand {
   margin: 20px auto;
 }
 
-.activity-child.groupcare .contents-box-04 .link-box::before {
+.activity-child.groupcare .contents-box-05 .link-box::before {
   display: block;
   content: '';
   width: 0;
@@ -5053,17 +5105,17 @@ select::-ms-expand {
   left: 14px;
 }
 
-.activity-child.groupcare .contents-box-04 .link-box a {
+.activity-child.groupcare .contents-box-05 .link-box a {
   text-decoration: none;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-04 .link-box {
+  .activity-child.groupcare .contents-box-05 .link-box {
     width: 360px;
   }
 }
 
-.activity-child.groupcare .contents-box-04 .link-box a {
+.activity-child.groupcare .contents-box-05 .link-box a {
   background-color: #95cb40;
   color: #fff;
   padding: 14px 4px;
@@ -5074,23 +5126,23 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-04 .link-box a:hover {
+  .activity-child.groupcare .contents-box-05 .link-box a:hover {
     background-color: #1b8924;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .activity-child.groupcare .contents-box-04 .link-box {
+  .activity-child.groupcare .contents-box-05 .link-box {
     width: 360px;
     margin: 20px auto 20px 0;
   }
 }
 
-.activity-child.groupcare .contents-box-05 h3 {
+.activity-child.groupcare .contents-box-06 h3 {
   margin-top: 20px;
 }
 
-.activity-child.groupcare .contents-box-05 h3:first-of-type {
+.activity-child.groupcare .contents-box-06 h3:first-of-type {
   margin-bottom: 10px;
   background-image: url(./images/pages/groupcare-member-icon.png);
   background-repeat: no-repeat;
@@ -5103,7 +5155,7 @@ select::-ms-expand {
   font-weight: bold;
 }
 
-.activity-child.groupcare .contents-box-05 h3:nth-of-type(2) {
+.activity-child.groupcare .contents-box-06 h3:nth-of-type(2) {
   margin-bottom: 10px;
   background-image: url(./images/pages/calendar-icon.png);
   background-repeat: no-repeat;
@@ -5116,52 +5168,52 @@ select::-ms-expand {
   font-weight: bold;
 }
 
-.activity-child.groupcare .contents-box-05 .contents-box-inner-02 {
+.activity-child.groupcare .contents-box-06 .contents-box-inner-02 {
   border: 3px solid #95cb40;
   border-radius: 10px;
   padding: 15px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-05 .contents-box-inner-02 {
+  .activity-child.groupcare .contents-box-06 .contents-box-inner-02 {
     text-align: center;
     font-size: 16px;
   }
 }
 
-.activity-child.groupcare .contents-box-05 table {
+.activity-child.groupcare .contents-box-06 table {
   margin-top: 10px;
   font-size: 14px;
   border-color: #ddd;
 }
 
-.activity-child.groupcare .contents-box-05 table tr {
+.activity-child.groupcare .contents-box-06 table tr {
   background-color: transparent;
   display: flex;
   flex-flow: column;
 }
 
 @media screen and (min-width: 600px) {
-  .activity-child.groupcare .contents-box-05 table tr {
+  .activity-child.groupcare .contents-box-06 table tr {
     display: table-row;
   }
 }
 
-.activity-child.groupcare .contents-box-05 table th, .activity-child.groupcare .contents-box-05 table td {
+.activity-child.groupcare .contents-box-06 table th, .activity-child.groupcare .contents-box-06 table td {
   border-color: #ddd;
 }
 
-.activity-child.groupcare .contents-box-05 table th {
+.activity-child.groupcare .contents-box-06 table th {
   font-weight: normal;
   background-color: #f5f5f5;
 }
 
-.activity-child.groupcare .contents-box-05 table td {
+.activity-child.groupcare .contents-box-06 table td {
   background-color: transparent;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.groupcare .contents-box-05 table th {
+  .activity-child.groupcare .contents-box-06 table th {
     width: 200px;
   }
 }
