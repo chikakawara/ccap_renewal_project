@@ -7932,6 +7932,7 @@ select::-ms-expand {
 
 .enlightenment-child.interview .contents-box-02 .note {
   margin-top: 5px;
+  margin-bottom: 0;
   font-size: 0.9em;
 }
 
