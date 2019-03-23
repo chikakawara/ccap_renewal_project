@@ -436,14 +436,13 @@ select::-ms-expand {
 
 @media print, screen and (min-width: 960px) {
   #st-menubox {
-    margin: 30px 0;
+    margin: 25px 0;
   }
 }
 
 #st-menubox .menu {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 #st-menubox .menu li {
@@ -455,7 +454,7 @@ select::-ms-expand {
   border: 0;
   border-right: 2px dotted #95cb40;
   width: 176.66667px;
-  height: 24px;
+  height: 40px;
 }
 
 #st-menubox .menu > li:first-child {
@@ -463,12 +462,15 @@ select::-ms-expand {
 }
 
 #st-menubox .menu > li > a {
-  line-height: 24px;
+  line-height: 40px;
+  height: 40px;
   font-family: "Noto Sans JP";
+  font-size: 14px;
 }
 
 #st-menubox .menu > li > a:hover {
-  color: #1b8924;
+  color: #fff;
+  background-color: #1b8924;
 }
 
 #st-menubox .sub-menu {
