@@ -1205,12 +1205,8 @@
       }
     }
   }
-  /* 電話番号 */
-  .contents-box-02 {
-    @include tel-within-contents;
-  }
   /* プログラム内容 */
-  .contents-box-03 {
+  .contents-box-02 {
     h2 {
       small {
         color: $txt-base-color02;
@@ -1265,7 +1261,7 @@
     }
   }
   /* プログラムに参加するには */
-  .contents-box-04 {
+  .contents-box-03 {
     table {
       @include table-simple;
       th {

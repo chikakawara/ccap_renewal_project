@@ -5221,7 +5221,6 @@ select::-ms-expand {
 /* ペアレンティングプログラム activity/parenting */
 .activity-child.parenting {
   /* 導入 */
-  /* 電話番号 */
   /* プログラム内容 */
   /* プログラムに参加するには */
 }
@@ -5277,120 +5276,7 @@ select::-ms-expand {
   }
 }
 
-.activity-child.parenting .contents-box-02 .contents-box-inner {
-  background-color: #f3fCe6;
-  border-radius: 10px;
-  display: flex;
-  flex-flow: column;
-  padding: 10px 0;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner {
-    background-color: transparent;
-    border-radius: 0;
-    background-image: url(./images/pages/telno_bg.png);
-    background-repeat: no-repeat;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0 60px;
-    height: 127px;
-  }
-}
-
-.activity-child.parenting .contents-box-02 .contents-box-inner dl {
-  width: 90%;
-  margin: 0 auto 10px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl:first-of-type {
-    width: 400px;
-    min-width: 400px;
-  }
-}
-
-.activity-child.parenting .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
-  background-image: url(./images/pages/telno.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: transparent;
-  width: 80%;
-  max-width: 370px;
-  height: calc(100vw * 0.8 / 740 * 80);
-  max-height: 40px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl:first-of-type dd:last-child {
-    width: 370px;
-  }
-}
-
-.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
-  background-color: #fff;
-  padding: 10px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    width: auto;
-  }
-}
-
-.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd {
-  overflow: hidden;
-}
-
-.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p {
-  margin: 0;
-}
-
-.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p .day {
-  min-width: 6em;
-  display: inline-block;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p .day {
-    margin-right: 0.5em;
-    display: inline;
-  }
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p {
-    font-size: 15px;
-    float: left;
-    line-height: 1.4;
-    letter-spacing: 0;
-  }
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type dd p:first-child {
-    margin-right: 1em;
-  }
-}
-
-.activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
-  color: #1b8924;
-  font-size: 18px;
-}
-
-@media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-02 .addition {
-    text-align: right;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-}
-
-.activity-child.parenting .contents-box-03 h2 small {
+.activity-child.parenting .contents-box-02 h2 small {
   color: #333;
   font-size: 16px;
   display: block;
@@ -5398,13 +5284,13 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 h2 small {
+  .activity-child.parenting .contents-box-02 h2 small {
     display: inline;
     margin-top: 0;
   }
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner {
+.activity-child.parenting .contents-box-02 .contents-box-inner {
   border: 3px solid #95cb40;
   border-radius: 10px;
   padding: 0 15px;
@@ -5413,37 +5299,37 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 .contents-box-inner {
+  .activity-child.parenting .contents-box-02 .contents-box-inner {
     padding: 10px 30px;
   }
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner dl {
+.activity-child.parenting .contents-box-02 .contents-box-inner dl {
   border-bottom: 2px dotted #95cb40;
   padding-bottom: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 .contents-box-inner dl {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl {
     display: flex;
     align-items: center;
     padding: 20px 0;
   }
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner dl:last-child {
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-child {
   border-bottom: 0;
   margin-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner dl dt {
+.activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
   color: #1b8924;
   font-size: 18px;
   margin: 20px 0 5px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 .contents-box-inner dl dt {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl dt {
     margin: 0;
     font-size: 20px;
     width: 110px;
@@ -5453,37 +5339,37 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 .contents-box-inner dl dd {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dl dd {
     font-size: 14px;
     margin-left: 15px;
   }
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner dl dd ul li {
+.activity-child.parenting .contents-box-02 .contents-box-inner dl dd ul li {
   font-size: 14px;
   padding-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner dl:last-of-type {
+.activity-child.parenting .contents-box-02 .contents-box-inner dl:last-of-type {
   border-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner dd h4 {
+.activity-child.parenting .contents-box-02 .contents-box-inner dd h4 {
   color: #1b8924;
   font-size: 16px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-03 .contents-box-inner dd h4 {
+  .activity-child.parenting .contents-box-02 .contents-box-inner dd h4 {
     font-size: 15px;
   }
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner dd p {
+.activity-child.parenting .contents-box-02 .contents-box-inner dd p {
   margin-bottom: 0;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner > p {
+.activity-child.parenting .contents-box-02 .contents-box-inner > p {
   background-color: #f3fCe6;
   border-radius: 4px;
   text-align: center;
@@ -5495,7 +5381,7 @@ select::-ms-expand {
   position: relative;
 }
 
-.activity-child.parenting .contents-box-03 .contents-box-inner > p::before {
+.activity-child.parenting .contents-box-02 .contents-box-inner > p::before {
   content: '';
   display: block;
   background-image: url(./images/pages/plus.png);
@@ -5507,54 +5393,54 @@ select::-ms-expand {
   background-size: contain;
 }
 
-.activity-child.parenting .contents-box-04 {
+.activity-child.parenting .contents-box-03 {
   /* 申込方法 */
 }
 
-.activity-child.parenting .contents-box-04 table {
+.activity-child.parenting .contents-box-03 table {
   margin-top: 10px;
   font-size: 14px;
   border-color: #ddd;
 }
 
-.activity-child.parenting .contents-box-04 table tr {
+.activity-child.parenting .contents-box-03 table tr {
   background-color: transparent;
   display: flex;
   flex-flow: column;
 }
 
 @media screen and (min-width: 600px) {
-  .activity-child.parenting .contents-box-04 table tr {
+  .activity-child.parenting .contents-box-03 table tr {
     display: table-row;
   }
 }
 
-.activity-child.parenting .contents-box-04 table th, .activity-child.parenting .contents-box-04 table td {
+.activity-child.parenting .contents-box-03 table th, .activity-child.parenting .contents-box-03 table td {
   border-color: #ddd;
 }
 
-.activity-child.parenting .contents-box-04 table th {
+.activity-child.parenting .contents-box-03 table th {
   font-weight: normal;
   background-color: #f5f5f5;
 }
 
-.activity-child.parenting .contents-box-04 table td {
+.activity-child.parenting .contents-box-03 table td {
   background-color: transparent;
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-04 table th {
+  .activity-child.parenting .contents-box-03 table th {
     width: 200px;
   }
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-04 table td {
+  .activity-child.parenting .contents-box-03 table td {
     padding-left: 20px;
   }
 }
 
-.activity-child.parenting .contents-box-04 .contents-box-inner {
+.activity-child.parenting .contents-box-03 .contents-box-inner {
   border-radius: 10px;
   background-color: #f3fCe6;
   padding: 20px 20px;
@@ -5562,29 +5448,29 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-04 .contents-box-inner {
+  .activity-child.parenting .contents-box-03 .contents-box-inner {
     padding: 30px 40px;
   }
 }
 
-.activity-child.parenting .contents-box-04 .contents-box-inner h3 {
+.activity-child.parenting .contents-box-03 .contents-box-inner h3 {
   margin-bottom: 15px;
 }
 
-.activity-child.parenting .contents-box-04 .contents-box-inner ol {
+.activity-child.parenting .contents-box-03 .contents-box-inner ol {
   counter-reset: my-counter;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.activity-child.parenting .contents-box-04 .contents-box-inner ol li {
+.activity-child.parenting .contents-box-03 .contents-box-inner ol li {
   padding-left: 40px;
   position: relative;
   font-size: inherit;
 }
 
-.activity-child.parenting .contents-box-04 .contents-box-inner ol li::before {
+.activity-child.parenting .contents-box-03 .contents-box-inner ol li::before {
   content: counter(my-counter);
   counter-increment: my-counter;
   background-color: #95cb40;
@@ -5600,7 +5486,7 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .activity-child.parenting .contents-box-04 .contents-box-inner ol li::before {
+  .activity-child.parenting .contents-box-03 .contents-box-inner ol li::before {
     font-size: 16px;
   }
 }
