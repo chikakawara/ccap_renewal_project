@@ -153,7 +153,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   letter-spacing: 0.1em;
   margin: 20px 30px;
   @include screen-pc {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .lead-box-title {
     text-align: center;
@@ -168,9 +168,16 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
     line-height: 1.8;
     @include screen-pc {
       font-size: 14px;
-      width: 80%;
+      width: 960px;
       margin: 0 auto;
       letter-spacing: 0.05em;
+      text-align: center;
+    }
+    br {
+      display: none;
+      @include screen-pc {
+        display: inline-block;
+      }
     }
   }
 }
@@ -179,7 +186,7 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
 .for-people-box {
   border: 3px solid $primary-color;
   border-radius: 10px;
-  margin: 0 20px 20px;
+  margin: 0 20px 60px;
   padding: 0 15px;
   @include screen-pc {
     border: 0;
@@ -300,21 +307,24 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
   @include screen-pc {
     margin-bottom: 0;
   }
+  .section-title {
+    margin-top: 25px;
+  }
   ul {
     list-style-type: none;
     background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     text-align: left;
+    margin: 20px auto 30px;
     @include screen-pc {
       width: 960px;
-      margin: 20px auto;
+      padding: 10px 40px;
     }
     li {
       display: block;
-      border-bottom: 2px solid #ddd;
-      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
       color: $txt-base-color02;
       text-decoration: none;
       @include screen-pc {
@@ -332,9 +342,11 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
             display: inline-block;
             color: #fff;
             background: #f2bd1c;
-            padding: 2px 6px;
-            border-radius: 5px;
-            font-size: 13px;
+            padding: 2px;
+            border-radius: 2px;
+            font-size: 12px;
+            width: 140px;
+            text-align: center;
           }
         }
         &.latest-news-title {
@@ -359,14 +371,13 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
         }
       }
       &:last-child {
-
         border: 0;
-
       }
     }
   }
   .latest-news-more-link {
     @include rounded-rectangle-link();
+    margin-bottom: 30px;
   }
 }
 
@@ -452,7 +463,13 @@ $mainimg-width: calc(100vw - ( 20px * 2 ));
     }
   }
   .actions-more-link {
-    @include rounded-rectangle-link($pc-width:80%);
+    @include rounded-rectangle-link($pc-width:65%);
+    a {
+      @include screen-pc {
+        padding: 8px 4px;
+        font-size: 14px;
+      }
+    }
   }
 }
 

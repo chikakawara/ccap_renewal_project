@@ -1665,7 +1665,7 @@ select::-ms-expand {
 
 @media print, screen and (min-width: 960px) {
   .lead-box {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1687,9 +1687,20 @@ select::-ms-expand {
 @media print, screen and (min-width: 960px) {
   .lead-box .lead-box-body {
     font-size: 14px;
-    width: 80%;
+    width: 960px;
     margin: 0 auto;
     letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.lead-box .lead-box-body br {
+  display: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .lead-box .lead-box-body br {
+    display: inline-block;
   }
 }
 
@@ -1697,7 +1708,7 @@ select::-ms-expand {
 .for-people-box {
   border: 3px solid #95cb40;
   border-radius: 10px;
-  margin: 0 20px 20px;
+  margin: 0 20px 60px;
   padding: 0 15px;
 }
 
@@ -1874,26 +1885,30 @@ select::-ms-expand {
   }
 }
 
+.latest-news-box .section-title {
+  margin-top: 25px;
+}
+
 .latest-news-box ul {
   list-style-type: none;
   background-color: #fff;
-  margin: 20px 0;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   text-align: left;
+  margin: 20px auto 30px;
 }
 
 @media print, screen and (min-width: 960px) {
   .latest-news-box ul {
     width: 960px;
-    margin: 20px auto;
+    padding: 10px 40px;
   }
 }
 
 .latest-news-box ul li {
   display: block;
-  border-bottom: 2px solid #ddd;
-  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  padding: 18px 0;
   color: #333;
   text-decoration: none;
 }
@@ -1920,9 +1935,11 @@ select::-ms-expand {
   display: inline-block;
   color: #fff;
   background: #f2bd1c;
-  padding: 2px 6px;
-  border-radius: 5px;
-  font-size: 13px;
+  padding: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  width: 140px;
+  text-align: center;
 }
 
 .latest-news-box ul li span.latest-news-title {
@@ -1959,6 +1976,7 @@ select::-ms-expand {
   position: relative;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .latest-news-box .latest-news-more-link::before {
@@ -2157,7 +2175,7 @@ select::-ms-expand {
 
 @media print, screen and (min-width: 960px) {
   .actions-box .actions-more-link {
-    width: 80%;
+    width: 65%;
   }
 }
 
@@ -2174,6 +2192,13 @@ select::-ms-expand {
 @media print, screen and (min-width: 960px) {
   .actions-box .actions-more-link a:hover {
     background-color: #1b8924;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .actions-box .actions-more-link a {
+    padding: 8px 4px;
+    font-size: 14px;
   }
 }
 
