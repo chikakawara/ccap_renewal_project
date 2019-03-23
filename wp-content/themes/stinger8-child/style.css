@@ -7881,6 +7881,33 @@ select::-ms-expand {
   }
 }
 
+/* 理事長メッセージ about/message */
+.about-child.message .message_photo-pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about-child.message .message_photo-pc {
+    display: block;
+    width: 190px;
+    float: left;
+    margin-right: 30px;
+  }
+}
+
+.about-child.message .message_photo-sp {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+@media print, screen and (min-width: 960px) {
+  .about-child.message .message_photo-sp {
+    display: none;
+  }
+}
+
 /* 団体概要 about/organization */
 .about-child.organization {
   /* 導入 */
