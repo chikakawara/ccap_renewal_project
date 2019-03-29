@@ -5245,6 +5245,60 @@ select::-ms-expand {
   }
 }
 
+.activity-child.groupcare .contents-box-06 .link-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.activity-child.groupcare .contents-box-06 .link-box::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+.activity-child.groupcare .contents-box-06 .link-box a {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-06 .link-box {
+    width: 360px;
+  }
+}
+
+.activity-child.groupcare .contents-box-06 .link-box a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.groupcare .contents-box-06 .link-box a:hover {
+    background-color: #1b8924;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.groupcare .contents-box-06 .link-box {
+    width: 360px;
+    margin: 20px auto 20px 0;
+  }
+}
+
 /* ペアレンティングプログラム activity/parenting */
 .activity-child.parenting {
   /* 導入 */
@@ -5515,6 +5569,60 @@ select::-ms-expand {
 @media print, screen and (min-width: 960px) {
   .activity-child.parenting .contents-box-03 .contents-box-inner ol li::before {
     font-size: 16px;
+  }
+}
+
+.activity-child.parenting .contents-box-03 .link-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.activity-child.parenting .contents-box-03 .link-box::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  position: absolute;
+  border-color: transparent transparent transparent #fff;
+  top: calc(50% - 3px);
+  left: 14px;
+}
+
+.activity-child.parenting .contents-box-03 .link-box a {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-03 .link-box {
+    width: 360px;
+  }
+}
+
+.activity-child.parenting .contents-box-03 .link-box a {
+  background-color: #95cb40;
+  color: #fff;
+  padding: 14px 4px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media print, screen and (min-width: 960px) {
+  .activity-child.parenting .contents-box-03 .link-box a:hover {
+    background-color: #1b8924;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .activity-child.parenting .contents-box-03 .link-box {
+    width: 360px;
+    margin: 20px auto 20px 0;
   }
 }
 
