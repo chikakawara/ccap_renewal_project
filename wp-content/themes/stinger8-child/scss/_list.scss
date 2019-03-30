@@ -1,5 +1,16 @@
 /* list */
 
+/* 「研修・セミナー」TOPマージン */
+.blog {
+  .st-main {
+    margin: 10px 15px;
+    @include screen-pc {
+      margin: 0 280px 0 0;
+    }
+  }
+}
+
+/* アーカイブ */
 .archive {
   /* 一覧周囲にマージン */
   .st-main {
@@ -29,12 +40,6 @@
     @include screen-pc {
       padding-top: 20px;
     }
-  }
-}
-
-.st-main {
-  @include screen-pc {
-    margin: 0 280px 0 0;
   }
 }
 

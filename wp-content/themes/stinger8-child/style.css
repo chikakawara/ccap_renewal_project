@@ -8628,6 +8628,18 @@ select::-ms-expand {
 }
 
 /* list */
+/* 「研修・セミナー」TOPマージン */
+.blog .st-main {
+  margin: 10px 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .blog .st-main {
+    margin: 0 280px 0 0;
+  }
+}
+
+/* アーカイブ */
 .archive {
   /* 一覧周囲にマージン */
   /* 一覧タイトル */
@@ -8666,12 +8678,6 @@ select::-ms-expand {
 @media print, screen and (min-width: 960px) {
   .archive .kanren {
     padding-top: 20px;
-  }
-}
-
-@media print, screen and (min-width: 960px) {
-  .st-main {
-    margin: 0 280px 0 0;
   }
 }
 
@@ -8809,31 +8815,45 @@ select::-ms-expand {
 }
 
 /* single */
-/* カテゴリーラベル */
-.post .st-catgroup {
+.single {
+  /* 一覧周囲にマージン */
+  /* カテゴリーラベル */
+  /* 投稿ページ */
+}
+
+.single .st-main {
+  margin: 10px 15px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .single .st-main {
+    margin: 0 280px 0 0;
+  }
+}
+
+.single .post .st-catgroup {
   padding-top: 0;
 }
 
-.catname {
+.single .catname {
   color: #fff;
   background: #f2bd1c;
 }
 
 @media print, screen and (min-width: 960px) {
-  .catname {
+  .single .catname {
     font-size: 11px !important;
   }
 }
 
-/* 投稿ページ */
-.article-post {
+.single .article-post {
   /* カテゴリと日付 */
   /* 見出し */
   /* 本文 */
 }
 
 @media print, screen and (min-width: 960px) {
-  .article-post {
+  .single .article-post {
     border: 2px solid #95cb40;
     border-radius: 10px;
     padding: 20px 40px;
@@ -8842,7 +8862,7 @@ select::-ms-expand {
   }
 }
 
-.article-post .article-post--header {
+.single .article-post .article-post--header {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -8850,30 +8870,30 @@ select::-ms-expand {
 }
 
 @media print, screen and (min-width: 960px) {
-  .article-post .article-post--header {
+  .single .article-post .article-post--header {
     flex-flow: row;
     align-items: center;
   }
 }
 
-.article-post .article-post--header .article-post--header--date {
+.single .article-post .article-post--header .article-post--header--date {
   margin: 15px 0 0 0;
 }
 
 @media print, screen and (min-width: 960px) {
-  .article-post .article-post--header .article-post--header--date {
+  .single .article-post .article-post--header .article-post--header--date {
     margin: 0 0 0 20px;
     font-size: 14px;
   }
 }
 
-.article-post .entry-title {
+.single .article-post .entry-title {
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
 
 @media print, screen and (min-width: 960px) {
-  .article-post .entry-title {
+  .single .article-post .entry-title {
     margin: 20px 0;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
@@ -8881,22 +8901,22 @@ select::-ms-expand {
   }
 }
 
-.article-post .entry-content {
+.single .article-post .entry-content {
   line-height: 1.8;
   letter-spacing: 0.05em;
 }
 
 @media print, screen and (min-width: 960px) {
-  .article-post .entry-content {
+  .single .article-post .entry-content {
     font-size: 15px;
   }
 }
 
-.article-post .entry-content h2, .article-post .entry-content h3 {
+.single .article-post .entry-content h2, .single .article-post .entry-content h3 {
   font-size: 18px;
 }
 
-.article-post .entry-content h2 {
+.single .article-post .entry-content h2 {
   font-weight: bold;
   background: #f3f3f3;
   padding: 8px;
@@ -8904,38 +8924,38 @@ select::-ms-expand {
   margin: 20px 0;
 }
 
-.article-post .entry-content h3 {
+.single .article-post .entry-content h3 {
   padding: 0 10px 5px 0;
   font-size: 18px;
   line-height: 1.4;
   border-bottom: 1px dashed #8a8a8a;
 }
 
-.article-post .entry-content h4 {
+.single .article-post .entry-content h4 {
   background: none;
   padding: 0;
   margin-bottom: 10px;
 }
 
-.article-post .entry-content p {
+.single .article-post .entry-content p {
   margin-bottom: 20px;
 }
 
-.article-post .entry-content table tr:nth-child(even) {
+.single .article-post .entry-content table tr:nth-child(even) {
   background-color: transparent;
 }
 
-.article-post .entry-content .post ol,
-.article-post .entry-content .post ul {
+.single .article-post .entry-content .post ol,
+.single .article-post .entry-content .post ul {
   padding-top: 0;
 }
 
-.p-navi {
+.single .p-navi {
   margin-top: 20px;
 }
 
 @media print, screen and (min-width: 960px) {
-  .p-navi {
+  .single .p-navi {
     margin-top: 0;
   }
 }
