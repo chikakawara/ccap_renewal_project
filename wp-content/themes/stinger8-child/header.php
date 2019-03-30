@@ -70,8 +70,8 @@
 										<!-- utility_bottom -->
 										<?php wp_nav_menu( array( 'theme_location' => 'utility_bottom', 'menu_class' => 'menu-utility__header-bottom' ) ); ?>
 										<div class="telno">
-											<span data-action="call" data-tel="0353002990">
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
+											<span data-action="call" data-tel="0369090999">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-6909-0999">
 											</span>
 										</div>
 										<!-- custom accordion -->
@@ -91,8 +91,8 @@
 							<!-- SP用電話番号 topにのみ表示 -->
 							<?php if ( is_front_page() ) : ?>
 								<div class="telno__forsp">
-									<span data-action="call" data-tel="0353002990">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-5300-2990">
+									<span data-action="call" data-tel="0369090999">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tel.png" alt="聞かせてください、子育ての悩み。03-6909-0999">
 									</span>
 								</div>
 							<?php endif; ?>
