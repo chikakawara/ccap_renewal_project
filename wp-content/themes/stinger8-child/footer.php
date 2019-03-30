@@ -27,7 +27,7 @@
 				'menu_class' => 'menu-utility__footer-top'
 			) ); ?>
 			<div class="link-twitter">
-				<a href="https://twitter.com/ccap27117136" target="_blank">
+				<a href="//twitter.com/ccap27117136" target="_blank">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="twitter">
 				</a>
 			</div>
@@ -46,12 +46,12 @@
 		</ul>
 		<ul class="footer-bottom-banners">
 			<li class="banner-orangeribbon">
-				<a href="http://www.orangeribbon.jp/" target="_blank">
+				<a href="//www.orangeribbon.jp/" target="_blank">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bn_orangeribbon.png" alt="子ども虐待防止　オレンジリボン運動">
 				</a>
 			</li>
 			<li class="banner-servicegrant">
-				<a href="https://www.servicegrant.or.jp/" target="_blank">
+				<a href="//www.servicegrant.or.jp/" target="_blank">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bn_servicegrant.png" alt="donated by SERVICE GRANT">
 				</a>
 			</li>

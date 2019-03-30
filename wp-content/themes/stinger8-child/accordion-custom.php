@@ -31,5 +31,5 @@
   <a href="//yamaneko.ccap.or.jp/" target="_blank">クリニック（開設予定）</a>
 </div>
 <div class="link-orange-ribbon">
-  <a href="http://www.orangeribbon.jp/" target="_blank">オレンジリボン運動</a>
+  <a href="//www.orangeribbon.jp/" target="_blank">オレンジリボン運動</a>
 </div>

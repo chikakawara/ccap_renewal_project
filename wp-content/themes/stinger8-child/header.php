@@ -26,8 +26,8 @@
 		<link rel="alternate" type="application/rss+xml" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?> RSS Feed" href="<?php bloginfo( 'rss2_url' ); ?>" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" >
 		<!-- google font -->
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 		<script src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/js/html5shiv.js"></script>
@@ -61,7 +61,7 @@
 											<a href="//yamaneko.ccap.or.jp/" target="_blank">クリニック（開設予定）</a>
 										</div>
 										<div class="link-twitter">
-											<a href="https://twitter.com/ccap27117136" target="_blank">
+											<a href="//twitter.com/ccap27117136" target="_blank">
 												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="twitter">
 											</a>
 										</div>
