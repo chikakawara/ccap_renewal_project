@@ -71,7 +71,7 @@ $(function() {
 
 // gloval nav hover slidedown
 $(function() {
-  $('#menu-global-1 .menu-item').mouseenter(function() {
+  $('#menu-global-1.menu .menu-item').mouseenter(function() {
     $(this).children('.sub-menu').slideDown('fast');
   }).mouseleave(function() {
     $(this).children('.sub-menu').slideUp('fast');
