@@ -8252,10 +8252,6 @@ select::-ms-expand {
   /* 導入 */
 }
 
-.about-child.report .contents-box-01 h2 small {
-  display: block;
-}
-
 .about-child.report .contents-box-01 table {
   margin-top: 10px;
   font-size: 14px;

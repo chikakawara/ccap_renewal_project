@@ -2297,11 +2297,6 @@
 .about-child.report {
   /* 導入 */
   .contents-box-01 {
-    h2 {
-      small {
-        display: block;
-      }
-    }
     table {
       @include table-simple;
       th {
