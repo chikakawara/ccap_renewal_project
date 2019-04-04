@@ -58,7 +58,7 @@
 										<?php wp_nav_menu( array( 'theme_location' => 'utility_top', 'menu_class' => 'menu-utility__header-top' ) ); ?>
 										<!-- links -->
 										<div class="link-clinic">
-											<a href="//yamaneko.ccap.or.jp/" target="_blank">クリニック（開設予定）</a>
+											<a href="//peraichi.com/landing_pages/view/yamaneko2019" target="_blank">クリニックやまねこ</a>
 										</div>
 										<div class="link-twitter">
 											<a href="//twitter.com/ccap27117136" target="_blank">

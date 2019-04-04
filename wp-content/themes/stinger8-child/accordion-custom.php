@@ -28,7 +28,7 @@
   ) ); ?>
 </div>
 <div class="link-clinic">
-  <a href="//yamaneko.ccap.or.jp/" target="_blank">クリニック（開設予定）</a>
+  <a href="//peraichi.com/landing_pages/view/yamaneko2019" target="_blank">クリニックやまねこ</a>
 </div>
 <div class="link-orange-ribbon">
   <a href="//www.orangeribbon.jp/" target="_blank">オレンジリボン運動</a>
